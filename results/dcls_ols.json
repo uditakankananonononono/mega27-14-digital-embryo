@@ -1,0 +1,12 @@
+{
+ "model": "OLS lambda ~ bcd_dose, HC3 robust SE, fit window [0,0.5]EL",
+ "n_gradients": 482,
+ "slope_per_dose": 0.011690431883082646,
+ "slope_ci95": [
+  0.005988440156094189,
+  0.017392423610071102
+ ],
+ "p_value_slope": 5.8597200294852374e-05,
+ "r2": 0.046715481889400556,
+ "crosscheck": "Spearman rho=0.356, p=7.9e-16 on same window (results/bcd_windows.json)"
+}

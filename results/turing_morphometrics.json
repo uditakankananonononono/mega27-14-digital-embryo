@@ -1,0 +1,11 @@
+{
+ "model": "Gierer-Meinhardt 2D n=96, mu_a=0.03, mu_h=0.12, Da=0.005, Dh=0.2, steady state",
+ "n_spots": 642,
+ "spot_area_mean": 1.7850467289719627,
+ "spot_area_cv": 0.3539876234523602,
+ "spot_eccentricity_mean": 0.6766748068277446,
+ "otsu_threshold": 5.420359130188782,
+ "k2_fft_this_run": 2.7159425648307516,
+ "k2_sim_committed_n48": 2.6885237478643838,
+ "note": "spot morphometrics via skimage measure/filters; k2 differs from committed n=48 sweep value due to lattice size (expected)."
+}

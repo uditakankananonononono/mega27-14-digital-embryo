@@ -1,0 +1,34 @@
+{
+ "bicoid": {
+  "ncbi_gene_id": "40830",
+  "name": "bcd",
+  "description": "bicoid",
+  "organism": "Drosophila melanogaster"
+ },
+ "hunchback": {
+  "ncbi_gene_id": "41032",
+  "name": "hb",
+  "description": "hunchback",
+  "organism": "Drosophila melanogaster"
+ },
+ "even-skipped": {
+  "ncbi_gene_id": "36039",
+  "name": "eve",
+  "description": "even skipped",
+  "organism": "Drosophila melanogaster"
+ },
+ "knirps": {
+  "ncbi_gene_id": "40287",
+  "name": "kni",
+  "description": "knirps",
+  "organism": "Drosophila melanogaster"
+ },
+ "giant": {
+  "ncbi_gene_id": "31227",
+  "name": "gt",
+  "description": "giant",
+  "organism": "Drosophila melanogaster"
+ },
+ "_liu2013_pmid": "23580621",
+ "_source": "NCBI eutils esearch/esummary db=gene/pubmed, retrieved 2026-09-25"
+}

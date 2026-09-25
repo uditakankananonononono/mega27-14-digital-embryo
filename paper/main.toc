@@ -1,0 +1,8 @@
+\contentsline {section}{\numberline {1}Introduction}{2}{section.1}%
+\contentsline {section}{\numberline {2}Mathematical preliminaries and derivations}{2}{section.2}%
+\contentsline {section}{\numberline {3}Study A: Turing pattern selection}{2}{section.3}%
+\contentsline {section}{\numberline {4}Study B: Gene-regulatory-network attractors}{2}{section.4}%
+\contentsline {section}{\numberline {5}Study C: Morphogen gradients and positional information}{2}{section.5}%
+\contentsline {section}{\numberline {6}Tools, datasets and reproducibility}{2}{section.6}%
+\contentsline {section}{\numberline {7}Honest negatives and limitations}{2}{section.7}%
+\contentsline {section}{\numberline {8}Conclusion}{2}{section.8}%

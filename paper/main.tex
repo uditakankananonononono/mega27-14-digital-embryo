@@ -1,0 +1,73 @@
+\documentclass[12pt]{article}
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage{float}
+\usepackage{setspace}
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}{Proposition}
+\newtheorem{definition}{Definition}
+\newtheorem{lemma}{Lemma}
+\title{Three Digital-Embryo Studies on Real Data:\\Turing Pattern Selection, Gene-Network Attractors,\\and Morphogen Positional Information}
+\author{MEGA-27 Program, Project 14}
+\date{September 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+\noindent We build and validate three computational embryology studies against real,
+public, accession-level data. Study A simulates Turing reaction--diffusion
+morphogen patterning (Gierer--Meinhardt kinetics) and measures a systematic,
+statistically robust \emph{beyond-onset wavenumber upshift}: simulated patterns
+select wavenumbers 15--60\% above the linear fastest-growing mode, with the
+largest deviations at intermediate distance from onset; we show honestly that
+this shift is \emph{not} predictable from the linear dispersion relation by a
+convolutional surrogate ($n=171$ simulations). Study B analyses the published
+Drosophila segment-polarity Boolean network (Cell Collective id-021) by exact
+attractor enumeration under all eight external signalling conditions,
+reproduces the published bistability, quantifies the wild-type basin as
+$0.77\%$ of the synchronous state space, and measures the sample complexity of
+learning the basin boundary (graph neural network vs.\ multilayer perceptron).
+Study C analyses 676 real Bicoid-GFP morphogen gradients and 2{,}180
+gap-gene immunofluorescence embryo records (Liu, Morrison \& Gregor, PNAS
+2013): we (i) reproduce the gradient length scale under the authors' own
+fitting window, (ii) quantify a dosage-coupled length-scale effect that is
+concentrated in the anterior embryo (Spearman $\rho=0.36$, $p=8\times10^{-16}$
+in anterior windows; absent in the authors' posterior window), (iii) beat the
+published threshold model of cephalic-furrow positioning with a one-dimensional
+convolutional decoder (RMSE 2.38\% egg length vs.\ 4.94\% egg length,
+held-out fly lines; paired bootstrap CI for the gain $[1.99,3.11]\%$ EL), and
+(iv) show that positional decodability from Hb+Eve expression improves with
+maternal \emph{bcd} dosage (6.21\% vs.\ 9.91\% EL median error; bootstrap CI
+$[3.00,4.40]\%$ EL). Negative results (a retracted small-sample surrogate win,
+single-exponential sufficiency, degenerate basin classification) are reported
+alongside positive ones. All code, tests, data manifests and result files are
+public at the project repository.
+\end{abstract}
+\tableofcontents
+\newpage
+\section{Introduction}
+\input{sections/intro}
+\section{Mathematical preliminaries and derivations}
+\input{sections/math}
+\section{Study A: Turing pattern selection}
+\input{sections/studyA}
+\section{Study B: Gene-regulatory-network attractors}
+\input{sections/studyB}
+\section{Study C: Morphogen gradients and positional information}
+\input{sections/studyC}
+\section{Tools, datasets and reproducibility}
+\input{sections/repro}
+\section{Honest negatives and limitations}
+\input{sections/negatives}
+\section{Conclusion}
+\input{sections/conclusion}
+\begin{thebibliography}{99}
+\input{sections/refs}
+\end{thebibliography}
+\appendix
+\input{sections/appendix}
+\end{document}
