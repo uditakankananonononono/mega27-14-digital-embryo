@@ -1,7 +1,8 @@
 {
- "n_sims": 58,
- "cv": "6-fold over parameter sets",
- "linear_fastest_mode_relRMSE": 0.2768998718045141,
- "cnn_dispersion_relRMSE": 0.2352865213680309,
- "improvement": 1.176862449215237
+ "n_sims": 171,
+ "cv": "6-fold, 2-seed avg",
+ "linear_only_relRMSE": 0.27173672290345646,
+ "linear_plus_cnn_correction_relRMSE": 0.29485295793137417,
+ "improvement": 0.9216008033628141,
+ "RETRACTION": "The n=58 run showed CNN +17.7% over linear theory; at n=171 this does NOT replicate (CNN 0.292-0.295 vs linear 0.272 relRMSE). The n=58 win was a small-sample artifact. Honest negative: the beyond-onset wavenumber shift is not predictable from the linear dispersion curve alone. The shift itself is real: 87% of 171 sims sit above the lattice-rounded linear mode, mean upshift +0.88 k^2 units."
 }

@@ -61,10 +61,18 @@ def cnn_fit_predict(train, test, epochs=400, seed=0):
                      for i, f in zip(test, frac)])
 
 
+CACHE = ROOT / "results" / "turing_sims_cache.json"
+
 if __name__ == "__main__":
+    import sys
+    if len(sys.argv) > 1 and sys.argv[1] == "sims":
+        with mp.Pool(2) as pool:
+            rows = [r for r in pool.map(_point, range(220)) if r]
+        CACHE.write_text(json.dumps(rows))
+        print("sims cached:", len(rows))
+        sys.exit(0)
     global ROWS
-    with mp.Pool(2) as pool:
-        ROWS = [r for r in pool.map(_point, range(72)) if r]
+    ROWS = json.loads(CACHE.read_text())
     rng = np.random.default_rng(0)
     idx = rng.permutation(len(ROWS))
     k = 6

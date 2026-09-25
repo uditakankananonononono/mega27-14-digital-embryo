@@ -86,4 +86,12 @@ class GiererMeinhardt2D:
         k2 = KX**2 + KY**2
         p = p.ravel(); k2 = k2.ravel()
         p[k2 == 0] = 0
-        return k2[np.argmax(p)]
+        i = int(np.argmax(p))
+        # parabolic sub-bin interpolation for precision beyond the FFT grid
+        if 0 < i < len(p) - 1 and p[i - 1] > 0 and p[i + 1] > 0:
+            y0, y1, y2 = np.log(p[i - 1]), np.log(p[i]), np.log(p[i + 1])
+            denom = y0 - 2 * y1 + y2
+            if abs(denom) > 1e-12:
+                delta = 0.5 * (y0 - y2) / denom
+                return k2[i] + delta * (k2[1] - k2[0])
+        return k2[i]
