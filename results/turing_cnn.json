@@ -1,0 +1,7 @@
+{
+ "n_sims": 58,
+ "cv": "6-fold over parameter sets",
+ "linear_fastest_mode_relRMSE": 0.2768998718045141,
+ "cnn_dispersion_relRMSE": 0.2352865213680309,
+ "improvement": 1.176862449215237
+}
