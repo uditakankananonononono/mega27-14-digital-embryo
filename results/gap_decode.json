@@ -1,0 +1,61 @@
+{
+ "1XA:Eve,Hb": {
+  "n_embryos": 137,
+  "n_test_pts": 2362,
+  "median_abs_err_pctEL": 9.909909909909913,
+  "mean_abs_err_pctEL": 14.907456143696617
+ },
+ "1XA:Kni,Gt": {
+  "n_embryos": 152,
+  "n_test_pts": 2359,
+  "median_abs_err_pctEL": 22.022022022022025,
+  "mean_abs_err_pctEL": 23.064862234001694
+ },
+ "2XA:Kni,Gt": {
+  "n_embryos": 194,
+  "n_test_pts": 3193,
+  "median_abs_err_pctEL": 22.222222222222225,
+  "mean_abs_err_pctEL": 23.377652629140258
+ },
+ "2XA2IIIA:Hb,Eve": {
+  "n_embryos": 205,
+  "n_test_pts": 3575,
+  "median_abs_err_pctEL": 6.206206206206205,
+  "mean_abs_err_pctEL": 8.864696864696866
+ },
+ "2XA2IIIA:Kni,Gt": {
+  "n_embryos": 195,
+  "n_test_pts": 3357,
+  "median_abs_err_pctEL": 17.817817817817815,
+  "mean_abs_err_pctEL": 19.873075339265387
+ },
+ "1XA BNT:Hb,Eve": {
+  "n_embryos": 211,
+  "n_test_pts": 3778,
+  "median_abs_err_pctEL": 11.011011011011012,
+  "mean_abs_err_pctEL": 12.85743127987702
+ },
+ "2XA BNT:Hb,Eve": {
+  "n_embryos": 218,
+  "n_test_pts": 3575,
+  "median_abs_err_pctEL": 8.408408408408407,
+  "mean_abs_err_pctEL": 11.054411054411055
+ },
+ "published_context": {
+  "petkova2019_4gapgenes": "~1% EL joint decoding (Cell 176:844)",
+  "dubuis2013_single_gene": "single gap genes carry ~2-3 bits; %EL errors several x larger than joint"
+ },
+ "dosage_decodability": {
+  "comparison": "Hb,Eve kNN decoder, 1XA (1x bcd) vs 2XA2IIIA (3x bcd), identical pipeline/split",
+  "median_err_1x_pctEL": 9.909909909909913,
+  "median_err_3x_pctEL": 6.206206206206205,
+  "diff_ci95_pctEL": [
+   3.003003003003002,
+   4.404404404404405
+  ],
+  "n_test_points": [
+   2362,
+   3575
+  ]
+ }
+}
