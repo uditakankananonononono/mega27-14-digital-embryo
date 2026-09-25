@@ -1,3 +1,4 @@
+README.md
 setup.py
 src/digitalembryo/__init__.py
 src/digitalembryo/grn.py

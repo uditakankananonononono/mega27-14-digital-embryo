@@ -1,0 +1,22 @@
+{
+  "liu2013/LiveImaging.mat": {
+    "url": "https://zenodo.org/api/records/4942019/files/Liu%20et%20al.%20-%20LiveImaging_data_structure.mat/content",
+    "md5": "b566116da71c12d3ac1f90c86c09c17a",
+    "status": "cached"
+  },
+  "liu2013/Immunofluorescence.mat": {
+    "url": "https://zenodo.org/api/records/4942019/files/Liu%20et%20al.%20-%20Immunofluorescence_data_structure.mat/content",
+    "md5": "bf5c56902f63cbf0b96af380bd03db72",
+    "status": "downloaded"
+  },
+  "liu2013/README_IF.txt": {
+    "url": "https://zenodo.org/api/records/4942019/files/README_for_Liu%20et%20al.%20-%20Immunofluorescence_data_structure.txt/content",
+    "md5": "f561d4bdad74c06b324432d2d8864a6e",
+    "status": "cached"
+  },
+  "liu2013/README_Live.txt": {
+    "url": "https://zenodo.org/api/records/4942019/files/README_for_Liu%20et%20al.%20-%20LiveImaging_data_structure.txt/content",
+    "md5": "6d7f2ec1b90b9dccb12c699f1aa01bab",
+    "status": "cached"
+  }
+}
