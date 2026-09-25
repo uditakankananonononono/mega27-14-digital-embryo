@@ -1,0 +1,222 @@
+{
+ "model": "Cell Collective id-021 BODY-SEGMENTATION-IN-DROSOPHILA-2013",
+ "doi": "10.1371/journal.pone.0055946",
+ "conditions": {
+  "hh0_WG0_SLP0": {
+   "n_fixed": 1,
+   "n_cycles": 0,
+   "fixed": [
+    {
+     "v_CIA": 0,
+     "v_CIR": 1,
+     "v_CI_protein": 1,
+     "v_EN_protein": 0,
+     "v_HH_protein": 0,
+     "v_PH": 0,
+     "v_PTC_protein": 1,
+     "v_SMO": 0,
+     "v_WG_protein": 0,
+     "v_ci": 1,
+     "v_en": 0,
+     "v_hh": 0,
+     "v_ptc": 0,
+     "v_wg": 0
+    }
+   ],
+   "cycle_lengths": []
+  },
+  "hh0_WG0_SLP1": {
+   "n_fixed": 1,
+   "n_cycles": 0,
+   "fixed": [
+    {
+     "v_CIA": 0,
+     "v_CIR": 1,
+     "v_CI_protein": 1,
+     "v_EN_protein": 0,
+     "v_HH_protein": 0,
+     "v_PH": 0,
+     "v_PTC_protein": 1,
+     "v_SMO": 0,
+     "v_WG_protein": 0,
+     "v_ci": 1,
+     "v_en": 0,
+     "v_hh": 0,
+     "v_ptc": 0,
+     "v_wg": 0
+    }
+   ],
+   "cycle_lengths": []
+  },
+  "hh0_WG1_SLP0": {
+   "n_fixed": 2,
+   "n_cycles": 0,
+   "fixed": [
+    {
+     "v_CIA": 0,
+     "v_CIR": 0,
+     "v_CI_protein": 0,
+     "v_EN_protein": 1,
+     "v_HH_protein": 1,
+     "v_PH": 0,
+     "v_PTC_protein": 0,
+     "v_SMO": 1,
+     "v_WG_protein": 0,
+     "v_ci": 0,
+     "v_en": 1,
+     "v_hh": 1,
+     "v_ptc": 0,
+     "v_wg": 0
+    },
+    {
+     "v_CIA": 0,
+     "v_CIR": 0,
+     "v_CI_protein": 0,
+     "v_EN_protein": 1,
+     "v_HH_protein": 1,
+     "v_PH": 0,
+     "v_PTC_protein": 1,
+     "v_SMO": 0,
+     "v_WG_protein": 0,
+     "v_ci": 0,
+     "v_en": 1,
+     "v_hh": 1,
+     "v_ptc": 0,
+     "v_wg": 0
+    }
+   ],
+   "cycle_lengths": []
+  },
+  "hh0_WG1_SLP1": {
+   "n_fixed": 1,
+   "n_cycles": 0,
+   "fixed": [
+    {
+     "v_CIA": 0,
+     "v_CIR": 1,
+     "v_CI_protein": 1,
+     "v_EN_protein": 0,
+     "v_HH_protein": 0,
+     "v_PH": 0,
+     "v_PTC_protein": 1,
+     "v_SMO": 0,
+     "v_WG_protein": 0,
+     "v_ci": 1,
+     "v_en": 0,
+     "v_hh": 0,
+     "v_ptc": 0,
+     "v_wg": 0
+    }
+   ],
+   "cycle_lengths": []
+  },
+  "hh1_WG0_SLP0": {
+   "n_fixed": 2,
+   "n_cycles": 0,
+   "fixed": [
+    {
+     "v_CIA": 1,
+     "v_CIR": 0,
+     "v_CI_protein": 1,
+     "v_EN_protein": 0,
+     "v_HH_protein": 0,
+     "v_PH": 1,
+     "v_PTC_protein": 1,
+     "v_SMO": 1,
+     "v_WG_protein": 0,
+     "v_ci": 1,
+     "v_en": 0,
+     "v_hh": 0,
+     "v_ptc": 1,
+     "v_wg": 0
+    },
+    {
+     "v_CIA": 1,
+     "v_CIR": 0,
+     "v_CI_protein": 1,
+     "v_EN_protein": 0,
+     "v_HH_protein": 0,
+     "v_PH": 1,
+     "v_PTC_protein": 1,
+     "v_SMO": 1,
+     "v_WG_protein": 1,
+     "v_ci": 1,
+     "v_en": 0,
+     "v_hh": 0,
+     "v_ptc": 1,
+     "v_wg": 1
+    }
+   ],
+   "cycle_lengths": []
+  },
+  "hh1_WG0_SLP1": {
+   "n_fixed": 1,
+   "n_cycles": 0,
+   "fixed": [
+    {
+     "v_CIA": 1,
+     "v_CIR": 0,
+     "v_CI_protein": 1,
+     "v_EN_protein": 0,
+     "v_HH_protein": 0,
+     "v_PH": 1,
+     "v_PTC_protein": 1,
+     "v_SMO": 1,
+     "v_WG_protein": 1,
+     "v_ci": 1,
+     "v_en": 0,
+     "v_hh": 0,
+     "v_ptc": 1,
+     "v_wg": 1
+    }
+   ],
+   "cycle_lengths": []
+  },
+  "hh1_WG1_SLP0": {
+   "n_fixed": 1,
+   "n_cycles": 0,
+   "fixed": [
+    {
+     "v_CIA": 0,
+     "v_CIR": 0,
+     "v_CI_protein": 0,
+     "v_EN_protein": 1,
+     "v_HH_protein": 1,
+     "v_PH": 0,
+     "v_PTC_protein": 0,
+     "v_SMO": 1,
+     "v_WG_protein": 0,
+     "v_ci": 0,
+     "v_en": 1,
+     "v_hh": 1,
+     "v_ptc": 0,
+     "v_wg": 0
+    }
+   ],
+   "cycle_lengths": []
+  },
+  "hh1_WG1_SLP1": {
+   "n_fixed": 1,
+   "n_cycles": 0,
+   "fixed": [
+    {
+     "v_CIA": 1,
+     "v_CIR": 0,
+     "v_CI_protein": 1,
+     "v_EN_protein": 0,
+     "v_HH_protein": 0,
+     "v_PH": 1,
+     "v_PTC_protein": 1,
+     "v_SMO": 1,
+     "v_WG_protein": 1,
+     "v_ci": 1,
+     "v_en": 0,
+     "v_hh": 0,
+     "v_ptc": 1,
+     "v_wg": 1
+    }
+   ],
+   "cycle_lengths": []
+  }
+ }
+}
