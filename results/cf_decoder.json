@@ -1,0 +1,40 @@
+{
+ "n_embryos": 250,
+ "n_lines": 29,
+ "cv": "5-fold, disjoint fly lines",
+ "models": {
+  "liu_threshold_lnA": {
+   "rmse_EL": 0.028566385267385405,
+   "rmse_pctEL": 2.8566385267385406,
+   "r2": 0.7903191483884812
+  },
+  "liu_threshold_trueD": {
+   "rmse_EL": 0.049376381036795654,
+   "rmse_pctEL": 4.937638103679565,
+   "r2": 0.37354957924632315
+  },
+  "ridge_lnA_lambda": {
+   "rmse_EL": 0.02552215248024542,
+   "rmse_pctEL": 2.5522152480245417,
+   "r2": 0.8326280054505081
+  },
+  "cnn1d_profile_3seed": {
+   "rmse_EL": 0.023802871188951788,
+   "rmse_pctEL": 2.3802871188951786,
+   "r2": 0.8544182665041805
+  }
+ },
+ "paired_bootstrap_cnn_minus_liu": {
+  "rmse_gain_mean_pctEL": 2.567120534421632,
+  "ci95_pctEL": [
+   1.9924425913021022,
+   3.1073586673130005
+  ],
+  "p_gain_le_0": 0.0
+ },
+ "published_bar": {
+  "liu2013_Sx_pctEL": 10.5,
+  "liu2013_relC_at_CF_sd_pct": "16+-5",
+  "note": "Liu et al. PNAS 2013 threshold model; bar = its CV RMSE on identical data"
+ }
+}
