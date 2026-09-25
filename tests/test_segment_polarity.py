@@ -45,6 +45,6 @@ def test_ci_knockout_blocks_wg_reactivation():
         return tuple(s)
 
     for bits in itertools.product([0, 1], repeat=len(sp.NODES)):
-        if bits[idx["wg"]] != 0:
-            continue
+        if bits[idx["wg"]] != 0 or bits[idx["ci"]] != 0:
+            continue  # LOF holds ci OFF throughout; only such states are valid
         assert succ_lof(bits)[idx["wg"]] == 0
