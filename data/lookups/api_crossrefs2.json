@@ -1,0 +1,107 @@
+{
+ "mygene_bcd": {
+  "flybase": null,
+  "ensembl": {
+   "gene": "FBgn0000166",
+   "protein": [
+    "FBpp0081164",
+    "FBpp0081165",
+    "FBpp0081166",
+    "FBpp0081167",
+    "FBpp0081168"
+   ],
+   "transcript": [
+    "FBtr0081664",
+    "FBtr0081665",
+    "FBtr0081666",
+    "FBtr0081667",
+    "FBtr0081668"
+   ],
+   "translation": [
+    {
+     "protein": "FBpp0081165",
+     "rna": "FBtr0081665"
+    },
+    {
+     "protein": "FBpp0081167",
+     "rna": "FBtr0081667"
+    },
+    {
+     "protein": "FBpp0081168",
+     "rna": "FBtr0081668"
+    },
+    {
+     "protein": "FBpp0081166",
+     "rna": "FBtr0081666"
+    },
+    {
+     "protein": "FBpp0081164",
+     "rna": "FBtr0081664"
+    }
+   ],
+   "type_of_gene": "protein_coding"
+  },
+  "name": "bicoid"
+ },
+ "string_segpole": {
+  "n_edges": 141,
+  "top": [
+   [
+    "gsb",
+    "ptc",
+    0.49
+   ],
+   [
+    "gsb",
+    "hh",
+    0.62
+   ],
+   [
+    "gsb",
+    "wg",
+    0.83
+   ],
+   [
+    "fu",
+    "dlp",
+    0.51
+   ],
+   [
+    "fu",
+    "boi",
+    0.52
+   ]
+  ]
+ },
+ "quickgo_error": "Expecting value: line 1 column 1 (char 0)",
+ "rcsb_bicoid": {
+  "n": 4,
+  "ids": [
+   "9RW7",
+   "9RW8",
+   "9RW9",
+   "1ZQ3"
+  ]
+ },
+ "europepmc_liu2013": {
+  "title": "Dynamic interpretation of maternal inputs by the Drosophila segmentation gene network.",
+  "cited": 99,
+  "doi": "10.1073/pnas.1220912110"
+ },
+ "flymine_error": "The read operation timed out",
+ "ols_go": {
+  "iri": "http://purl.obolibrary.org/obo/GO_0000978",
+  "label": "RNA polymerase II cis-regulatory region sequence-specific DNA binding",
+  "obo_id": "GO:0000978"
+ },
+ "geneontology_go0003700": {
+  "label": "DNA-binding transcription factor activity",
+  "id": null
+ },
+ "semanticscholar_liu2013": {
+  "paperId": "3282ea94f1aee9e333d41e3c58211ca5b63f94fa",
+  "title": "Dynamic interpretation of maternal inputs by the Drosophila segmentation gene network",
+  "citationCount": 110
+ },
+ "_source": "MyGene.info, STRING, RCSB PDB, Europe PMC, EBI OLS4, Gene Ontology API (AmiGO), Semantic Scholar; 2026-09-25"
+}

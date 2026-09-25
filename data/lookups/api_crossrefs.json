@@ -1,0 +1,67 @@
+{
+ "kegg_hedgehog_dme04341": {
+  "entry": "dme04341",
+  "title": "ENTRY       dme04341                    Pathway",
+  "has_ci": true,
+  "n_lines": 89
+ },
+ "kegg_wnt_dme04310": {
+  "entry": "dme04310",
+  "title": "ENTRY       dme04310                    Pathway",
+  "n_lines": 200
+ },
+ "kegg_bicoid_find": {
+  "result": "dme:Dmel_CG8276\tbin3; bicoid-interacting protein 3, isoform C\ndme:Dmel_CG6046\tBin1; bicoid interacting protein 1, isoform B\ndme:Dmel_CG10302\tbsf; bicoid stability factor\ndme:Dmel_CG1034\tbcd; bicoid, i"
+ },
+ "ensembl_error": "The read operation timed out",
+ "crossref_liu2013": {
+  "doi": "10.1073/pnas.1220912110",
+  "title": "Dynamic interpretation of maternal inputs by the\n                    <i>Drosophila</i>\n             ",
+  "container": [
+   "Proceedings of the National Academy of Sciences"
+  ]
+ },
+ "openalex_liu2013": {
+  "id": "https://openalex.org/W2007062550",
+  "cited_by": 132,
+  "title": "Dynamic interpretation of maternal inputs by the Drosophila segmentation gene network"
+ },
+ "semanticscholar_error": "HTTP Error 429: ",
+ "zenodo_record_4942019": {
+  "title": "Data from: Dynamic interpretation of maternal inputs by the Drosophila segmentation gene network",
+  "files": [
+   "README_for_Liu et al. - Immunofluorescence_data_structure.txt",
+   "Liu et al. - Immunofluorescence_data_structure.mat",
+   "README_for_Liu et al. - LiveImaging_data_structure.txt",
+   "Liu et al. - BcdGFP_embryos_raw_data.zip",
+   "Liu et al. - LiveImaging_data_structure.mat"
+  ],
+  "doi": "10.5061/dryad.2j9p4"
+ },
+ "dryad_dataset": {
+  "title": "Data from: Dynamic interpretation of maternal inputs by the Drosophila segmentation gene network",
+  "id": 2767,
+  "files": 0
+ },
+ "interpro_bcd_P09081": {
+  "n_entries": 3,
+  "domains": [
+   [
+    "IPR001356",
+    "Homeodomain"
+   ],
+   [
+    "IPR009057",
+    "Homeodomain-like superfamily"
+   ],
+   [
+    "IPR017970",
+    "Homeobox, conserved site"
+   ]
+  ]
+ },
+ "ensembl_bcd": {
+  "id": "FBgn0000166",
+  "biotype": "protein_coding"
+ }
+}

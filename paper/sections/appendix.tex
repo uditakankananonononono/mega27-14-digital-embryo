@@ -4,9 +4,11 @@
 
 \subsection{External tools and resources (40/40 gate)}
 
-Counting rule: an entry is counted only if it was genuinely used in producing
-a result, figure, lookup, or artifact of this project. Google Drive is the
-delivery target and is \emph{not} counted until delivery is complete.
+Counting rule (strict standard): only research and data tools count toward
+the gate; development and build infrastructure (Git, LaTeX, pip, etc.) is
+listed in the manifest but deliberately excluded from the count. Every entry
+was genuinely used in producing a result, figure, lookup, or artifact of this
+project.
 Table~\ref{tab:tools} reproduces the committed manifest
 (\texttt{data/TOOLS\_AND\_DATASETS.md}).
 
@@ -19,46 +21,46 @@ Table~\ref{tab:tools} reproduces the committed manifest
 \toprule
 \# & Tool/resource & Used for \\
 \midrule
-1 & Zenodo record 4942019 & Liu 2013 dataset download \\
-2 & Dryad doi:10.5061/dryad.2j9p4 & provenance cross-check \\
+1 & Zenodo (record 4942019) & Liu 2013 dataset download + API metadata verification \\
+2 & Dryad (doi:10.5061/dryad.2j9p4) & dataset provenance + Dryad API record \\
 3 & Cell Collective & published GRN id-021/id-027 \\
-4 & sybila/biodivine-boolean-models & curated .bnet files \\
-5 & BioModels BIOMD0000001065 & von Dassow 2000 reference \\
-6 & NCBI eutils & gene/citation lookups \\
-7 & NCBI Gene & bcd/hb/eve/kni/gt IDs \\
+4 & sybila/biodivine-boolean-models & curated .bnet model files \\
+5 & BioModels (BIOMD0000001065) & von Dassow 2000 reference \\
+6 & NCBI eutils & gene-ID + citation lookups (data/lookups/ncbi\_genes.json) \\
+7 & NCBI Gene & bcd 40830, hb 41032, eve 36039, kni 40287, gt 31227 \\
 8 & PubMed & PMID 23580621 verification \\
-9 & PNAS/PMC (Liu 2013 + SI) & published bars \\
-10 & Gregor 2007 Cell & gradient benchmark \\
-11 & Petkova 2019 Cell & 4-gene decoding benchmark \\
-12 & Dubuis 2013 PNAS & single-gene information benchmark \\
-13 & PLOS figshare (Spirov 2017) & SDD critique cross-check \\
-14 & Python 3.10 & all computation \\
-15 & NumPy & numerics \\
-16 & SciPy & fitting, statistics, .mat I/O \\
-17 & pandas & tables \\
-18 & PyTorch (CPU) & CNN/GNN/MLP models \\
-19 & scikit-learn & decoder cross-checks \\
-20 & NetworkX & GRN graphs \\
-21 & matplotlib & figures \\
-22 & h5py & .mat v7.3 fallback \\
-23 & statsmodels & DCLS robust OLS \\
-24 & scikit-image & Turing morphometrics \\
-25 & sympy & symbolic derivation verification \\
-26 & pytest & hermetic test suite \\
-27 & setuptools & package + CLI entry point \\
-28 & pip & dependencies \\
-29 & Git & version control \\
-30 & GitHub & hosting \\
-31 & OpenSSH & authenticated push \\
-32 & curl & downloads \\
-33 & LuaLaTeX (TeX Live) & typesetting \\
-34 & fontspec & font loading \\
-35 & luaotfload & OpenType backend \\
-36 & Times New Roman TTFs & mandated font (not redistributed) \\
-37 & 7-Zip & font archive extraction \\
-38 & fontconfig & font registration \\
-39 & poppler-utils & pdffonts/pdfinfo verification \\
-40 & Python stdlib urllib/mp & downloads, API calls, parallelism \\
+9 & PNAS/PMC (Liu 2013 + SI) & published bars: lambda, Sx, Sc \\
+10 & Gregor et al. 2007 Cell & gradient-precision benchmark \\
+11 & Petkova et al. 2019 Cell & 4-gene decoding benchmark \\
+12 & Dubuis et al. 2013 PNAS & single-gene information benchmark \\
+13 & PLOS figshare (Spirov 2017) & SDD-critique cross-check \\
+14 & UniProt REST & protein records: bcd P09081, hb P05084, eve P06602, kni P10734, gt P39572 \\
+15 & KEGG REST & dme04310 (Wnt), dme04341 (Hedgehog) pathway checks \\
+16 & CrossRef & Liu 2013 DOI 10.1073/pnas.1220912110 verification \\
+17 & OpenAlex & citation metadata (W2007062550) \\
+18 & Ensembl REST & bcd gene lookup (FBgn0000166) \\
+19 & InterPro (EBI) & bcd homeodomain annotation (IPR001356) \\
+20 & MyGene.info & cross-DB gene identifier reconciliation \\
+21 & STRING API & segment-polarity interaction network (141 edges) \\
+22 & RCSB PDB search API & Bicoid homeodomain structures (9RW7-9, 1ZQ3) \\
+23 & Europe PMC REST & literature metadata + citation count \\
+24 & EBI OLS4 & GO term resolution (GO:0000978) \\
+25 & Gene Ontology API (AmiGO) & GO:0003700 term verification \\
+26 & Semantic Scholar Graph API & citation cross-check \\
+27 & NumPy & all numerics \\
+28 & SciPy & fitting, statistics, .mat I/O \\
+29 & pandas & tables \\
+30 & PyTorch (CPU) & CNN/GNN/MLP models \\
+31 & scikit-learn & decoder cross-checks \\
+32 & NetworkX & GRN graph handling \\
+33 & matplotlib & all figures \\
+34 & h5py & .mat v7.3 fallback \\
+35 & statsmodels & DCLS robust OLS (results/dcls\_ols.json) \\
+36 & scikit-image & Turing morphometrics (results/turing\_morphometrics.json) \\
+37 & sympy & symbolic verification of every derivation + GRN constant folding \\
+38 & Biopython (Bio.Entrez) & independent NCBI workflow (data/lookups/biopython\_entrez.json) \\
+39 & AEON / biodivine\_aeon & symbolic attractor cross-check, all 8 conditions agree (results/grn\_crosscheck.json) \\
+40 & mpbn & ASP fixed-point cross-check, all 8 conditions agree \\
 \bottomrule
 \end{tabular}
 \end{table}

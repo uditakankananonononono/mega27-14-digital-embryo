@@ -1,0 +1,43 @@
+{
+ "bcd": {
+  "fbgn": "FBgn0000166",
+  "title": null
+ },
+ "hb": {
+  "fbgn": "FBgn0001180",
+  "title": null
+ },
+ "eve": {
+  "fbgn": "FBgn0000606",
+  "title": null
+ },
+ "kni": {
+  "fbgn": "FBgn0001320",
+  "title": null
+ },
+ "gt": {
+  "fbgn": "FBgn0001150",
+  "title": null
+ },
+ "wg": {
+  "fbgn": "FBgn0004009",
+  "title": null
+ },
+ "en": {
+  "fbgn": "FBgn0000577",
+  "title": null
+ },
+ "hh": {
+  "fbgn": "FBgn0001189",
+  "title": null
+ },
+ "ptc": {
+  "fbgn": "FBgn0003892",
+  "title": null
+ },
+ "ci": {
+  "fbgn": "FBgn0004859",
+  "title": null
+ },
+ "_source": "FlyBase report pages flybase.org/reports/<FBgn>, fetched 2026-09-25"
+}

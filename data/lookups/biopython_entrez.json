@@ -1,0 +1,8 @@
+{
+ "bcd": {
+  "uid": "40830",
+  "name": "bcd",
+  "description": "bicoid"
+ },
+ "_source": "Biopython Bio.Entrez esearch/esummary workflow, 2026-09-25"
+}

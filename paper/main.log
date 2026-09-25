@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.14.0 (TeX Live 2022/dev/Debian)  (format=lualatex 2026.8.14)  25 SEP 2026 11:56
+This is LuaHBTeX, Version 1.14.0 (TeX Live 2022/dev/Debian)  (format=lualatex 2026.8.14)  25 SEP 2026 12:06
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -658,12 +658,12 @@ Overfull \hbox (7.12779pt too wide) in paragraph at lines 5--12
  []
 
 [15] [16]
-<figures/fig_dispersion.pdf, id=620, 542.025pt x 303.534pt>
+<figures/fig_dispersion.pdf, id=625, 542.025pt x 303.534pt>
 File: figures/fig_dispersion.pdf Graphic file (type pdf)
 <use figures/fig_dispersion.pdf>
 Package luatex.def Info: figures/fig_dispersion.pdf  used on input line 74.
 (luatex.def)             Requested size: 352.31625pt x 197.30402pt.
-<figures/fig_turing_dev.pdf, id=625, 375.804pt x 260.172pt>
+<figures/fig_turing_dev.pdf, id=630, 375.804pt x 260.172pt>
 File: figures/fig_turing_dev.pdf Graphic file (type pdf)
 <use figures/fig_turing_dev.pdf>
 Package luatex.def Info: figures/fig_turing_dev.pdf  used on input line 84.
@@ -677,7 +677,7 @@ warning  (pdf backend): ignoring duplicate destination with the name 'figure.2'
 <./figures/fig_turing_dev.pdf>] [19
 warning  (pdf backend): ignoring duplicate destination with the name 'table.2'
 ]
-<figures/fig_turing_panels.pdf, id=746, 578.16pt x 578.16pt>
+<figures/fig_turing_panels.pdf, id=751, 578.16pt x 578.16pt>
 File: figures/fig_turing_panels.pdf Graphic file (type pdf)
 <use figures/fig_turing_panels.pdf>
 Package luatex.def Info: figures/fig_turing_panels.pdf  used on input line 197.
@@ -721,7 +721,7 @@ oman(0)/m/sc/12 -ON basin,
  []
 
 [24]
-<figures/fig_grn_learning.pdf, id=828, 375.804pt x 260.172pt>
+<figures/fig_grn_learning.pdf, id=833, 375.804pt x 260.172pt>
 File: figures/fig_grn_learning.pdf Graphic file (type pdf)
 <use figures/fig_grn_learning.pdf>
 Package luatex.def Info: figures/fig_grn_learning.pdf  used on input line 145.
@@ -747,7 +747,14 @@ lts/results.json\TU/TimesNewRoman(0)/m/sc/12 , \TU/lmtt/m/n/12 B_grn.derrida\TU
 warning  (pdf backend): ignoring duplicate destination with the name 'table.5'
 
 warning  (pdf backend): ignoring duplicate destination with the name 'table.6'
-]) (./sections/studyC.tex [27] [28]
+])
+Overfull \hbox (8.9587pt too wide) in paragraph at lines 278--61
+\TU/TimesNewRoman(0)/m/sc/12 bistable con-di-tions (\TU/lmtt/m/n/12 results/grn_
+crosscheck.json\TU/TimesNewRoman(0)/m/sc/12 ; code \TU/lmtt/m/n/12 experiments/g
+rn_crosscheck.py\TU/TimesNewRoman(0)/m/sc/12 ).
+ []
+
+[27] (./sections/studyC.tex [28]
 Overfull \hbox (10.42416pt too wide) in paragraph at lines 71--76
 []\TU/TimesNewRoman(0)/b/n/12 Fit-ting. \TU/TimesNewRoman(0)/m/sc/12 Per-gradien
 t single-exponential fits [] by Levenberg--Marquardt (SciPy \TU/lmtt/m/n/12 curv
@@ -770,13 +777,13 @@ ro-duced --- and window-sensitive
 [29] [30
 warning  (pdf backend): ignoring duplicate destination with the name 'table.7'
 ]
-<figures/fig_lambda_dosage.pdf, id=955, 375.804pt x 260.172pt>
+<figures/fig_lambda_dosage.pdf, id=961, 375.804pt x 260.172pt>
 File: figures/fig_lambda_dosage.pdf Graphic file (type pdf)
 <use figures/fig_lambda_dosage.pdf>
 Package luatex.def Info: figures/fig_lambda_dosage.pdf  used on input line 171.
 
 (luatex.def)             Requested size: 225.4804pt x 156.10042pt.
-<figures/fig_windows.pdf, id=956, 390.258pt x 260.172pt>
+<figures/fig_windows.pdf, id=962, 390.258pt x 260.172pt>
 File: figures/fig_windows.pdf Graphic file (type pdf)
 <use figures/fig_windows.pdf>
 Package luatex.def Info: figures/fig_windows.pdf  used on input line 172.
@@ -787,7 +794,9 @@ Overfull \hbox (0.43153pt too wide) in paragraph at lines 180--180
 hed cephalic-furrow bench-
  []
 
-
+[31
+warning  (pdf backend): ignoring duplicate destination with the name 'figure.5'
+<./figures/fig_lambda_dosage.pdf><./figures/fig_windows.pdf>]
 Underfull \hbox (badness 1609) in paragraph at lines 206--206
 \TU/TimesNewRoman(0)/m/sc/12 in per-cent egg length. The CNN beats the pub-lishe
 d thresh-old model on iden-ti-cal data
@@ -803,25 +812,24 @@ T1/cmr/m/n/12 3\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 11]$\TU/TimesNewRoman(0)/m/sc/
 Com-mit-ted:
  []
 
-[31
-warning  (pdf backend): ignoring duplicate destination with the name 'figure.5'
-<./figures/fig_lambda_dosage.pdf><./figures/fig_windows.pdf>]
-<figures/fig_cf_decoder.pdf, id=1079, 375.804pt x 260.172pt>
+<figures/fig_cf_decoder.pdf, id=1085, 375.804pt x 260.172pt>
 File: figures/fig_cf_decoder.pdf Graphic file (type pdf)
 <use figures/fig_cf_decoder.pdf>
 Package luatex.def Info: figures/fig_cf_decoder.pdf  used on input line 235.
 (luatex.def)             Requested size: 328.82707pt x 227.66182pt.
-
+[32
+warning  (pdf backend): ignoring duplicate destination with the name 'table.8'
+]
 Overfull \hbox (38.48782pt too wide) in paragraph at lines 244--250
 \TU/TimesNewRoman(0)/m/sc/12 si-tion, eval-u-ated on held-out em-bryos of the sa
 me line. Ta-ble []9[] sum-marises (\TU/lmtt/m/n/12 results/gap_decode.json\TU/T
 imesNewRoman(0)/m/sc/12 ). 
  []
 
-[32
-warning  (pdf backend): ignoring duplicate destination with the name 'table.8'
-
+[33
 warning  (pdf backend): ignoring duplicate destination with the name 'figure.6'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'table.9'
 <./figures/fig_cf_decoder.pdf>]
 Overfull \hbox (72.73418pt too wide) in paragraph at lines 283--288
 []\TU/TimesNewRoman(0)/m/sc/12 Com-ple-men-tar-ily, the Hb bound-ary po-si-tions
@@ -829,23 +837,21 @@ Overfull \hbox (72.73418pt too wide) in paragraph at lines 283--288
 imesNewRoman(0)/m/sc/12 ):
  []
 
-<figures/fig_gap_decode.pdf, id=1157, 448.074pt x 245.718pt>
+<figures/fig_gap_decode.pdf, id=1169, 448.074pt x 245.718pt>
 File: figures/fig_gap_decode.pdf Graphic file (type pdf)
 <use figures/fig_gap_decode.pdf>
 Package luatex.def Info: figures/fig_gap_decode.pdf  used on input line 291.
 (luatex.def)             Requested size: 258.36668pt x 141.68793pt.
-[33
-warning  (pdf backend): ignoring duplicate destination with the name 'table.9'
-]
-<figures/fig_bcd_gradients.pdf, id=1165, 650.43pt x 375.804pt>
+[34
+warning  (pdf backend): ignoring duplicate destination with the name 'figure.7'
+<./figures/fig_gap_decode.pdf>]
+<figures/fig_bcd_gradients.pdf, id=1236, 650.43pt x 375.804pt>
 File: figures/fig_bcd_gradients.pdf Graphic file (type pdf)
 <use figures/fig_bcd_gradients.pdf>
 Package luatex.def Info: figures/fig_bcd_gradients.pdf  used on input line 325.
 
 (luatex.def)             Requested size: 375.80544pt x 217.135pt.
- [34
-warning  (pdf backend): ignoring duplicate destination with the name 'figure.7'
-<./figures/fig_gap_decode.pdf>] [35
+ [35
 warning  (pdf backend): ignoring duplicate destination with the name 'figure.8'
 <./figures/fig_bcd_gradients.pdf>]) [36
 warning  (pdf backend): ignoring duplicate destination with the name 'table.10'
@@ -930,10 +936,36 @@ Underfull \hbox (badness 1910) in paragraph at lines 22--25
 man(0)/m/sc/12 , 188--192 (2000). (BioMod-els
  []
 
-[43]) (./sections/appendix.tex [44] [45
+[43]) (./sections/appendix.tex
+Underfull \hbox (badness 10000) in paragraph at lines 29--30
+[]\TU/TimesNewRoman(0)/m/n/10.95 gene-ID + ci-ta-tion lookups
+ []
+
+
+Underfull \hbox (badness 4156) in paragraph at lines 38--39
+[]\TU/TimesNewRoman(0)/m/n/10.95 dme04310 (Wnt), dme04341 (Hedge-hog) path-way
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 59--60
+[]\TU/TimesNewRoman(0)/m/n/10.95 Tur-ing mor-pho-met-rics (re-sults/tur-ing_mor-
+pho-met-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 61--62
+[]\TU/TimesNewRoman(0)/m/n/10.95 in-de-pen-dent NCBI work-flow (data/lookups/bio
+py-
+ []
+
+[44]
+Overfull \vbox (38.08255pt too high) has occurred while \output is active []
+
+
+[45
 warning  (pdf backend): ignoring duplicate destination with the name 'table.11'
 ]
-Overfull \hbox (51.86143pt too wide) in paragraph at lines 87--93
+Overfull \hbox (51.86143pt too wide) in paragraph at lines 89--95
 \TU/TimesNewRoman(0)/m/sc/12 1XA2IIA, 2XA1IIA ($\OT1/cmr/m/n/12 2\OMS/cmsy/m/n/
 12 $\TU/TimesNewRoman(0)/m/sc/12 ); 2XA2IIA, 2IIA2IIIA, 2XA2IIIA, 2XA2IIIB ($\
 OT1/cmr/m/n/12 3\OMS/cmsy/m/n/12 $\TU/TimesNewRoman(0)/m/sc/12 ); 2XA1IIA2IIIA,
@@ -945,122 +977,122 @@ warning  (pdf backend): ignoring duplicate destination with the name 'table.12'
 
 warning  (pdf backend): ignoring duplicate destination with the name 'table.13'
 ]
-Overfull \hbox (37.00438pt too wide) in paragraph at lines 160--160
+Overfull \hbox (37.00438pt too wide) in paragraph at lines 162--162
 []\TU/lmtt/m/n/12 python experiments/turing_sweep.py     # Study A sweep (result
 s/turing_sweep.json)[] 
  []
 
 
-Overfull \hbox (12.28441pt too wide) in paragraph at lines 160--160
+Overfull \hbox (12.28441pt too wide) in paragraph at lines 162--162
 []\TU/lmtt/m/n/12 python experiments/turing_cnn.py       # Study A surrogate + 
 retraction record[] 
  []
 
 
-Underfull \hbox (badness 6332) in paragraph at lines 187--189
+Underfull \hbox (badness 6332) in paragraph at lines 189--191
 []\TU/TimesNewRoman(0)/m/n/10.95 gap-gene de-cod-ing (Ta-ble []9[]) + dosage-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 195--197
+Underfull \hbox (badness 10000) in paragraph at lines 197--199
 []\TU/TimesNewRoman(0)/m/n/10.95 bal-anced re-sult + ex-act basin frac-tion
  []
 
 
-Underfull \hbox (badness 4217) in paragraph at lines 204--206
+Underfull \hbox (badness 4217) in paragraph at lines 206--208
 []\TU/TimesNewRoman(0)/m/n/10.95 validation-suite num-bers (an-a-lytic checks,
  []
 
 [47]
-Overfull \hbox (66.15079pt too wide) in paragraph at lines 216--231
+Overfull \hbox (66.15079pt too wide) in paragraph at lines 218--233
  [] 
  []
 
 [48
 warning  (pdf backend): ignoring duplicate destination with the name 'table.14'
 ]
-Overfull \hbox (87.56961pt too wide) in paragraph at lines 249--250
+Overfull \hbox (87.56961pt too wide) in paragraph at lines 251--252
 []\TU/lmtt/m/n/10.95 .models.cnn1d_profile_3seed.rmse_pctEL
  []
 
 
-Overfull \hbox (87.56961pt too wide) in paragraph at lines 251--252
+Overfull \hbox (87.56961pt too wide) in paragraph at lines 253--254
 []\TU/lmtt/m/n/10.95 .models.liu_threshold_trueD.rmse_pctEL
  []
 
 
-Overfull \hbox (110.5646pt too wide) in paragraph at lines 253--254
+Overfull \hbox (110.5646pt too wide) in paragraph at lines 255--256
 []\TU/lmtt/m/n/10.95 .paired_bootstrap_cnn_minus_liu.ci95_pctEL
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 255--256
+Underfull \hbox (badness 10000) in paragraph at lines 257--258
 []\TU/lmtt/m/n/10.95 .windows."0.0-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 255--256
+Underfull \hbox (badness 10000) in paragraph at lines 257--258
 \TU/lmtt/m/n/10.95 0.5".dcls_rho /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 255--256
+Underfull \hbox (badness 10000) in paragraph at lines 257--258
 \TU/lmtt/m/n/10.95 .dcls_p \TU/TimesNewRoman(0)/m/n/10.95 (bcd_win-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 256--256
+Underfull \hbox (badness 10000) in paragraph at lines 258--258
 []$\OT1/cmr/m/n/10.95 0\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 0117$\TU/TimesNe
 wRoman(0)/m/n/10.95 , CI
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 257--258
+Underfull \hbox (badness 10000) in paragraph at lines 259--260
 []\TU/lmtt/m/n/10.95 .slope_per_dose /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 259--260
+Underfull \hbox (badness 10000) in paragraph at lines 261--262
 []\TU/lmtt/m/n/10.95 .windows."0.2-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 259--260
+Underfull \hbox (badness 10000) in paragraph at lines 261--262
 \TU/lmtt/m/n/10.95 0.8".lam_median
  []
 
 
-Overfull \hbox (24.33337pt too wide) in paragraph at lines 261--262
+Overfull \hbox (24.33337pt too wide) in paragraph at lines 263--264
 []\TU/lmtt/m/n/10.95 .f_test_reject_fraction.p05
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 263--264
+Underfull \hbox (badness 10000) in paragraph at lines 265--266
 []\TU/lmtt/m/n/10.95 .dosage_decodability.*
  []
 
 
-Overfull \hbox (35.83087pt too wide) in paragraph at lines 265--266
+Overfull \hbox (35.83087pt too wide) in paragraph at lines 267--268
 []\TU/lmtt/m/n/10.95 .wg_on_basin_fraction_uniform
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 267--268
+Underfull \hbox (badness 10000) in paragraph at lines 269--270
 []\TU/lmtt/m/n/10.95 .curve \TU/TimesNewRoman(0)/m/n/10.95 (grn_learn-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 269--270
+Underfull \hbox (badness 10000) in paragraph at lines 271--272
 []\TU/lmtt/m/n/10.95 .rows[].dev \TU/TimesNewRoman(0)/m/n/10.95 (tur-
  []
 
 
-Overfull \hbox (70.32336pt too wide) in paragraph at lines 271--273
+Overfull \hbox (70.32336pt too wide) in paragraph at lines 273--275
 []\TU/lmtt/m/n/10.95 .linear_plus_cnn_correction_relRMSE
  []
 
 
-Underfull \hbox (badness 1577) in paragraph at lines 271--273
+Underfull \hbox (badness 1577) in paragraph at lines 273--275
 \TU/TimesNewRoman(0)/m/n/10.95 vs \TU/lmtt/m/n/10.95 .linear_only_relRMSE
  []
 
@@ -1071,17 +1103,17 @@ warning  (pdf backend): ignoring duplicate destination with the name 'table.15'
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: D1DCE669EEB8EF351337D62B1FEC013A;18296.
+(rerunfilecheck)             Checksum: 83D7E0ADED407F7CC962C28C30183E4C;18620.
 )
 
 Here is how much of LuaTeX's memory you used:
- 13732 strings out of 477805
+ 13734 strings out of 477805
  100000,794899 words of node,token memory allocated
  771 words of node memory still in use:
    6 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 71 attribute, 55 glue_spec
 , 71 attribute_list, 1 write, 2 pdf_action nodes
-   avail lists: 2:1006,3:851,4:24,5:291,6:98,7:7800,8:69,9:838,10:15,11:652
- 33613 multiletter control sequences out of 65536+600000
+   avail lists: 2:1002,3:851,4:24,5:291,6:98,7:7800,8:69,9:804,10:15,11:652
+ 33614 multiletter control sequences out of 65536+600000
  102 fonts using 10564303 bytes
  68i,12n,79p,703b,477s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texm
@@ -1103,10 +1135,10 @@ e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (50 pages, 578338 bytes).
+Output written on main.pdf (50 pages, 580207 bytes).
 
-PDF statistics: 1519 PDF objects out of 1728 (max. 8388607)
- 1021 compressed objects within 11 object streams
- 209 named destinations out of 1000 (max. 131072)
- 609 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 1525 PDF objects out of 1728 (max. 8388607)
+ 1027 compressed objects within 11 object streams
+ 210 named destinations out of 1000 (max. 131072)
+ 617 words of extra memory for PDF output out of 10000 (max. 100000000)
 

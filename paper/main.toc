@@ -37,12 +37,13 @@
 \contentsline {subsection}{\numberline {4.9}Why the bistability exists}{27}{subsection.4.9}%
 \contentsline {subsection}{\numberline {4.10}Why the GNN wins early}{27}{subsection.4.10}%
 \contentsline {subsection}{\numberline {4.11}Checks against the published model record}{27}{subsection.4.11}%
+\contentsline {subsection}{\numberline {4.12}Second-method verification of the attractor census}{28}{subsection.4.12}%
 \contentsline {section}{\numberline {5}Study C: Morphogen gradients and positional information}{28}{section.5}%
 \contentsline {subsection}{\numberline {5.1}Data}{28}{subsection.5.1}%
 \contentsline {subsection}{\numberline {5.2}The dosage series and the cephalic furrow}{28}{subsection.5.2}%
 \contentsline {subsection}{\numberline {5.3}Analysis pipeline}{29}{subsection.5.3}%
-\contentsline {subsection}{\numberline {5.4}Result 1: the exponential length scale, reproduced --- and window-sensitive}{29}{subsection.5.4}%
-\contentsline {subsection}{\numberline {5.5}Result 2: the length scale increases with maternal bcd dosage (DCLS)}{30}{subsection.5.5}%
+\contentsline {subsection}{\numberline {5.4}Result 1: the exponential length scale, reproduced --- and window-sensitive}{30}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.5}Result 2: the length scale increases with maternal bcd dosage (DCLS)}{31}{subsection.5.5}%
 \contentsline {subsection}{\numberline {5.6}Result 3: a learned decoder breaks the published cephalic-furrow benchmark}{31}{subsection.5.6}%
 \contentsline {subsection}{\numberline {5.7}Result 4: gap-gene decoding and the dosage--decodability link}{33}{subsection.5.7}%
 \contentsline {subsection}{\numberline {5.8}What Study C establishes}{34}{subsection.5.8}%

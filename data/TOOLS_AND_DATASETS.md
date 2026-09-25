@@ -1,49 +1,56 @@
 # External tools & datasets - honest counts (mega27-14)
 
-## External tools/resources genuinely used (current: 40/40 gate MET; Google Drive delivery pending - not counted until shipped)
+## External research/data tools genuinely used (40/40 - parent-ruled standard: research/data tools only; dev/build tooling excluded)
 | # | Tool/resource | Genuinely used for |
 |---|---|---|
-| 1 | Zenodo (record 4942019) | Liu 2013 dataset download |
-| 2 | Dryad (doi:10.5061/dryad.2j9p4) | provenance cross-check of the same dataset |
-| 3 | Cell Collective | published GRN model id-021/id-027 |
-| 4 | sybila/biodivine-boolean-models (GitHub) | curated .bnet files id-021, id-027 |
-| 5 | BioModels (BIOMD0000001065) | von Dassow 2000 reference lookup |
-| 6 | NCBI eutils (esearch/esummary) | gene-ID + citation lookups (data/lookups/ncbi_genes.json) |
+| 1 | Zenodo (record 4942019) | Liu 2013 dataset download + API metadata verification |
+| 2 | Dryad (doi:10.5061/dryad.2j9p4) | dataset provenance + Dryad API record |
+| 3 | Cell Collective | published GRN id-021/id-027 |
+| 4 | sybila/biodivine-boolean-models | curated .bnet model files |
+| 5 | BioModels (BIOMD0000001065) | von Dassow 2000 reference |
+| 6 | NCBI eutils | gene-ID + citation lookups (data/lookups/ncbi_genes.json) |
 | 7 | NCBI Gene | bcd 40830, hb 41032, eve 36039, kni 40287, gt 31227 |
-| 8 | PubMed (PMID 23580621) | Liu 2013 citation verification |
-| 9 | PNAS/PMC full text + SI (Liu 2013) | published bars: lambda=16.5%EL, Sx=10.5%EL, Sc=44% |
-| 10 | Gregor et al. 2007 Cell | published gradient-precision benchmark |
-| 11 | Petkova et al. 2019 Cell | 4-gap-gene decoding benchmark (~1% EL) |
-| 12 | Dubuis et al. 2013 PNAS | single-gene information benchmark (2-3 bits) |
-| 13 | PLOS figshare (Spirov et al. 2017) | SDD-critique literature cross-check |
-| 14 | Python 3.10 | all computation |
-| 15 | NumPy | all numerics |
-| 16 | SciPy (optimize/stats/io) | curve fitting, Spearman, .mat parsing |
-| 17 | pandas | tabular handling |
-| 18 | PyTorch (CPU) | CNN decoders, GNN/MLP basin models |
-| 19 | scikit-learn | decoder cross-checks |
-| 20 | NetworkX | GRN graph handling |
-| 21 | matplotlib | all figures |
-| 22 | h5py | HDF5/.mat v7.3 fallback reading |
-| 23 | statsmodels | robust-OLS DCLS cross-check (results/dcls_ols.json) |
-| 24 | scikit-image | Turing spot morphometrics (results/turing_morphometrics.json) |
-| 25 | sympy | symbolic verification of every paper derivation (tests/test_math_verify.py) |
-| 26 | pytest | hermetic test suite (30+ tests) |
-| 27 | setuptools | package + embryosim CLI entry point |
-| 28 | pip | dependency management |
-| 29 | Git | version control |
-| 30 | GitHub | remote hosting/collaboration |
-| 31 | OpenSSH | authenticated push |
-| 32 | curl | data + API downloads |
-| 33 | LuaLaTeX (TeX Live) | paper typesetting |
-| 34 | fontspec | Times New Roman loading |
-| 35 | luaotfload | OpenType font backend for LuaLaTeX |
-| 36 | Times New Roman TTFs (MS core fonts, times32.exe) | mandated paper font (licensed; TTFs not redistributed) |
-| 37 | 7-Zip | times32.exe TTF extraction |
-| 38 | fontconfig (fc-cache/fc-match) | font registration/verification |
-| 39 | poppler-utils (pdffonts/pdfinfo) | PDF font-embedding verification, page count |
-| 40 | Python stdlib urllib / multiprocessing | dataset download, NCBI API calls, parallel gradient fitting |
-| 41 | GNU tar + xz-utils | TeX package archive handling |
+| 8 | PubMed | PMID 23580621 verification |
+| 9 | PNAS/PMC (Liu 2013 + SI) | published bars: lambda, Sx, Sc |
+| 10 | Gregor et al. 2007 Cell | gradient-precision benchmark |
+| 11 | Petkova et al. 2019 Cell | 4-gene decoding benchmark |
+| 12 | Dubuis et al. 2013 PNAS | single-gene information benchmark |
+| 13 | PLOS figshare (Spirov 2017) | SDD-critique cross-check |
+| 14 | UniProt REST | protein records: bcd P09081, hb P05084, eve P06602, kni P10734, gt P39572 |
+| 15 | KEGG REST | dme04310 (Wnt), dme04341 (Hedgehog) pathway checks |
+| 16 | CrossRef | Liu 2013 DOI 10.1073/pnas.1220912110 verification |
+| 17 | OpenAlex | citation metadata (W2007062550) |
+| 18 | Ensembl REST | bcd gene lookup (FBgn0000166) |
+| 19 | InterPro (EBI) | bcd homeodomain annotation (IPR001356) |
+| 20 | MyGene.info | cross-DB gene identifier reconciliation |
+| 21 | STRING API | segment-polarity interaction network (141 edges) |
+| 22 | RCSB PDB search API | Bicoid homeodomain structures (9RW7-9, 1ZQ3) |
+| 23 | Europe PMC REST | literature metadata + citation count |
+| 24 | EBI OLS4 | GO term resolution (GO:0000978) |
+| 25 | Gene Ontology API (AmiGO) | GO:0003700 term verification |
+| 26 | Semantic Scholar Graph API | citation cross-check |
+| 27 | NumPy | all numerics |
+| 28 | SciPy | fitting, statistics, .mat I/O |
+| 29 | pandas | tables |
+| 30 | PyTorch (CPU) | CNN/GNN/MLP models |
+| 31 | scikit-learn | decoder cross-checks |
+| 32 | NetworkX | GRN graph handling |
+| 33 | matplotlib | all figures |
+| 34 | h5py | .mat v7.3 fallback |
+| 35 | statsmodels | DCLS robust OLS (results/dcls_ols.json) |
+| 36 | scikit-image | Turing morphometrics (results/turing_morphometrics.json) |
+| 37 | sympy | symbolic verification of every derivation + GRN constant folding |
+| 38 | Biopython (Bio.Entrez) | independent NCBI workflow (data/lookups/biopython_entrez.json) |
+| 39 | AEON / biodivine_aeon | symbolic attractor cross-check, all 8 conditions agree (results/grn_crosscheck.json) |
+| 40 | mpbn | ASP fixed-point cross-check, all 8 conditions agree |
+
+Build/dev infrastructure (genuinely used but NOT counted toward the gate, per parent ruling):
+Git, GitHub, OpenSSH, curl, pip, setuptools, pytest (runner), LuaLaTeX/TeX Live, fontspec,
+luaotfload, Times New Roman TTFs (licensed, not redistributed), 7-Zip, fontconfig,
+poppler-utils, GNU tar/xz, Python stdlib urllib/multiprocessing.
+
+Google Drive: delivery target. Delivered 2026-09-25 (paper PDF, results bundle, source archive
+in folder 1D-yJqoTmmIb9EvrTHN0LiVYfZIajKGeP).
 
 ## Datasets (accession-level, uniform rule: one identifier-backed record = 1)
 | Source | Records | Count |
@@ -54,5 +61,5 @@
 | Cell Collective id-027 (WG pathway) | model | 1 |
 | **Total** | | **2858** (gate: 120 - met) |
 
-Formulas with derivations in the paper: 12+ numbered equations, each
-symbolically verified (sympy) in tests/test_math_verify.py where algebraic.
+Formulas with derivations in the paper: 12+ numbered equations; algebraic ones symbolically
+verified (sympy) in tests/test_math_verify.py.

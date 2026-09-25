@@ -1,0 +1,28 @@
+{
+ "bcd": {
+  "accession": "P09081",
+  "protein": "Homeotic protein bicoid",
+  "length": 494
+ },
+ "hb": {
+  "accession": "P05084",
+  "protein": "Protein hunchback",
+  "length": 758
+ },
+ "eve": {
+  "accession": "P06602",
+  "protein": "Segmentation protein even-skipped",
+  "length": 376
+ },
+ "kni": {
+  "accession": "P10734",
+  "protein": "Zygotic gap protein knirps",
+  "length": 429
+ },
+ "gt": {
+  "accession": "P39572",
+  "protein": "Protein giant",
+  "length": 448
+ },
+ "_source": "UniProt REST API uniprotkb/search, organism_id:7227 (D. melanogaster), 2026-09-25"
+}

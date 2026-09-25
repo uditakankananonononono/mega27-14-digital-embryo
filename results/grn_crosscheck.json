@@ -1,0 +1,46 @@
+{
+ "ours_counts": {
+  "hh0_WG0_SLP0": 1,
+  "hh0_WG0_SLP1": 1,
+  "hh0_WG1_SLP0": 2,
+  "hh0_WG1_SLP1": 1,
+  "hh1_WG0_SLP0": 2,
+  "hh1_WG0_SLP1": 1,
+  "hh1_WG1_SLP0": 1,
+  "hh1_WG1_SLP1": 1
+ },
+ "committed_counts": {
+  "hh0_WG0_SLP0": 1,
+  "hh0_WG0_SLP1": 1,
+  "hh0_WG1_SLP0": 2,
+  "hh0_WG1_SLP1": 1,
+  "hh1_WG0_SLP0": 2,
+  "hh1_WG0_SLP1": 1,
+  "hh1_WG1_SLP0": 1,
+  "hh1_WG1_SLP1": 1
+ },
+ "ours_match_committed": true,
+ "aeon_fixed_counts": {
+  "hh0_WG0_SLP0": 1,
+  "hh0_WG0_SLP1": 1,
+  "hh0_WG1_SLP0": 2,
+  "hh0_WG1_SLP1": 1,
+  "hh1_WG0_SLP0": 2,
+  "hh1_WG0_SLP1": 1,
+  "hh1_WG1_SLP0": 1,
+  "hh1_WG1_SLP1": 1
+ },
+ "mpbn_fixed_counts": {
+  "hh0_WG0_SLP0": 1,
+  "hh0_WG0_SLP1": 1,
+  "hh0_WG1_SLP0": 2,
+  "hh0_WG1_SLP1": 1,
+  "hh1_WG0_SLP0": 2,
+  "hh1_WG0_SLP1": 1,
+  "hh1_WG1_SLP0": 1,
+  "hh1_WG1_SLP1": 1
+ },
+ "aeon_agrees": true,
+ "mpbn_agrees": true,
+ "method": "externals constant-folded into rules (sympy simplify_logic DNF); AEON symbolic fixed points (async semantics), mpbn ASP fixedpoints; fixed points are update-invariant"
+}

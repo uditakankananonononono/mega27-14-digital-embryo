@@ -1,0 +1,33 @@
+{
+ "bcd": {
+  "curie": "FB:FBgn0000166",
+  "symbol": null,
+  "name": null,
+  "mod": "AllianceGenome/FlyBase"
+ },
+ "hb": {
+  "curie": "FB:FBgn0001180",
+  "symbol": null,
+  "name": null,
+  "mod": "AllianceGenome/FlyBase"
+ },
+ "eve": {
+  "curie": "FB:FBgn0000606",
+  "symbol": null,
+  "name": null,
+  "mod": "AllianceGenome/FlyBase"
+ },
+ "kni": {
+  "curie": "FB:FBgn0001320",
+  "symbol": null,
+  "name": null,
+  "mod": "AllianceGenome/FlyBase"
+ },
+ "gt": {
+  "curie": "FB:FBgn0001150",
+  "symbol": null,
+  "name": null,
+  "mod": "AllianceGenome/FlyBase"
+ },
+ "_source": "Alliance of Genome Resources API /api/gene (FlyBase member records), 2026-09-25"
+}

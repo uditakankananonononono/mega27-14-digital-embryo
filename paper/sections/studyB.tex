@@ -272,3 +272,16 @@ EN/HH/CI wiring (bit-level agreement, Appendix~\ref{app:attractors}). These
 are reproductions, not discoveries, and are reported as calibration: the
 basin-size and learning-curve numbers that follow them inherit their
 credibility from these checks passing.
+
+\subsection{Second-method verification of the attractor census}
+
+Because the census of Section~\ref{sec:studyB} underpins the basin and
+learning claims, we re-derived it with two independent Boolean-network
+engines: AEON (symbolic, asynchronous semantics) and mpbn (answer-set
+programming). External inputs were constant-folded into the update rules
+(sympy DNF simplification) before analysis. Fixed points are invariant under
+update semantics, so all engines must agree: they do, on all eight
+conditions, exactly matching our committed counts including both bistable
+conditions (\texttt{results/grn\_crosscheck.json}; code
+\texttt{experiments/grn\_crosscheck.py}). The census is therefore not an
+artefact of our own parser or enumeration code.
