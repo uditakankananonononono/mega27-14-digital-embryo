@@ -1,0 +1,10 @@
+{
+ "model": "Cell Collective id-021, condition hh1_WG0_SLP0 (bistable in wg)",
+ "n_samples": 2000,
+ "n_test": 600,
+ "positive_rate": 0.004999999888241291,
+ "acc_majority": 0.9933333396911621,
+ "acc_mlp": 0.9933333333333333,
+ "acc_gnn": 0.9933333333333333,
+ "note": "DEGENERATE ML TASK at uniform sampling: wg-ON basin = 0.5% of the 2^11 state space under synchronous update (majority accuracy 99.3% - accuracy meaningless). Real finding: wg-ON basin fraction 0.005+-MC on the published id-021 network; balanced-sampling GNN/MLP comparison queued."
+}
