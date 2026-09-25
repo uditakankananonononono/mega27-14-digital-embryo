@@ -1,0 +1,100 @@
+{
+ "model": "id-021 hh1_WG0_SLP0",
+ "task": "predict wg-ON basin membership",
+ "n_test": 200,
+ "curve": [
+  {
+   "n_train": 20,
+   "acc_gnn": [
+    0.845,
+    0.725,
+    0.855
+   ],
+   "acc_mlp": [
+    0.89,
+    0.945,
+    0.895
+   ]
+  },
+  {
+   "n_train": 40,
+   "acc_gnn": [
+    0.98,
+    0.955,
+    0.96
+   ],
+   "acc_mlp": [
+    0.955,
+    0.96,
+    0.96
+   ]
+  },
+  {
+   "n_train": 60,
+   "acc_gnn": [
+    0.975,
+    0.985,
+    0.99
+   ],
+   "acc_mlp": [
+    0.98,
+    0.975,
+    0.97
+   ]
+  },
+  {
+   "n_train": 100,
+   "acc_gnn": [
+    0.99,
+    0.985,
+    0.97
+   ],
+   "acc_mlp": [
+    0.965,
+    0.99,
+    0.97
+   ]
+  },
+  {
+   "n_train": 160,
+   "acc_gnn": [
+    0.995,
+    0.99,
+    0.99
+   ],
+   "acc_mlp": [
+    0.99,
+    0.99,
+    0.985
+   ]
+  },
+  {
+   "n_train": 240,
+   "acc_gnn": [
+    0.995,
+    0.985,
+    0.99
+   ],
+   "acc_mlp": [
+    0.985,
+    0.99,
+    0.99
+   ]
+  },
+  {
+   "n_train": 418,
+   "acc_gnn": [
+    1.0,
+    0.99,
+    0.995
+   ],
+   "acc_mlp": [
+    0.99,
+    0.99,
+    0.99
+   ]
+  }
+ ],
+ "state_space": 2048,
+ "finding": "basin boundary exactly learnable from a few hundred random states"
+}

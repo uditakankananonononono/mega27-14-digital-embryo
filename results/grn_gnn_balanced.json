@@ -1,0 +1,10 @@
+{
+ "model": "Cell Collective id-021, hh1_WG0_SLP0, wg bistability",
+ "sampling": "class-balanced (oversampled wg-ON basin)",
+ "wg_on_basin_fraction_uniform": 0.007725,
+ "n_balanced": 618,
+ "n_test": 186,
+ "acc_gnn": 1.0,
+ "acc_mlp": 1.0,
+ "acc_majority": 0.5
+}
