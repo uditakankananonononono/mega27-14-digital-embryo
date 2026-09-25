@@ -105,3 +105,13 @@ def bootstrap_lambda(x, y, n_boot=200, rng=None):
             continue
     lo, hi = np.percentile(lams, [2.5, 97.5])
     return float(lo), float(hi), float(np.mean(lams))
+
+
+def loglinear_lambda(x, y, lo=0.2, hi=0.8):
+    """Liu et al. estimator: linear fit of ln C(x) over [lo, hi] EL; lambda=-1/slope."""
+    x, y = np.asarray(x), np.asarray(y)
+    m = (x >= lo) & (x <= hi) & (y > 0)
+    if m.sum() < 8:
+        return np.nan
+    slope = np.polyfit(x[m], np.log(y[m]), 1)[0]
+    return float(-1.0 / slope) if slope < 0 else np.nan
