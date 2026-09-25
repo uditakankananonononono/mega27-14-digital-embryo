@@ -33,9 +33,10 @@ question for the segment-polarity module: the model does not pattern
 the preceding developmental stages actually produce. The learnability result
 ($\sim 60$ labelled states suffice) shows the basin boundary, though tiny, is
 geometrically simple --- consistent with the ordered dynamics the Derrida
-analysis predicts. The extension that matters biologically is the
-multi-cellular one, and it is precisely the one that is currently broken
-(Section~\ref{sec:negatives}); fixing it is the top open engineering item.
+analysis predicts. The multi-cellular extension this motivated is now in place
+(Section~\ref{sec:multicell}): the same network, embedded in a 4-cell row,
+supports the wild-type stripe pair exactly for the SLP prepatterns that
+clear a two-cell window.
 
 \textbf{Study C.} The CF-decoder margin ($+2.57\%$ EL, CI $[1.99, 3.11]$)
 is large relative to the biology: the whole embryo-to-embryo spread of the
@@ -53,8 +54,10 @@ dosage--decodability result extends the same axis to the downstream genes.
 \subsection{Open work, in priority order}
 
 \begin{enumerate}
-\item Repair or replace the multi-cell segment-polarity extension; validate
-against the published two-cell and four-cell patterns.
+\item (Done during this project: the multi-cell port of id-021,
+Section~\ref{sec:multicell}.) Next step on that front: basins and
+reachability of the wild-type stripe pair under the compatible SLP
+prepatterns, which needs transient analysis beyond fixed points.
 \item Independent-dataset validation of the CF decoder.
 \item Weakly nonlinear theory of the wavenumber upshift; extension to other
 kinetics and boundary conditions.

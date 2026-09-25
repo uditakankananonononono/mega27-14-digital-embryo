@@ -36,16 +36,16 @@ and would have looked publishable. Balanced sampling is what makes the
 learning curve informative. Any future basin-learning benchmark on rare
 attractors must control for this.
 
-\subsection{Known limitation: the multi-cell segment-polarity extension is
-broken}
+\subsection{Superseded: the first multi-cell segment-polarity attempt}
 
-\texttt{segment\_polarity\_mc.py} (a multi-cellular extension with
-intercellular WG/HH signalling) currently finds zero fixed points under
-synchronous update --- it does not reproduce even the single-cell attractors
-when embedded in a sheet. Rather than ship a quietly wrong model, it is
-marked experimental, excluded from every claim, and listed as open work:
-either complete the node set (SMO/CIA/CIR wiring across cell boundaries) or
-port the curated id-021 rules to the multi-cell setting.
+The first multi-cell extension (\texttt{segment\_polarity\_mc.py}, a 5-node
+simplification with hand-written coupling) found zero fixed points under
+synchronous update --- a broken model. It is retained in the repository as a
+record, marked experimental, and was never used in any claim. The working
+multi-cell model (Section~\ref{sec:multicell}) replaces it by porting the
+curated id-021 rules verbatim instead of re-deriving a reduced rule set ---
+the lesson: extend from the curated network, not from a simplified sketch of
+it.
 
 \subsection{Limitations of scope}
 

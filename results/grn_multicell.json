@@ -1,0 +1,157 @@
+{
+ "model": "id-021 (Marques-Pita & Rocha 2013, doi:10.1371/journal.pone.0055946) ported to C=4 cells; A&O 2003 geometry",
+ "n_variables": 56,
+ "engine": "mpbn (ASP fixed-point enumeration); fixed points are update-invariant",
+ "per_slp_prepattern": {
+  "0000": {
+   "n_fixed_points": 22,
+   "patterns": [
+    "....",
+    "..EW",
+    ".EWE",
+    "EWE.",
+    "EWEW",
+    "WE..",
+    "WEEW",
+    "WEWE"
+   ]
+  },
+  "0001": {
+   "n_fixed_points": 14,
+   "patterns": [
+    "....",
+    "..EW",
+    ".EW.",
+    "EWEW",
+    "WE..",
+    "WEEW",
+    "WEW."
+   ]
+  },
+  "0010": {
+   "n_fixed_points": 11,
+   "patterns": [
+    "....",
+    ".EWE",
+    "EW..",
+    "WEWE"
+   ]
+  },
+  "0011": {
+   "n_fixed_points": 7,
+   "patterns": [
+    "....",
+    ".EW.",
+    "EW..",
+    "WEW."
+   ]
+  },
+  "0100": {
+   "n_fixed_points": 11,
+   "patterns": [
+    "....",
+    "..WE",
+    "EWE.",
+    "EWEW"
+   ]
+  },
+  "0101": {
+   "n_fixed_points": 5,
+   "patterns": [
+    "....",
+    "EWEW"
+   ]
+  },
+  "0110": {
+   "n_fixed_points": 9,
+   "patterns": [
+    "....",
+    "..WE",
+    "EW..",
+    "EWWE"
+   ]
+  },
+  "0111": {
+   "n_fixed_points": 3,
+   "patterns": [
+    "....",
+    "EW.."
+   ]
+  },
+  "1000": {
+   "n_fixed_points": 14,
+   "patterns": [
+    "....",
+    "..EW",
+    ".WE.",
+    ".WEW",
+    "WE..",
+    "WEEW",
+    "WEWE"
+   ]
+  },
+  "1001": {
+   "n_fixed_points": 10,
+   "patterns": [
+    "....",
+    "..EW",
+    ".WEW",
+    "WE..",
+    "WEEW",
+    "WEW."
+   ]
+  },
+  "1010": {
+   "n_fixed_points": 5,
+   "patterns": [
+    "....",
+    "WEWE"
+   ]
+  },
+  "1011": {
+   "n_fixed_points": 3,
+   "patterns": [
+    "....",
+    "WEW."
+   ]
+  },
+  "1100": {
+   "n_fixed_points": 7,
+   "patterns": [
+    "....",
+    "..WE",
+    ".WE.",
+    ".WEW"
+   ]
+  },
+  "1101": {
+   "n_fixed_points": 3,
+   "patterns": [
+    "....",
+    ".WEW"
+   ]
+  },
+  "1110": {
+   "n_fixed_points": 3,
+   "patterns": [
+    "....",
+    "..WE"
+   ]
+  },
+  "1111": {
+   "n_fixed_points": 1,
+   "patterns": [
+    "...."
+   ]
+  }
+ },
+ "wildtype_pattern": "WE.. (one wg cell adjacent to one en/hh cell, two default cells)",
+ "wildtype_compatible_slp": [
+  "0000",
+  "0001",
+  "1000",
+  "1001"
+ ],
+ "finding": "Wild-type stripe pair WE.. is a fixed point exactly for SLP patterns 0000, 0001, 1000, 1001 - i.e. SLP must be OFF in the en stripe and in the cell posterior to it; SLP=1 two cells downstream of wg induces an ectopic second wg stripe (e.g. WEW./WEWE).",
+ "replaces": "segment_polarity_mc.py (broken 5-node version: 0 fixed points; superseded)"
+}

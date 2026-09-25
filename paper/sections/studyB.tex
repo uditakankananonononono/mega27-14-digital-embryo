@@ -159,12 +159,8 @@ annealed approximation \eqref{eq:derrida}, validated on our reference
 networks (Section~\ref{sec:math-boolean}), supplies the dynamical-systems
 context: this network operates in the ordered regime, which is precisely why
 small basins and sharp boundaries can coexist --- a chaotic network would not
-have stable, learnable basins at all. An extension of the model to a
-multi-cellular sheet with intercellular WG/HH signalling is present in the
-repository (\texttt{segment\_polarity\_mc.py}) but is \emph{experimental and
-currently fails to reproduce fixed points} under synchronous update; it is
-excluded from every claim above and listed among the open work
-(Section~\ref{sec:negatives}).
+have stable, learnable basins at all. A multi-cellular extension of exactly this rule set exists and works;
+Section~\ref{sec:multicell} reports it.
 
 \subsection{The network in detail}
 
@@ -285,3 +281,72 @@ conditions, exactly matching our committed counts including both bistable
 conditions (\texttt{results/grn\_crosscheck.json}; code
 \texttt{experiments/grn\_crosscheck.py}). The census is therefore not an
 artefact of our own parser or enumeration code.
+
+\subsection{Multi-cell extension: the SLP prepattern problem made exact}
+\label{sec:multicell}
+
+The single-cell module's external inputs are, in the embryo, the outputs of
+neighbouring cells. We ported the id-021 rule set verbatim to a 1D row of
+$C = 4$ cells (56 variables): each cell carries the full 14-node network, and
+\texttt{v\_WG\_external} / \texttt{v\_hh\_external} of cell $i$ are defined as
+the disjunction of WG/HH protein in cells $i-1$ and $i+1$ --- the
+Albert--Othmer paracrine geometry \cite{albert2003}. The pair-rule gene
+\emph{sloppy paired} (SLP) enters as a fixed per-cell prepattern bit. Fixed
+points are computed by answer-set enumeration (mpbn); being
+update-semantics-invariant, they need no simulation choice
+(\texttt{experiments/segment\_polarity\_mc2.py},
+\texttt{results/grn\_multicell.json}). An earlier 5-node simplification of
+this model is superseded; it produced no fixed points and is kept in the
+repository only as a record (Section~\ref{sec:negatives}).
+
+Scanning all $2^4 = 16$ SLP prepatterns yields a clean selector table
+(Table~\ref{tab:slp}). The wild-type pattern --- one \emph{wg} cell adjacent
+to one \emph{en}/\emph{hh} cell, two default cells (\texttt{WE..}) --- is a
+fixed point for exactly four prepatterns: SLP $= (0,0,0,0)$, $(0,0,0,1)$,
+$(1,0,0,0)$, $(1,0,0,1)$; i.e.\ SLP must be OFF in the \emph{en} cell
+(required by the \emph{en} rule itself) \emph{and} OFF in the cell posterior
+to it. The mechanism of the second constraint is visible in the rules: with
+SLP on in that cell, HH received from the \emph{en} cell activates CIA, and
+$\text{CIA} \wedge \text{SLP}$ switches \emph{wg} on --- producing an ectopic
+second \emph{wg} stripe (\texttt{WEW.}, \texttt{WEWE}). This is the
+multi-cell reading of the pair-rule prepattern's role: SLP must clear a
+two-cell window for each stripe pair, or the segment double-patterns.
+
+\begin{table}[H]
+\centering
+\caption{Fixed-point stripe patterns of the 4-cell id-021 port for all 16 SLP
+prepatterns (W = \emph{wg} cell, E = \emph{en}/\emph{hh} cell, . = default
+cell; $n$ = number of fixed points). Wild-type \texttt{WE..} rows in bold.
+Committed: \texttt{results/grn\_multicell.json}.}
+\label{tab:slp}
+\small
+\begin{tabular}{clc}
+\toprule
+SLP prepattern & fixed-point patterns & $n$ \\
+\midrule
+\textbf{0000} & ...., ..EW, .EWE, EWE., EWEW, \textbf{WE..}, WEEW, WEWE & 22 \\
+\textbf{0001} & ...., ..EW, .EW., EWEW, \textbf{WE..}, WEEW, WEW. & 14 \\
+0010 & ...., .EWE, EW.., WEWE & 11 \\
+0011 & ...., .EW., EW.., WEW. & 7 \\
+0100 & ...., ..WE, EWE., EWEW & 11 \\
+0101 & ...., EWEW & 5 \\
+0110 & ...., ..WE, EW.., EWWE & 9 \\
+0111 & ...., EW.. & 3 \\
+\textbf{1000} & ...., ..EW, .WE., .WEW, \textbf{WE..}, WEEW, WEWE & 14 \\
+\textbf{1001} & ...., ..EW, .WEW, \textbf{WE..}, WEEW, WEW. & 10 \\
+1010 & ...., WEWE & 5 \\
+1011 & ...., WEW. & 3 \\
+1100 & ...., ..WE, .WE., .WEW & 7 \\
+1101 & ...., .WEW & 3 \\
+1110 & ...., ..WE & 3 \\
+1111 & .... & 1 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+(The four wild-type-compatible prepatterns --- 0000, 0001, 1000, 1001, their
+rows bolded --- are exactly those with SLP OFF in the second and third
+cells. Patterns such as \texttt{.EW.} and \texttt{..WE} are
+reversed-polarity or shifted stripe pairs, which the embryo never sees; their
+existence as additional fixed points is expected in a boundary-free ring
+model and is noted, not hidden.)

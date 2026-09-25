@@ -1,4 +1,7 @@
-"""Study B: multi-cell segment-polarity Boolean model (Albert & Othmer 2003).
+"""SUPERSEDED (kept as record): first multi-cell attempt; 0 fixed points, broken.
+Working model: experiments/segment_polarity_mc2.py (see results/grn_multicell.json).
+
+Study B: multi-cell segment-polarity Boolean model (Albert & Othmer 2003).
 
 1D row of C cells x 5 nodes (wg, en, hh, ptc, ci). Paracrine coupling:
 WG and HH signal to immediate neighbours. Exact attractor enumeration over

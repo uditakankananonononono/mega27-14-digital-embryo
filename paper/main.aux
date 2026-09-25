@@ -146,82 +146,87 @@
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.8}Dynamical regime: Derrida validation}{26}{subsection.4.8}\protected@file@percent }
 \@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces Derrida annealed approximation vs.\ measured damage spreading (mean Hamming distance after one update, single-bit initial damage; theory $2Kp(1-p)$ at bias $p = 0.25$). Committed: \texttt  {results/results.json}.}}{26}{table.6}\protected@file@percent }
 \newlabel{tab:derrida}{{6}{26}{Derrida annealed approximation vs.\ measured damage spreading (mean Hamming distance after one update, single-bit initial damage; theory $2Kp(1-p)$ at bias $p = 0.25$). Committed: \texttt {results/results.json}}{table.6}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.9}Why the bistability exists}{27}{subsection.4.9}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.9}Why the bistability exists}{26}{subsection.4.9}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.10}Why the GNN wins early}{27}{subsection.4.10}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.11}Checks against the published model record}{27}{subsection.4.11}\protected@file@percent }
-\citation{liu2013}
-\citation{liu2013}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.12}Second-method verification of the attractor census}{28}{subsection.4.12}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {5}Study C: Morphogen gradients and positional information}{28}{section.5}\protected@file@percent }
-\newlabel{sec:studyC}{{5}{28}{Study C: Morphogen gradients and positional information}{section.5}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Data}{28}{subsection.5.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}The dosage series and the cephalic furrow}{28}{subsection.5.2}\protected@file@percent }
-\citation{liu2013}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Analysis pipeline}{29}{subsection.5.3}\protected@file@percent }
-\citation{spirov2017}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.4}Result 1: the exponential length scale, reproduced --- and window-sensitive}{30}{subsection.5.4}\protected@file@percent }
-\newlabel{sec:lambda}{{5.4}{30}{Result 1: the exponential length scale, reproduced --- and window-sensitive}{subsection.5.4}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {7}{\ignorespaces Window sensitivity of the Bcd length scale and of the dosage-coupled length-scale (DCLS) correlation. Each row: per-gradient single exponential fits restricted to the stated $x$ window (fractional egg length), population median $\lambda $, and Spearman correlation of per-gradient $\lambda $ with maternal bcd dosage across the 20 dosage-annotated lines ($n \approx 482$ gradients). Committed: \texttt  {results/bcd\_windows.json}.}}{30}{table.7}\protected@file@percent }
-\newlabel{tab:windows}{{7}{30}{Window sensitivity of the Bcd length scale and of the dosage-coupled length-scale (DCLS) correlation. Each row: per-gradient single exponential fits restricted to the stated $x$ window (fractional egg length), population median $\lambda $, and Spearman correlation of per-gradient $\lambda $ with maternal bcd dosage across the 20 dosage-annotated lines ($n \approx 482$ gradients). Committed: \texttt {results/bcd\_windows.json}}{table.7}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.5}Result 2: the length scale increases with maternal bcd dosage (DCLS)}{31}{subsection.5.5}\protected@file@percent }
-\newlabel{sec:dcls}{{5.5}{31}{Result 2: the length scale increases with maternal bcd dosage (DCLS)}{subsection.5.5}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Left: per-dosage $\lambda $ distributions (DCLS). Right: window sensitivity of both $\lambda $ and the DCLS correlation; the published window is marked.}}{31}{figure.5}\protected@file@percent }
-\newlabel{fig:dcls}{{5}{31}{Left: per-dosage $\lambda $ distributions (DCLS). Right: window sensitivity of both $\lambda $ and the DCLS correlation; the published window is marked}{figure.5}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.6}Result 3: a learned decoder breaks the published cephalic-furrow benchmark}{31}{subsection.5.6}\protected@file@percent }
-\newlabel{sec:cfdecoder}{{5.6}{31}{Result 3: a learned decoder breaks the published cephalic-furrow benchmark}{subsection.5.6}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {8}{\ignorespaces Cephalic-furrow position decoding. Cross-validation over disjoint fly lines; RMSE in percent egg length. The CNN beats the published threshold model on identical data by a paired-bootstrap margin of $2.57\%$ EL, CI$_{95}$ $[1.99, 3.11]$, $p < 10^{-4}$. Committed: \texttt  {results/cf\_decoder.json}.}}{32}{table.8}\protected@file@percent }
-\newlabel{tab:cf}{{8}{32}{Cephalic-furrow position decoding. Cross-validation over disjoint fly lines; RMSE in percent egg length. The CNN beats the published threshold model on identical data by a paired-bootstrap margin of $2.57\%$ EL, CI$_{95}$ $[1.99, 3.11]$, $p < 10^{-4}$. Committed: \texttt {results/cf\_decoder.json}}{table.8}{}}
-\citation{petkova2019}
-\citation{dubuis2013}
-\citation{petkova2019}
-\citation{dubuis2013}
-\citation{petkova2019}
-\citation{dubuis2013}
-\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces CF decoder: predicted vs.\ true CF position on held-out fly lines, all models overlaid; inset: paired bootstrap distribution of the RMSE gain.}}{33}{figure.6}\protected@file@percent }
-\newlabel{fig:cf}{{6}{33}{CF decoder: predicted vs.\ true CF position on held-out fly lines, all models overlaid; inset: paired bootstrap distribution of the RMSE gain}{figure.6}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.7}Result 4: gap-gene decoding and the dosage--decodability link}{33}{subsection.5.7}\protected@file@percent }
-\newlabel{sec:gapdecode}{{5.7}{33}{Result 4: gap-gene decoding and the dosage--decodability link}{subsection.5.7}{}}
-\newlabel{sec:dosagedecode}{{5.7}{33}{Result 4: gap-gene decoding and the dosage--decodability link}{subsection.5.7}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {9}{\ignorespaces Positional decoding from gap-gene pairs (kNN, held-out embryos). Median absolute error in \%EL. Published context: joint 4-gap-gene decoding achieves $\sim 1\%$ EL \cite  {petkova2019}; single gap genes carry 2--3 bits \cite  {dubuis2013}. Our two-gene numbers are consistent with that ordering.}}{33}{table.9}\protected@file@percent }
-\newlabel{tab:gap}{{9}{33}{Positional decoding from gap-gene pairs (kNN, held-out embryos). Median absolute error in \%EL. Published context: joint 4-gap-gene decoding achieves $\sim 1\%$ EL \cite {petkova2019}; single gap genes carry 2--3 bits \cite {dubuis2013}. Our two-gene numbers are consistent with that ordering}{table.9}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Gap-gene positional decoding by line and gene pair; the dosage ordering within each panel is the dosage--decodability effect.}}{34}{figure.7}\protected@file@percent }
-\newlabel{fig:gap}{{7}{34}{Gap-gene positional decoding by line and gene pair; the dosage ordering within each panel is the dosage--decodability effect}{figure.7}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.8}What Study C establishes}{34}{subsection.5.8}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.9}Per-line detail and internal controls}{34}{subsection.5.9}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces The 676 quality-filtered Bcd-GFP gradients (per-dosage panels), with single-exponential fits overlaid. The anterior steepness and posterior shoulder that drive the window sensitivity of Table\nobreakspace  {}\ref  {tab:windows} are visible by eye.}}{35}{figure.8}\protected@file@percent }
-\newlabel{fig:gradients}{{8}{35}{The 676 quality-filtered Bcd-GFP gradients (per-dosage panels), with single-exponential fits overlaid. The anterior steepness and posterior shoulder that drive the window sensitivity of Table~\ref {tab:windows} are visible by eye}{figure.8}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {10}{\ignorespaces Per-line Bcd length-scale summary (median $\lambda $ over the line's gradients on the default $[0,0.6]$ EL window; range in brackets). Lines without dosage annotation (BN/BT/BNT series) are excluded from dosage correlations but included in population statistics. Source: \texttt  {results/bcd\_sdd.json}, per-gradient rows.}}{36}{table.10}\protected@file@percent }
-\newlabel{tab:lines}{{10}{36}{Per-line Bcd length-scale summary (median $\lambda $ over the line's gradients on the default $[0,0.6]$ EL window; range in brackets). Lines without dosage annotation (BN/BT/BNT series) are excluded from dosage correlations but included in population statistics. Source: \texttt {results/bcd\_sdd.json}, per-gradient rows}{table.10}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.10}Decoding protocol detail}{36}{subsection.5.10}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {6}Tools, datasets and reproducibility}{37}{section.6}\protected@file@percent }
-\newlabel{sec:repro}{{6}{37}{Tools, datasets and reproducibility}{section.6}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}Repository layout}{37}{subsection.6.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.2}The \texttt  {embryosim} command-line tool}{37}{subsection.6.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.3}Test suite}{38}{subsection.6.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.4}Data acquisition}{38}{subsection.6.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.5}Compute environment}{38}{subsection.6.5}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.6}Module reference}{38}{subsection.6.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.12}Second-method verification of the attractor census}{27}{subsection.4.12}\protected@file@percent }
 \citation{albert2003}
-\@writefile{toc}{\contentsline {section}{\numberline {7}Discussion}{39}{section.7}\protected@file@percent }
-\newlabel{sec:discussion}{{7}{39}{Discussion}{section.7}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.1}Cross-study synthesis}{39}{subsection.7.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.2}What the numbers do and do not say}{40}{subsection.7.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.3}Open work, in priority order}{40}{subsection.7.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.13}Multi-cell extension: the SLP prepattern problem made exact}{28}{subsection.4.13}\protected@file@percent }
+\newlabel{sec:multicell}{{4.13}{28}{Multi-cell extension: the SLP prepattern problem made exact}{subsection.4.13}{}}
+\citation{liu2013}
+\@writefile{lot}{\contentsline {table}{\numberline {7}{\ignorespaces Fixed-point stripe patterns of the 4-cell id-021 port for all 16 SLP prepatterns (W = \emph  {wg} cell, E = \emph  {en}/\emph  {hh} cell, . = default cell; $n$ = number of fixed points). Wild-type \texttt  {WE..} rows in bold. Committed: \texttt  {results/grn\_multicell.json}.}}{29}{table.7}\protected@file@percent }
+\newlabel{tab:slp}{{7}{29}{Fixed-point stripe patterns of the 4-cell id-021 port for all 16 SLP prepatterns (W = \emph {wg} cell, E = \emph {en}/\emph {hh} cell, . = default cell; $n$ = number of fixed points). Wild-type \texttt {WE..} rows in bold. Committed: \texttt {results/grn\_multicell.json}}{table.7}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Study C: Morphogen gradients and positional information}{29}{section.5}\protected@file@percent }
+\newlabel{sec:studyC}{{5}{29}{Study C: Morphogen gradients and positional information}{section.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Data}{29}{subsection.5.1}\protected@file@percent }
+\citation{liu2013}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}The dosage series and the cephalic furrow}{30}{subsection.5.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Analysis pipeline}{30}{subsection.5.3}\protected@file@percent }
+\citation{liu2013}
+\citation{spirov2017}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.4}Result 1: the exponential length scale, reproduced --- and window-sensitive}{31}{subsection.5.4}\protected@file@percent }
+\newlabel{sec:lambda}{{5.4}{31}{Result 1: the exponential length scale, reproduced --- and window-sensitive}{subsection.5.4}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {8}{\ignorespaces Window sensitivity of the Bcd length scale and of the dosage-coupled length-scale (DCLS) correlation. Each row: per-gradient single exponential fits restricted to the stated $x$ window (fractional egg length), population median $\lambda $, and Spearman correlation of per-gradient $\lambda $ with maternal bcd dosage across the 20 dosage-annotated lines ($n \approx 482$ gradients). Committed: \texttt  {results/bcd\_windows.json}.}}{31}{table.8}\protected@file@percent }
+\newlabel{tab:windows}{{8}{31}{Window sensitivity of the Bcd length scale and of the dosage-coupled length-scale (DCLS) correlation. Each row: per-gradient single exponential fits restricted to the stated $x$ window (fractional egg length), population median $\lambda $, and Spearman correlation of per-gradient $\lambda $ with maternal bcd dosage across the 20 dosage-annotated lines ($n \approx 482$ gradients). Committed: \texttt {results/bcd\_windows.json}}{table.8}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.5}Result 2: the length scale increases with maternal bcd dosage (DCLS)}{32}{subsection.5.5}\protected@file@percent }
+\newlabel{sec:dcls}{{5.5}{32}{Result 2: the length scale increases with maternal bcd dosage (DCLS)}{subsection.5.5}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Left: per-dosage $\lambda $ distributions (DCLS). Right: window sensitivity of both $\lambda $ and the DCLS correlation; the published window is marked.}}{32}{figure.5}\protected@file@percent }
+\newlabel{fig:dcls}{{5}{32}{Left: per-dosage $\lambda $ distributions (DCLS). Right: window sensitivity of both $\lambda $ and the DCLS correlation; the published window is marked}{figure.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.6}Result 3: a learned decoder breaks the published cephalic-furrow benchmark}{33}{subsection.5.6}\protected@file@percent }
+\newlabel{sec:cfdecoder}{{5.6}{33}{Result 3: a learned decoder breaks the published cephalic-furrow benchmark}{subsection.5.6}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {9}{\ignorespaces Cephalic-furrow position decoding. Cross-validation over disjoint fly lines; RMSE in percent egg length. The CNN beats the published threshold model on identical data by a paired-bootstrap margin of $2.57\%$ EL, CI$_{95}$ $[1.99, 3.11]$, $p < 10^{-4}$. Committed: \texttt  {results/cf\_decoder.json}.}}{33}{table.9}\protected@file@percent }
+\newlabel{tab:cf}{{9}{33}{Cephalic-furrow position decoding. Cross-validation over disjoint fly lines; RMSE in percent egg length. The CNN beats the published threshold model on identical data by a paired-bootstrap margin of $2.57\%$ EL, CI$_{95}$ $[1.99, 3.11]$, $p < 10^{-4}$. Committed: \texttt {results/cf\_decoder.json}}{table.9}{}}
 \citation{petkova2019}
-\@writefile{toc}{\contentsline {section}{\numberline {8}Honest negatives and limitations}{41}{section.8}\protected@file@percent }
-\newlabel{sec:negatives}{{8}{41}{Honest negatives and limitations}{section.8}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {8.1}Retraction: the CNN Turing surrogate (Study A)}{41}{subsection.8.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {8.2}Negative: the second exponential component is not justified per-embryo (Study C)}{41}{subsection.8.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {8.3}Negative: uniform-sampling basin classification is degenerate (Study B)}{41}{subsection.8.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {8.4}Known limitation: the multi-cell segment-polarity extension is broken}{42}{subsection.8.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {8.5}Limitations of scope}{42}{subsection.8.5}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {8.6}What we would do differently}{42}{subsection.8.6}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {9}Conclusion}{42}{section.9}\protected@file@percent }
+\citation{dubuis2013}
+\citation{petkova2019}
+\citation{dubuis2013}
+\citation{petkova2019}
+\citation{dubuis2013}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces CF decoder: predicted vs.\ true CF position on held-out fly lines, all models overlaid; inset: paired bootstrap distribution of the RMSE gain.}}{34}{figure.6}\protected@file@percent }
+\newlabel{fig:cf}{{6}{34}{CF decoder: predicted vs.\ true CF position on held-out fly lines, all models overlaid; inset: paired bootstrap distribution of the RMSE gain}{figure.6}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.7}Result 4: gap-gene decoding and the dosage--decodability link}{34}{subsection.5.7}\protected@file@percent }
+\newlabel{sec:gapdecode}{{5.7}{34}{Result 4: gap-gene decoding and the dosage--decodability link}{subsection.5.7}{}}
+\newlabel{sec:dosagedecode}{{5.7}{34}{Result 4: gap-gene decoding and the dosage--decodability link}{subsection.5.7}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {10}{\ignorespaces Positional decoding from gap-gene pairs (kNN, held-out embryos). Median absolute error in \%EL. Published context: joint 4-gap-gene decoding achieves $\sim 1\%$ EL \cite  {petkova2019}; single gap genes carry 2--3 bits \cite  {dubuis2013}. Our two-gene numbers are consistent with that ordering.}}{34}{table.10}\protected@file@percent }
+\newlabel{tab:gap}{{10}{34}{Positional decoding from gap-gene pairs (kNN, held-out embryos). Median absolute error in \%EL. Published context: joint 4-gap-gene decoding achieves $\sim 1\%$ EL \cite {petkova2019}; single gap genes carry 2--3 bits \cite {dubuis2013}. Our two-gene numbers are consistent with that ordering}{table.10}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Gap-gene positional decoding by line and gene pair; the dosage ordering within each panel is the dosage--decodability effect.}}{35}{figure.7}\protected@file@percent }
+\newlabel{fig:gap}{{7}{35}{Gap-gene positional decoding by line and gene pair; the dosage ordering within each panel is the dosage--decodability effect}{figure.7}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.8}What Study C establishes}{35}{subsection.5.8}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.9}Per-line detail and internal controls}{35}{subsection.5.9}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces The 676 quality-filtered Bcd-GFP gradients (per-dosage panels), with single-exponential fits overlaid. The anterior steepness and posterior shoulder that drive the window sensitivity of Table\nobreakspace  {}\ref  {tab:windows} are visible by eye.}}{36}{figure.8}\protected@file@percent }
+\newlabel{fig:gradients}{{8}{36}{The 676 quality-filtered Bcd-GFP gradients (per-dosage panels), with single-exponential fits overlaid. The anterior steepness and posterior shoulder that drive the window sensitivity of Table~\ref {tab:windows} are visible by eye}{figure.8}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {11}{\ignorespaces Per-line Bcd length-scale summary (median $\lambda $ over the line's gradients on the default $[0,0.6]$ EL window; range in brackets). Lines without dosage annotation (BN/BT/BNT series) are excluded from dosage correlations but included in population statistics. Source: \texttt  {results/bcd\_sdd.json}, per-gradient rows.}}{37}{table.11}\protected@file@percent }
+\newlabel{tab:lines}{{11}{37}{Per-line Bcd length-scale summary (median $\lambda $ over the line's gradients on the default $[0,0.6]$ EL window; range in brackets). Lines without dosage annotation (BN/BT/BNT series) are excluded from dosage correlations but included in population statistics. Source: \texttt {results/bcd\_sdd.json}, per-gradient rows}{table.11}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.10}Decoding protocol detail}{37}{subsection.5.10}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {6}Tools, datasets and reproducibility}{38}{section.6}\protected@file@percent }
+\newlabel{sec:repro}{{6}{38}{Tools, datasets and reproducibility}{section.6}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}Repository layout}{38}{subsection.6.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2}The \texttt  {embryosim} command-line tool}{38}{subsection.6.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.3}Test suite}{39}{subsection.6.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.4}Data acquisition}{39}{subsection.6.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.5}Compute environment}{39}{subsection.6.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.6}Module reference}{39}{subsection.6.6}\protected@file@percent }
+\citation{albert2003}
+\@writefile{toc}{\contentsline {section}{\numberline {7}Discussion}{40}{section.7}\protected@file@percent }
+\newlabel{sec:discussion}{{7}{40}{Discussion}{section.7}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.1}Cross-study synthesis}{40}{subsection.7.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.2}What the numbers do and do not say}{41}{subsection.7.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.3}Open work, in priority order}{41}{subsection.7.3}\protected@file@percent }
+\citation{petkova2019}
+\@writefile{toc}{\contentsline {section}{\numberline {8}Honest negatives and limitations}{42}{section.8}\protected@file@percent }
+\newlabel{sec:negatives}{{8}{42}{Honest negatives and limitations}{section.8}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.1}Retraction: the CNN Turing surrogate (Study A)}{42}{subsection.8.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.2}Negative: the second exponential component is not justified per-embryo (Study C)}{42}{subsection.8.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.3}Negative: uniform-sampling basin classification is degenerate (Study B)}{43}{subsection.8.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.4}Superseded: the first multi-cell segment-polarity attempt}{43}{subsection.8.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.5}Limitations of scope}{43}{subsection.8.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.6}What we would do differently}{43}{subsection.8.6}\protected@file@percent }
 \bibcite{turing1952}{1}
 \bibcite{gierer1972}{2}
 \bibcite{wolpert1969}{3}
 \bibcite{gregor2007}{4}
 \bibcite{liu2013}{5}
+\@writefile{toc}{\contentsline {section}{\numberline {9}Conclusion}{44}{section.9}\protected@file@percent }
 \bibcite{petkova2019}{6}
 \bibcite{dubuis2013}{7}
 \bibcite{vondassow2000}{8}
@@ -229,25 +234,25 @@
 \bibcite{helikar2012}{10}
 \bibcite{derrida1986}{11}
 \bibcite{spirov2017}{12}
-\@writefile{toc}{\contentsline {section}{\numberline {A}Tool and dataset manifest}{44}{appendix.A}\protected@file@percent }
-\newlabel{app:manifest}{{A}{44}{Tool and dataset manifest}{appendix.A}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {A.1}External tools and resources (40/40 gate)}{44}{subsection.A.1}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {11}{\ignorespaces External tools/resources genuinely used (committed manifest).}}{45}{table.11}\protected@file@percent }
-\newlabel{tab:tools}{{11}{45}{External tools/resources genuinely used (committed manifest)}{table.11}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {A.2}Dataset manifest (accession-level)}{46}{subsection.A.2}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {12}{\ignorespaces Dataset counts. Total 2{,}858 (gate: 120).}}{46}{table.12}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {B}Exact attractor records (Study B)}{46}{appendix.B}\protected@file@percent }
-\newlabel{app:attractors}{{B}{46}{Exact attractor records (Study B)}{appendix.B}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {13}{\ignorespaces All fixed points of Cell Collective id-021 under all eight external conditions (synchronous update; no limit cycles exist in any condition).}}{46}{table.13}\protected@file@percent }
-\newlabel{tab:allattractors}{{13}{46}{All fixed points of Cell Collective id-021 under all eight external conditions (synchronous update; no limit cycles exist in any condition)}{table.13}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {C}Reproduction commands}{47}{appendix.C}\protected@file@percent }
-\newlabel{app:repro}{{C}{47}{Reproduction commands}{appendix.C}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {D}Results-file inventory}{48}{appendix.D}\protected@file@percent }
-\newlabel{app:results}{{D}{48}{Results-file inventory}{appendix.D}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {14}{\ignorespaces Committed results files and the claims they carry.}}{48}{table.14}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {E}Test-suite inventory}{48}{appendix.E}\protected@file@percent }
-\newlabel{app:tests}{{E}{48}{Test-suite inventory}{appendix.E}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {F}Claim-to-file traceability}{49}{appendix.F}\protected@file@percent }
-\newlabel{app:trace}{{F}{49}{Claim-to-file traceability}{appendix.F}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {15}{\ignorespaces Traceability of headline claims.}}{50}{table.15}\protected@file@percent }
-\gdef \@abspage@last{50}
+\@writefile{toc}{\contentsline {section}{\numberline {A}Tool and dataset manifest}{45}{appendix.A}\protected@file@percent }
+\newlabel{app:manifest}{{A}{45}{Tool and dataset manifest}{appendix.A}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {A.1}External tools and resources (40/40 gate)}{45}{subsection.A.1}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {12}{\ignorespaces External tools/resources genuinely used (committed manifest).}}{46}{table.12}\protected@file@percent }
+\newlabel{tab:tools}{{12}{46}{External tools/resources genuinely used (committed manifest)}{table.12}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {A.2}Dataset manifest (accession-level)}{47}{subsection.A.2}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {13}{\ignorespaces Dataset counts. Total 2{,}858 (gate: 120).}}{47}{table.13}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {B}Exact attractor records (Study B)}{47}{appendix.B}\protected@file@percent }
+\newlabel{app:attractors}{{B}{47}{Exact attractor records (Study B)}{appendix.B}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {14}{\ignorespaces All fixed points of Cell Collective id-021 under all eight external conditions (synchronous update; no limit cycles exist in any condition).}}{47}{table.14}\protected@file@percent }
+\newlabel{tab:allattractors}{{14}{47}{All fixed points of Cell Collective id-021 under all eight external conditions (synchronous update; no limit cycles exist in any condition)}{table.14}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {C}Reproduction commands}{48}{appendix.C}\protected@file@percent }
+\newlabel{app:repro}{{C}{48}{Reproduction commands}{appendix.C}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {D}Results-file inventory}{49}{appendix.D}\protected@file@percent }
+\newlabel{app:results}{{D}{49}{Results-file inventory}{appendix.D}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {15}{\ignorespaces Committed results files and the claims they carry.}}{49}{table.15}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {E}Test-suite inventory}{49}{appendix.E}\protected@file@percent }
+\newlabel{app:tests}{{E}{49}{Test-suite inventory}{appendix.E}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {F}Claim-to-file traceability}{50}{appendix.F}\protected@file@percent }
+\newlabel{app:trace}{{F}{50}{Claim-to-file traceability}{appendix.F}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {16}{\ignorespaces Traceability of headline claims.}}{51}{table.16}\protected@file@percent }
+\gdef \@abspage@last{51}

@@ -34,45 +34,46 @@
 \contentsline {subsection}{\numberline {4.6}Interpretation}{25}{subsection.4.6}%
 \contentsline {subsection}{\numberline {4.7}The network in detail}{26}{subsection.4.7}%
 \contentsline {subsection}{\numberline {4.8}Dynamical regime: Derrida validation}{26}{subsection.4.8}%
-\contentsline {subsection}{\numberline {4.9}Why the bistability exists}{27}{subsection.4.9}%
+\contentsline {subsection}{\numberline {4.9}Why the bistability exists}{26}{subsection.4.9}%
 \contentsline {subsection}{\numberline {4.10}Why the GNN wins early}{27}{subsection.4.10}%
 \contentsline {subsection}{\numberline {4.11}Checks against the published model record}{27}{subsection.4.11}%
-\contentsline {subsection}{\numberline {4.12}Second-method verification of the attractor census}{28}{subsection.4.12}%
-\contentsline {section}{\numberline {5}Study C: Morphogen gradients and positional information}{28}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Data}{28}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}The dosage series and the cephalic furrow}{28}{subsection.5.2}%
-\contentsline {subsection}{\numberline {5.3}Analysis pipeline}{29}{subsection.5.3}%
-\contentsline {subsection}{\numberline {5.4}Result 1: the exponential length scale, reproduced --- and window-sensitive}{30}{subsection.5.4}%
-\contentsline {subsection}{\numberline {5.5}Result 2: the length scale increases with maternal bcd dosage (DCLS)}{31}{subsection.5.5}%
-\contentsline {subsection}{\numberline {5.6}Result 3: a learned decoder breaks the published cephalic-furrow benchmark}{31}{subsection.5.6}%
-\contentsline {subsection}{\numberline {5.7}Result 4: gap-gene decoding and the dosage--decodability link}{33}{subsection.5.7}%
-\contentsline {subsection}{\numberline {5.8}What Study C establishes}{34}{subsection.5.8}%
-\contentsline {subsection}{\numberline {5.9}Per-line detail and internal controls}{34}{subsection.5.9}%
-\contentsline {subsection}{\numberline {5.10}Decoding protocol detail}{36}{subsection.5.10}%
-\contentsline {section}{\numberline {6}Tools, datasets and reproducibility}{37}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Repository layout}{37}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}The \texttt {embryosim} command-line tool}{37}{subsection.6.2}%
-\contentsline {subsection}{\numberline {6.3}Test suite}{38}{subsection.6.3}%
-\contentsline {subsection}{\numberline {6.4}Data acquisition}{38}{subsection.6.4}%
-\contentsline {subsection}{\numberline {6.5}Compute environment}{38}{subsection.6.5}%
-\contentsline {subsection}{\numberline {6.6}Module reference}{38}{subsection.6.6}%
-\contentsline {section}{\numberline {7}Discussion}{39}{section.7}%
-\contentsline {subsection}{\numberline {7.1}Cross-study synthesis}{39}{subsection.7.1}%
-\contentsline {subsection}{\numberline {7.2}What the numbers do and do not say}{40}{subsection.7.2}%
-\contentsline {subsection}{\numberline {7.3}Open work, in priority order}{40}{subsection.7.3}%
-\contentsline {section}{\numberline {8}Honest negatives and limitations}{41}{section.8}%
-\contentsline {subsection}{\numberline {8.1}Retraction: the CNN Turing surrogate (Study A)}{41}{subsection.8.1}%
-\contentsline {subsection}{\numberline {8.2}Negative: the second exponential component is not justified per-embryo (Study C)}{41}{subsection.8.2}%
-\contentsline {subsection}{\numberline {8.3}Negative: uniform-sampling basin classification is degenerate (Study B)}{41}{subsection.8.3}%
-\contentsline {subsection}{\numberline {8.4}Known limitation: the multi-cell segment-polarity extension is broken}{42}{subsection.8.4}%
-\contentsline {subsection}{\numberline {8.5}Limitations of scope}{42}{subsection.8.5}%
-\contentsline {subsection}{\numberline {8.6}What we would do differently}{42}{subsection.8.6}%
-\contentsline {section}{\numberline {9}Conclusion}{42}{section.9}%
-\contentsline {section}{\numberline {A}Tool and dataset manifest}{44}{appendix.A}%
-\contentsline {subsection}{\numberline {A.1}External tools and resources (40/40 gate)}{44}{subsection.A.1}%
-\contentsline {subsection}{\numberline {A.2}Dataset manifest (accession-level)}{46}{subsection.A.2}%
-\contentsline {section}{\numberline {B}Exact attractor records (Study B)}{46}{appendix.B}%
-\contentsline {section}{\numberline {C}Reproduction commands}{47}{appendix.C}%
-\contentsline {section}{\numberline {D}Results-file inventory}{48}{appendix.D}%
-\contentsline {section}{\numberline {E}Test-suite inventory}{48}{appendix.E}%
-\contentsline {section}{\numberline {F}Claim-to-file traceability}{49}{appendix.F}%
+\contentsline {subsection}{\numberline {4.12}Second-method verification of the attractor census}{27}{subsection.4.12}%
+\contentsline {subsection}{\numberline {4.13}Multi-cell extension: the SLP prepattern problem made exact}{28}{subsection.4.13}%
+\contentsline {section}{\numberline {5}Study C: Morphogen gradients and positional information}{29}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Data}{29}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}The dosage series and the cephalic furrow}{30}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Analysis pipeline}{30}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Result 1: the exponential length scale, reproduced --- and window-sensitive}{31}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.5}Result 2: the length scale increases with maternal bcd dosage (DCLS)}{32}{subsection.5.5}%
+\contentsline {subsection}{\numberline {5.6}Result 3: a learned decoder breaks the published cephalic-furrow benchmark}{33}{subsection.5.6}%
+\contentsline {subsection}{\numberline {5.7}Result 4: gap-gene decoding and the dosage--decodability link}{34}{subsection.5.7}%
+\contentsline {subsection}{\numberline {5.8}What Study C establishes}{35}{subsection.5.8}%
+\contentsline {subsection}{\numberline {5.9}Per-line detail and internal controls}{35}{subsection.5.9}%
+\contentsline {subsection}{\numberline {5.10}Decoding protocol detail}{37}{subsection.5.10}%
+\contentsline {section}{\numberline {6}Tools, datasets and reproducibility}{38}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Repository layout}{38}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}The \texttt {embryosim} command-line tool}{38}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Test suite}{39}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.4}Data acquisition}{39}{subsection.6.4}%
+\contentsline {subsection}{\numberline {6.5}Compute environment}{39}{subsection.6.5}%
+\contentsline {subsection}{\numberline {6.6}Module reference}{39}{subsection.6.6}%
+\contentsline {section}{\numberline {7}Discussion}{40}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Cross-study synthesis}{40}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}What the numbers do and do not say}{41}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Open work, in priority order}{41}{subsection.7.3}%
+\contentsline {section}{\numberline {8}Honest negatives and limitations}{42}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Retraction: the CNN Turing surrogate (Study A)}{42}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Negative: the second exponential component is not justified per-embryo (Study C)}{42}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.3}Negative: uniform-sampling basin classification is degenerate (Study B)}{43}{subsection.8.3}%
+\contentsline {subsection}{\numberline {8.4}Superseded: the first multi-cell segment-polarity attempt}{43}{subsection.8.4}%
+\contentsline {subsection}{\numberline {8.5}Limitations of scope}{43}{subsection.8.5}%
+\contentsline {subsection}{\numberline {8.6}What we would do differently}{43}{subsection.8.6}%
+\contentsline {section}{\numberline {9}Conclusion}{44}{section.9}%
+\contentsline {section}{\numberline {A}Tool and dataset manifest}{45}{appendix.A}%
+\contentsline {subsection}{\numberline {A.1}External tools and resources (40/40 gate)}{45}{subsection.A.1}%
+\contentsline {subsection}{\numberline {A.2}Dataset manifest (accession-level)}{47}{subsection.A.2}%
+\contentsline {section}{\numberline {B}Exact attractor records (Study B)}{47}{appendix.B}%
+\contentsline {section}{\numberline {C}Reproduction commands}{48}{appendix.C}%
+\contentsline {section}{\numberline {D}Results-file inventory}{49}{appendix.D}%
+\contentsline {section}{\numberline {E}Test-suite inventory}{49}{appendix.E}%
+\contentsline {section}{\numberline {F}Claim-to-file traceability}{50}{appendix.F}%

@@ -1,0 +1,57 @@
+targets,factors
+v_CIA_c0, (((v_HH_protein_c1) & v_CI_protein_c0) | (v_CI_protein_c0 & !v_PTC_protein_c0))
+v_CIR_c0, ((v_CI_protein_c0 & v_PTC_protein_c0) & !(v_HH_protein_c1))
+v_CI_protein_c0, v_ci_c0
+v_EN_protein_c0, v_en_c0
+v_HH_protein_c0, v_hh_c0
+v_PH_c0, (v_PTC_protein_c0 & (v_HH_protein_c1))
+v_PTC_protein_c0, ((v_PTC_protein_c0 & !(v_HH_protein_c1)) | v_ptc_c0)
+v_SMO_c0, ((v_HH_protein_c1) | !((v_HH_protein_c1) | v_PTC_protein_c0))
+v_WG_protein_c0, v_wg_c0
+v_ci_c0, !v_EN_protein_c0
+v_en_c0, ((v_WG_protein_c1) & !1)
+v_hh_c0, (v_EN_protein_c0 & !v_CIR_c0)
+v_ptc_c0, (v_CIA_c0 & !(v_CIR_c0 | v_EN_protein_c0))
+v_wg_c0, (((v_wg_c0 & (1 | v_CIA_c0)) & !v_CIR_c0) | ((v_CIA_c0 & 1) & !v_CIR_c0))
+v_CIA_c1, (((v_HH_protein_c0 | v_HH_protein_c2) & v_CI_protein_c1) | (v_CI_protein_c1 & !v_PTC_protein_c1))
+v_CIR_c1, ((v_CI_protein_c1 & v_PTC_protein_c1) & !(v_HH_protein_c0 | v_HH_protein_c2))
+v_CI_protein_c1, v_ci_c1
+v_EN_protein_c1, v_en_c1
+v_HH_protein_c1, v_hh_c1
+v_PH_c1, (v_PTC_protein_c1 & (v_HH_protein_c0 | v_HH_protein_c2))
+v_PTC_protein_c1, ((v_PTC_protein_c1 & !(v_HH_protein_c0 | v_HH_protein_c2)) | v_ptc_c1)
+v_SMO_c1, ((v_HH_protein_c0 | v_HH_protein_c2) | !((v_HH_protein_c0 | v_HH_protein_c2) | v_PTC_protein_c1))
+v_WG_protein_c1, v_wg_c1
+v_ci_c1, !v_EN_protein_c1
+v_en_c1, ((v_WG_protein_c0 | v_WG_protein_c2) & !0)
+v_hh_c1, (v_EN_protein_c1 & !v_CIR_c1)
+v_ptc_c1, (v_CIA_c1 & !(v_CIR_c1 | v_EN_protein_c1))
+v_wg_c1, (((v_wg_c1 & (0 | v_CIA_c1)) & !v_CIR_c1) | ((v_CIA_c1 & 0) & !v_CIR_c1))
+v_CIA_c2, (((v_HH_protein_c1 | v_HH_protein_c3) & v_CI_protein_c2) | (v_CI_protein_c2 & !v_PTC_protein_c2))
+v_CIR_c2, ((v_CI_protein_c2 & v_PTC_protein_c2) & !(v_HH_protein_c1 | v_HH_protein_c3))
+v_CI_protein_c2, v_ci_c2
+v_EN_protein_c2, v_en_c2
+v_HH_protein_c2, v_hh_c2
+v_PH_c2, (v_PTC_protein_c2 & (v_HH_protein_c1 | v_HH_protein_c3))
+v_PTC_protein_c2, ((v_PTC_protein_c2 & !(v_HH_protein_c1 | v_HH_protein_c3)) | v_ptc_c2)
+v_SMO_c2, ((v_HH_protein_c1 | v_HH_protein_c3) | !((v_HH_protein_c1 | v_HH_protein_c3) | v_PTC_protein_c2))
+v_WG_protein_c2, v_wg_c2
+v_ci_c2, !v_EN_protein_c2
+v_en_c2, ((v_WG_protein_c1 | v_WG_protein_c3) & !0)
+v_hh_c2, (v_EN_protein_c2 & !v_CIR_c2)
+v_ptc_c2, (v_CIA_c2 & !(v_CIR_c2 | v_EN_protein_c2))
+v_wg_c2, (((v_wg_c2 & (0 | v_CIA_c2)) & !v_CIR_c2) | ((v_CIA_c2 & 0) & !v_CIR_c2))
+v_CIA_c3, (((v_HH_protein_c2) & v_CI_protein_c3) | (v_CI_protein_c3 & !v_PTC_protein_c3))
+v_CIR_c3, ((v_CI_protein_c3 & v_PTC_protein_c3) & !(v_HH_protein_c2))
+v_CI_protein_c3, v_ci_c3
+v_EN_protein_c3, v_en_c3
+v_HH_protein_c3, v_hh_c3
+v_PH_c3, (v_PTC_protein_c3 & (v_HH_protein_c2))
+v_PTC_protein_c3, ((v_PTC_protein_c3 & !(v_HH_protein_c2)) | v_ptc_c3)
+v_SMO_c3, ((v_HH_protein_c2) | !((v_HH_protein_c2) | v_PTC_protein_c3))
+v_WG_protein_c3, v_wg_c3
+v_ci_c3, !v_EN_protein_c3
+v_en_c3, ((v_WG_protein_c2) & !1)
+v_hh_c3, (v_EN_protein_c3 & !v_CIR_c3)
+v_ptc_c3, (v_CIA_c3 & !(v_CIR_c3 | v_EN_protein_c3))
+v_wg_c3, (((v_wg_c3 & (1 | v_CIA_c3)) & !v_CIR_c3) | ((v_CIA_c3 & 1) & !v_CIR_c3))
