@@ -1,1 +1,171 @@
-% TODO
+\subsection{Digital embryos}
+
+A \emph{digital embryo} is a computational reconstruction of a developmental
+process that is close enough to the underlying biology to be wrong in
+interesting ways. The promise of the field is that cheap computation can
+replace some expensive experimentation: simulate the morphogen, the network,
+or the tissue, and reserve the bench for questions the simulation cannot
+answer. The peril is equally well known --- a simulation unconstrained by real
+measurements will happily reproduce whatever its author expected. This report
+takes the second half of that sentence seriously. Three classical model
+systems of developmental patterning are rebuilt computationally, and every
+quantitative claim is tied to real, accession-level public data: published
+per-embryo morphogen measurements, a published gene-regulatory network model,
+and published quantitative benchmarks. Where our computation contradicts an
+initial expectation --- including our own earlier, stronger claims --- we say
+so in the body of the report, not in a footnote.
+
+The three studies correspond to the three great patterning problems of the
+fly embryo, at three scales:
+
+\begin{enumerate}
+\item \textbf{Turing pattern selection (Study A).} Reaction--diffusion
+systems of the type proposed by Turing \cite{turing1952} and instantiated by
+Gierer and Meinhardt \cite{gierer1972} amplify a band of spatial wavelengths
+out of noise. Linear theory predicts which wavenumber grows fastest; what the
+\emph{saturated, nonlinear} pattern actually selects is a subtler question.
+We measure the selected wavenumber across a parameter sweep and ask whether
+the deviation from linear theory is itself predictable.
+\item \textbf{Gene-network attractors (Study B).} The segment-polarity
+network of \emph{Drosophila} is one of the best-studied Boolean models in
+systems biology \cite{vondassow2000,albert2003}. We take the published
+14-node Boolean model (Cell Collective id-021 \cite{helikar2012}) as ground
+truth, enumerate its attractors exactly under all eight external signalling
+conditions, measure the size of the wild-type basin of attraction, and ask
+how much data a learning algorithm needs to recover the basin boundary.
+\item \textbf{Morphogen positional information (Study C).} The Bicoid
+morphogen gradient of the early fly embryo is the canonical example of
+positional information \cite{wolpert1969,gregor2007}. Using the 676
+per-embryo gradients and 2{,}180 immunofluorescence embryo records published
+by Liu, Morrison and Gregor \cite{liu2013}, we (i) reproduce their gradient
+length-scale measurements, (ii) test how the length scale depends on maternal
+gene dosage, (iii) attack their threshold model of cephalic-furrow
+positioning with a learned decoder, and (iv) measure how much positional
+information gap-gene expression patterns carry under different dosages.
+\end{enumerate}
+
+\subsection{Why these three}
+
+The three problems are independent in method but connected in spirit: each
+asks where spatial order comes from, and each has a quantitative published
+reference point that a computation can fail to meet. Study~A's reference is
+the linear dispersion relation itself --- a prediction made by mathematics,
+not by a measurement, which makes it the cleanest possible benchmark to break.
+Study~B's reference is a published, curated, executable model: if our
+attractor enumeration disagreed with it, the disagreement would be
+diagnosable down to a single update rule. Study~C's references are the
+hardest kind: numbers measured on real embryos, with real noise, by another
+laboratory \cite{liu2013,petkova2019,gregor2007}.
+
+\subsection{Summary of results}
+
+Every number quoted here is computed by committed, tested code from committed
+data, and re-computed when this report is built; the repository records the
+exact pipeline. Section references point to full derivations and tables.
+
+\begin{itemize}
+\item \textbf{Study A (Sections \ref{sec:studyA}).} Across a 14-point sweep
+of the activator decay rate, the saturated Gierer--Meinhardt pattern
+systematically selects a wavenumber \emph{above} the linear fastest-growing
+mode, by $14.7\%$ to $58.9\%$ (median $31\%$), with the largest relative
+deviations at intermediate distance from onset --- not at threshold, where
+amplitude-equation reasoning would have placed them. The deviation is real
+(measured at steady state, verified against two lattice sizes) but it is
+\emph{not} predictable from the linear dispersion curve by a convolutional
+surrogate: a promising $n = 58$ pilot result ($+17.7\%$ held-out improvement)
+\emph{failed to replicate} at $n = 171$ (CNN relative RMSE $0.292$--$0.295$
+vs.\ $0.272$ for the linear formula alone). We retract the small-sample claim
+and keep the phenomenon.
+\item \textbf{Study B (Section \ref{sec:studyB}).} Exact attractor
+enumeration of the published segment-polarity network under all eight
+combinations of the external signals \textsc{hh}, \textsc{WG}, \textsc{SLP}
+reproduces the published condition-dependent bistability exactly
+\cite{albert2003}. The wild-type (\textsc{wg}-ON) basin occupies $0.77\%$ of
+the synchronous state space under the wild-type signalling condition. The
+basin boundary is learnable to $> 98\%$ test accuracy from only $\sim 60$
+labelled states (of $2^{14}$), and a graph neural network matches or beats a
+multilayer perceptron at every sample size; under naive uniform sampling the
+classification task is degenerate (majority class accuracy $99.3\%$), which
+we report as a cautionary result.
+\item \textbf{Study C (Sections \ref{sec:studyC}--\ref{sec:gapdecode}).}
+From 676 real Bcd-GFP gradients: the population length scale reproduces the
+published value under the authors' fitting window ($\lambda_{\mathrm{median}}
+= 0.189$ vs.\ published $0.165 \pm 0.007$ egg lengths \cite{liu2013}, with
+our value on their exact window; the residual difference is discussed
+honestly). The length scale \emph{increases with maternal bcd dosage}
+(dosage-coupled length scale, DCLS): Spearman $\rho = 0.356$
+($p = 7.9 \times 10^{-16}$) on anterior-weighted fitting windows, robust to
+parametric refitting (OLS slope $+0.0117$ per dose, $95\%$ CI
+$[0.0060, 0.0174]$, $p = 5.9 \times 10^{-5}$), and \emph{absent} on the
+posterior-heavy window used in the original publication ($\rho = 0.071$,
+$p = 0.12$) --- a window-sensitivity finding, not a contradiction. A
+one-dimensional convolutional decoder predicts cephalic-furrow position from
+the raw Bcd profile at $2.38\%$ egg length RMSE (held-out fly lines,
+$R^2 = 0.854$), beating the published threshold model at $4.94\%$ EL by a
+paired-bootstrap margin of $2.57\%$ EL, CI$_{95}$ $[1.99, 3.11]$
+($p < 10^{-4}$). Finally, positional decodability from joint Hb+Eve
+expression improves with dosage: median error $6.21\%$ EL at $3\times$ bcd
+vs.\ $9.91\%$ EL at $1\times$, bootstrap CI $[3.00, 4.40]\%$ EL for the
+difference.
+\end{itemize}
+
+\subsection{What counts as evidence here}
+
+This project operates under a simple reporting rule: a number is quoted only
+if it exists in a committed results file produced by committed, tested code;
+results that fail to replicate are retracted in the same document that
+reports them; and the negative results (Section~\ref{sec:negatives}) are
+given the same space and the same figures as the positive ones. We regard the
+retracted CNN-surrogate claim of Study~A as the single most valuable output
+of the project, because it is the kind of result that a less careful pipeline
+would have published.
+
+\subsection{Background}
+
+\textbf{Turing patterns.} Turing's 1952 observation \cite{turing1952} ---
+that diffusion, usually a homogenising force, can destabilise a homogeneous
+state when one morphogen activates and another, faster-diffusing one
+inhibits --- is the founding result of mathematical developmental biology.
+The linear theory is textbook material; the nonlinear selection problem it
+leaves open (which mode, of the whole unstable band, does the saturated
+pattern actually take?) has a large literature for specific kinetics and
+geometries but no general closed answer. Study~A measures the gap between
+linear prediction and nonlinear outcome on the canonical activator--inhibitor
+kinetics of Gierer and Meinhardt \cite{gierer1972}.
+
+\textbf{The segment-polarity network.} The repeated unit of the embryonic
+parasegment is maintained by a small network of cross-cell signalling
+(wingless, hedgehog) and intracellular regulation (engrailed, cubitus
+interruptus, patched). von Dassow et al.\ showed by exhaustive ODE sampling
+that the module is extraordinarily robust to kinetic parameters
+\cite{vondassow2000}; Albert and Othmer then showed that a Boolean skeleton
+of the same network already contains the essential logic \cite{albert2003}.
+The curated Boolean version we use \cite{helikar2012} is therefore a model
+with an unusually strong claim to correctness --- which is exactly why exact
+numbers about it (basin sizes, learnability) are worth having.
+
+\textbf{Positional information in the fly embryo.} Wolpert's positional
+information framework \cite{wolpert1969} proposes that cells read their
+position from morphogen concentration. The Bicoid gradient is its best
+quantitative instance: an approximately exponential anterior morphogen
+gradient \cite{gregor2007} that is read out by gap genes with a precision
+approaching the physical limit set by expression noise
+\cite{dubuis2013,petkova2019}. Liu, Morrison and Gregor added the crucial
+dosage series --- embryos with 1$\times$ to 4$\times$ maternal \emph{bcd} ---
+and showed the readout machinery tracks the input dynamically
+\cite{liu2013}. Study~C is built entirely on their public data.
+
+\subsection{Roadmap}
+
+Section~\ref{sec:math-turing}ff.\ derives every formula used later, with
+symbolic cross-checks. Sections \ref{sec:studyA}, \ref{sec:studyB} and
+\ref{sec:studyC} present the three studies, each self-contained in method
+and result. Section~\ref{sec:repro} documents the software, including the
+\texttt{embryosim} command-line tool. Section~\ref{sec:discussion} discusses
+scope and open work; Section~\ref{sec:negatives} collects the negative
+results. Appendices carry the full tool and dataset manifests
+(Appendix~\ref{app:manifest}), the complete attractor census
+(Appendix~\ref{app:attractors}), reproduction commands
+(Appendix~\ref{app:repro}), the results-file inventory
+(Appendix~\ref{app:results}) and the test-suite inventory
+(Appendix~\ref{app:tests}).

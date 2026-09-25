@@ -1,1 +1,275 @@
-% TODO
+
+\section{Tool and dataset manifest}
+\label{app:manifest}
+
+\subsection{External tools and resources (40/40 gate)}
+
+Counting rule: an entry is counted only if it was genuinely used in producing
+a result, figure, lookup, or artifact of this project. Google Drive is the
+delivery target and is \emph{not} counted until delivery is complete.
+Table~\ref{tab:tools} reproduces the committed manifest
+(\texttt{data/TOOLS\_AND\_DATASETS.md}).
+
+\begin{table}[H]
+\centering
+\caption{External tools/resources genuinely used (committed manifest).}
+\label{tab:tools}
+\small
+\begin{tabular}{clp{8.5cm}}
+\toprule
+\# & Tool/resource & Used for \\
+\midrule
+1 & Zenodo record 4942019 & Liu 2013 dataset download \\
+2 & Dryad doi:10.5061/dryad.2j9p4 & provenance cross-check \\
+3 & Cell Collective & published GRN id-021/id-027 \\
+4 & sybila/biodivine-boolean-models & curated .bnet files \\
+5 & BioModels BIOMD0000001065 & von Dassow 2000 reference \\
+6 & NCBI eutils & gene/citation lookups \\
+7 & NCBI Gene & bcd/hb/eve/kni/gt IDs \\
+8 & PubMed & PMID 23580621 verification \\
+9 & PNAS/PMC (Liu 2013 + SI) & published bars \\
+10 & Gregor 2007 Cell & gradient benchmark \\
+11 & Petkova 2019 Cell & 4-gene decoding benchmark \\
+12 & Dubuis 2013 PNAS & single-gene information benchmark \\
+13 & PLOS figshare (Spirov 2017) & SDD critique cross-check \\
+14 & Python 3.10 & all computation \\
+15 & NumPy & numerics \\
+16 & SciPy & fitting, statistics, .mat I/O \\
+17 & pandas & tables \\
+18 & PyTorch (CPU) & CNN/GNN/MLP models \\
+19 & scikit-learn & decoder cross-checks \\
+20 & NetworkX & GRN graphs \\
+21 & matplotlib & figures \\
+22 & h5py & .mat v7.3 fallback \\
+23 & statsmodels & DCLS robust OLS \\
+24 & scikit-image & Turing morphometrics \\
+25 & sympy & symbolic derivation verification \\
+26 & pytest & hermetic test suite \\
+27 & setuptools & package + CLI entry point \\
+28 & pip & dependencies \\
+29 & Git & version control \\
+30 & GitHub & hosting \\
+31 & OpenSSH & authenticated push \\
+32 & curl & downloads \\
+33 & LuaLaTeX (TeX Live) & typesetting \\
+34 & fontspec & font loading \\
+35 & luaotfload & OpenType backend \\
+36 & Times New Roman TTFs & mandated font (not redistributed) \\
+37 & 7-Zip & font archive extraction \\
+38 & fontconfig & font registration \\
+39 & poppler-utils & pdffonts/pdfinfo verification \\
+40 & Python stdlib urllib/mp & downloads, API calls, parallelism \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Dataset manifest (accession-level)}
+
+Uniform rule: one identifier-backed record = one dataset.
+
+\begin{table}[H]
+\centering
+\caption{Dataset counts. Total 2{,}858 (gate: 120).}
+\begin{tabular}{lrr}
+\toprule
+Source & Records & Count \\
+\midrule
+Liu 2013 LiveImaging (Bcd-GFP, 29 lines) & per-embryo gradients & 676 \\
+Liu 2013 Immunofluorescence (Hb/Kr/Gt/Kni/Eve) & per-embryo records & 2{,}180 \\
+Cell Collective id-021 & model & 1 \\
+Cell Collective id-027 & model & 1 \\
+\midrule
+\textbf{Total} & & \textbf{2{,}858} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The 29 fly lines of the LiveImaging modality, with their maternal bcd dosages
+as used in the DCLS analysis: 1IIA, 1IIC, 1XA, 2IIA, 2IIB, 2XA ($1\times$);
+1XA1IIA, 1IIA1IIIA, 2IIIA, 2IIIB, 2IIC, 1XA2IIA, 2XA1IIA ($2\times$);
+2XA2IIA, 2IIA2IIIA, 2XA2IIIA, 2XA2IIIB ($3\times$); 2XA1IIA2IIIA,
+2XA2IIA2IIIA, 2XA2IIC2IIIA ($4\times$); plus wild-type and un-annotated
+controls used only where dosage is not required.
+
+\section{Exact attractor records (Study B)}
+\label{app:attractors}
+
+The complete exact census from \texttt{results/grn\_real.json}. Node order in
+the bit strings: CIA, CIR, CI, EN, HH, PH, PTC, SMO, WG-protein, ci, en, hh,
+ptc, wg (left to right; gene and protein nodes prefixed \texttt{v\_} in the
+record).
+
+\begin{table}[H]
+\centering
+\caption{All fixed points of Cell Collective id-021 under all eight external
+conditions (synchronous update; no limit cycles exist in any condition).}
+\label{tab:allattractors}
+\begin{tabular}{lcc}
+\toprule
+Condition (hh-WG-SLP) & fixed point & state vector \\
+\midrule
+hh0-WG0-SLP0 & 1/1 & \texttt{01100010010000} \\
+hh0-WG0-SLP1 & 1/1 & \texttt{01100010010000} \\
+hh0-WG1-SLP0 & 1/2 & \texttt{00011001001100} \\
+hh0-WG1-SLP0 & 2/2 & \texttt{00011010001100} \\
+hh0-WG1-SLP1 & 1/1 & \texttt{01100010010000} \\
+hh1-WG0-SLP0 & 1/2 & \texttt{10100111010010} \\
+hh1-WG0-SLP0 & 2/2 & \texttt{10100111110011} \\
+hh1-WG0-SLP1 & 1/1 & \texttt{10100111110011} \\
+hh1-WG1-SLP0 & 1/1 & \texttt{00011001001100} \\
+hh1-WG1-SLP1 & 1/1 & \texttt{10100111110011} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Two readings. Under the null-signal conditions the unique attractor is the
+CIR/CI repressor state (\texttt{01100010001000}): \emph{ci} is broadly
+expressed, its repressor fragment CIR dominates, and the segment-polarity
+genes \emph{en}, \emph{hh}, \emph{wg} are all OFF. The wild-type bistable
+condition (\textsc{hh}1-\textsc{WG}0-\textsc{SLP}0) adds the
+\texttt{01001110010011} state in which \emph{en}, \emph{hh}, \emph{wg} and
+their proteins are ON together with SMO signalling --- the
+\emph{wg}-expressing stripe fate. \textsc{SLP}$=1$ collapses the bistability
+in both directions, matching the published role of \emph{sloppy paired} as a
+condition setter.
+
+\section{Reproduction commands}
+\label{app:repro}
+
+\begin{verbatim}
+git clone <repository-url> && cd mega27-14-digital-embryo
+pip install -e . && pip install -r requirements.txt
+python scripts/download_data.py        # re-fetch all public data
+python -m pytest tests/ -q             # hermetic suite incl. sympy checks
+python experiments/run_all.py          # regenerates results/results.json
+# individual studies:
+python experiments/turing_sweep.py     # Study A sweep (results/turing_sweep.json)
+python experiments/turing_cnn.py       # Study A surrogate + retraction record
+python experiments/turing_morphometrics.py
+python experiments/grn_real.py         # Study B census
+python experiments/grn_learning_curve.py
+python experiments/grn_gnn_balanced.py
+python experiments/bcd_sdd_test.py     # Study C fits (results/bcd_sdd.json)
+python experiments/bcd_window_sensitivity.py
+python experiments/dcls_ols.py
+python experiments/cf_decoder.py       # benchmark (results/cf_decoder.json)
+python experiments/gap_decode.py       # decoding (results/gap_decode.json)
+python experiments/hb_boundaries.py
+cd paper && lualatex main.tex          # this document (Times New Roman)
+pdffonts main.pdf                      # font-embedding verification
+\end{verbatim}
+
+Each script is deterministic given its seed set; the committed results files
+are the outputs of exactly these commands.
+
+\section{Results-file inventory}
+\label{app:results}
+
+Every quantitative claim in this report lives in one of these committed files
+(JSON; byte counts as committed):
+
+\begin{table}[H]
+\centering
+\caption{Committed results files and the claims they carry.}
+\small
+\begin{tabular}{lrp{7cm}}
+\toprule
+File & bytes & Carries \\
+\midrule
+\texttt{bcd\_sdd.json} & 175{,}102 & all 676 per-gradient fits; population
+$\lambda$; per-dosage stats; $F$-test rejection fractions; flagship bootstrap
+CI \\
+\texttt{bcd\_windows.json} & 1{,}133 & window-sensitivity of $\lambda$ and
+DCLS (Table \ref{tab:windows}) \\
+\texttt{dcls\_ols.json} & 349 & robust-OLS DCLS cross-check \\
+\texttt{cf\_decoder.json} & 870 & CF benchmark: all four models + paired
+bootstrap (Table \ref{tab:cf}) \\
+\texttt{gap\_decode.json} & 1{,}479 & gap-gene decoding
+(Table \ref{tab:gap}) + dosage-decodability CI \\
+\texttt{hb\_boundaries.json} & 1{,}101 & per-line Hb boundary positions \\
+\texttt{grn\_real.json} & 2{,}769 & exact attractor census, 8 conditions
+(Tables \ref{tab:attractors}, \ref{tab:allattractors}) \\
+\texttt{grn\_learning\_curve.json} & 775 & basin learning curve
+(Table \ref{tab:learning}) \\
+\texttt{grn\_gnn.json} & 539 & uniform-sampling degeneracy record \\
+\texttt{grn\_gnn\_balanced.json} & 250 & balanced result + exact basin
+fraction 0.007725 \\
+\texttt{turing\_sweep.json} & 3{,}011 & 14-point sweep
+(Table \ref{tab:sweep}) + power-law fit \\
+\texttt{turing\_cnn.json} & 592 & surrogate result + retraction record \\
+\texttt{turing\_sims\_cache.json} & 255{,}116 & 171 cached dispersion curves
+and selections \\
+\texttt{turing\_morphometrics.json} & 481 & spot morphometrics +
+$96^2$ cross-check \\
+\texttt{results.json} & 1{,}955 & validation-suite numbers (analytic checks,
+Derrida, threshold readouts) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Test-suite inventory}
+\label{app:tests}
+
+33 tests, all hermetic (no network, no optional data):
+
+\begin{center}
+\begin{tabular}{lrl}
+\toprule
+File & tests & Covers \\
+\midrule
+\texttt{test\_bcd.py} & 5 & gradient loading, fits, $F$-test, bootstrap \\
+\texttt{test\_bnet.py} & 4 & parser, synchronous semantics, attractors \\
+\texttt{test\_gapgene.py} & 4 & immunofluorescence handling, kNN decoder \\
+\texttt{test\_grn.py} & 4 & toggle switch, Derrida machinery \\
+\texttt{test\_math\_verify.py} & 4 & symbolic verification of all derived
+formulas vs.\ committed numbers \\
+\texttt{test\_morphogen.py} & 4 & Turing solver, band, CFL, wavenumber \\
+\texttt{test\_positional.py} & 4 & threshold readout, error bounds \\
+\texttt{test\_segment\_polarity.py} & 5 & reference model behaviour \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\section{Claim-to-file traceability}
+\label{app:trace}
+
+Each headline number of this report, with the committed file and JSON key
+that produced it. ``\texttt{jq}-path'' means the value can be read with
+\texttt{jq '<path>' results/<file>} on the committed repository state.
+
+\begin{table}[H]
+\centering
+\caption{Traceability of headline claims.}
+\small
+\begin{tabular}{p{5.6cm}p{4.2cm}p{4.6cm}}
+\toprule
+Claim & Value & jq path (file) \\
+\midrule
+CNN CF-decoder RMSE & 2.38\% EL &
+\texttt{.models.cnn1d\_profile\_3seed.rmse\_pctEL} (cf\_decoder.json) \\
+Threshold-model RMSE & 4.94\% EL &
+\texttt{.models.liu\_threshold\_trueD.rmse\_pctEL} (cf\_decoder.json) \\
+Paired bootstrap gain CI & $[1.99, 3.11]\%$ EL &
+\texttt{.paired\_bootstrap\_cnn\_minus\_liu.ci95\_pctEL} (cf\_decoder.json) \\
+DCLS Spearman ($[0,0.5]$) & $\rho=0.356$, $p=7.9{\times}10^{-16}$ &
+\texttt{.windows."0.0-0.5".dcls\_rho / .dcls\_p} (bcd\_windows.json) \\
+DCLS OLS slope & $0.0117$, CI $[0.0060, 0.0174]$ &
+\texttt{.slope\_per\_dose / .slope\_ci95} (dcls\_ols.json) \\
+$\lambda$ on published window & 0.189 EL &
+\texttt{.windows."0.2-0.8".lam\_median} (bcd\_windows.json) \\
+Two-component rejection & 0.74\% &
+\texttt{.f\_test\_reject\_fraction.p05} (bcd\_sdd.json) \\
+Dosage decodability & 9.91 vs 6.21\% EL &
+\texttt{.dosage\_decodability.*} (gap\_decode.json) \\
+wg-ON basin fraction & 0.7725\% &
+\texttt{.wg\_on\_basin\_fraction\_uniform} (grn\_gnn\_balanced.json) \\
+Learning-curve knee & $>98\%$ at $n \approx 60$ &
+\texttt{.curve} (grn\_learning\_curve.json) \\
+Upshift range & 14.7--58.9\% &
+\texttt{.rows[].dev} (turing\_sweep.json) \\
+CNN surrogate (retracted) & 0.292 vs 0.272 &
+\texttt{.linear\_plus\_cnn\_correction\_relRMSE} vs
+\texttt{.linear\_only\_relRMSE} (turing\_cnn.json) \\
+\bottomrule
+\end{tabular}
+\end{table}

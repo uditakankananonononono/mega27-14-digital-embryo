@@ -1,1 +1,73 @@
-% TODO
+\label{sec:negatives}
+
+This section collects the results that did not come out the way we wanted.
+They are part of the deliverable, not an embarrassment routed around.
+
+\subsection{Retraction: the CNN Turing surrogate (Study A)}
+
+An $n = 58$ pilot suggested a CNN could predict the beyond-onset wavenumber
+upshift from the linear dispersion curve $17.7\%$ better than the linear
+formula alone. At $n = 171$ the effect inverts (CNN rel.\ RMSE $0.292$--$0.295$
+vs.\ linear $0.272$). The small-sample win was an artefact of the first
+sample. What survives: the upshift phenomenon itself (Section~\ref{sec:upshift}),
+the quantisation diagnosis, and a cautionary data point about
+surrogate-modelling claims at $n < 100$. The interim claim was corrected in
+the project record within a day; the retraction is committed in
+\texttt{results/turing\_cnn.json} alongside the numbers.
+
+\subsection{Negative: the second exponential component is not justified
+per-embryo (Study C)}
+
+Despite the population-level window sensitivity of $\lambda$
+(Table~\ref{tab:windows}), per-embryo two-component fits reject the single
+exponential in only $0.74\%$ of 676 gradients ($0.30\%$ Bonferroni) --- below
+the 5\% false-positive floor. Whatever drives the window trend, it is too
+small per embryo to license a two-component model. We report this because the
+two-component fit is a standard move in this literature, and on this dataset
+it fails an $F$-test at scale.
+
+\subsection{Negative: uniform-sampling basin classification is degenerate
+(Study B)}
+
+A naive pipeline for ``learn the basin boundary'' samples states uniformly
+and reports accuracy. Here that yields $99.3\%$ accuracy for the majority
+classifier itself (Section~\ref{sec:basinlearn}): the number is meaningless
+and would have looked publishable. Balanced sampling is what makes the
+learning curve informative. Any future basin-learning benchmark on rare
+attractors must control for this.
+
+\subsection{Known limitation: the multi-cell segment-polarity extension is
+broken}
+
+\texttt{segment\_polarity\_mc.py} (a multi-cellular extension with
+intercellular WG/HH signalling) currently finds zero fixed points under
+synchronous update --- it does not reproduce even the single-cell attractors
+when embedded in a sheet. Rather than ship a quietly wrong model, it is
+marked experimental, excluded from every claim, and listed as open work:
+either complete the node set (SMO/CIA/CIR wiring across cell boundaries) or
+port the curated id-021 rules to the multi-cell setting.
+
+\subsection{Limitations of scope}
+
+(i) The Turing upshift is measured for one kinetics family and one lattice;
+generality is untested. (ii) DCLS is an observational correlation across fly
+lines, not a perturbation experiment we performed; causal claims belong to
+the original authors' dosage manipulations. (iii) The CF decoder, while
+cross-validated over fly lines, is evaluated on one dataset from one
+laboratory; a second independent CF-annotated dataset would be the right
+next test. (iv) Our $\lambda$ reproduction retains a $\sim 15\%$ gap to the
+published central value, attributed to unspecified fitting details in the
+original; we chose transparency over tuning.
+
+\subsection{What we would do differently}
+
+Three procedural lessons generalise beyond this project. (i) \emph{Size the
+sample to the claim before claiming}: the retracted Study-A surrogate win
+existed only at $n = 58$; a power consideration at the outset would have
+postponed the claim to $n \approx 170$ and never produced it. (ii)
+\emph{Report the majority-class baseline first}: the degenerate basin
+classifier of Study B would have been caught in an afternoon by printing one
+extra line. (iii) \emph{Fix the window before fitting}: the window
+sensitivity of Study C means any single-window $\lambda$ number is
+incomplete without its window stated; every $\lambda$ in this report now
+carries its window with it.

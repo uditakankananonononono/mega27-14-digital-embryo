@@ -1,0 +1,66 @@
+\label{sec:discussion}
+
+\subsection{Cross-study synthesis}
+
+The three studies share one methodological skeleton: take the strongest
+published quantitative statement available, recompute it from primary data or
+a primary model, then push one step past it --- and report both steps with
+equal honesty. The push-past step succeeded in Study~B (basin size, learning
+curve) and Study~C (benchmark margin, dosage-decodability) and failed
+instructively in Study~A (CNN surrogate, retracted). That 2-out-of-3 rate is
+not a bug in the programme; it is the expected yield of attempting genuine
+extensions rather than rehearsing known results. A programme in which every
+extension succeeds is a programme whose extensions were too timid.
+
+\subsection{What the numbers do and do not say}
+
+\textbf{Study A.} The upshift (median $31\%$ above the linear mode, peaking
+at intermediate distance from onset) is a property of the Gierer--Meinhardt
+kinetics on lattices of the tested size. We have not shown it for other
+kinetics (Schnakenberg, FitzHugh--Nagumo), other boundary conditions, or
+continuum-accurate solvers; each is a natural next computation and the
+pipeline accepts them by parameter change. The non-monotone dependence on
+$\varepsilon$ suggests the deviation is controlled by the competition between
+mode-coupling strength (which grows with amplitude, i.e.\ with distance from
+onset) and band flatness (which shrinks it again), but we have measured, not
+derived, this --- a weakly nonlinear analysis in the spirit of amplitude
+equations is the obvious theoretical follow-up, and our retracted CNN attempt
+is evidence that the effect is not trivially readable from linear data.
+
+\textbf{Study B.} The $0.77\%$ wild-type basin reframes the robustness
+question for the segment-polarity module: the model does not pattern
+\emph{whatever} the initial state, it patterns given the initial states that
+the preceding developmental stages actually produce. The learnability result
+($\sim 60$ labelled states suffice) shows the basin boundary, though tiny, is
+geometrically simple --- consistent with the ordered dynamics the Derrida
+analysis predicts. The extension that matters biologically is the
+multi-cellular one, and it is precisely the one that is currently broken
+(Section~\ref{sec:negatives}); fixing it is the top open engineering item.
+
+\textbf{Study C.} The CF-decoder margin ($+2.57\%$ EL, CI $[1.99, 3.11]$)
+is large relative to the biology: the whole embryo-to-embryo spread of the
+furrow is $10.5\%$ EL. Two readings are possible and we cannot yet separate
+them: the threshold model leaves profile-shape information unused (our
+preferred reading, supported by the ridge model capturing most of the gain
+from two shape features), or the CNN exploits line-specific systematics that
+happen to survive line-disjoint cross-validation. A second, independent
+CF-annotated dataset would decide between them; we flag this as the most
+important external validation of the project. The DCLS refinement
+(anterior-concentrated dosage coupling) is compatible with the published
+supplement figure and adds a spatial statement to it; the
+dosage--decodability result extends the same axis to the downstream genes.
+
+\subsection{Open work, in priority order}
+
+\begin{enumerate}
+\item Repair or replace the multi-cell segment-polarity extension; validate
+against the published two-cell and four-cell patterns.
+\item Independent-dataset validation of the CF decoder.
+\item Weakly nonlinear theory of the wavenumber upshift; extension to other
+kinetics and boundary conditions.
+\item Stochastic-target surrogates for pattern selection (predict the
+distribution over lattice modes rather than a single wavenumber).
+\item Joint decoding across all measured gap genes on the immunofluorescence
+panel, approaching the four-gene benchmark of \cite{petkova2019} with the
+same honest cross-validation.
+\end{enumerate}

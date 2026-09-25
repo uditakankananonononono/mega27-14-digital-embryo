@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.14.0 (TeX Live 2022/dev/Debian)  (format=lualatex 2026.8.14)  25 SEP 2026 11:42
+This is LuaHBTeX, Version 1.14.0 (TeX Live 2022/dev/Debian)  (format=lualatex 2026.8.14)  25 SEP 2026 11:56
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -421,98 +421,98 @@ Package: setspace 2011/12/19 v6.7a set line spacing
 \c@proposition=\count300
 \c@definition=\count301
 \c@lemma=\count302
-
-No file main.aux.
-
+ (./main.aux)
 \openout1 = main.aux
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 18.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 19.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 1
-8.
+9.
+
 (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
 
 Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
 (fontspec)             this).
 
 \symlegacymaths=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 18.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 18.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 18.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 18.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 18.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 18.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 18.
-LaTeX Font Info:    Redeclaring math accent \check on input line 18.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 18.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 18.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 18.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 18.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 18.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 18.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 18.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 18.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 18.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 18.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 18.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 18.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 18.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 18.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 18.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 18.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 19.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 19.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 19.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 19.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 19.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 19.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 19.
+LaTeX Font Info:    Redeclaring math accent \check on input line 19.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 19.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 19.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 19.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 19.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 19.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 19.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 19.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 19.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 19.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 19.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 19.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 19.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 19.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 19.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 19.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 19.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 18.
+(Font)              `operators' in the math version `normal' on input line 19.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> TU/TimesNewRoman(0)/m/n on input line 1
-8.
+9.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 18.
+(Font)              `operators' in the math version `bold' on input line 19.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  OT1/cmr/bx/n --> TU/TimesNewRoman(0)/m/n on input line 
-18.
+19.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  TU/TimesNewRoman(0)/m/n --> TU/TimesNewRoman(0)/m/n on 
-input line 18.
+input line 19.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
 (Font)                  OT1/cmr/m/it --> TU/TimesNewRoman(0)/m/it on input line
- 18.
+ 19.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
 (Font)                  OT1/cmr/bx/n --> TU/TimesNewRoman(0)/b/n on input line 
-18.
+19.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 18.
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 19.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 18.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 19.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  TU/TimesNewRoman(0)/m/n --> TU/TimesNewRoman(0)/b/n on 
-input line 18.
+input line 19.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  OT1/cmr/bx/it --> TU/TimesNewRoman(0)/b/it on input lin
-e 18.
+e 19.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 18.
+(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 19.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 18.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 19.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: luatex
@@ -570,7 +570,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring OFF on input line 18.
+Package hyperref Info: Link coloring OFF on input line 19.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -583,73 +583,530 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count309
 )
-LaTeX Info: Redefining \ref on input line 18.
-LaTeX Info: Redefining \pageref on input line 18.
-LaTeX Info: Redefining \nameref on input line 18.
+LaTeX Info: Redefining \ref on input line 19.
+LaTeX Info: Redefining \pageref on input line 19.
+LaTeX Info: Redefining \nameref on input line 19.
+
+(./main.out) (./main.out)
 \@outlinefile=\write3
 
 \openout3 = main.out
-LaTeX Font Info:    Trying to load font information for U+msa on input line 20.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 21.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 20.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 21.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Overfull \hbox (12.31372pt too wide) in paragraph at lines 21--49
+Overfull \hbox (12.31372pt too wide) in paragraph at lines 22--50
 \TU/TimesNewRoman(0)/m/n/10.95 level data. Study A sim-u-lates Tur-ing reaction-
 -diffusion mor-phogen pat-tern-ing (Gierer--Meinhardt
  []
 
+(./main.toc [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] [3])
 \tf@toc=\write4
 
 \openout4 = main.toc
-[1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./sections/intro.tex)
-(./sections/math.tex) (./sections/studyA.tex) (./sections/studyB.tex)
-(./sections/studyC.tex) (./sections/repro.tex) (./sections/negatives.tex)
-(./sections/conclusion.tex) (./sections/refs.tex)
+[4] (./sections/intro.tex [5]
+Overfull \hbox (11.40514pt too wide) in paragraph at lines 67--79
+\TU/TimesNewRoman(0)/m/n/12 Gierer--Meinhardt pat-tern sys-tem-at-i-cally se-lec
+ts a wavenum-ber \TU/TimesNewRoman(0)/m/it/12 above \TU/TimesNewRoman(0)/m/n/12
+ the lin-ear fastest-growing
+ []
 
-LaTeX Warning: Empty `thebibliography' environment on input line 70.
 
-(./sections/appendix.tex) [2] (./main.aux)
+LaTeX Font Warning: Font shape `TU/TimesNewRoman(0)/m/sc' undefined
+(Font)              using `TU/TimesNewRoman(0)/m/n' instead on input line 81.
 
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
+[6] [7]) (./sections/math.tex
+Overfull \hbox (1.8491pt too wide) in paragraph at lines 1--9
+\TU/TimesNewRoman(0)/m/sc/12 (\TU/lmtt/m/n/12 tests/test_math_verify.py\TU/Time
+sNewRoman(0)/m/sc/12 ), which as-serts ex-act equal-ity be-tween the sym-bolic 
+re-sults quoted
+ []
 
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  2287D827D7E7DE38139EAF4FE078416F;1720.
+[8] [9]
+Overfull \hbox (117.45493pt too wide) in paragraph at lines 137--145
+\TU/TimesNewRoman(0)/m/sc/12 All sim-u-la-tions use $\OT1/cmr/m/n/12 \OML/cmm/
+m/it/12 t \OT1/cmr/m/n/12 = 0\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 8/(4\OML/cmm/m/i
+t/12 D[]\OT1/cmr/m/n/12 )$\TU/TimesNewRoman(0)/m/sc/12 , en-forced in code with a hard er-ror when vi-o-lated (\TU/lmtt/m/n/12 GiererMeinhardt2D.__init__\TU/TimesNewRoman(0)/m/sc/12 ).
+ []
+
+[10] [11] [12]
+Overfull \hbox (14.2764pt too wide) in paragraph at lines 306--310
+[]\TU/TimesNewRoman(0)/b/n/12 Def-i-ni-tion 2 \TU/TimesNewRoman(0)/m/sc/12 (Basi
+n of at-trac-tion)\TU/TimesNewRoman(0)/b/n/12 . \TU/TimesNewRoman(0)/m/it/12 The
+ basin of an at-trac-tor $\OMS/cmsy/m/n/12 A$ \TU/TimesNewRoman(0)/m/it/12 is $
+\OMS/cmsy/m/n/12 B\OT1/cmr/m/n/12 (\OMS/cmsy/m/n/12 A\OT1/cmr/m/n/12 ) = \OMS/c
+msy/m/n/12 f\TU/TimesNewRoman(0)/b/n/12 x \OT1/cmr/m/n/12 : \OML/cmm/m/it/12 F[
+]\OT1/cmr/m/n/12 (\TU/TimesNewRoman(0)/b/n/12 x\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/
+12 2 A[]\OML/cmm/m/it/12 t \OMS/cmsy/m/n/12 
+ []
+
+[13] [14]) (./sections/studyA.tex
+Overfull \hbox (7.12779pt too wide) in paragraph at lines 5--12
+\TU/TimesNewRoman(0)/m/sc/12 Lin-ear sta-bil-ity anal-y-sis of a Tur-ing sys-tem
+ (Sec-tion []2.1[]) pre-dicts both the band of un-sta-ble wavenum-
+ []
+
+[15] [16]
+<figures/fig_dispersion.pdf, id=620, 542.025pt x 303.534pt>
+File: figures/fig_dispersion.pdf Graphic file (type pdf)
+<use figures/fig_dispersion.pdf>
+Package luatex.def Info: figures/fig_dispersion.pdf  used on input line 74.
+(luatex.def)             Requested size: 352.31625pt x 197.30402pt.
+<figures/fig_turing_dev.pdf, id=625, 375.804pt x 260.172pt>
+File: figures/fig_turing_dev.pdf Graphic file (type pdf)
+<use figures/fig_turing_dev.pdf>
+Package luatex.def Info: figures/fig_turing_dev.pdf  used on input line 84.
+(luatex.def)             Requested size: 399.29463pt x 276.44792pt.
+ [17
+warning  (pdf backend): ignoring duplicate destination with the name 'table.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'figure.1'
+<./figures/fig_dispersion.pdf>] [18
+warning  (pdf backend): ignoring duplicate destination with the name 'figure.2'
+<./figures/fig_turing_dev.pdf>] [19
+warning  (pdf backend): ignoring duplicate destination with the name 'table.2'
+]
+<figures/fig_turing_panels.pdf, id=746, 578.16pt x 578.16pt>
+File: figures/fig_turing_panels.pdf Graphic file (type pdf)
+<use figures/fig_turing_panels.pdf>
+Package luatex.def Info: figures/fig_turing_panels.pdf  used on input line 197.
+
+(luatex.def)             Requested size: 375.80544pt x 375.79955pt.
+ [20] [21
+warning  (pdf backend): ignoring duplicate destination with the name 'figure.3'
+<./figures/fig_turing_panels.pdf>]) (./sections/studyB.tex [22]
+Overfull \hbox (92.6005pt too wide) in paragraph at lines 75--87
+\TU/TimesNewRoman(0)/m/sc/12 the \TU/TimesNewRoman(0)/m/it/12 wg\TU/TimesNewRom
+an(0)/m/sc/12 -ON fixed point at-tracts $\OT1/cmr/m/n/12 0\OML/cmm/m/it/12 :\OT
+1/cmr/m/n/12 77\TU/TimesNewRoman(0)/m/sc/12 %$ of the state space (ex-act count com-mit-ted in \TU/lmtt/m/n/12 results/grn_gnn_balanced.json
+ []
+
+[23
+warning  (pdf backend): ignoring duplicate destination with the name 'table.3'
+]
+Overfull \hbox (83.9746pt too wide) in paragraph at lines 92--98
+\TU/TimesNewRoman(0)/m/sc/12 fol-lows the reg-u-la-tory graph (both im-ple-mente
+d in Py-Torch, com-mit-ted in \TU/lmtt/m/n/12 experiments/grn_learning_curve.py
+ []
+
+
+Overfull \hbox (122.95222pt too wide) in paragraph at lines 110--122
+\TU/TimesNewRoman(0)/m/sc/12 both mod-els reach $\OT1/cmr/m/n/12 100\TU/TimesNe
+wRoman(0)/m/sc/12 %$ test ac-cu-racy from 618 bal-anced train-ing states (186 he
+ld out; \TU/lmtt/m/n/12 results/grn_gnn_balanced.json\TU/TimesNewRoman(0)/m/sc/
+12 ).
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 127--127
+[]\TU/TimesNewRoman(0)/m/sc/12 Ta-ble 4: []Basin-boundary learn-ing curve (test ac-cu-racy, 3 seeds, com-mit-ted:
+ []
+
+
+Underfull \hbox (badness 1917) in paragraph at lines 127--127
+\TU/lmtt/m/n/12 results/grn_learning_curve.json\TU/TimesNewRoman(0)/m/sc/12 ). 
+Task: pre-dict mem-ber-ship of the \TU/TimesNewRoman(0)/m/it/12 wg\TU/TimesNewR
+oman(0)/m/sc/12 -ON basin,
+ []
+
+[24]
+<figures/fig_grn_learning.pdf, id=828, 375.804pt x 260.172pt>
+File: figures/fig_grn_learning.pdf Graphic file (type pdf)
+<use figures/fig_grn_learning.pdf>
+Package luatex.def Info: figures/fig_grn_learning.pdf  used on input line 145.
+(luatex.def)             Requested size: 328.82707pt x 227.66182pt.
+ [25
+warning  (pdf backend): ignoring duplicate destination with the name 'table.4'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'figure.4'
+<./figures/fig_grn_learning.pdf>]
+Overfull \hbox (2.08548pt too wide) in paragraph at lines 201--207
+\TU/TimesNewRoman(0)/m/sc/12 Equa-tion [] pre-dicts dam-age spread-ing from the net-work
+’s ef-fec-tive con-nec-tiv-ity. On our Boolean
+ []
+
+
+Overfull \hbox (2.46562pt too wide) in paragraph at lines 201--207
+\TU/TimesNewRoman(0)/m/sc/12 ref-er-ence suite (com-mit-ted \TU/lmtt/m/n/12 resu
+lts/results.json\TU/TimesNewRoman(0)/m/sc/12 , \TU/lmtt/m/n/12 B_grn.derrida\TU
+/TimesNewRoman(0)/m/sc/12 ), mea-sured spread-ing tracks
+ []
+
+[26
+warning  (pdf backend): ignoring duplicate destination with the name 'table.5'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'table.6'
+]) (./sections/studyC.tex [27] [28]
+Overfull \hbox (10.42416pt too wide) in paragraph at lines 71--76
+[]\TU/TimesNewRoman(0)/b/n/12 Fit-ting. \TU/TimesNewRoman(0)/m/sc/12 Per-gradien
+t single-exponential fits [] by Levenberg--Marquardt (SciPy \TU/lmtt/m/n/12 curv
+e_fit\TU/TimesNewRoman(0)/m/sc/12 )
+ []
+
+
+Overfull \hbox (4.81204pt too wide) in paragraph at lines 76--80
+[]\TU/TimesNewRoman(0)/b/n/12 Ag-gre-ga-tion. \TU/TimesNewRoman(0)/m/sc/12 Pop-u
+-la-tion statis-tics are me-di-ans with IQRs (re-ported along-side means nowhere
+
+ []
+
+
+Overfull \hbox (13.08871pt too wide) in paragraph at lines 87--87
+[]\TU/TimesNewRoman(0)/b/n/14.4 Re-sult 1: the ex-po-nen-tial length scale, re-p
+ro-duced --- and window-sensitive 
+ []
+
+[29] [30
+warning  (pdf backend): ignoring duplicate destination with the name 'table.7'
+]
+<figures/fig_lambda_dosage.pdf, id=955, 375.804pt x 260.172pt>
+File: figures/fig_lambda_dosage.pdf Graphic file (type pdf)
+<use figures/fig_lambda_dosage.pdf>
+Package luatex.def Info: figures/fig_lambda_dosage.pdf  used on input line 171.
+
+(luatex.def)             Requested size: 225.4804pt x 156.10042pt.
+<figures/fig_windows.pdf, id=956, 390.258pt x 260.172pt>
+File: figures/fig_windows.pdf Graphic file (type pdf)
+<use figures/fig_windows.pdf>
+Package luatex.def Info: figures/fig_windows.pdf  used on input line 172.
+(luatex.def)             Requested size: 225.4804pt x 150.32024pt.
+
+Overfull \hbox (0.43153pt too wide) in paragraph at lines 180--180
+[]\TU/TimesNewRoman(0)/b/n/14.4 Re-sult 3: a learned de-coder breaks the pub-lis
+hed cephalic-furrow bench-
+ []
+
+
+Underfull \hbox (badness 1609) in paragraph at lines 206--206
+\TU/TimesNewRoman(0)/m/sc/12 in per-cent egg length. The CNN beats the pub-lishe
+d thresh-old model on iden-ti-cal data
+ []
+
+
+Underfull \hbox (badness 1960) in paragraph at lines 206--206
+\TU/TimesNewRoman(0)/m/sc/12 by a paired-bootstrap mar-gin of $\OT1/cmr/m/n/12 
+2\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 57\TU/TimesNewRoman(0)/m/sc/12 %$ EL, CI$[][
+]$ $\OT1/cmr/m/n/12 [1\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 99\OML/cmm/m/it/12 ; \O
+T1/cmr/m/n/12 3\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 11]$\TU/TimesNewRoman(0)/m/sc/
+12 , $\OML/cmm/m/it/12 p < \OT1/cmr/m/n/12 10[]$\TU/TimesNewRoman(0)/m/sc/12 . 
+Com-mit-ted:
+ []
+
+[31
+warning  (pdf backend): ignoring duplicate destination with the name 'figure.5'
+<./figures/fig_lambda_dosage.pdf><./figures/fig_windows.pdf>]
+<figures/fig_cf_decoder.pdf, id=1079, 375.804pt x 260.172pt>
+File: figures/fig_cf_decoder.pdf Graphic file (type pdf)
+<use figures/fig_cf_decoder.pdf>
+Package luatex.def Info: figures/fig_cf_decoder.pdf  used on input line 235.
+(luatex.def)             Requested size: 328.82707pt x 227.66182pt.
+
+Overfull \hbox (38.48782pt too wide) in paragraph at lines 244--250
+\TU/TimesNewRoman(0)/m/sc/12 si-tion, eval-u-ated on held-out em-bryos of the sa
+me line. Ta-ble []9[] sum-marises (\TU/lmtt/m/n/12 results/gap_decode.json\TU/T
+imesNewRoman(0)/m/sc/12 ). 
+ []
+
+[32
+warning  (pdf backend): ignoring duplicate destination with the name 'table.8'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'figure.6'
+<./figures/fig_cf_decoder.pdf>]
+Overfull \hbox (72.73418pt too wide) in paragraph at lines 283--288
+[]\TU/TimesNewRoman(0)/m/sc/12 Com-ple-men-tar-ily, the Hb bound-ary po-si-tions
+ them-selves shift with dosage (\TU/lmtt/m/n/12 results/hb_boundaries.json\TU/T
+imesNewRoman(0)/m/sc/12 ):
+ []
+
+<figures/fig_gap_decode.pdf, id=1157, 448.074pt x 245.718pt>
+File: figures/fig_gap_decode.pdf Graphic file (type pdf)
+<use figures/fig_gap_decode.pdf>
+Package luatex.def Info: figures/fig_gap_decode.pdf  used on input line 291.
+(luatex.def)             Requested size: 258.36668pt x 141.68793pt.
+[33
+warning  (pdf backend): ignoring duplicate destination with the name 'table.9'
+]
+<figures/fig_bcd_gradients.pdf, id=1165, 650.43pt x 375.804pt>
+File: figures/fig_bcd_gradients.pdf Graphic file (type pdf)
+<use figures/fig_bcd_gradients.pdf>
+Package luatex.def Info: figures/fig_bcd_gradients.pdf  used on input line 325.
+
+(luatex.def)             Requested size: 375.80544pt x 217.135pt.
+ [34
+warning  (pdf backend): ignoring duplicate destination with the name 'figure.7'
+<./figures/fig_gap_decode.pdf>] [35
+warning  (pdf backend): ignoring duplicate destination with the name 'figure.8'
+<./figures/fig_bcd_gradients.pdf>]) [36
+warning  (pdf backend): ignoring duplicate destination with the name 'table.10'
+] (./sections/repro.tex
+Overfull \hbox (6.10442pt too wide) in paragraph at lines 24--24
+[]    \TU/lmtt/m/n/12 morphogen.py         Turing simulators (Gierer-Meinhardt 
+2D), CFL-checked[] 
+ []
+
+
+Overfull \hbox (37.00438pt too wide) in paragraph at lines 24--24
+[]    \TU/lmtt/m/n/12 bcd.py               Bcd gradient loading, exponential fit
+s, F-test, bootstrap[] 
+ []
+
+
+Overfull \hbox (6.10442pt too wide) in paragraph at lines 24--24
+[]    \TU/lmtt/m/n/12 segment_polarity_mc.py  EXPERIMENTAL multi-cell extension (see negatives)[] 
+ []
+
+
+Overfull \hbox (24.6444pt too wide) in paragraph at lines 24--24
+[]  \TU/lmtt/m/n/12 experiments/           one script per result block, each wri
+tes results/*.json[] 
+ []
+
+
+Overfull \hbox (30.82439pt too wide) in paragraph at lines 24--24
+[]  \TU/lmtt/m/n/12 tests/                 hermetic pytest suite (incl. symbolic
+ math verification)[] 
+ []
+
+LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <14.4> not available
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 26.
+[37]
+Overfull \hbox (3.30315pt too wide) in paragraph at lines 46--55
+\TU/TimesNewRoman(0)/m/sc/12 tests across seven files, in-clud-ing \TU/lmtt/m/n
+/12 test_math_verify.py\TU/TimesNewRoman(0)/m/sc/12 , which sym-bol-i-cally re-d
+erives the steady
+ []
+
+
+Overfull \hbox (2.51024pt too wide) in paragraph at lines 46--55
+\TU/TimesNewRoman(0)/m/sc/12 state [], the Ja-co-bian in-vari-ants [], the in-st
+a-bil-ity band [] and the SDD/read-out for-mu-las []--[]
+ []
+
+
+Overfull \hbox (11.78941pt too wide) in paragraph at lines 58--63
+\TU/lmtt/m/n/12 scripts/download_data.py \TU/TimesNewRoman(0)/m/sc/12 re-fetches
+ all in-puts from their pub-lic sources (Zen-odo record 4942019
+ []
+
+
+Overfull \hbox (15.20436pt too wide) in paragraph at lines 66--71
+\TU/TimesNewRoman(0)/m/sc/12 All re-sults were pro-duced on a 2-CPU / 1.9GB-RAM sand-box in pure Python (NumPy/SciPy/PyTorch-
+ []
+
+[38]
+Overfull \hbox (23.02122pt too wide) in paragraph at lines 91--94
+[]\TU/lmtt/m/n/12 positional.py \TU/TimesNewRoman(0)/m/sc/12 --- Wolpert French-
+flag and threshold-readout sim-u-la-tions, with the information-
+ []
+
+
+Overfull \hbox (22.6804pt too wide) in paragraph at lines 96--98
+[]\TU/lmtt/m/n/12 grn.py \TU/TimesNewRoman(0)/m/sc/12 --- Boolean-ensemble tools
+: Gardner--Collins tog-gle switch ref-er-ence and or-dered/chaotic
+ []
+
+
+Overfull \hbox (5.17845pt too wide) in paragraph at lines 98--100
+[]\TU/lmtt/m/n/12 gnn.py \TU/TimesNewRoman(0)/m/sc/12 --- graph neu-ral net-work
+ over a reg-u-la-tory graph (equa-tion []) for basin-membership
+ []
+
+) (./sections/discussion.tex [39] [40]) (./sections/negatives.tex [41])
+(./sections/conclusion.tex [42]) (./sections/refs.tex
+Underfull \hbox (badness 1910) in paragraph at lines 22--25
+\TU/TimesNewRoman(0)/m/sc/12 work is a ro-bust de-vel-op-men-tal mod-ule,'' \TU
+/TimesNewRoman(0)/m/it/12 Na-ture \TU/TimesNewRoman(0)/b/n/12 406\TU/TimesNewRo
+man(0)/m/sc/12 , 188--192 (2000). (BioMod-els
+ []
+
+[43]) (./sections/appendix.tex [44] [45
+warning  (pdf backend): ignoring duplicate destination with the name 'table.11'
+]
+Overfull \hbox (51.86143pt too wide) in paragraph at lines 87--93
+\TU/TimesNewRoman(0)/m/sc/12 1XA2IIA, 2XA1IIA ($\OT1/cmr/m/n/12 2\OMS/cmsy/m/n/
+12 $\TU/TimesNewRoman(0)/m/sc/12 ); 2XA2IIA, 2IIA2IIIA, 2XA2IIIA, 2XA2IIIB ($\
+OT1/cmr/m/n/12 3\OMS/cmsy/m/n/12 $\TU/TimesNewRoman(0)/m/sc/12 ); 2XA1IIA2IIIA,
+ 2XA2IIA2IIIA,
+ []
+
+[46
+warning  (pdf backend): ignoring duplicate destination with the name 'table.12'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'table.13'
+]
+Overfull \hbox (37.00438pt too wide) in paragraph at lines 160--160
+[]\TU/lmtt/m/n/12 python experiments/turing_sweep.py     # Study A sweep (result
+s/turing_sweep.json)[] 
+ []
+
+
+Overfull \hbox (12.28441pt too wide) in paragraph at lines 160--160
+[]\TU/lmtt/m/n/12 python experiments/turing_cnn.py       # Study A surrogate + 
+retraction record[] 
+ []
+
+
+Underfull \hbox (badness 6332) in paragraph at lines 187--189
+[]\TU/TimesNewRoman(0)/m/n/10.95 gap-gene de-cod-ing (Ta-ble []9[]) + dosage-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 195--197
+[]\TU/TimesNewRoman(0)/m/n/10.95 bal-anced re-sult + ex-act basin frac-tion
+ []
+
+
+Underfull \hbox (badness 4217) in paragraph at lines 204--206
+[]\TU/TimesNewRoman(0)/m/n/10.95 validation-suite num-bers (an-a-lytic checks,
+ []
+
+[47]
+Overfull \hbox (66.15079pt too wide) in paragraph at lines 216--231
+ [] 
+ []
+
+[48
+warning  (pdf backend): ignoring duplicate destination with the name 'table.14'
+]
+Overfull \hbox (87.56961pt too wide) in paragraph at lines 249--250
+[]\TU/lmtt/m/n/10.95 .models.cnn1d_profile_3seed.rmse_pctEL
+ []
+
+
+Overfull \hbox (87.56961pt too wide) in paragraph at lines 251--252
+[]\TU/lmtt/m/n/10.95 .models.liu_threshold_trueD.rmse_pctEL
+ []
+
+
+Overfull \hbox (110.5646pt too wide) in paragraph at lines 253--254
+[]\TU/lmtt/m/n/10.95 .paired_bootstrap_cnn_minus_liu.ci95_pctEL
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 255--256
+[]\TU/lmtt/m/n/10.95 .windows."0.0-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 255--256
+\TU/lmtt/m/n/10.95 0.5".dcls_rho /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 255--256
+\TU/lmtt/m/n/10.95 .dcls_p \TU/TimesNewRoman(0)/m/n/10.95 (bcd_win-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 256--256
+[]$\OT1/cmr/m/n/10.95 0\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 0117$\TU/TimesNe
+wRoman(0)/m/n/10.95 , CI
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 257--258
+[]\TU/lmtt/m/n/10.95 .slope_per_dose /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 259--260
+[]\TU/lmtt/m/n/10.95 .windows."0.2-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 259--260
+\TU/lmtt/m/n/10.95 0.8".lam_median
+ []
+
+
+Overfull \hbox (24.33337pt too wide) in paragraph at lines 261--262
+[]\TU/lmtt/m/n/10.95 .f_test_reject_fraction.p05
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 263--264
+[]\TU/lmtt/m/n/10.95 .dosage_decodability.*
+ []
+
+
+Overfull \hbox (35.83087pt too wide) in paragraph at lines 265--266
+[]\TU/lmtt/m/n/10.95 .wg_on_basin_fraction_uniform
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 267--268
+[]\TU/lmtt/m/n/10.95 .curve \TU/TimesNewRoman(0)/m/n/10.95 (grn_learn-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 269--270
+[]\TU/lmtt/m/n/10.95 .rows[].dev \TU/TimesNewRoman(0)/m/n/10.95 (tur-
+ []
+
+
+Overfull \hbox (70.32336pt too wide) in paragraph at lines 271--273
+[]\TU/lmtt/m/n/10.95 .linear_plus_cnn_correction_relRMSE
+ []
+
+
+Underfull \hbox (badness 1577) in paragraph at lines 271--273
+\TU/TimesNewRoman(0)/m/n/10.95 vs \TU/lmtt/m/n/10.95 .linear_only_relRMSE
+ []
+
+) [49] [50
+warning  (pdf backend): ignoring duplicate destination with the name 'table.15'
+] (./main.aux)
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: D1DCE669EEB8EF351337D62B1FEC013A;18296.
 )
 
 Here is how much of LuaTeX's memory you used:
- 13189 strings out of 477805
- 100000,662416 words of node,token memory allocated
- 503 words of node memory still in use:
-   6 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 7 attribute, 55 glue_spec,
- 7 attribute_list, 1 write nodes
-   avail lists: 2:203,3:116,4:17,5:55,6:24,7:7819,8:20,9:195,10:13,11:651
- 33347 multiletter control sequences out of 65536+600000
- 73 fonts using 7386855 bytes
- 68i,6n,79p,234b,333s stack positions out of 5000i,500n,10000p,200000b,80000s
-</home/sandbox/.local/share/fonts/Timesi.TTF></home/sandbox/.local/share/fonts/T
-imesbd.TTF></home/sandbox/.local/share/fonts/Times.TTF></usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmsy8.pfb>
-Output written on main.pdf (2 pages, 121312 bytes).
+ 13732 strings out of 477805
+ 100000,794899 words of node,token memory allocated
+ 771 words of node memory still in use:
+   6 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 71 attribute, 55 glue_spec
+, 71 attribute_list, 1 write, 2 pdf_action nodes
+   avail lists: 2:1006,3:851,4:24,5:291,6:98,7:7800,8:69,9:838,10:15,11:652
+ 33613 multiletter control sequences out of 65536+600000
+ 102 fonts using 10564303 bytes
+ 68i,12n,79p,703b,477s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texm
+f/fonts/opentype/public/lm/lmmonolt10-bold.otf></usr/share/texmf/fonts/opentype/
+public/lm/lmsans8-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmmono1
+2-regular.otf></home/sandbox/.local/share/fonts/Timesi.TTF></home/sandbox/.local
+/share/fonts/Timesbd.TTF></home/sandbox/.local/share/fonts/Times.TTF></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
+onts/cmextra/cmmib8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+r12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on main.pdf (50 pages, 578338 bytes).
 
-PDF statistics: 68 PDF objects out of 1000 (max. 8388607)
- 49 compressed objects within 1 object stream
- 13 named destinations out of 1000 (max. 131072)
- 1 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 1519 PDF objects out of 1728 (max. 8388607)
+ 1021 compressed objects within 11 object streams
+ 209 named destinations out of 1000 (max. 131072)
+ 609 words of extra memory for PDF output out of 10000 (max. 100000000)
 

@@ -1,1 +1,30 @@
-% TODO
+Three digital-embryo studies, three different relationships between
+computation and data. Study~A found a robust phenomenon (the beyond-onset
+wavenumber upshift, $15$--$60\%$, mid-band peak, resolution-verified) and an
+honest dead end (its CNN predictability, retracted at $n = 171$). Study~B
+turned a curated Boolean model into exact numbers: a full attractor census
+under eight conditions, a wild-type basin of $0.77\%$ of state space, and a
+basin boundary learnable from $\sim 60$ labelled states --- plus the sampling
+degeneracy that makes naive versions of that measurement meaningless.
+Study~C reproduced a canonical morphogen measurement on 676 real gradients,
+refined the dosage--length-scale coupling and localised it to the anterior
+embryo, broke the published cephalic-furrow decoding benchmark on its own
+data ($2.38\%$ vs.\ $4.94\%$ EL, paired CI $[1.99, 3.11]$), and measured the
+dosage-dependence of positional decodability in gap genes ($9.91 \to 6.21\%$
+EL, CI $[3.00, 4.40]$).
+
+The throughline is methodological: every number lives in a committed results
+file produced by tested code from accession-level public data; every formula
+is derived in the text and re-verified symbolically in the test suite; every
+failed claim is preserved next to the successful ones. We consider the
+retraction machinery --- not any single result --- the project's most
+reusable output.
+
+
+If there is one transferable claim, it is procedural: benchmarks and
+published models are reproducible and beatable on their own data with
+commodity hardware, provided the evaluation is line-disjoint, the intervals
+are paired, and the failures are kept in the same document as the wins. The
+repository that backs this report --- code, tests, manifests, results, and
+this text --- is constructed so that any single number can be traced to the
+command that produced it in under a minute.

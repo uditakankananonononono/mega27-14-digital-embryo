@@ -1,1 +1,105 @@
-% TODO
+\label{sec:repro}
+
+\subsection{Repository layout}
+
+\begin{verbatim}
+mega27-14-digital-embryo/
+  src/digitalembryo/     installable package (pip install -e .)
+    morphogen.py         Turing simulators (Gierer-Meinhardt 2D), CFL-checked
+    bcd.py               Bcd gradient loading, exponential fits, F-test, bootstrap
+    positional.py        threshold readout, positional-error theory
+    bnet.py              Boolean network parser + exact attractor engine
+    gnn.py               GNN/MLP basin-boundary models
+    gapgene.py           gap-gene decoding (kNN)
+    decoder.py           CF decoders (threshold, ridge, CNN)
+    segment_polarity.py  single-cell reference model
+    segment_polarity_mc.py  EXPERIMENTAL multi-cell extension (see negatives)
+    cli.py               the embryosim command-line tool
+  experiments/           one script per result block, each writes results/*.json
+  tests/                 hermetic pytest suite (incl. symbolic math verification)
+  results/               every number quoted in this report, as JSON
+  data/raw/              downloaded datasets (re-fetchable via scripts/)
+  data/TOOLS_AND_DATASETS.md   tool and dataset manifest
+  paper/                 this report (LuaLaTeX, Times New Roman)
+\end{verbatim}
+
+\subsection{The \texttt{embryosim} command-line tool}
+
+The project ships a usable CLI (entry point registered in \texttt{setup.py}):
+
+\begin{verbatim}
+embryosim fit-bcd --input LiveImaging.mat --out fits.json
+      # per-gradient exponential fits + population stats (Study C, Sec. 6.2)
+embryosim hb-boundary --input Immunofluorescence.mat --line 1XA
+      # per-line Hb boundary positions with IQRs (Sec. 6.5)
+embryosim turing --mu-a 0.04 --steps 2500
+      # run a Gierer-Meinhardt sim, report selected wavenumber (Study A)
+embryosim attractors --model id-021 --condition hh1_WG0_SLP0
+      # exact attractor census of a curated Boolean model (Study B)
+\end{verbatim}
+
+Each subcommand wraps exactly the code path that produced the corresponding
+committed results file, so CLI output and paper numbers cannot drift apart.
+
+\subsection{Test suite}
+
+The pytest suite is hermetic (no network; small committed fixtures) and
+currently comprises 30+ tests across seven files, including
+\texttt{test\_math\_verify.py}, which symbolically re-derives the steady
+state \eqref{eq:gmss}, the Jacobian invariants \eqref{eq:jacobian}, the
+instability band \eqref{eq:band} and the SDD/readout formulas
+\eqref{eq:expgrad}--\eqref{eq:readouterr} with sympy and asserts exact
+agreement with the committed numerical results --- the paper's formulas and
+its numbers are therefore checked against each other, not merely each stated
+once.
+
+\subsection{Data acquisition}
+
+\texttt{scripts/download\_data.py} re-fetches all inputs from their public
+sources (Zenodo record 4942019 for the Liu dataset; the
+sybila/biodivine-boolean-models GitHub mirror for id-021/id-027) and verifies
+sizes. The full external-tool and dataset inventory, with the counting rule,
+is in Appendix~\ref{app:manifest}.
+
+\subsection{Compute environment}
+
+All results were produced on a 2-CPU / 1.9\,GB-RAM sandbox in pure Python
+(NumPy/SciPy/PyTorch-CPU). Nothing in this report required a GPU; the largest
+single computation (the 171-simulation Turing sweep) completes in minutes.
+This is itself a deliberate design point: every claim is reproducible on
+commodity hardware.
+
+\subsection{Module reference}
+
+The installable package \texttt{digitalembryo} contains eleven modules; their
+roles, as documented in their own docstrings, are:
+
+\begin{itemize}
+\item \texttt{morphogen.py} --- Gierer--Meinhardt activator--inhibitor
+kinetics on a 2D field, with linearised Turing-instability analysis
+(equations \eqref{eq:band}--\eqref{eq:kmax}) and CFL-checked integration.
+\item \texttt{turing\_ext.py} --- beyond-onset wavenumber-renormalisation
+analysis: the deviation of the nonlinear steady-state wavenumber from the
+linear fastest-growing mode as a function of distance from onset.
+\item \texttt{bcd.py} --- real Bicoid-gradient analysis: SDD exponential
+fits, per-embryo two-component $F$-tests, bootstrap intervals on $\lambda$.
+\item \texttt{decoder.py} --- cephalic-furrow positional decoding:
+reimplementation of the Liu et al.\ threshold model
+$x_{\mathrm{CF}} = S_x \ln D + c$ and the CNN alternative.
+\item \texttt{gapgene.py} --- gap-gene immunofluorescence handling:
+1{,}000-point AP-axis profiles for Hb, Kr, Gt, Kni, Eve.
+\item \texttt{positional.py} --- Wolpert French-flag and threshold-readout
+simulations, with the information-theoretic error bounds of
+Section~\ref{sec:math-readout}.
+\item \texttt{bnet.py} --- minimal BoolNet-format parser and exact
+synchronous-dynamics engine (full transition graph, attractor extraction).
+\item \texttt{grn.py} --- Boolean-ensemble tools: Gardner--Collins toggle
+switch reference and ordered/chaotic classification via Derrida spreading.
+\item \texttt{gnn.py} --- graph neural network over a regulatory graph
+(equation \eqref{eq:gnn}) for basin-membership learning.
+\item \texttt{segment\_polarity.py} --- simplified single-cell
+segment-polarity reference model (Albert--Othmer topology
+\cite{albert2003}).
+\item \texttt{segment\_polarity\_mc.py} --- multi-cell extension
+(EXPERIMENTAL; see Section~\ref{sec:negatives}).
+\end{itemize}

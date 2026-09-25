@@ -1,1 +1,421 @@
-% TODO
+All computations in this report rest on a small set of mathematical objects,
+derived here in full so that every subsequent claim can be traced to an
+explicit formula. Each derivation below is additionally checked
+\emph{symbolically} by computer algebra (sympy 1.14) in the repository test
+suite (\texttt{tests/test\_math\_verify.py}), which asserts exact equality
+between the symbolic results quoted here and the numerical values committed
+in \texttt{results/results.json}. Where a formula is later used to produce a
+number, the section producing that number says so explicitly.
+
+\subsection{Turing systems: linear stability of the homogeneous state}
+\label{sec:math-turing}
+
+We consider two-morphogen reaction--diffusion systems on a square domain
+$\Omega = [0,L]^2$ with periodic boundary conditions,
+\begin{equation}
+\partial_t a = f(a,h) + D_a \nabla^2 a, \qquad
+\partial_t h = g(a,h) + D_h \nabla^2 h ,
+\label{eq:rd}
+\end{equation}
+where $a(\mathbf{x},t)$ and $h(\mathbf{x},t)$ are the activator and inhibitor
+concentrations, $D_a, D_h > 0$ their diffusion coefficients, and $f, g$ the
+local reaction kinetics. The specific kinetics used throughout Study~A are the
+rescaled Gierer--Meinhardt kinetics \cite{gierer1972},
+\begin{equation}
+f(a,h) = \rho\,\frac{a^2}{h} - \mu_a a, \qquad
+g(a,h) = \rho\, a^2 - \mu_h h ,
+\label{eq:gm}
+\end{equation}
+with source density $\rho > 0$ and decay rates $\mu_a, \mu_h > 0$.
+
+\begin{proposition}[Homogeneous steady state]
+\label{prop:ss}
+The system \eqref{eq:rd}--\eqref{eq:gm} has a unique spatially homogeneous
+steady state with $a^\ast > 0$, namely
+\begin{equation}
+a^\ast = \frac{\mu_h}{\mu_a}, \qquad
+h^\ast = \frac{\rho\,\mu_h}{\mu_a^2}.
+\label{eq:gmss}
+\end{equation}
+\end{proposition}
+\begin{proof}
+Setting $f = 0$ with $a > 0$ gives $\rho a^2 / h = \mu_a a$, i.e.\
+$h = \rho a / \mu_a$. Setting $g = 0$ gives $h = \rho a^2 / \mu_h$.
+Eliminating $h$ yields $\rho a / \mu_a = \rho a^2 / \mu_h$, hence
+$a^\ast = \mu_h/\mu_a$; back-substitution gives $h^\ast$. Symbolic check:
+\texttt{sympy.solve} returns exactly this pair and no other positive solution
+(repository test \texttt{test\_gm\_steady\_state}).
+\end{proof}
+
+Linearising about $(a^\ast, h^\ast)$ with $u = a - a^\ast$, $v = h - h^\ast$
+gives $\partial_t (u,v)^{\mathsf T} = J (u,v)^{\mathsf T} + D \nabla^2
+(u,v)^{\mathsf T}$ with $D = \operatorname{diag}(D_a, D_h)$ and Jacobian
+\begin{equation}
+J = \begin{pmatrix} f_a & f_h \\ g_a & g_h \end{pmatrix}_{(a^\ast,h^\ast)}
+  = \begin{pmatrix} \mu_a & -\mu_a^2/\mu_h \\[2pt] 2\mu_h & -\mu_h \end{pmatrix},
+\qquad
+\operatorname{tr} J = \mu_a - \mu_h, \qquad
+\det J = \mu_a \mu_h .
+\label{eq:jacobian}
+\end{equation}
+(The four entries follow from $f_a = 2\rho a/h - \mu_a$, $f_h = -\rho a^2/h^2$,
+$g_a = 2\rho a$, $g_h = -\mu_h$ evaluated at \eqref{eq:gmss}; symbolic
+verification in the test suite.) For the standard parameter set used in our
+validation run ($\mu_a = 0.06$, $\mu_h = 0.12$, $\rho = 1$) this gives
+$a^\ast = 2$, $h^\ast = 33.\overline{3}$, $\operatorname{tr} J = -0.06$,
+$\det J = 0.0072$ --- identical to the values committed in
+\texttt{results/results.json}.
+
+Because the Laplacian diagonalises over Fourier modes $e^{i\mathbf{k}\cdot
+\mathbf{x}}$, each wavenumber $\mathbf{k}$ evolves independently with
+matrix $M(k^2) = J - k^2 D$, $k^2 = |\mathbf{k}|^2$. Its eigenvalues
+$\sigma_\pm(k^2)$ satisfy
+\begin{equation}
+\sigma^2 - \tau(k^2)\,\sigma + \Delta(k^2) = 0, \qquad
+\tau(k^2) = \operatorname{tr} J - (D_a + D_h) k^2, \qquad
+\Delta(k^2) = \det J - B k^2 + D_a D_h k^4 ,
+\label{eq:dispersion}
+\end{equation}
+where
+\begin{equation}
+B \;=\; D_h f_a + D_a g_h \;=\; D_h \mu_a - D_a \mu_h .
+\label{eq:Bdef}
+\end{equation}
+Since $\tau(k^2) < 0$ whenever $\operatorname{tr} J < 0$, an instability of
+the homogeneous state to pattern formation requires $\Delta(k^2) < 0$ for some
+$k^2 > 0$ (the Turing condition \cite{turing1952}). As $\Delta$ is an upward
+parabola in $k^2$, the unstable band is the interval between its two positive
+roots,
+\begin{equation}
+k^2_{\pm} = \frac{B \pm \sqrt{B^2 - 4 D_a D_h \det J}}{2 D_a D_h},
+\qquad\text{real and positive iff } B > 2\sqrt{D_a D_h \det J},
+\label{eq:band}
+\end{equation}
+the latter being the classic condition $D_h \mu_a - D_a \mu_h >
+2\sqrt{D_a D_h \mu_a \mu_h}$, i.e.\ the inhibitor must diffuse sufficiently
+faster than the activator. The dispersion peak (fastest-growing mode) sits at
+the vertex of the parabola,
+\begin{equation}
+k^2_{\max} = \arg\max_{k^2} \operatorname{Re}\sigma_{+}(k^2)
+\;=\; \frac{B}{2 D_a D_h} \;=\; \frac{\mu_a}{2 D_a} - \frac{\mu_h}{2 D_h},
+\label{eq:kmax}
+\end{equation}
+where the second equality is exact whenever $\tau$ varies negligibly across
+the band; the symbolic derivation in the test suite confirms that
+$\partial \operatorname{Re}\sigma_+ / \partial k^2 = 0$ at this point to
+leading order, and our simulations use \eqref{eq:kmax} as the linear
+prediction $k^2_{\mathrm{lin}}$. For the validation parameter set,
+\eqref{eq:band} gives $k^2_- = 0.671$, $k^2_+ = 10.729$, exactly the committed
+values, and $k^2_{\max} = 5.70$.
+
+\begin{definition}[Distance from onset]
+With $\mu_a$ swept at fixed $\mu_h, D_a, D_h$, the \emph{onset} value
+$\mu_a^{\mathrm{crit}}$ is the largest $\mu_a$ for which the instability
+condition in \eqref{eq:band} holds, i.e.\ the root of
+$B = 2\sqrt{D_a D_h \det J}$. We measure distance from onset by
+\begin{equation}
+\varepsilon \;=\; 1 - \frac{\mu_a}{\mu_a^{\mathrm{crit}}}.
+\label{eq:epsilon}
+\end{equation}
+\end{definition}
+For our sweep ($D_a = 0.005$, $D_h = 0.2$, $\mu_h = 0.12$) one finds
+$\mu_a^{\mathrm{crit}} = 0.12$, so $\varepsilon = 1 - \mu_a/0.12$.
+
+\subsection{Finite-difference integration and the stability bound}
+\label{sec:math-cfl}
+
+We discretise \eqref{eq:rd} on an $n \times n$ lattice with spacing
+$\Delta x = 1$ and the five-point Laplacian, and integrate with explicit Euler
+steps. The Laplacian eigenvalues on the lattice lie in $[-8, 0]$ (for
+unit spacing, the five-point stencil with periodic boundaries), and the
+explicit diffusion update $u \mapsto u + \Delta t\, D\, \Delta_h u$ is stable
+only if $|1 - 8 \Delta t D| \le 1$ in the worst mode, giving the CFL-type
+bound
+\begin{equation}
+\Delta t \;\le\; \frac{1}{4 D_{\max}}, \qquad D_{\max} = \max(D_a, D_h).
+\label{eq:cfl}
+\end{equation}
+All simulations use $\Delta t = 0.8 / (4 D_{\max})$, enforced in code with a
+hard error when violated (\texttt{GiererMeinhardt2D.\_\_init\_\_}). The
+discrete dispersion relation replaces $k^2$ by the lattice symbol
+$\tilde k^2 = 4\sin^2(k_x/2) + 4\sin^2(k_y/2)$; the difference between
+$\tilde k^2$ and $k^2$ is one of the honest sources of wavenumber quantisation
+we track in Study~A (the ``lattice-rounded linear mode'' of
+Section~\ref{sec:studyA}).
+
+\subsection{Morphogen gradients: synthesis--diffusion--degradation}
+\label{sec:math-sdd}
+
+The standard model of a maternally deposited morphogen such as Bicoid (Bcd) is
+the synthesis--diffusion--degradation (SDD) equation \cite{gregor2007}: protein
+is produced at the anterior pole at flux $J_0$, diffuses with coefficient $D$,
+and is degraded uniformly at rate $\gamma$. In the steady state, on a
+one-dimensional axis $x \ge 0$ (fractional egg length, $x=0$ anterior),
+\begin{equation}
+D\, c''(x) = \gamma\, c(x), \qquad -D\, c'(0) = J_0, \qquad c(\infty) = 0.
+\label{eq:sdd}
+\end{equation}
+
+\begin{proposition}[Exponential gradient]
+The unique bounded solution of \eqref{eq:sdd} is
+\begin{equation}
+c(x) = \frac{J_0}{\sqrt{D\gamma}}\, e^{-x/\lambda},
+\qquad \lambda = \sqrt{\frac{D}{\gamma}} ,
+\label{eq:expgrad}
+\end{equation}
+i.e.\ an exponential with length scale $\lambda$.
+\end{proposition}
+\begin{proof}
+The general solution of $D c'' = \gamma c$ is $c = C_1 e^{x/\lambda} +
+C_2 e^{-x/\lambda}$ with $\lambda = \sqrt{D/\gamma}$; boundedness forces
+$C_1 = 0$, and the flux condition $-D c'(0) = D C_2/\lambda = J_0$ fixes
+$C_2 = J_0\lambda/D = J_0/\sqrt{D\gamma}$. The symbolic check in the test
+suite substitutes \eqref{eq:expgrad} into both the ODE and the flux condition
+and simplifies both to zero (\texttt{test\_sdd\_solution}).
+\end{proof}
+
+Equation \eqref{eq:expgrad} is the functional form we fit to each of the 676
+measured Bcd-GFP gradients in Study~C. Because real embryos deviate from a
+single exponential, we also fit the two-component generalisation
+\begin{equation}
+c(x) = A_1 e^{-x/\lambda_1} + A_2 e^{-x/\lambda_2}
+\label{eq:twocomp}
+\end{equation}
+and ask whether the extra two parameters are justified by the data. The
+answer is an $F$-test on nested residual sums of squares: with
+$\mathrm{RSS}_1$ ($\mathrm{RSS}_2$) the residual sum of squares of the one-
+(two-) component fit, $p_1 = 2$, $p_2 = 4$ parameters and $n$ data points,
+\begin{equation}
+F = \frac{(\mathrm{RSS}_1 - \mathrm{RSS}_2)/(p_2 - p_1)}
+         {\mathrm{RSS}_2/(n - p_2)}
+  \sim F_{p_2 - p_1,\; n - p_2}
+\label{eq:ftest}
+\end{equation}
+under the null that the one-component model suffices. The statistic
+\eqref{eq:ftest} follows from the standard nested-model argument: under the
+null, the extra sum of squares $\mathrm{RSS}_1 - \mathrm{RSS}_2$ achieved by
+the additional $p_2 - p_1$ parameters is $\chi^2_{p_2-p_1}$-distributed and
+independent of $\mathrm{RSS}_2 \sim \chi^2_{n-p_2}$, so their normalised
+ratio is $F$-distributed. The Bonferroni correction multiplies the per-embryo
+$p$-value threshold by the number of tests $m = 676$, i.e.\ significance at
+family-wise rate $\alpha$ requires $p < \alpha/m$; we report both raw and
+corrected rejection fractions because the truth for a population of
+heterogeneous embryos lies between the per-test and family-wise readings. We
+report the fraction of embryos for which \eqref{eq:ftest} rejects the single
+exponential at $p < 0.05$ (raw and Bonferroni-corrected).
+
+\subsection{Positional readout: thresholds, error propagation, Fisher information}
+\label{sec:math-readout}
+
+A downstream gene reads the gradient by comparing local concentration to a
+threshold $c_T$; the resulting boundary position is
+\begin{equation}
+x_T = \lambda \ln\!\frac{A}{c_T}, \qquad A = c(0),
+\label{eq:threshold}
+\end{equation}
+obtained by inverting \eqref{eq:expgrad}. Differentiating,
+\begin{equation}
+\frac{\partial x_T}{\partial A} = \frac{\lambda}{A}, \qquad
+\frac{\partial x_T}{\partial \lambda} = \ln \frac{A}{c_T} = \frac{x_T}{\lambda},
+\label{eq:sensitivities}
+\end{equation}
+so a relative fluctuation $\delta A / A$ of the amplitude maps to an
+\emph{absolute} positional error $\delta x_T = \lambda\, \delta A / A$: the
+positional error induced by amplitude noise is proportional to the decay
+length and independent of position. Likewise, if the concentration at the
+readout position is measured with absolute noise $\sigma_c$, error propagation
+through $c(x_T) = c_T$ gives
+\begin{equation}
+\sigma_x = \frac{\sigma_c}{|c'(x_T)|} = \frac{\lambda\,\sigma_c}{c_T},
+\label{eq:readouterr}
+\end{equation}
+which is the formula underlying the positional-error predictions validated
+against simulation in the committed \texttt{results/results.json}
+(\texttt{C\_positional} block; e.g.\ $\sigma_x = 0.002$ predicted vs.\ $0.00195$
+measured for $\lambda = 0.2$, $\sigma_c/c_T = 0.01$).
+
+More generally, decoding position from $G$ gene-expression levels
+$\mathbf{g}(x)$ is an estimation problem. For independent Gaussian noise of
+magnitude $\sigma_i$ on gene $i$, the Fisher information about position is
+\begin{equation}
+\mathcal{I}(x) = \sum_{i=1}^{G} \frac{1}{\sigma_i^2}
+\left( \frac{\partial g_i}{\partial x} \right)^{\!2},
+\label{eq:fisher}
+\end{equation}
+and the Cram\'er--Rao bound $\sigma_x \ge 1/\sqrt{\mathcal{I}(x)}$ sets the
+best achievable precision of \emph{any} unbiased decoder. This is the lens
+through which we interpret the gap-gene decoding results of
+Section~\ref{sec:gapdecode}: single-gene readouts are information-limited
+wherever the profile is flat, while joint decoders pool the derivatives of
+several profiles. For the exponential gradient \eqref{eq:expgrad} with
+uniform relative noise $\sigma_c = \eta c$ one obtains the closed form
+\begin{equation}
+\mathcal{I}(x) = \frac{1}{\eta^2 \lambda^2}
+\qquad\Longrightarrow\qquad
+\sigma_x \ge \eta\,\lambda,
+\label{eq:crbound}
+\end{equation}
+a position-independent bound: precision relative to the patterning scale is
+set by the relative expression noise alone.
+
+\subsection{Bootstrap confidence intervals for decoder performance}
+\label{sec:math-bootstrap}
+
+Every benchmark claim in this report is a paired comparison on identical
+cross-validation folds. Let $e^{\mathrm{A}}_i$, $e^{\mathrm{B}}_i$ be the
+per-embryo (or per-fold) errors of two models and
+$d_i = e^{\mathrm{B}}_i - e^{\mathrm{A}}_i$ their paired differences. We
+resample $d_i$ with replacement $B = 10{,}000$ times, take the mean of each
+resample, and report the percentile interval
+\begin{equation}
+\mathrm{CI}_{95} = \big[ Q_{0.025}(\bar d^{\ast}),\; Q_{0.975}(\bar d^{\ast}) \big],
+\qquad
+p = \frac{1}{B}\sum_{b=1}^{B} \mathbb{1}\{\bar d^{\ast b} \le 0\},
+\label{eq:bootstrap}
+\end{equation}
+the fraction of resamples in which the claimed improvement vanishes or
+reverses. All intervals quoted in the text are of this form. The procedure is
+deliberately assumption-light: no Gaussianity of the error distribution is
+assumed, only exchangeability of the paired differences within the resampled
+unit. For the decoder benchmarks the resampling unit is the held-out fold
+(cluster bootstrap over fly lines), so the intervals honestly reflect
+line-level rather than embryo-level replication.
+
+To make \eqref{eq:crbound} concrete, consider the exponential profile
+$c(x) = A e^{-x/\lambda}$ observed with relative Gaussian noise
+$\sigma_c = \eta c$. Then $\partial c/\partial x = -c/\lambda$, and
+\eqref{eq:fisher} for this single profile gives
+$\mathcal{I}(x) = (c/\lambda)^2 / (\eta c)^2 = 1/(\eta \lambda)^2$,
+independent of $x$ --- which is the content of \eqref{eq:crbound}: for a
+pure exponential with purely relative noise, positional information per unit
+length is constant along the axis. Real gradients deviate from both
+assumptions (Section~\ref{sec:lambda}), which is why the empirical decoders
+of Study~C rather than \eqref{eq:crbound} set our final numbers; the bound
+serves as the reference against which decoder error is compared.
+
+\subsection{Boolean models of gene-regulatory networks}
+\label{sec:math-boolean}
+
+A Boolean network on $N$ nodes is a map $F : \{0,1\}^N \to \{0,1\}^N$,
+$x_i(t{+}1) = F_i(\mathbf{x}(t))$, iterated here under \emph{synchronous}
+update. The state space has $2^N$ states; trajectories are deterministic, so
+every state flows to exactly one attractor, which is either a fixed point
+($F(\mathbf{x}^\ast) = \mathbf{x}^\ast$) or a limit cycle.
+
+\begin{definition}[Basin of attraction]
+The basin of an attractor $\mathcal{A}$ is
+$\mathcal{B}(\mathcal{A}) = \{ \mathbf{x} : F^{t}(\mathbf{x}) \in \mathcal{A}
+\text{ for some } t \ge 0 \}$, and the basin fraction is
+$|\mathcal{B}|/2^N$.
+\end{definition}
+
+For the 14-node segment-polarity network of Study~B the state space has
+$2^{14} = 16{,}384$ states (14 free nodes; the three external inputs are held
+fixed per condition), small enough for \emph{exact} enumeration: we compute
+the full transition graph and read off every attractor and basin. This removes
+all sampling error from the attractor census of Section~\ref{sec:studyB}.
+
+The \emph{Derrida annealed approximation} \cite{derrida1986} predicts the
+divergence of nearby trajectories: if two states differ in $d(t)$ bits, the
+expected Hamming distance after one synchronous update of a random $K$-input
+Boolean network with bias $p$ is
+\begin{equation}
+d(t{+}1) = N \big[1 - (1 - 2 p (1-p))^{K \cdot d(t)/N}\big]
+\;\approx\; 2 K p (1-p)\, d(t) \quad (d \ll N),
+\label{eq:derrida}
+\end{equation}
+so the network is ordered, critical, or chaotic according as
+$2 K p (1-p)$ is $< 1$, $=1$, or $> 1$. The committed validation block
+(\texttt{results/results.json}, \texttt{B\_grn.derrida}) checks the linear
+prediction against measured spreading on our reference networks (theory
+$0.5, 1.0, 1.5, 2.0$ vs.\ measured $0.48, 1.06, 1.31, 1.67$ for $K = 1..4$,
+$p = 0.25$).
+
+Finally, the sample-complexity question of Study~B is a binary classification
+problem on the hypercube: learn the indicator of the wild-type basin from
+$n$ labelled states. We track the test accuracy of two model classes
+(multilayer perceptron and a graph neural network using the regulatory graph)
+as a function of $n$; the empirical learning curve
+$\mathrm{acc}(n)$ is reported in full rather than summarised by a fitted
+exponent, because the interesting content is the knee --- the $n$ at which the
+basin boundary becomes essentially learnable.
+
+\subsection{Decoder models and evaluation statistics}
+\label{sec:math-decoders}
+
+Three decoder families appear in Studies A and C; their definitions are
+collected here so that the results tables are self-contained.
+
+\textbf{Ridge regression.} Given per-embryo features $\mathbf{u} \in
+\mathbb{R}^p$ (e.g.\ $(\ln A, \lambda)$) and targets $y$ (CF position), the
+ridge estimator minimises
+\begin{equation}
+\hat{\boldsymbol\beta} = \arg\min_{\boldsymbol\beta}
+\|\mathbf{y} - X\boldsymbol\beta\|_2^2 + \alpha \|\boldsymbol\beta\|_2^2
+\;=\; (X^{\mathsf T} X + \alpha I)^{-1} X^{\mathsf T} \mathbf{y},
+\label{eq:ridge}
+\end{equation}
+with $\alpha$ chosen by inner cross-validation.
+
+\textbf{One-dimensional CNN.} The profile decoder of
+Section~\ref{sec:cfdecoder} applies $L = 3$ blocks of the form
+\begin{equation}
+z^{(\ell)} = \phi\!\big( W^{(\ell)} * z^{(\ell-1)} + b^{(\ell)} \big),
+\qquad z^{(0)} = \text{Bcd profile},
+\label{eq:cnn}
+\end{equation}
+where $*$ denotes a length-5 convolution with padding, $\phi$ is ReLU, and
+each block is followed by max-pooling of stride 2; a global average pool and
+a linear head produce the scalar prediction $\hat y$. Trained by Adam on
+squared error, early-stopped on a validation split, three seeds averaged.
+
+\textbf{$k$-nearest-neighbour decoding} (Study C, gap genes): position is
+predicted as the mean of the positions of the $k$ nearest training embryos in
+normalised expression space,
+\begin{equation}
+\hat x(\mathbf{g}) = \frac{1}{k} \sum_{j \in \mathcal{N}_k(\mathbf{g})} x_j,
+\qquad k = 5,
+\label{eq:knn}
+\end{equation}
+with features standardised per gene.
+
+\textbf{Evaluation.} All errors are reported as root-mean-square error or
+median absolute error in percent egg length, with
+\begin{equation}
+\mathrm{RMSE} = \sqrt{\tfrac{1}{n}\textstyle\sum_i (y_i - \hat y_i)^2},
+\qquad
+R^2 = 1 - \frac{\sum_i (y_i - \hat y_i)^2}{\sum_i (y_i - \bar y)^2}.
+\label{eq:rmse}
+\end{equation}
+
+\textbf{Rank correlation.} The DCLS analyses use Spearman's $\rho$: with
+$R_i, S_i$ the ranks of $\lambda_i$ and dosage$_i$,
+\begin{equation}
+\rho = \frac{\operatorname{cov}(R, S)}{\sigma_R \, \sigma_S},
+\label{eq:spearman}
+\end{equation}
+whose null distribution is computed by exact permutation for our sample
+sizes by SciPy. The parametric cross-check is OLS with heteroscedasticity-
+robust (HC3) standard errors \cite{liu2013}: $\hat{\boldsymbol\beta} =
+(X^{\mathsf T}X)^{-1} X^{\mathsf T} \mathbf{y}$ with covariance estimator
+$(X^{\mathsf T}X)^{-1} X^{\mathsf T} \operatorname{diag}(r_i^2 /
+(1-h_i)^2) X (X^{\mathsf T}X)^{-1}$, where $r_i$ are residuals and $h_i$
+leverages.
+
+\subsection{Graph neural network for basin membership}
+\label{sec:math-gnn}
+
+The Study-B GNN treats the regulatory graph $G = (V, E)$ of id-021 as a
+message-passing scaffold. Node states are initialised from the Boolean state
+vector, $h_v^{(0)} = [x_v]$, and updated for $T = 3$ rounds by
+\begin{equation}
+m_v^{(t)} = \sum_{u \in \mathcal{N}(v)} W_r\, h_u^{(t-1)}, \qquad
+h_v^{(t)} = \phi\!\big( W_s h_v^{(t-1)} + m_v^{(t)} \big),
+\label{eq:gnn}
+\end{equation}
+with a per-edge-type weight matrix $W_r$ (activating vs.\ repressing edge)
+and self-update $W_s$; a readout head maps the final node embeddings to the
+basin-membership logit. The MLP baseline replaces \eqref{eq:gnn} by two dense
+hidden layers on the raw state vector. Both are trained with class-balanced
+minibatches; the sampling caveat this implies is discussed in
+Section~\ref{sec:basinlearn}.
