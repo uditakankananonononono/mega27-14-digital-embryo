@@ -1,0 +1,49 @@
+{
+ "decoder": "Gaussian MAP (near-optimal), shrinkage-reg covariance",
+ "sessions": {
+  "1XA:Hb+Eve+Kr": {
+   "n_embryos": 244,
+   "by_size": {
+    "1": {
+     "median_abs_err_pctEL": 18.0,
+     "null_median_pctEL": 23.0,
+     "n_runs": 6
+    },
+    "2": {
+     "median_abs_err_pctEL": 2.0,
+     "null_median_pctEL": 16.0,
+     "n_runs": 6
+    },
+    "3": {
+     "median_abs_err_pctEL": 2.0,
+     "null_median_pctEL": 15.0,
+     "n_runs": 2
+    }
+   },
+   "scaling_exponent_alpha": 2.1259799061924656,
+   "extrapolated_err_at_4genes_pctEL": 0.7772988568869921
+  },
+  "2XA:Hb+Eve+Kr": {
+   "n_embryos": 142,
+   "by_size": {
+    "1": {
+     "median_abs_err_pctEL": 13.0,
+     "null_median_pctEL": 22.0,
+     "n_runs": 6
+    },
+    "2": {
+     "median_abs_err_pctEL": 4.0,
+     "null_median_pctEL": 17.0,
+     "n_runs": 6
+    },
+    "3": {
+     "median_abs_err_pctEL": 2.0,
+     "null_median_pctEL": 15.0,
+     "n_runs": 2
+    }
+   },
+   "scaling_exponent_alpha": 1.7034272413016878,
+   "extrapolated_err_at_4genes_pctEL": 1.226366849046987
+  }
+ }
+}
