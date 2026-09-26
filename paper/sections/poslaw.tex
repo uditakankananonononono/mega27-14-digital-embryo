@@ -81,3 +81,19 @@ preferentially at the poles (3.3-4.1$\times$ at the end bands vs.\
 shallowing therefore has a spatial mechanism: the dosage-dependent precision
 loss concentrates at the axis poles. Code experiments/gap\_poslaw\_posres.py;
 results results/gap\_poslaw\_posres.json.
+
+\paragraph{POSLAW-4: the pole rescue is decoder-robust.}
+POSLAW-2 split the dosage claims by decoder (exponent robust, absolute
+precision kNN-specific), so the POSLAW-3 pole rescue - measured with kNN only -
+needed the same test. Rerunning the identical position-resolved band analysis
+with the Gaussian MAP decoder (experiments/gap\_poslaw\_posres\_bayes.py;
+results/gap\_poslaw\_posres\_bayes.json), the rescue survives and
+strengthens at the poles: at 1$\times$ dosage the terminal-band single-gene
+error is 68\,\%EL against a flat 2\,\%EL three-gene profile (gain
+$34\times$, vs.\ $15.7\times$ under kNN), and the U-shaped single-gene
+profile persists across bands (13/4/10/10/68 \%EL). At 2$\times$ the rescue
+again weakens preferentially at the poles (gains $5$-$17.5\times$,
+band-4 single-gene error 35\,\%EL). The pole rescue is therefore a property
+of the data, not of the kNN decoder, while the absolute-precision dosage claim
+remains decoder-specific - the claim-splitting discipline of POSLAW-2 extends
+to the spatial finding.
