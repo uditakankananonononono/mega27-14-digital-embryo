@@ -1,0 +1,86 @@
+{
+ "reference": {
+  "dubuis_2013_single_gene": "several %EL",
+  "petkova_2019_four_genes_pctEL": 1.0
+ },
+ "sessions": {
+  "1XA:Hb+Eve+Kr": {
+   "n_embryos": 244,
+   "genes": [
+    "Hb",
+    "Eve",
+    "Kr"
+   ],
+   "by_size": {
+    "1": {
+     "median_abs_err_pctEL": 21.62162162162162,
+     "iqr": [
+      14.714714714714717,
+      21.921921921921925
+     ],
+     "null_median_pctEL": 24.424424424424423,
+     "n_runs": 6
+    },
+    "2": {
+     "median_abs_err_pctEL": 6.206206206206206,
+     "iqr": [
+      6.0060060060060065,
+      15.415415415415413
+     ],
+     "null_median_pctEL": 24.42442442442442,
+     "n_runs": 6
+    },
+    "3": {
+     "median_abs_err_pctEL": 2.4024024024024007,
+     "iqr": [
+      2.4024024024023993,
+      2.4024024024024024
+     ],
+     "null_median_pctEL": 25.62562562562562,
+     "n_runs": 2
+    }
+   },
+   "scaling_exponent_alpha": 1.9785380217258708,
+   "extrapolated_err_at_4genes_pctEL": 1.4392031477490954
+  },
+  "2XA:Hb+Eve+Kr": {
+   "n_embryos": 142,
+   "genes": [
+    "Hb",
+    "Eve",
+    "Kr"
+   ],
+   "by_size": {
+    "1": {
+     "median_abs_err_pctEL": 21.021021021021014,
+     "iqr": [
+      15.115115115115117,
+      22.722722722722715
+     ],
+     "null_median_pctEL": 24.42442442442442,
+     "n_runs": 6
+    },
+    "2": {
+     "median_abs_err_pctEL": 8.00800800800801,
+     "iqr": [
+      7.707707707707719,
+      16.116116116116107
+     ],
+     "null_median_pctEL": 24.824824824824827,
+     "n_runs": 6
+    },
+    "3": {
+     "median_abs_err_pctEL": 4.204204204204202,
+     "iqr": [
+      4.104104104104103,
+      4.304304304304301
+     ],
+     "null_median_pctEL": 24.82482482482482,
+     "n_runs": 2
+    }
+   },
+   "scaling_exponent_alpha": 1.4571497641596851,
+   "extrapolated_err_at_4genes_pctEL": 2.8224316384662407
+  }
+ }
+}

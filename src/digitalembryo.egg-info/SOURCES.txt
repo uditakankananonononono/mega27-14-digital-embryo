@@ -6,6 +6,7 @@ src/digitalembryo/bnet.py
 src/digitalembryo/cli.py
 src/digitalembryo/decoder.py
 src/digitalembryo/gapgene.py
+src/digitalembryo/gnn.py
 src/digitalembryo/grn.py
 src/digitalembryo/morphogen.py
 src/digitalembryo/positional.py
@@ -21,6 +22,8 @@ tests/test_bcd.py
 tests/test_bnet.py
 tests/test_gapgene.py
 tests/test_grn.py
+tests/test_math_verify.py
 tests/test_morphogen.py
+tests/test_multicell.py
 tests/test_positional.py
 tests/test_segment_polarity.py
