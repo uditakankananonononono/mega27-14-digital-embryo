@@ -62,3 +62,22 @@ immunofluorescence data, positional information is almost entirely a
 \emph{multi-gene} property. Limits: only two three-gene sessions exist in the
 archive; the exponent is a three-point fit; the $d=4$ point is a one-step
 extrapolation; $k$NN is not the optimal decoder.
+
+\subsection{Result 3 (POSLAW-3): joint decoding flattens the positional error
+profile; dosage doubling re-creates it at the poles}
+
+Binning per-sample decoding errors by true position (five bands across the
+axis, same sessions and folds) shows where the joint-decoding gain lives. At
+1$\times$ \emph{bcd}, single-gene error is strongly U-shaped (37.6, 17.6, 7.6,
+17.2, 36.0\,\%EL from anterior to posterior) while three-gene decoding is
+nearly flat (2.4, 2.4, 1.2, 2.4, 4.6\,\%EL): the gain ratio peaks at the
+anterior pole (15.7$\times$) and holds at 6.3-7.8$\times$ elsewhere. Joint
+decoding does not merely lower average error - it \emph{rescues the axis
+poles}, where no single gap gene carries usable position information. At
+2$\times$ dosage the rescue weakens everywhere (gain 3.3-6.8$\times$) and
+preferentially at the poles (3.3-4.1$\times$ at the end bands vs.\
+6.5-6.8$\times$ mid-axis), re-opening the U (three-gene error 8.0 and
+10.4\,\%EL at the poles vs.\ 1.6-2.0 mid-axis). The POSLAW-2 exponent
+shallowing therefore has a spatial mechanism: the dosage-dependent precision
+loss concentrates at the axis poles. Code experiments/gap\_poslaw\_posres.py;
+results results/gap\_poslaw\_posres.json.

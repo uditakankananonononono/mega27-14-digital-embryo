@@ -1,0 +1,83 @@
+{
+ "bands": 5,
+ "band_edges_pctEL": [
+  0.0,
+  20.0,
+  40.0,
+  60.0,
+  80.0,
+  100.0
+ ],
+ "sessions": {
+  "1XA:Hb+Eve+Kr": {
+   "n_embryos": 244,
+   "by_band": [
+    {
+     "band": 0,
+     "single_gene_median_pctEL": 37.63763763763764,
+     "three_gene_median_pctEL": 2.4024024024024024,
+     "gain_ratio": 15.666666666666666
+    },
+    {
+     "band": 1,
+     "single_gene_median_pctEL": 17.61761761761762,
+     "three_gene_median_pctEL": 2.402402402402401,
+     "gain_ratio": 7.3333333333333375
+    },
+    {
+     "band": 2,
+     "single_gene_median_pctEL": 7.607607607607603,
+     "three_gene_median_pctEL": 1.2012012012012074,
+     "gain_ratio": 6.333333333333297
+    },
+    {
+     "band": 3,
+     "single_gene_median_pctEL": 17.217217217217218,
+     "three_gene_median_pctEL": 2.4024024024023927,
+     "gain_ratio": 7.166666666666696
+    },
+    {
+     "band": 4,
+     "single_gene_median_pctEL": 36.03603603603604,
+     "three_gene_median_pctEL": 4.6046046046046065,
+     "gain_ratio": 7.826086956521737
+    }
+   ]
+  },
+  "2XA:Hb+Eve+Kr": {
+   "n_embryos": 142,
+   "by_band": [
+    {
+     "band": 0,
+     "single_gene_median_pctEL": 33.033033033033036,
+     "three_gene_median_pctEL": 8.008008008008009,
+     "gain_ratio": 4.125
+    },
+    {
+     "band": 1,
+     "single_gene_median_pctEL": 20.42042042042042,
+     "three_gene_median_pctEL": 4.804804804804802,
+     "gain_ratio": 4.250000000000003
+    },
+    {
+     "band": 2,
+     "single_gene_median_pctEL": 10.410410410410403,
+     "three_gene_median_pctEL": 1.6016016016016044,
+     "gain_ratio": 6.499999999999984
+    },
+    {
+     "band": 3,
+     "single_gene_median_pctEL": 13.613613613613618,
+     "three_gene_median_pctEL": 2.0020020020020013,
+     "gain_ratio": 6.800000000000004
+    },
+    {
+     "band": 4,
+     "single_gene_median_pctEL": 34.034034034034036,
+     "three_gene_median_pctEL": 10.410410410410408,
+     "gain_ratio": 3.26923076923077
+    }
+   ]
+  }
+ }
+}
