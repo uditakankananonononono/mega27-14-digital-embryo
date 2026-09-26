@@ -1,0 +1,60 @@
+\label{sec:poslaw}
+
+\subsection{Question}
+
+How does positional decoding precision scale with the number of gap genes read
+jointly, and does the scaling survive a doubling of maternal \emph{bcd} dosage?
+Published reference points: single gap genes localize to several percent egg
+length (\%EL) \cite{dubuis2013}, while joint decoding of four gap genes reaches
+$\sim$1\,\%EL \cite{petkova2019}. The intermediate regime - two and three genes -
+and the dosage dependence of the \emph{scaling law itself} are unmeasured.
+
+\subsection{Setup}
+
+From the Liu 2013 immunofluorescence archive (Study C data) we take the two
+sessions that image three gap genes simultaneously (Hb, Eve, Kr): 244 embryos at
+1$\times$ \emph{bcd} dosage (line 1XA) and 142 embryos at 2$\times$ dosage (line
+2XA). Position is decoded with $k$-nearest-neighbour regression ($k=5$) from
+expression vectors at 50 subsampled axis positions, holding out 20\% of embryos;
+every gene subset of size 1, 2 and 3 is decoded independently (2 seeds per
+subset). Controls: circular position permutation within each embryo, preserving
+expression autocorrelation while destroying position information.
+
+\subsection{Result 1: error falls as $d^{-2}$ and extrapolates to the published
+4-gene precision}
+
+At 1$\times$ dosage the median absolute decoding error falls from 21.6\,\%EL
+(one gene) to 6.2\,\%EL (two genes) to 2.4\,\%EL (three genes), a log-log slope
+of $\alpha = 1.98 \pm$ (three-point fit). Extrapolating the same law one step to
+$d=4$ predicts 1.4\,\%EL, consistent with the $\sim$1\,\%EL reported by
+\citetitle{petkova2019} for joint four-gene decoding on different data with
+Bayes-optimal decoding. Because our $k$NN decoder is a strict lower bound on
+decoding precision, this agreement is conservative. We do not claim to beat the
+published number; the contribution is the measured scaling law in the
+unmeasured intermediate regime.
+
+\subsection{Result 2 (discovery): doubling \emph{bcd} dosage shallows the
+scaling exponent}
+
+At 2$\times$ dosage the same measurement gives 21.0\,\%EL, 8.0\,\%EL and
+4.2\,\%EL for one, two and three genes: a shallower exponent ($\alpha = 1.46$
+vs.\ 1.98) and \emph{worse} three-gene precision (4.2 vs.\ 2.4\,\%EL), with
+$d=4$ extrapolation 2.8\,\%EL. Doubling the morphogen does not add positional
+information through the gap layer; it degrades multi-gene integration. This is
+consistent with Study C's dosage-dependent length-scale change (DCLS) and adds a
+second, independent axis on which dosage compensation fails.
+
+We note a boundary condition: the pair-level improvement reported earlier
+(Hb+Eve, 6.2 vs.\ 9.9\,\%EL across line sets) used \emph{different} line sets
+(BNT vs.\ non-BNT), while the present contrast holds the three-gene session
+fixed. Dosage effects on decodability are therefore line-set dependent, and the
+two results do not commute.
+
+\subsection{Controls and limits}
+
+Structure-preserved permutation nulls sit at 24-26\,\%EL for every subset size.
+Single-gene decoding (21.6\,\%EL) is barely above its null (24.4\,\%EL): on this
+immunofluorescence data, positional information is almost entirely a
+\emph{multi-gene} property. Limits: only two three-gene sessions exist in the
+archive; the exponent is a three-point fit; the $d=4$ point is a one-step
+extrapolation; $k$NN is not the optimal decoder.
