@@ -1,0 +1,84 @@
+{
+ "decoder": "Gaussian MAP",
+ "bands": 5,
+ "band_edges_pctEL": [
+  0.0,
+  20.0,
+  40.0,
+  60.0,
+  80.0,
+  100.0
+ ],
+ "sessions": {
+  "1XA:Hb+Eve+Kr": {
+   "n_embryos": 244,
+   "by_band": [
+    {
+     "band": 0,
+     "single_gene_median_pctEL": 13.0,
+     "three_gene_median_pctEL": 2.0,
+     "gain_ratio": 6.5
+    },
+    {
+     "band": 1,
+     "single_gene_median_pctEL": 4.0,
+     "three_gene_median_pctEL": 2.0,
+     "gain_ratio": 2.0
+    },
+    {
+     "band": 2,
+     "single_gene_median_pctEL": 10.0,
+     "three_gene_median_pctEL": 2.0,
+     "gain_ratio": 5.0
+    },
+    {
+     "band": 3,
+     "single_gene_median_pctEL": 10.0,
+     "three_gene_median_pctEL": 2.0,
+     "gain_ratio": 5.0
+    },
+    {
+     "band": 4,
+     "single_gene_median_pctEL": 68.0,
+     "three_gene_median_pctEL": 2.0,
+     "gain_ratio": 34.0
+    }
+   ]
+  },
+  "2XA:Hb+Eve+Kr": {
+   "n_embryos": 142,
+   "by_band": [
+    {
+     "band": 0,
+     "single_gene_median_pctEL": 10.0,
+     "three_gene_median_pctEL": 2.0,
+     "gain_ratio": 5.0
+    },
+    {
+     "band": 1,
+     "single_gene_median_pctEL": 12.0,
+     "three_gene_median_pctEL": 2.0,
+     "gain_ratio": 6.0
+    },
+    {
+     "band": 2,
+     "single_gene_median_pctEL": 6.0,
+     "three_gene_median_pctEL": 2.0,
+     "gain_ratio": 3.0
+    },
+    {
+     "band": 3,
+     "single_gene_median_pctEL": 21.0,
+     "three_gene_median_pctEL": 2.0,
+     "gain_ratio": 10.5
+    },
+    {
+     "band": 4,
+     "single_gene_median_pctEL": 35.0,
+     "three_gene_median_pctEL": 2.0,
+     "gain_ratio": 17.5
+    }
+   ]
+  }
+ }
+}
