@@ -1,0 +1,105 @@
+{
+ "design": "Hill ODE counterpart, 3^5=243 IC grid, t_end=40, dt=0.1; Boolean core reference: wg-ON fixed point exists (1,1,1,0,0) with basin 20/32",
+ "sweep": {
+  "K=0.2,n=2.0": {
+   "wg_on_frac": 0.0,
+   "n_attr": 1
+  },
+  "K=0.2,n=4.0": {
+   "wg_on_frac": 0.0,
+   "n_attr": 1
+  },
+  "K=0.2,n=8.0": {
+   "wg_on_frac": 0.0,
+   "n_attr": 1
+  },
+  "K=0.35,n=2.0": {
+   "wg_on_frac": 0.0,
+   "n_attr": 1
+  },
+  "K=0.35,n=4.0": {
+   "wg_on_frac": 0.0,
+   "n_attr": 1
+  },
+  "K=0.35,n=8.0": {
+   "wg_on_frac": 0.0,
+   "n_attr": 1
+  },
+  "K=0.5,n=2.0": {
+   "wg_on_frac": 0.0,
+   "n_attr": 1
+  },
+  "K=0.5,n=4.0": {
+   "wg_on_frac": 0.0,
+   "n_attr": 1
+  },
+  "K=0.5,n=8.0": {
+   "wg_on_frac": 0.0,
+   "n_attr": 1
+  },
+  "K=0.65,n=2.0": {
+   "wg_on_frac": 0.0,
+   "n_attr": 1
+  },
+  "K=0.65,n=4.0": {
+   "wg_on_frac": 0.0,
+   "n_attr": 1
+  },
+  "K=0.65,n=8.0": {
+   "wg_on_frac": 0.0,
+   "n_attr": 1
+  }
+ },
+ "mechanism": "wg-ON Boolean state (1,1,1,0,0) has ci=0; wg's only activator in the core is ci, so in the ODE wg production vanishes and linear decay erases the state. Discrete bistability is update-rule-supported, not ODE-supported, without self-activation.",
+ "autoactivation_threshold_scan": {
+  "auto=0.0": {
+   "wg_on_frac": 0.0,
+   "n_attr": 1
+  },
+  "auto=0.05": {
+   "wg_on_frac": 0.0,
+   "n_attr": 1
+  },
+  "auto=0.1": {
+   "wg_on_frac": 0.0,
+   "n_attr": 1
+  },
+  "auto=0.2": {
+   "wg_on_frac": 0.0,
+   "n_attr": 1
+  },
+  "auto=0.3": {
+   "wg_on_frac": 0.0,
+   "n_attr": 1
+  },
+  "auto=0.5": {
+   "wg_on_frac": 0.0,
+   "n_attr": 1
+  },
+  "auto=0.75": {
+   "wg_on_frac": 0.0,
+   "n_attr": 1
+  },
+  "auto=1.0": {
+   "wg_on_frac": 0.6667,
+   "n_attr": 3
+  },
+  "auto=0.8": {
+   "wg_on_frac": 0.0,
+   "n_attr": 1
+  },
+  "auto=0.85": {
+   "wg_on_frac": 0.0,
+   "n_attr": 1
+  },
+  "auto=0.9": {
+   "wg_on_frac": 0.6667,
+   "n_attr": 2
+  },
+  "auto=0.95": {
+   "wg_on_frac": 0.6667,
+   "n_attr": 2
+  }
+ },
+ "threshold_reading": "wg-ON reappears only for autoactivation >= 0.9 of full Hill strength; below 0.85 the continuous system has a single all-OFF attractor for all tested (K,n). Boolean bistability is therefore update-rule-supported: it survives continuous dynamics only with near-full-strength wg self-activation."
+}

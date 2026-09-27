@@ -1,0 +1,153 @@
+{
+ "design": "Hill ODE counterpart of the 5-node Albert-Othmer core; 5^5=3125 grid of initial conditions",
+ "hill_K": 0.5,
+ "hill_n": 4.0,
+ "ode_wg_on_fraction": 0.0,
+ "ode_n_distinct_attractors_approx": 1,
+ "ode_wg_on_attractor_examples": [],
+ "boolean_fixed_points": [
+  [
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  [
+   1,
+   1,
+   1,
+   0,
+   0
+  ],
+  [
+   0,
+   0,
+   0,
+   1,
+   0
+  ],
+  [
+   1,
+   1,
+   1,
+   0,
+   0
+  ],
+  [
+   0,
+   0,
+   1,
+   0,
+   0
+  ],
+  [
+   1,
+   1,
+   1,
+   0,
+   1
+  ],
+  [
+   0,
+   0,
+   1,
+   0,
+   0
+  ],
+  [
+   1,
+   1,
+   1,
+   0,
+   0
+  ],
+  [
+   0,
+   1,
+   1,
+   0,
+   0
+  ],
+  [
+   1,
+   1,
+   1,
+   0,
+   0
+  ],
+  [
+   0,
+   1,
+   1,
+   0,
+   0
+  ],
+  [
+   1,
+   1,
+   1,
+   0,
+   0
+  ],
+  [
+   1,
+   1,
+   1,
+   0,
+   1
+  ],
+  [
+   1,
+   1,
+   1,
+   0,
+   0
+  ],
+  [
+   1,
+   1,
+   1,
+   0,
+   0
+  ],
+  [
+   1,
+   1,
+   1,
+   0,
+   0
+  ],
+  [
+   1,
+   1,
+   1,
+   0,
+   0
+  ],
+  [
+   1,
+   1,
+   1,
+   0,
+   0
+  ],
+  [
+   1,
+   1,
+   1,
+   0,
+   0
+  ]
+ ],
+ "boolean_n_cycles": 0,
+ "boolean_basin_sizes": {
+  "(1, 1, 1, 0, 0)": 20,
+  "(0, 0, 1, 0, 0)": 2,
+  "(0, 0, 0, 0, 0)": 1,
+  "(0, 0, 0, 1, 0)": 1,
+  "(1, 1, 1, 0, 1)": 4,
+  "(0, 1, 1, 0, 0)": 4
+ },
+ "reading": "if the ODE preserves a wg-ON attractor with nonzero basin, the bistability conclusion survives continuous dynamics"
+}
