@@ -17,20 +17,29 @@
  "stochastic_noise_sweep": {
   "0.001": {
    "mean_states": 91.0,
-   "sd": 10.344080432788601
+   "sd": 10.344080432788601,
+   "fraction_of_state_space": 0.00555419921875,
+   "fold_vs_sync": 0.7109375
   },
   "0.01": {
    "mean_states": 807.0,
-   "sd": 57.645468165329355
+   "sd": 57.645468165329355,
+   "fraction_of_state_space": 0.04925537109375,
+   "fold_vs_sync": 6.3046875
   },
   "0.05": {
    "mean_states": 2977.0,
-   "sd": 83.77947242612596
+   "sd": 83.77947242612596,
+   "fraction_of_state_space": 0.18170166015625,
+   "fold_vs_sync": 23.2578125
   },
   "0.1": {
    "mean_states": 3356.0,
-   "sd": 41.7612260356422
+   "sd": 41.7612260356422,
+   "fraction_of_state_space": 0.204833984375,
+   "fold_vs_sync": 26.21875
   }
  },
- "reading": "basin conclusion is update-rule dependent if async fraction diverges materially from synchronous 0.781%"
+ "reading": "basin conclusion is update-rule dependent if async fraction diverges materially from synchronous 0.781%",
+ "stochastic_protocol": "quarter-sample (4096 states), 4 reps, counts scaled x4; fractions over full 2^14 space"
 }
