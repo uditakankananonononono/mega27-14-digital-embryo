@@ -1,0 +1,38 @@
+{
+ "network": "gap-gene cross-repression module (hb/kr/gt/kni), anterior Bcd prepattern",
+ "n_states": 16,
+ "wt_state": "hb-ON only (anterior gap domain)",
+ "wt_basin_states": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10,
+  11,
+  12,
+  13,
+  14,
+  15
+ ],
+ "wt_basin_fraction": 1.0,
+ "fragility_index": 0.0,
+ "per_gene_exit_fraction": {
+  "hb": 0.0,
+  "kr": 0.0,
+  "gt": 0.0,
+  "kni": 0.0
+ },
+ "comparison": {
+  "id021_single_cell": {
+   "wt_basin_fraction": 0.0078,
+   "fragility": 0.5
+  }
+ },
+ "reading": "generalization: does the fragility framework's structure (rare WT basin, gene-specific exit asymmetry) recur in an unrelated developmental module"
+}
