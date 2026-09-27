@@ -81,6 +81,77 @@ def cmd_attractors(args):
                      indent=2))
 
 
+def cmd_fragility(args):
+    """Developmental fragility index on a .bnet GRN model."""
+    from .bnet import parse_bnet
+    import itertools, json as _json
+    import numpy as _np
+    rules = parse_bnet(pathlib.Path(args.model).read_text())
+    ext = {}
+    for pin in (args.fix or []):
+        k, v = pin.split("="); ext[k] = int(v)
+    free = [n for n in rules if n not in ext]
+    from .bnet import successor as _succ
+    def step(state):
+        ns = _succ(state, rules, ext)
+        return ns
+    # enumerate
+    n = len(free)
+    succ = {}
+    for bits in itertools.product([0, 1], repeat=n):
+        st = dict(ext); st.update(dict(zip(free, bits)))
+        ns = step(st)
+        succ[tuple(bits)] = tuple(ns[f] for f in free)
+    def root_of(s):
+        seen = {}
+        cur = s
+        while cur not in seen:
+            seen[cur] = len(seen)
+            cur = succ[cur]
+        return cur
+    # WT = wg-ON fixed point
+    wt = None
+    for s in succ:
+        if succ[s] == s:
+            st = dict(zip(free, s))
+            if st.get("v_wg", 0) == 1:
+                wt = s
+    if wt is None:
+        print(_json.dumps({"error": "no wg-ON fixed point"})); return
+    basin = [s for s in succ if root_of(s) == wt]
+    exits = 0; total = 0
+    for s in basin:
+        for b in range(n):
+            t = list(s); t[b] ^= 1; t = tuple(t)
+            total += 1
+            if root_of(t) != wt:
+                exits += 1
+    print(_json.dumps({"model": args.model, "n_states": 2 ** n,
+                       "wt_basin_states": len(basin),
+                       "wt_basin_fraction": len(basin) / 2 ** n,
+                       "fragility_index": exits / total if total else None},
+                      indent=2))
+
+
+def cmd_info_threshold(args):
+    """Minimum-information threshold: decode CF position from degraded Bcd."""
+    from .decoder import embryo_table, grouped_folds
+    import numpy as _np
+    import json as _json
+    rows = embryo_table()
+    X = _np.array([r["profile"] for r in rows])
+    y = _np.array([r["cf"] for r in rows])
+    folds = grouped_folds(rows, 5)
+    rmses = []
+    for tr, te in folds:
+        Xm = _np.column_stack([_np.ones(len(X)), X])
+        w = _np.linalg.solve(Xm[tr].T @ Xm[tr] + 1.0 * _np.eye(Xm.shape[1]), Xm[tr].T @ y[tr])
+        pred = Xm[te] @ w
+        rmses.append(float(_np.sqrt(_np.mean((pred - y[te]) ** 2))))
+    print(_json.dumps({"full_gradient_rmse_pct_EL_mean": 100 * float(_np.mean(rmses)),
+                       "liu_2013_benchmark_pct_EL": 4.94}, indent=2))
+
+
 def main(argv=None):
     p = argparse.ArgumentParser(prog="embryosim", description=__doc__)
     sub = p.add_subparsers(required=True)
@@ -102,6 +173,12 @@ def main(argv=None):
     a.add_argument("--model", default=str(ROOT / "data/raw/grn_models/id021_bodysegmentation.bnet"))
     a.add_argument("--fix", nargs="*", help="external pins like v_hh_external=1")
     a.set_defaults(fn=cmd_attractors)
+    fr = sub.add_parser("fragility", help="developmental fragility index of a .bnet model")
+    fr.add_argument("--model", default=str(ROOT / "data/raw/grn_models/id021_bodysegmentation.bnet"))
+    fr.add_argument("--fix", nargs="*", default=["v_hh_external=1", "v_WG_external=0", "v_SLP=0"])
+    fr.set_defaults(fn=cmd_fragility)
+    it = sub.add_parser("info-threshold", help="minimum-information decode of CF position")
+    it.set_defaults(fn=cmd_info_threshold)
     args = p.parse_args(argv)
     args.fn(args)
 
