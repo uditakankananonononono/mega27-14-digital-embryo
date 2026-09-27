@@ -104,7 +104,7 @@ reproduction as successful at the level of the qualitative claim (exponential
 with $\lambda \approx 0.17$--$0.19$ EL on the published window) and report
 the residual discrepancy openly rather than tuning it away.
 
-\begin{table}[H]
+\begin{table}[!htbp]
 \centering
 \caption{Window sensitivity of the Bcd length scale and of the
 dosage-coupled length-scale (DCLS) correlation. Each row: per-gradient single
@@ -166,7 +166,7 @@ published supplement figure: confirmed in sign and rough magnitude, localised
 in space by our window analysis, and shown to be invisible under the original
 posterior-heavy fitting window.
 
-\begin{figure}[H]
+\begin{figure}[!htbp]
 \centering
 \includegraphics[width=0.48\textwidth]{figures/fig_lambda_dosage.pdf}\hfill
 \includegraphics[width=0.48\textwidth]{figures/fig_windows.pdf}
@@ -197,7 +197,7 @@ over disjoint fly lines} --- a line-level holdout, so no embryo of a test
 line appears in training. Results (250 embryos with CF annotation, 29 lines,
 3 training seeds; committed \texttt{results/cf\_decoder.json}):
 
-\begin{table}[H]
+\begin{table}[!htbp]
 \centering
 \caption{Cephalic-furrow position decoding. Cross-validation over disjoint
 fly lines; RMSE in percent egg length. The CNN beats the published threshold
@@ -230,7 +230,7 @@ CNN's advantage over the two-feature ridge ($2.55$) is small but consistent
 profile shape, not from deep learning per se; we say so to keep the claim
 honest.
 
-\begin{figure}[H]
+\begin{figure}[!htbp]
 \centering
 \includegraphics[width=0.7\textwidth]{figures/fig_cf_decoder.pdf}
 \caption{CF decoder: predicted vs.\ true CF position on held-out fly lines,
@@ -248,7 +248,7 @@ that map joint expression levels to fractional egg position, evaluated on
 held-out embryos of the same line. Table~\ref{tab:gap} summarises
 (\texttt{results/gap\_decode.json}).
 
-\begin{table}[H]
+\begin{table}[!htbp]
 \centering
 \caption{Positional decoding from gap-gene pairs (kNN, held-out embryos).
 Median absolute error in \%EL. Published context: joint 4-gap-gene decoding
@@ -286,7 +286,7 @@ $0.372$ EL (1XA, $n = 18$) to $0.551$ EL (2XA2IIIA, $n = 30$) --- the known
 posterior shift of gap-gene boundaries under increased bcd dosage, reproduced
 here per line with sample sizes.
 
-\begin{figure}[H]
+\begin{figure}[!htbp]
 \centering
 \includegraphics[width=0.55\textwidth]{figures/fig_gap_decode.pdf}
 \caption{Gap-gene positional decoding by line and gene pair; the dosage
@@ -320,7 +320,7 @@ $\lambda \in [0.251, 0.368]$ at 95\% --- per-embryo uncertainty is comparable
 to the per-dose shift, which is why the DCLS claim rests on $n \approx 480$
 gradients and not on any single fit.
 
-\begin{figure}[H]
+\begin{figure}[!htbp]
 \centering
 \includegraphics[width=0.8\textwidth]{figures/fig_bcd_gradients.pdf}
 \caption{The 676 quality-filtered Bcd-GFP gradients (per-dosage panels),
@@ -330,7 +330,7 @@ visible by eye.}
 \label{fig:gradients}
 \end{figure}
 
-\begin{table}[H]
+\begin{table}[!htbp]
 \centering
 \caption{Per-line Bcd length-scale summary (median $\lambda$ over the line's
 gradients on the default $[0,0.6]$ EL window; range in brackets). Lines

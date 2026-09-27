@@ -39,7 +39,7 @@ moderate far from onset. A power law $\mathrm{dev} \sim c\, \varepsilon^\gamma$
 fit to the positive deviations gives $\gamma = 0.474$, $c = 0.370$
 (least squares on $\ln \mathrm{dev}$ vs.\ $\ln \varepsilon$, $n = 14$).
 
-\begin{table}[H]
+\begin{table}[!htbp]
 \centering
 \caption{Turing wavenumber sweep. $k^2_{\mathrm{lin}}$: linear fastest-growing
 mode \eqref{eq:kmax}; $k^2_{\mathrm{sim}}$: measured steady-state peak;
@@ -69,7 +69,7 @@ $\mu_a$ & $\varepsilon$ & $k^2_{\mathrm{lin}}$ & $k^2_{\mathrm{sim}}$ & dev.\ (\
 \end{tabular}
 \end{table}
 
-\begin{figure}[H]
+\begin{figure}[!htbp]
 \centering
 \includegraphics[width=0.75\textwidth]{figures/fig_dispersion.pdf}
 \caption{Linear dispersion relations $\operatorname{Re}\sigma_+(k^2)$
@@ -79,7 +79,7 @@ saturated pattern consistently overshoots even these moving peaks.}
 \label{fig:dispersion}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}[!htbp]
 \centering
 \includegraphics[width=0.85\textwidth]{figures/fig_turing_dev.pdf}
 \caption{Selected vs.\ linear wavenumber across the sweep. Left:
@@ -130,7 +130,7 @@ relative RMSE $0.272$, CNN $0.292$--$0.295$ --- the CNN is \emph{worse}
 retract it here explicitly; the interim claim survived less than a day of
 additional simulation, which is exactly how the pipeline is supposed to work.
 
-\begin{table}[H]
+\begin{table}[!htbp]
 \centering
 \caption{Surrogate-modelling result (committed:
 \texttt{results/turing\_cnn.json}). The retracted $n=58$ figure is shown for
@@ -192,7 +192,7 @@ mean upshift $+0.88$ $k^2$-units (\texttt{results/turing\_cnn.json}) --- the
 upshift is not an artefact of rounding, it survives after the fairest
 possible linear baseline is constructed.
 
-\begin{figure}[H]
+\begin{figure}[!htbp]
 \centering
 \includegraphics[width=0.8\textwidth]{figures/fig_turing_panels.pdf}
 \caption{Steady-state activator fields at four points of the sweep

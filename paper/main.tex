@@ -3,10 +3,12 @@
 \usepackage[margin=1in]{geometry}
 \usepackage{amsmath,amssymb,amsthm}
 \usepackage{graphicx}
-\usepackage{booktabs}
-\usepackage{hyperref}
-\usepackage{float}
-\usepackage{setspace}
+\IfFileExists{booktabs.sty}{\usepackage{booktabs}}{\newcommand{\toprule}{\hline}\newcommand{\midrule}{\hline}\newcommand{\bottomrule}{\hline}}
+% hyperref unusable here (pdftexcmds.sty missing); url.sty is present and breaks long URLs
+\usepackage{url}
+% float.sty missing; [H] placements rewritten to [!htbp]
+% setspace.sty missing; approximating onehalfspacing
+\providecommand{\onehalfspacing}{\linespread{1.25}\selectfont}
 \newtheorem{theorem}{Theorem}
 \newtheorem{proposition}{Proposition}
 \newtheorem{definition}{Definition}
