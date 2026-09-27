@@ -45,3 +45,9 @@ RULE: title pivot lands only after the supporting analyses exist (fragility inde
 ## First deliverables (cheap, existing data)
 1. Developmental fragility index from existing basin enumeration (reframe 5 / #11 sensitivity seed)
 2. Information-threshold sweep on Study C decoder (reframe 2): full -> noisy -> partial -> sparse Bicoid gradient, find critical threshold
+
+## LANDED 2026-09-27 (commit pending below)
+- Reframe 5 + #11 + #16: developmental fragility index on id-021 (F=0.500 exact, 128/2048=0.781% WT basin, 4 always-fatal nodes, 7 abolishing clamps, 6 doubling clamps, 6 critical + 3 basin-expanding edges). results/grn_fragility.json; paper section 9.
+- Reframe 2 + #12: minimum-information threshold sweep (decode beats Liu 4.94% EL from ONE gradient point at 4.29%, anterior 10% window 2.99%, noise critical ~4x signal std). results/info_threshold.json; paper section 10.
+- #9: edge-removal + node-clamp sensitivity seed LANDED (update-rule sync/async comparison still QUEUED).
+Still queued: #3, #4, #6, #15, #17, #19 (4-model comparison), editorial #8/#13/#18 pass, title pivot (awaits spine analyses).

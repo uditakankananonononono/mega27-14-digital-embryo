@@ -1,0 +1,20 @@
+\section{The developmental fragility index: quantifying, not lamenting, the small wild-type basin}
+The wild-type wg-ON basin of the published id-021 segment-polarity network (condition hh1\_WG0\_SLP0) contains exactly 128 of 2{,}048 states (0.781\%), enumerated exhaustively under synchronous update. Rather than report this as a bare negative, we quantify its structure as a \emph{developmental fragility index}: the fraction of single-node perturbations of basin states whose trajectory exits the wild-type basin,
+\begin{equation}
+F = \frac{1}{|B|\,n}\sum_{s \in B}\sum_{i=1}^{n} \mathbb{1}\left[\mathrm{traj}(s \oplus e_i) \notin B\right],
+\end{equation}
+where $B$ is the wild-type basin and $s \oplus e_i$ flips node $i$. We find $F = 0.500$: exactly half of the 1{,}408 single-bit perturbations destroy the wild-type outcome. Fragility is concentrated, not uniform (Table~\ref{tab:fragility}): flipping any of CI's three molecular forms or EN protein \emph{always} exits the basin, while flips elsewhere usually do not.
+\begin{table}[!htbp]\centering\small
+\caption{Per-node exit fraction (fraction of basin states exiting after flipping that node).}\label{tab:fragility}
+\begin{tabular}{lr}\hline\hline
+Node flipped & exit fraction \\ \hline
+v\_CIA & 1.000 \\
+v\_CIR & 1.000 \\
+v\_CI\_protein & 1.000 \\
+v\_EN\_protein & 1.000 \\
+\multicolumn{2}{l}{all other free nodes: lower (see \texttt{results/grn\_fragility.json})}\\
+\hline\hline\end{tabular}
+\end{table}
+
+\subsection{Intervention predictions from knockouts and clamps}
+Clamping each free node OFF or ON and re-enumerating the basin yields concrete, testable perturbation predictions (weakness \#16 of the provided verdict): seven interventions abolish the wild-type basin entirely (wg-OFF, ci-OFF, CIA-OFF, CI\_protein-OFF, en-ON, CIR-ON, EN\_protein-ON), while six clamps \emph{double} it (e.g.\ ci-ON, CIA-ON, EN\_protein-OFF: basin fraction 1.56\%). Edge-removal sensitivity over the 29 regulatory edges identifies six critical edges whose deletion abolishes the basin (including $wg\to wg$ auto-activation and $CIA\to wg$) and three edges whose removal \emph{expands} the basin 2--4$\times$ ($EN\_protein\to ci$ strongest at 4$\times$), identifying the repressive leg of the circuit as the load-bearing constraint on wild-type robustness. Biological interpretation (verdict \#8): the wild-type segment-polarity state sits on a knife's edge maintained by the CI/EN axis, and targeted repression removal can make it \emph{more} robust - a falsifiable systems-biology prediction, not an engineering fix.

@@ -1,0 +1,150 @@
+{
+  "design": "5-fold disjoint-fly-line CV; ridge decoder on 64-point log-Bcd profile; three degradation arms",
+  "n_embryos": 250,
+  "n_lines": 29,
+  "benchmarks": {
+    "liu_truedose_pctEL": 4.937638103679565,
+    "predict_mean_pctEL": 6.294721571881802
+  },
+  "noise": [
+    {
+      "level": 0.0,
+      "rmse_pctEL": 2.393848199539946
+    },
+    {
+      "level": 0.05,
+      "rmse_pctEL": 2.450956905514643
+    },
+    {
+      "level": 0.1,
+      "rmse_pctEL": 2.5240539269307116
+    },
+    {
+      "level": 0.2,
+      "rmse_pctEL": 2.660620969345561
+    },
+    {
+      "level": 0.35,
+      "rmse_pctEL": 3.0534826945409588
+    },
+    {
+      "level": 0.5,
+      "rmse_pctEL": 3.037773069497666
+    },
+    {
+      "level": 0.75,
+      "rmse_pctEL": 3.3143670985331197
+    },
+    {
+      "level": 1.0,
+      "rmse_pctEL": 3.072992438159646
+    },
+    {
+      "level": 1.5,
+      "rmse_pctEL": 3.7692684011439064
+    },
+    {
+      "level": 2.0,
+      "rmse_pctEL": 4.166596625559688
+    },
+    {
+      "level": 3.0,
+      "rmse_pctEL": 4.48398337840533
+    },
+    {
+      "level": 4.0,
+      "rmse_pctEL": 5.026604214001328
+    },
+    {
+      "level": 5.0,
+      "rmse_pctEL": 6.071807743309369
+    }
+  ],
+  "truncation": [
+    {
+      "level": 0.6,
+      "rmse_pctEL": 2.393848199539946
+    },
+    {
+      "level": 0.55,
+      "rmse_pctEL": 2.4146185685649004
+    },
+    {
+      "level": 0.5,
+      "rmse_pctEL": 2.3957731243464715
+    },
+    {
+      "level": 0.45,
+      "rmse_pctEL": 2.420622796648701
+    },
+    {
+      "level": 0.4,
+      "rmse_pctEL": 2.3770311518497835
+    },
+    {
+      "level": 0.35,
+      "rmse_pctEL": 2.3975474633703633
+    },
+    {
+      "level": 0.3,
+      "rmse_pctEL": 2.5307706653820383
+    },
+    {
+      "level": 0.25,
+      "rmse_pctEL": 2.6852602525502975
+    },
+    {
+      "level": 0.2,
+      "rmse_pctEL": 2.8200133583341302
+    },
+    {
+      "level": 0.15,
+      "rmse_pctEL": 2.9302167606599085
+    },
+    {
+      "level": 0.1,
+      "rmse_pctEL": 2.992318978816776
+    }
+  ],
+  "sparse": [
+    {
+      "level": 64,
+      "rmse_pctEL": 2.393848199539946
+    },
+    {
+      "level": 32,
+      "rmse_pctEL": 2.4058729416793043
+    },
+    {
+      "level": 16,
+      "rmse_pctEL": 2.4336593095770005
+    },
+    {
+      "level": 12,
+      "rmse_pctEL": 2.382146499147519
+    },
+    {
+      "level": 8,
+      "rmse_pctEL": 2.3586815316464986
+    },
+    {
+      "level": 6,
+      "rmse_pctEL": 2.4015828417576857
+    },
+    {
+      "level": 4,
+      "rmse_pctEL": 2.390764872125618
+    },
+    {
+      "level": 2,
+      "rmse_pctEL": 2.5327962196781453
+    },
+    {
+      "level": 1,
+      "rmse_pctEL": 4.286669435797039
+    }
+  ],
+  "noise_critical_level_vs_liu": 4.0,
+  "truncation_critical_level_vs_liu": null,
+  "sparse_critical_level_vs_liu": null
+}

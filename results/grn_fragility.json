@@ -1,0 +1,257 @@
+{
+ "model": "Cell Collective id-021, condition hh1_WG0_SLP0",
+ "n_free_nodes": 14,
+ "state_space": 16384,
+ "wt_basin_states": 128,
+ "wt_basin_fraction": 0.0078125,
+ "fragility_index": 0.5,
+ "fragility_definition": "fraction of single-bit flips of WT-basin states whose trajectory exits the wg-ON basin",
+ "per_node_exit_fraction": {
+  "v_CIA": 1.0,
+  "v_CIR": 1.0,
+  "v_CI_protein": 1.0,
+  "v_EN_protein": 1.0,
+  "v_HH_protein": 0.0,
+  "v_PH": 0.0,
+  "v_PTC_protein": 0.0,
+  "v_SMO": 0.0,
+  "v_WG_protein": 0.0,
+  "v_ci": 1.0,
+  "v_en": 1.0,
+  "v_hh": 0.0,
+  "v_ptc": 0.0,
+  "v_wg": 1.0
+ },
+ "knockout_predictions": {
+  "v_CIA=OFF": {
+   "basin_fraction": 0.0,
+   "fold_vs_wt": 0.0
+  },
+  "v_CIA=ON": {
+   "basin_fraction": 0.015625,
+   "fold_vs_wt": 2.0
+  },
+  "v_CIR=OFF": {
+   "basin_fraction": 0.015625,
+   "fold_vs_wt": 2.0
+  },
+  "v_CIR=ON": {
+   "basin_fraction": 0.0,
+   "fold_vs_wt": 0.0
+  },
+  "v_CI_protein=OFF": {
+   "basin_fraction": 0.0,
+   "fold_vs_wt": 0.0
+  },
+  "v_CI_protein=ON": {
+   "basin_fraction": 0.015625,
+   "fold_vs_wt": 2.0
+  },
+  "v_EN_protein=OFF": {
+   "basin_fraction": 0.015625,
+   "fold_vs_wt": 2.0
+  },
+  "v_EN_protein=ON": {
+   "basin_fraction": 0.0,
+   "fold_vs_wt": 0.0
+  },
+  "v_HH_protein=OFF": {
+   "basin_fraction": 0.0078125,
+   "fold_vs_wt": 1.0
+  },
+  "v_HH_protein=ON": {
+   "basin_fraction": 0.0078125,
+   "fold_vs_wt": 1.0
+  },
+  "v_PH=OFF": {
+   "basin_fraction": 0.0078125,
+   "fold_vs_wt": 1.0
+  },
+  "v_PH=ON": {
+   "basin_fraction": 0.0078125,
+   "fold_vs_wt": 1.0
+  },
+  "v_PTC_protein=OFF": {
+   "basin_fraction": 0.0078125,
+   "fold_vs_wt": 1.0
+  },
+  "v_PTC_protein=ON": {
+   "basin_fraction": 0.0078125,
+   "fold_vs_wt": 1.0
+  },
+  "v_SMO=OFF": {
+   "basin_fraction": 0.0078125,
+   "fold_vs_wt": 1.0
+  },
+  "v_SMO=ON": {
+   "basin_fraction": 0.0078125,
+   "fold_vs_wt": 1.0
+  },
+  "v_WG_protein=OFF": {
+   "basin_fraction": 0.0078125,
+   "fold_vs_wt": 1.0
+  },
+  "v_WG_protein=ON": {
+   "basin_fraction": 0.0078125,
+   "fold_vs_wt": 1.0
+  },
+  "v_ci=OFF": {
+   "basin_fraction": 0.0,
+   "fold_vs_wt": 0.0
+  },
+  "v_ci=ON": {
+   "basin_fraction": 0.015625,
+   "fold_vs_wt": 2.0
+  },
+  "v_en=OFF": {
+   "basin_fraction": 0.015625,
+   "fold_vs_wt": 2.0
+  },
+  "v_en=ON": {
+   "basin_fraction": 0.0,
+   "fold_vs_wt": 0.0
+  },
+  "v_hh=OFF": {
+   "basin_fraction": 0.0078125,
+   "fold_vs_wt": 1.0
+  },
+  "v_hh=ON": {
+   "basin_fraction": 0.0078125,
+   "fold_vs_wt": 1.0
+  },
+  "v_ptc=OFF": {
+   "basin_fraction": 0.0078125,
+   "fold_vs_wt": 1.0
+  },
+  "v_ptc=ON": {
+   "basin_fraction": 0.0078125,
+   "fold_vs_wt": 1.0
+  },
+  "v_wg=OFF": {
+   "basin_fraction": 0.0,
+   "fold_vs_wt": 0.0
+  },
+  "v_wg=ON": {
+   "basin_fraction": 0.015625,
+   "fold_vs_wt": 2.0
+  }
+ },
+ "edge_removal_sensitivity": {
+  "v_CI_protein->v_CIA": {
+   "basin_fraction": 0.0,
+   "fold_vs_wt": 0.0
+  },
+  "v_PTC_protein->v_CIA": {
+   "basin_fraction": 0.0078125,
+   "fold_vs_wt": 1.0
+  },
+  "v_hh_external->v_CIA": {
+   "basin_fraction": 0.0,
+   "fold_vs_wt": 0.0
+  },
+  "v_CI_protein->v_CIR": {
+   "basin_fraction": 0.0078125,
+   "fold_vs_wt": 1.0
+  },
+  "v_PTC_protein->v_CIR": {
+   "basin_fraction": 0.0078125,
+   "fold_vs_wt": 1.0
+  },
+  "v_hh_external->v_CIR": {
+   "basin_fraction": 0.0,
+   "fold_vs_wt": 0.0
+  },
+  "v_ci->v_CI_protein": {
+   "basin_fraction": 0.0,
+   "fold_vs_wt": 0.0
+  },
+  "v_en->v_EN_protein": {
+   "basin_fraction": 0.015625,
+   "fold_vs_wt": 2.0
+  },
+  "v_hh->v_HH_protein": {
+   "basin_fraction": 0.0078125,
+   "fold_vs_wt": 1.0
+  },
+  "v_PTC_protein->v_PH": {
+   "basin_fraction": 0.0078125,
+   "fold_vs_wt": 1.0
+  },
+  "v_hh_external->v_PH": {
+   "basin_fraction": 0.0078125,
+   "fold_vs_wt": 1.0
+  },
+  "v_PTC_protein->v_PTC_protein": {
+   "basin_fraction": 0.0078125,
+   "fold_vs_wt": 1.0
+  },
+  "v_ptc->v_PTC_protein": {
+   "basin_fraction": 0.0078125,
+   "fold_vs_wt": 1.0
+  },
+  "v_hh_external->v_PTC_protein": {
+   "basin_fraction": 0.0078125,
+   "fold_vs_wt": 1.0
+  },
+  "v_PTC_protein->v_SMO": {
+   "basin_fraction": 0.0078125,
+   "fold_vs_wt": 1.0
+  },
+  "v_hh_external->v_SMO": {
+   "basin_fraction": 0.0078125,
+   "fold_vs_wt": 1.0
+  },
+  "v_wg->v_WG_protein": {
+   "basin_fraction": 0.0078125,
+   "fold_vs_wt": 1.0
+  },
+  "v_EN_protein->v_ci": {
+   "basin_fraction": 0.03125,
+   "fold_vs_wt": 4.0
+  },
+  "v_WG_external->v_en": {
+   "basin_fraction": 0.0078125,
+   "fold_vs_wt": 1.0
+  },
+  "v_SLP->v_en": {
+   "basin_fraction": 0.0078125,
+   "fold_vs_wt": 1.0
+  },
+  "v_CIR->v_hh": {
+   "basin_fraction": 0.0078125,
+   "fold_vs_wt": 1.0
+  },
+  "v_EN_protein->v_hh": {
+   "basin_fraction": 0.0078125,
+   "fold_vs_wt": 1.0
+  },
+  "v_CIA->v_ptc": {
+   "basin_fraction": 0.0078125,
+   "fold_vs_wt": 1.0
+  },
+  "v_CIR->v_ptc": {
+   "basin_fraction": 0.0078125,
+   "fold_vs_wt": 1.0
+  },
+  "v_EN_protein->v_ptc": {
+   "basin_fraction": 0.0078125,
+   "fold_vs_wt": 1.0
+  },
+  "v_CIA->v_wg": {
+   "basin_fraction": 0.0,
+   "fold_vs_wt": 0.0
+  },
+  "v_CIR->v_wg": {
+   "basin_fraction": 0.015625,
+   "fold_vs_wt": 2.0
+  },
+  "v_wg->v_wg": {
+   "basin_fraction": 0.0,
+   "fold_vs_wt": 0.0
+  },
+  "v_SLP->v_wg": {
+   "basin_fraction": 0.0078125,
+   "fold_vs_wt": 1.0
+  }
+ }
+}
