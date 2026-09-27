@@ -1,0 +1,8 @@
+{
+ "linear_theory_relRMSE": 0.3427,
+ "cnn_curve_relRMSE": 0.3386,
+ "mlp_params_relRMSE": 0.4487,
+ "ridge_curve_features_relRMSE": 1.2396,
+ "protocol": "6-fold CV x 2 seeds; target = relative position of k2_sim within [k2_min, k2_max]; n=171 cached sims",
+ "reading": "if no model beats linear theory, the beyond-onset shift is not learnable from these inputs - a boundary result, not a modeling failure"
+}
