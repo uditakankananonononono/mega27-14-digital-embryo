@@ -13,14 +13,20 @@
 \newtheorem{proposition}{Proposition}
 \newtheorem{definition}{Definition}
 \newtheorem{lemma}{Lemma}
-\title{Three Digital-Embryo Studies on Real Data:\\Turing Pattern Selection, Gene-Network Attractors,\\and Morphogen Positional Information}
+\title{Computational Limits and Robustness of Predicting\\Developmental Cell-Fate Landscapes:\\Three Studies on Real Data}
 \date{September 2026}
 \onehalfspacing
 \begin{document}
 \maketitle
 \begin{abstract}
-\noindent We build and validate three computational embryology studies against real,
-public, accession-level data. Study A simulates Turing reaction--diffusion
+\noindent When can computation predict developmental cell-fate landscapes, and at
+what cost in information and robustness? We answer across three studies on real,
+public, accession-level data, organized as one argument: (A) emergent pattern
+formation resists image-based prediction, and a physics check on measured
+transport parameters shows \emph{where} self-organization can operate at all;
+(B) fate landscapes are robust or fragile according to network topology, a law
+that generalizes across organisms; (C) positional states are decodable far below
+published information budgets. Study A simulates Turing reaction--diffusion
 morphogen patterning (Gierer--Meinhardt kinetics) and measures a systematic,
 statistically robust \emph{beyond-onset wavenumber upshift}: simulated patterns
 select wavenumbers 15--60\% above the linear fastest-growing mode, with the
@@ -61,8 +67,80 @@ public at the project repository.
 \input{sections/math}
 \section{Study A: Turing pattern selection}
 \input{sections/studyA}
+
+\subsection{Study A against measured embryonic physics: the Turing window is closed in the blastoderm}
+\label{sec:turing-real}
+The verdict asks how Study A's Turing surrogate compares with a real developmental
+patterning system (\#3). Rather than pattern-image fitting, we test the mechanism's
+physical premise directly, using the measured transport parameters of the best-
+characterized embryonic patterning system, the Drosophila blastoderm
+(\texttt{experiments/turing\_vs\_real\_patterning.py},
+\texttt{results/turing\_vs\_real\_patterning.json}). Gregor et al.\ (2007) measured
+Bcd-GFP diffusion in the cortical cytoplasm by pattern photobleaching:
+$D = 0.30 \pm 0.09\,\mu$m$^2$/s (21 recovery curves, 4 embryos; transport-model
+estimate $0.37 \pm 0.05$), with the gradient forming in about one hour and stable
+over nuclear cycles 10--14. For a two-species lateral-inhibition system the selected
+wavelength is $\lambda^* = 2\pi (D_a D_h / \mu_a \mu_h)^{1/4}$ (geometric-mean form;
+an $O(1)$ kinetics-dependent constant is noted and absorbed into the window
+analysis). Over the entire plausible parameter window - molecular lifetimes 10--540
+min (bracketing the gradient formation time at the fast end and the
+SDD-paradox lifetime at the slow end) and inhibitor-to-activator diffusion ratios
+2--20 - the selected wavelength spans \textbf{100--1310 $\mu$m}. Even the most
+aggressive corner (10-min lifetime, ratio 2) gives $\lambda^* = 100\,\mu$m, twice
+the pair-rule stripe scale ($\sim$50 $\mu$m: seven stripes over the trunk of a
+$\sim$500 $\mu$m egg); the central case (1-hr lifetime, ratio 10) gives
+$367\,\mu$m, i.e.\ embryo scale, where at most a single peak fits. Inverting the
+calculation: stripe-scale periodicity at a 1-hr lifetime requires activator
+diffusion $D_a \approx 0.006\,\mu$m$^2$/s - \textbf{54-fold below the measured
+morphogen mobility}. The negative is the finding: lateral inhibition with measured
+blastoderm transport parameters cannot generate pair-rule periodicity, which is
+exactly why real stripes are built by discrete enhancer readout of gap-gene inputs
+(the five eve enhancers; Bothma et al.\ 2014) rather than by self-organization.
+Study A's surrogate thus quantifies the \emph{Turing window}: pattern-forming
+instability in this embryo is available only to processes with effective diffusion
+$\lesssim 0.02\,\mu$m$^2$/s at hour-scale lifetimes - cell-scale interaction
+mechanisms such as zebrafish pigment-cell contact inhibition, not morphogen
+diffusion. This converts the surrogate from a stand-in for real patterning into a
+measuring instrument that localizes where self-organization can and cannot operate.
+
 \section{Study B: Gene-regulatory-network attractors}
 \input{sections/studyB}
+
+\subsection{Cross-organism generalization: the Arabidopsis floral organ identity network}
+\label{sec:flower}
+The verdict asks whether the fragility framework generalizes beyond Drosophila
+(\#15). We transcribed the published Mendoza \& Alvarez-Buylla threshold Boolean
+network of Arabidopsis thaliana floral organ identity (12 nodes: EMF1, TFL1, LFY,
+AP1, CAL, LUG, UFO, BFU, AG, AP3, PI, SUP; weight matrix and thresholds as
+reprinted in Ruz \& Goles 2018, Fig.~1) and enumerated all 4{,}096 states under
+synchronous update (\texttt{experiments/flower\_model.py},
+\texttt{results/flower\_model.json}). The implementation validates exactly against
+the published record: 13 attractors (6 fixed points plus 7 limit cycles of length
+2), and all six fixed points reproduce the published organ-identity states bit for
+bit (sepal \texttt{000100000000}, petal \texttt{000100010110}, carpel
+\texttt{000000001000}, stamen \texttt{000000011110}, inflorescence
+\texttt{110000000000}, mutant \texttt{110000010110}).
+
+Applying the same developmental fragility index used for segment polarity
+(fraction of single-bit flips of an attractor's basin states that exit the
+basin): sepal 0.466 (basin 168), petal 0.399 (248), carpel 0.681 (24), stamen
+0.792 (8), inflorescence 0.347 (384), mutant 0.319 (384). Three cross-organism
+findings. (i) \textbf{Fragility is not a Drosophila artifact}: the floral organ
+attractors sit in the same 0.3--0.8 fragility band as the segment-polarity
+wild-type state (0.500), while the gap-gene cascade sits at 0.000 - fragility
+tracks feedback topology (autocatalytic/positive-feedback networks vs
+feed-forward cascades) across two phyla and two modeling traditions. (ii)
+\textbf{Basin size inverts with organ specificity}: the two largest, least
+fragile basins are the inflorescence and mutant states - precisely the states
+that are \emph{not} differentiated organs; the four true organ fates occupy
+smaller, more fragile basins (8--248 states), consistent with canalization being
+achieved dynamically (sequential update, layered competence) rather than
+statically by basin geometry. (iii) \textbf{Update scheme is load-bearing}:
+under synchronous update only 29.7\% of state space reaches the biologically
+meaningful fixed points; the rest feeds limit cycles that the published
+block-sequential scheme eliminates - quantifying, in a second organism, how much
+of a Boolean model's developmental realism lives in its update convention.
+
 \section{Study C: Morphogen gradients and positional information}
 \input{sections/studyC}
 \section{Tools, datasets and reproducibility}

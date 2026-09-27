@@ -1,0 +1,60 @@
+{
+ "n_states": 4096,
+ "n_attractors": 13,
+ "n_fixed_points": 6,
+ "n_limit_cycles_len2": 7,
+ "published_fixed_points_match": {
+  "sepal": true,
+  "petal": true,
+  "carpel": true,
+  "stamen": true,
+  "inflorescence": true,
+  "mutant": true
+ },
+ "labeled": {
+  "sepal": {
+   "state": "000100000000",
+   "is_fixed": true,
+   "basin": 168,
+   "fragility": 0.4663
+  },
+  "petal": {
+   "state": "000100010110",
+   "is_fixed": true,
+   "basin": 248,
+   "fragility": 0.3992
+  },
+  "carpel": {
+   "state": "000000001000",
+   "is_fixed": true,
+   "basin": 24,
+   "fragility": 0.6806
+  },
+  "stamen": {
+   "state": "000000011110",
+   "is_fixed": true,
+   "basin": 8,
+   "fragility": 0.7917
+  },
+  "inflorescence": {
+   "state": "110000000000",
+   "is_fixed": true,
+   "basin": 384,
+   "fragility": 0.3472
+  },
+  "mutant": {
+   "state": "110000010110",
+   "is_fixed": true,
+   "basin": 384,
+   "fragility": 0.3194
+  }
+ },
+ "comparison_segment_polarity": {
+  "wt_basin_frac": 0.0078125,
+  "fragility": 0.5
+ },
+ "gap_gene_cascade": {
+  "fragility": 0.0,
+  "structure": "single global attractor"
+ }
+}

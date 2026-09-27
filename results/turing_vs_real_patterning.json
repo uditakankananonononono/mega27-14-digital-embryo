@@ -1,0 +1,117 @@
+{
+ "measured_anchors": {
+  "D_bcd_cortical_um2_s": 0.3,
+  "D_sd": 0.09,
+  "gradient_formation_hr": 1.0,
+  "embryo_length_um": 500,
+  "source": "Gregor et al. 2007 Cell 130:141-152"
+ },
+ "stripe_scale_target_um": 50.0,
+ "wavelength_grid": [
+  {
+   "lifetime_min": 10,
+   "Dh_over_Da": 2,
+   "lambda_star_um": 100.2
+  },
+  {
+   "lifetime_min": 10,
+   "Dh_over_Da": 5,
+   "lambda_star_um": 126.1
+  },
+  {
+   "lifetime_min": 10,
+   "Dh_over_Da": 10,
+   "lambda_star_um": 149.9
+  },
+  {
+   "lifetime_min": 10,
+   "Dh_over_Da": 20,
+   "lambda_star_um": 178.3
+  },
+  {
+   "lifetime_min": 30,
+   "Dh_over_Da": 2,
+   "lambda_star_um": 173.6
+  },
+  {
+   "lifetime_min": 30,
+   "Dh_over_Da": 5,
+   "lambda_star_um": 218.3
+  },
+  {
+   "lifetime_min": 30,
+   "Dh_over_Da": 10,
+   "lambda_star_um": 259.6
+  },
+  {
+   "lifetime_min": 30,
+   "Dh_over_Da": 20,
+   "lambda_star_um": 308.8
+  },
+  {
+   "lifetime_min": 60,
+   "Dh_over_Da": 2,
+   "lambda_star_um": 245.6
+  },
+  {
+   "lifetime_min": 60,
+   "Dh_over_Da": 5,
+   "lambda_star_um": 308.8
+  },
+  {
+   "lifetime_min": 60,
+   "Dh_over_Da": 10,
+   "lambda_star_um": 367.2
+  },
+  {
+   "lifetime_min": 60,
+   "Dh_over_Da": 20,
+   "lambda_star_um": 436.7
+  },
+  {
+   "lifetime_min": 180,
+   "Dh_over_Da": 2,
+   "lambda_star_um": 425.3
+  },
+  {
+   "lifetime_min": 180,
+   "Dh_over_Da": 5,
+   "lambda_star_um": 534.8
+  },
+  {
+   "lifetime_min": 180,
+   "Dh_over_Da": 10,
+   "lambda_star_um": 636.0
+  },
+  {
+   "lifetime_min": 180,
+   "Dh_over_Da": 20,
+   "lambda_star_um": 756.3
+  },
+  {
+   "lifetime_min": 540,
+   "Dh_over_Da": 2,
+   "lambda_star_um": 736.7
+  },
+  {
+   "lifetime_min": 540,
+   "Dh_over_Da": 5,
+   "lambda_star_um": 926.3
+  },
+  {
+   "lifetime_min": 540,
+   "Dh_over_Da": 10,
+   "lambda_star_um": 1101.6
+  },
+  {
+   "lifetime_min": 540,
+   "Dh_over_Da": 20,
+   "lambda_star_um": 1310.0
+  }
+ ],
+ "min_lambda_star_um": 100.2,
+ "max_lambda_star_um": 1310.0,
+ "d_activator_needed_for_50um_at_1h_lifetime": 0.00556,
+ "fold_below_measured": 53.9,
+ "reading": "measured morphogen mobility puts any Turing wavelength at embryo scale, not stripe scale"
+}
