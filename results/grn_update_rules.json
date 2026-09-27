@@ -1,0 +1,36 @@
+{
+ "model": "Cell Collective id-021, condition hh1_WG0_SLP0",
+ "synchronous_exact_wt_states": 128,
+ "synchronous_exact_fraction": 0.0078125,
+ "async_wt_states_over_8_reps": [
+  1785,
+  1818,
+  1785,
+  1829,
+  1840,
+  1821,
+  1787,
+  1807
+ ],
+ "async_fraction_mean": 0.11041259765625,
+ "async_fraction_sd": 0.0012256521989760256,
+ "stochastic_noise_sweep": {
+  "0.001": {
+   "mean_states": 91.0,
+   "sd": 10.344080432788601
+  },
+  "0.01": {
+   "mean_states": 807.0,
+   "sd": 57.645468165329355
+  },
+  "0.05": {
+   "mean_states": 2977.0,
+   "sd": 83.77947242612596
+  },
+  "0.1": {
+   "mean_states": 3356.0,
+   "sd": 41.7612260356422
+  }
+ },
+ "reading": "basin conclusion is update-rule dependent if async fraction diverges materially from synchronous 0.781%"
+}
