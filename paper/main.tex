@@ -47,9 +47,8 @@ held-out fly lines; paired bootstrap CI for the gain $[1.99,3.11]\%$ EL), and
 maternal \emph{bcd} dosage (6.21\% vs.\ 9.91\% EL median error; bootstrap CI
 $[3.00,4.40]\%$ EL). Two headline measurements tie the studies together: a \emph{developmental fragility index}
 for the segment-polarity network ($F=0.500$; exactly half of all 1{,}792 single-node perturbations of
-wild-type-basin states destroy the wild-type outcome, concentrated entirely in the CI/EN axis, with
-seven clamp interventions that abolish the basin and six that double it) and a \emph{minimum-information
-threshold} for morphogen readout (cephalic-furrow position is decodable below the published benchmark
+wild-type-basin states destroy the wild-type outcome, concentrated in seven synchronous-sensitive nodes including wg, ci and en, with seven initial-state restrictions that yield zero wg-ON fixed-point outcomes and six with twice the unrestricted conditional fraction; these are not maintained clamps) and a \emph{minimum-information
+comparison} for supervised morphogen decoding (cephalic-furrow position is decodable below the published benchmark
 from a single measured point of the Bicoid gradient, 4.29\% vs 4.94\% EL for the true-dose comparator). The measured-amplitude comparator in the same benchmark has lower RMSE, 2.8566\% EL, so the one-point result does not beat all threshold alternatives. Negative results (a retracted small-sample surrogate win,
 single-exponential sufficiency, degenerate basin classification) are reported
 alongside positive ones, each with its positive interpretation. All code, tests, data manifests and result files are
@@ -127,13 +126,10 @@ wild-type state (0.500), while the gap-gene cascade sits at 0.000 - the basin-av
 \textbf{Basin size inverts with organ specificity}: the two largest, least
 fragile basins are the inflorescence and mutant states - precisely the states
 that are \emph{not} differentiated organs; the four true organ fates occupy
-smaller, more fragile basins (8--248 states), consistent with canalization being
-achieved dynamically (sequential update, layered competence) rather than
-statically by basin geometry. (iii) \textbf{Update scheme is load-bearing}:
+smaller, more fragile basins (8--248 states), a model observation that does not identify a biological canalization mechanism. (iii) \textbf{Update scheme is load-bearing}:
 under synchronous update only 29.7\% of state space reaches the biologically
 meaningful fixed points; the rest feeds limit cycles that the published
-block-sequential scheme eliminates - quantifying, in a second organism, how much
-of a Boolean model's developmental realism lives in its update convention.
+block-sequential scheme eliminates - showing model-output dependence on update convention, not a measurement of developmental realism.
 
 \input{sections/flower_radius}
 \input{sections/flower_async}

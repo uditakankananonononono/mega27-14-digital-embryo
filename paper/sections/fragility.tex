@@ -3,7 +3,7 @@ The wild-type wg-ON basin of the published id-021 segment-polarity network (cond
 \begin{equation}
 F = \frac{1}{|B|\,n}\sum_{s \in B}\sum_{i=1}^{n} \mathbb{1}\left[\mathrm{traj}(s \oplus e_i) \notin B\right],
 \end{equation}
-where $B$ is the wild-type basin and $s \oplus e_i$ flips node $i$. We find $F = 0.500$: exactly half of the 1{,}792 single-bit perturbations destroy the wild-type outcome. Fragility is concentrated, not uniform (Table~\ref{tab:fragility}): flipping any of CI's three molecular forms or EN protein \emph{always} exits the basin, while flips elsewhere usually do not.
+where $B$ is the wild-type basin and $s \oplus e_i$ flips node $i$. We find $F = 0.500$: exactly half of the 1{,}792 single-bit perturbations destroy the wild-type outcome. Fragility is concentrated, not uniform (Table~\ref{tab:fragility}): Seven nodes have exit fraction exactly one: CIA, CIR, CI protein, EN protein, ci, en and wg. The other seven have exit fraction zero under this synchronous basin measure. The earlier four-node table hid three equally sensitive nodes and is corrected below.
 \begin{table}[!htbp]\centering\small
 \caption{Per-node exit fraction (fraction of basin states exiting after flipping that node).}\label{tab:fragility}
 \begin{tabular}{lr}\hline\hline
@@ -12,9 +12,37 @@ v\_CIA & 1.000 \\
 v\_CIR & 1.000 \\
 v\_CI\_protein & 1.000 \\
 v\_EN\_protein & 1.000 \\
-\multicolumn{2}{l}{all other free nodes: lower (see \texttt{results/grn\_fragility.json})}\\
+v\_ci & 1.000 \\
+v\_en & 1.000 \\
+v\_wg & 1.000 \\
+\multicolumn{2}{l}{other seven free nodes: 0.000 (see \texttt{results/grn\_fragility.json})}\\
 \hline\hline\end{tabular}
 \end{table}
 
-\subsection{Intervention predictions from knockouts and clamps}
-Clamping each free node OFF or ON and re-enumerating the basin yields concrete, testable perturbation predictions (weakness \#16 of the provided verdict): seven interventions abolish the wild-type basin entirely (wg-OFF, ci-OFF, CIA-OFF, CI\_protein-OFF, en-ON, CIR-ON, EN\_protein-ON), while six clamps \emph{double} it (e.g.\ ci-ON, CIA-ON, EN\_protein-OFF: basin fraction 1.56\%). Edge-removal sensitivity over the 29 regulatory edges identifies six critical edges whose deletion abolishes the basin (including $wg\to wg$ auto-activation and $CIA\to wg$) and three edges whose removal \emph{expands} the basin 2--4$\times$ ($EN\_protein\to ci$ strongest at 4$\times$), identifying the repressive leg of the circuit as the load-bearing constraint on wild-type robustness. Biological interpretation (verdict \#8): the wild-type segment-polarity state sits on a knife's edge maintained by the CI/EN axis, and targeted repression removal can make it \emph{more} robust - a falsifiable systems-biology prediction, not an engineering fix.
+\subsection{Initial-state restrictions are not maintained knockouts}
+The historical \texttt{knockout\_predictions} field has seven initial-state restrictions with zero wg-ON fixed-point outcomes and six with twice the unrestricted fraction. The implementation does not maintain the named node clamp during its trajectory: \texttt{wt\_basin} sets the initial value, while \texttt{attractor\_of} calls the original successor rule at each step. For example, with every free node initially zero except en=1, the very first successor sets en=0. A maintained en=1 intervention would restore en to one after every update. This explicit source-level counterexample is retained in \path{results/grn_intervention_semantics_audit.json}.
+
+Accordingly the previous knockout, constitutive-expression and basin-doubling interpretation is withdrawn. The old numbers remain unchanged and describe conditioning on a node's starting value, with a reduced initial-state denominator, not modifying the regulatory dynamics. A maintained-clamp experiment requires an explicit altered transition function and a fresh exact enumeration. It cannot be inferred from these records.
+
+The edge-replacement experiment separately substitutes a regulator literal with zero in the target expression. This is a specified rule edit, not a physically validated deletion of an interaction. Its archived basin changes remain local model calculations, not evidence that targeted repression removal makes actual development more robust. The fragility index itself remains an exact synchronous single-bit basin-exit measure for the stated condition, not a measured biological fragility rate.
+
+\subsection{A new maintained-clamp census, with the phenotype limit visible}
+After verifying the semantic gap, a separate exact functional-graph census forces the chosen node before every rule evaluation and after each successor. It classifies all 8,192 states of the thirteen nonclamped nodes for each of 28 binary interventions. The unrestricted fourteen-node baseline again gives 128 wg-ON fixed-point outcomes among 16,384 starts. Results are new, not replacements for the historical initial-restriction file. Three maintained conditions are independently checked by direct trajectory enumeration in tests, in addition to graph-classification unit checks.
+
+\begin{table}[!htbp]\centering\small
+\caption{Selected maintained-clamp contrasts. Fractions concern a uniformly weighted reduced initial space reaching any wg=1 fixed point, not a full biological wild-type phenotype.}
+\begin{tabular}{lrr}\hline\hline
+Condition & Historical initial restriction & Maintained clamp \\\hline
+CIA ON & .015625 & .250000 \\
+CI protein ON & .015625 & .125000 \\
+ci ON & .015625 & .062500 \\
+EN protein OFF & .015625 & .031250 \\
+en OFF & .015625 & .015625 \\
+wg ON & .015625 & 1.000000 \\
+wg OFF & .000000 & .000000 \\\hline\hline
+\end{tabular}
+\end{table}
+
+The differences are substantive: CIA ON gives a quarter of the reduced starting space, not the old 1.5625\%. They establish how changing the transition differs from conditioning on the initial measure. They do not show that actual constitutive expression produces those outcome probabilities. The endpoint itself needs care: forcing wg ON trivially satisfies the wg marker at every fixed point. Its fraction of one is not full wild-type rescue. A maintained intervention must therefore state whether the target phenotype includes the manipulated node and what other phenotype coordinates are required. Reduced-space weighting also changes the denominator, so a larger fraction is not automatically more developmental accessibility under a natural initial distribution.
+
+The exact code and all 28 conditions are in \path{experiments/grn_maintained_clamp_audit.py} and \path{results/grn_maintained_clamp_audit.json}, with source model hash, node order, transition hashes, fixed-point/cycle counts and archived initial-restriction contrasts. The computation is finite and deterministic. Binary Boolean dynamics, the chosen external signals, uniform starting measure and wg-only fixed-point endpoint remain modeling choices. There is no physical intervention or wet-lab verification.
