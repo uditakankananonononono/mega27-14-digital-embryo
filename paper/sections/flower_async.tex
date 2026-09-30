@@ -1,0 +1,33 @@
+\subsection{Exact asynchronous absorption separates topology from update schedule}
+
+The earlier radius audit fixed the synchronous update rule while changing the starting measure. We now hold the floral threshold matrix and one-bit perturbation kernel fixed and change only the update schedule. At each step, one of the twelve nodes is selected uniformly at random and updated from the current state. Other nodes retain their values. Self-loops are retained when the selected node does not change. This is random single-node asynchronous dynamics, not a random permutation sweep, and is not calibrated to measured gene-expression timing.
+
+For the 4,096 states, let $T_i(x)$ update node $i$ alone. The Markov transition matrix is
+\[
+P_{xy}=\frac{1}{12}\sum_{i=1}^{12}\mathbf{1}[T_i(x)=y].
+\]
+We enumerate directed strongly connected components and retain only closed components as recurrent classes. There are exactly six closed classes, each a published floral fixed point. The seven synchronous two-cycles are not closed recurrent classes under this update kernel. This is a mathematical change in the dynamics, not evidence that real developmental cycles are absent.
+
+For transient-state matrix $Q$ and direct recurrent-class entry matrix $R$, the absorption matrix $H$ satisfies
+\[
+(I-Q)H=R.
+\]
+Boundary rows are one-hot indicators of class membership. Solving the sparse system gives the probability of eventual absorption at each fate from every initial state, without trajectory Monte Carlo. Maximum harmonic residual is $4.44\times10^{-16}$; all rows sum to one within numerical tolerance. The classification is exact enumeration, while absorption values are floating-point solutions of that finite system.
+
+\begin{center}\begin{tabular}{lrrr}\hline
+Fate & Sync. fixed $R(1)$ & Async. fixed $R(1)$ & Uniform mass\\\hline
+Sepal & 0.500 & 0.769 & 0.1974\\
+Petal & 0.417 & 0.651 & 0.1591\\
+Carpel & 0.333 & 0.687 & 0.0879\\
+Stamen & 0.167 & 0.557 & 0.0557\\
+Inflorescence & 0.667 & 0.852 & 0.2853\\
+Mutant & 0.583 & 0.735 & 0.2147\\\hline
+\end{tabular}\end{center}
+
+Fixed-start retention perturbs each of the twelve nodes of a published fixed point in turn and averages its absorption probability back to that fate. It uses the same twelve equally weighted perturbed states as the synchronous comparison. The carpel-versus-petal ordering reverses: synchronous retention is 0.333 versus 0.417, whereas asynchronous retention is 0.687 versus 0.651. Topology, weights, thresholds, fixed points, starting states and perturbation locations are identical. Update schedule alone changes this ordering. This is a counterexample to treating a robustness ranking as an invariant of network topology.
+
+Uniform absorption mass averages over all starting states and is not a deterministic basin size. A stochastic initial state can reach more than one fate under different schedules. To compare identical starting sets, we also evaluate the states in each \emph{synchronous} basin under the asynchronous kernel. Their probability of reaching the originally assigned fate is 0.828 for sepal, 0.679 for petal, 0.915 for carpel, 0.852 for stamen, 0.915 for inflorescence and 0.799 for mutant. These are not asynchronous basin definitions. They show that transporting a synchronous label to another update rule can lose certainty even before a new bit perturbation.
+
+Together with the starting-measure reversal, this result restricts the earlier topology-law language. Robustness belongs to the chosen transition dynamics, perturbation kernel and initial-state distribution together. Published-network comparisons can identify model-specific examples, not establish a causal cross-organism topology law without controlling those choices. Increasing asynchronous retention in this experiment is not evidence of superior biological canalization: single-node timing, artificial bit changes and uniform state weights remain modeling assumptions. No embryonic trajectory distribution or molecular-noise scale has been measured here.
+
+The executable is \path{experiments/flower_async_absorption.py}. Results include the closed classes, node-specific perturbation probabilities, all model checks and the source-code checksum in \path{results/flower_async_absorption.json}; the complete 4,096-by-six absorption matrix is retained in a compressed numerical archive. Source model: \url{https://pageperso.lis-lab.fr/~sylvain.sene/files/publi_pres/rgs18.pdf}. A useful next test would compare calibrated update rates or measured trajectory weights, rather than label the present schedule a biological truth.
