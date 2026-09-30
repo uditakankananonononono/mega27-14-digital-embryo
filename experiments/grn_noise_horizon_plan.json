@@ -1,0 +1,12 @@
+{
+ "status":"frozen before outcomes",
+ "initial_state_sampling":"uniform iid with replacement from 16384 integer states, 4096 trajectories per replicate",
+ "replicates":4,
+ "seed":930514,
+ "q":[0,0.001,0.01,0.05,0.1],
+ "horizons":[100,300,1000],
+ "paired_estimand":"same continuous trajectory path prefix: terminal marker/full-reference-fixed status at horizon versus status at first unchanged noisy step if one occurred, else at horizon",
+ "reference":"all unrestricted synchronous fixed points with wg=1, exact state identity; not a biologically verified phenotype",
+ "outcomes":["terminal_wg_fraction","terminal_reference_fixed_fraction","early_stop_wg_fraction","early_stop_reference_fixed_fraction","first_unchanged_seen_fraction"],
+ "limits":"Monte Carlo horizon-specific software model; continuing noise has no permanently absorbing state for 0<q<1; not stochastic basins or real development"
+}

@@ -6,3 +6,28 @@ The noisy experiment samples every fourth initial state, four repetitions, and s
 At q=.001 the archived terminal fraction is 0.5554\%, below the synchronous 0.78125\%. At .01, .05 and .1 it is 4.9255\%, 18.1702\% and 20.4834\%. Thus the earlier wording that noise simply inflates the basin is false even within this finite library. The four recorded fractions and lower-noise decrease remain unchanged in \texttt{results/grn\_update\_rules.json}. They must not be relabeled stochastic basin volumes or biological robustness.
 
 The original asynchronous and noise scripts do not recompute the per-node perturbation index or maintained-clamp interventions under each new rule. Consequently they do not demonstrate that the same CI/EN axis remains dominant across update schemes. Actual cellular timing, perturbation distributions and fate readout are unmeasured. The useful result is protocol dependence that motivates fresh, explicitly defined absorption or horizon-specific experiments, with failed claims preserved rather than repaired by biological analogy.
+
+\subsection{Paired continuing-noise paths separate the stopping rule from the endpoint}
+A new preplanned software audit holds each path prefix fixed while comparing first-unchanged stopping with continued noisy updating. Its frozen local plan uses four replicates, each with 4,096 uniformly sampled initial states (sampling with replacement), five noise rates and three horizons. The same initial states and random uniforms are shared across rates within a replicate. This pairing reduces comparisons to a specified protocol difference; it does not make the paths or horizons statistically independent. The plan was frozen before execution and its SHA-256 is retained in the result record. It is a local plan, not an externally registered study.
+
+For each path, we store two endpoints. The marker endpoint asks only whether wg=1 at the observation time. The stricter endpoint asks whether the entire fourteen-node state exactly matches an original unrestricted synchronous wg-ON fixed point; this model has one such state under the chosen external condition. This is an explicit full-state software reference, not a biologically validated wild-type phenotype. With continued noise, that reference can be visited and then left. Even a full-state match is therefore occupancy at a stated horizon, not permanent rescue.
+
+The continuous process is $X_{t+1}=f(X_t)\oplus Z_t$, where each free-node bit of $Z_t$ is independently Bernoulli($q$). At $0<q<1$ every bit-mask has positive probability, so from any current state every possible next state has positive probability. No single state is permanently absorbing. An unchanged step has probability greater than zero, but says nothing about the next sweep. First-unchanged stopping selectively freezes such events and changes the process being measured. We do not infer the stationary distribution or claim that 1,000 steps are sufficient for equilibrium.
+
+\begin{table}[ht]
+\centering\small
+\caption{Paired stopping/endpoint audit at 1,000 steps. Entries are mean percentages across four replicates of 4,096 random starts. SDs across replicates and all 100/300/1,000-step records are saved; these are not confidence intervals.}
+\begin{tabular}{rrrrr}\toprule
+$q$ & stopped wg & continued wg & stopped full state & continued full state\\\midrule
+0 & 0.739 & 0.739 & 0.739 & 0.739 \\
+0.001 & 1.215 & 12.622 & 1.215 & 12.115 \\
+0.01 & 5.334 & 13.208 & 5.310 & 9.253 \\
+0.05 & 17.560 & 15.479 & 16.193 & 2.466 \\
+0.1 & 21.069 & 19.061 & 15.631 & 0.488 \\
+\bottomrule\end{tabular}\end{table}
+
+At $q=.001$, first-unchanged stopping gives a marker fraction of 1.215\%, unchanged over the three recorded horizons because all sampled paths have stopped before 100 sweeps. Continuing the same prefixes instead gives 7.043\%, 11.700\% and 12.622\% at 100, 300 and 1,000 sweeps. The large horizon effect was hidden by the old stopping rule. This does not contradict the preserved historical 0.5554\% record: that record used a systematic quarter of the starting states and different random draws. The fresh random-start measure is deliberately separate, not a silent replacement.
+
+The distortion is not uniformly upward or downward. At $q=.1$ and 1,000 steps the stopped marker fraction is 21.069\% versus a continued fraction of 19.061\%. More importantly, the full-reference fractions are 15.631\% versus 0.488\%. A marker-only reading would hide most of the loss of full-state occupancy under stronger continuing noise. Across the tested rates, continued wg occupancy rises while continued reference-state occupancy peaks at the low nonzero rate and then falls. These rates do not establish an optimized biological noise level: initial-state weighting, external condition, horizon and endpoint were fixed model choices, not measured developmental inputs.
+
+The noiseless lookup audit reproduces the exact 128/16,384 basin count. Every vectorized transition-table entry is checked against the original scalar Boolean successor, and independent noiseless trajectories reproduce the saved random-start results. The simulation makes no intervention, changes no historical result, and supplies no wet-lab evidence. All 60 replicate/rate/horizon records, the original reference state, node order, model hash and frozen-plan hash are saved in \path{results/grn_noise_horizon_audit.json}; execution is \path{experiments/grn_noise_horizon_audit.py}. This distinguishes a reproducible protocol failure from an unsupported developmental story.
