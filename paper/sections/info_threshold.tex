@@ -1,7 +1,7 @@
 \section{The minimum-information threshold for positional decoding}
 Verdict reframe 2 asks: not ``how accurately can we decode'' but ``what is the minimum biological information required to recover developmental states''. We degrade the Bicoid gradient input to the positional decoder along three axes under the same disjoint-fly-line 5-fold protocol as the head-to-head benchmark, and ask where held-out error crosses the published Liu 2013 true-dose threshold model (4.94\% EL).
 \begin{table}[!htbp]\centering\small
-\caption{Information-degradation sweep (held-out RMSE, \% egg length). The decode never crosses the published benchmark except under extreme noise.}\label{tab:infothresh}
+\caption{Information-degradation sweep (held-out RMSE, \% egg length). Restricted-input scores are compared with the 4.94\% EL true-dose threshold; this is not the best comparator in the archived benchmark.}\label{tab:infothresh}
 \begin{tabular}{lll}\hline\hline
 Degradation & level & RMSE (\%EL) \\ \hline
 full gradient (64 points) & - & 2.39 \\
@@ -15,4 +15,4 @@ benchmark: Liu 2013 true-dose model & & 4.94 \\
 \hline\hline\end{tabular}
 \end{table}
 
-The finding is a positive quantitative-biology statement: \textbf{cephalic-furrow position is decodable below the published benchmark from a single measured point of the Bicoid gradient} (4.29\% EL), and the decode survives truncation to the anterior-most 10\% of the embryo (2.99\% EL). Positional information in this system is so redundant that the critical noise threshold lies near $\sigma \approx 4\times$ the signal standard deviation. Morphogen readout does not require gradient shape; amplitude-scale information alone nearly saturates the achievable accuracy - a constraint-style discovery about the information economy of developmental decoding, reported with the full sweep archived at \texttt{results/info\_threshold.json}.
+The single-point decoder reaches 4.29\% EL and the anterior-window decoder 2.99\% EL under the tested line-disjoint protocol. Both beat the 4.94\% EL true-dose threshold comparator, but neither beats the measured-amplitude threshold comparator at 2.8566\% EL in \texttt{results/cf\_decoder.json}. The noise crossing is a property of the selected synthetic corruption and estimator, not a minimum biological information threshold. We did not measure information in bits, the embryo's readout circuit, sensing noise or achievable optimal accuracy. Restricted-input prediction therefore does not establish that living morphogen readout needs no gradient shape. The full empirical sweep remains in \texttt{results/info\_threshold.json}.

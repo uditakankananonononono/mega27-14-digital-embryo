@@ -1,0 +1,72 @@
+[
+  {
+    "file": "paper/main.tex",
+    "before": "Three Studies on Real Data",
+    "after": "Simulation, Published Networks and Measured Gradients"
+  },
+  {
+    "file": "paper/main.tex",
+    "before": "We answer across three studies on real,\npublic, accession-level data",
+    "after": "We examine three mixed-evidence studies: synthetic pattern simulations, published regulatory models and public measured gradients"
+  },
+  {
+    "file": "paper/main.tex",
+    "before": "(A) emergent pattern\nformation resists image-based prediction",
+    "after": "(A) the tested dispersion-curve CNN does not improve held-out wavenumber prediction"
+  },
+  {
+    "file": "paper/main.tex",
+    "before": "(C) positional states are decodable far below\npublished information budgets.",
+    "after": "(C) supervised profile decoding is evaluated against specified empirical comparators, without measuring biological readout requirements."
+  },
+  {
+    "file": "paper/main.tex",
+    "before": "this shift is \\emph{not} predictable from the linear dispersion relation by a\nconvolutional surrogate ($n=171$ simulations).",
+    "after": "the tested convolutional surrogate on dispersion features fails to improve on the linear prediction ($n=171$ simulations). This is not an impossibility result for other features, estimators or training designs."
+  },
+  {
+    "file": "paper/main.tex",
+    "before": "from a single measured point of the Bicoid gradient, 4.29\\% vs 4.94\\% EL).",
+    "after": "from a single measured point of the Bicoid gradient, 4.29\\% vs 4.94\\% EL for the true-dose comparator). The measured-amplitude comparator in the same benchmark has lower RMSE, 2.8566\\% EL, so the one-point result does not beat all threshold alternatives."
+  },
+  {
+    "file": "paper/sections/conclusion.tex",
+    "before": "Study~A: emergent pattern wavenumber is a global dynamical property - local image features cannot carry it, which is why the CNN surrogate failed; developmental patterning encodes information non-locally.",
+    "after": "Study~A: the tested CNN uses the linear dispersion curve, not pattern images, and fails to improve the held-out wavenumber prediction. The experiment does not establish an information-theoretic limit on local image features or a biological mechanism of non-local encoding."
+  },
+  {
+    "file": "paper/sections/conclusion.tex",
+    "before": "Study~C: positional information is massively redundant - a single gradient measurement beats the published decoder benchmark - so the embryo's precision problem is not sensing but integration.",
+    "after": "Study~C: a supervised decoder can predict a measured landmark from restricted gradient inputs under this dataset and splitting protocol. The single-point score beats the true-dose 4.94\\% EL comparator but not the measured-amplitude 2.8566\\% EL comparator. The result does not identify whether a living embryo is limited by sensing, integration or another process."
+  },
+  {
+    "file": "paper/sections/conclusion.tex",
+    "before": "every formula\nis derived in the text and re-verified symbolically in the test suite; every\nfailed claim is preserved next to the successful ones.",
+    "after": "implemented formulas and tests provide local checks, not a certification of every mathematical statement; failed experimental claims are retained alongside their corrections."
+  },
+  {
+    "file": "paper/sections/conclusion.tex",
+    "before": "benchmarks and\npublished models are reproducible and beatable on their own data with\ncommodity hardware, provided the evaluation is line-disjoint, the intervals\nare paired, and the failures are kept in the same document as the wins.",
+    "after": "specific published-data benchmarks and model calculations can be reproduced and compared under stated splits with commodity hardware. Line-disjoint evaluation and paired resampling do not alone establish external validity, causal biological interpretation or universal superiority."
+  },
+  {
+    "file": "paper/sections/info_threshold.tex",
+    "before": "The decode never crosses the published benchmark except under extreme noise.",
+    "after": "Restricted-input scores are compared with the 4.94\\% EL true-dose threshold; this is not the best comparator in the archived benchmark."
+  },
+  {
+    "file": "paper/sections/info_threshold.tex",
+    "before": "The finding is a positive quantitative-biology statement: \\textbf{cephalic-furrow position is decodable below the published benchmark from a single measured point of the Bicoid gradient} (4.29\\% EL), and the decode survives truncation to the anterior-most 10\\% of the embryo (2.99\\% EL). Positional information in this system is so redundant that the critical noise threshold lies near $\\sigma \\approx 4\\times$ the signal standard deviation. Morphogen readout does not require gradient shape; amplitude-scale information alone nearly saturates the achievable accuracy - a constraint-style discovery about the information economy of developmental decoding, reported with the full sweep archived at \\texttt{results/info\\_threshold.json}.",
+    "after": "The single-point decoder reaches 4.29\\% EL and the anterior-window decoder 2.99\\% EL under the tested line-disjoint protocol. Both beat the 4.94\\% EL true-dose threshold comparator, but neither beats the measured-amplitude threshold comparator at 2.8566\\% EL in \\texttt{results/cf\\_decoder.json}. The noise crossing is a property of the selected synthetic corruption and estimator, not a minimum biological information threshold. We did not measure information in bits, the embryo's readout circuit, sensing noise or achievable optimal accuracy. Restricted-input prediction therefore does not establish that living morphogen readout needs no gradient shape. The full empirical sweep remains in \\texttt{results/info\\_threshold.json}."
+  },
+  {
+    "file": "paper/sections/studyA.tex",
+    "before": "The upshift is\nnot a lattice artefact.",
+    "after": "This one-condition, changed-seed check reduces concern about a gross resolution effect at that point; it does not rule out lattice effects across the whole sweep."
+  },
+  {
+    "file": "paper/sections/studyA.tex",
+    "before": "bounds what a purely linear surrogate can do and justifies the\ncontinued use of full simulation for wavenumber selection questions.",
+    "after": "records a limitation of this tested CNN and dataset, not a bound on every linear-feature surrogate. Full simulation remains a tested reference for these conditions."
+  }
+]

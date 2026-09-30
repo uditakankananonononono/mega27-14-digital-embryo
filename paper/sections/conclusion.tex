@@ -13,20 +13,15 @@ data ($2.38\%$ vs.\ $4.94\%$ EL, paired CI $[1.99, 3.11]$), and measured the
 dosage-dependence of positional decodability in gap genes ($9.91 \to 6.21\%$
 EL, CI $[3.00, 4.40]$).
 
-The biological throughline comes first (verdict \#8: every computational result must answer ``what biological interpretation follows''). Study~A: emergent pattern wavenumber is a global dynamical property - local image features cannot carry it, which is why the CNN surrogate failed; developmental patterning encodes information non-locally. Study~B: the wild-type segment-polarity state is a fragile attractor (fragility index $F=0.500$) whose brittleness is concentrated in the CI/EN axis and is partly a synchronous-timing artifact (14$\times$ more accessible asynchronously) - the model identifies rule-specific clamp changes that strengthen or destroy its basin. Floral-state audits further show that robustness rankings depend on starting measure, update schedule and recovery horizon. These computational interventions do not establish how actual development maintains robustness. Study~C: positional information is massively redundant - a single gradient measurement beats the published decoder benchmark - so the embryo's precision problem is not sensing but integration.
+The biological throughline comes first (verdict \#8: every computational result must answer ``what biological interpretation follows''). Study~A: the tested CNN uses the linear dispersion curve, not pattern images, and fails to improve the held-out wavenumber prediction. The experiment does not establish an information-theoretic limit on local image features or a biological mechanism of non-local encoding. Study~B: the wild-type segment-polarity state is a fragile attractor (fragility index $F=0.500$) whose brittleness is concentrated in the CI/EN axis and is partly a synchronous-timing artifact (14$\times$ more accessible asynchronously) - the model identifies rule-specific clamp changes that strengthen or destroy its basin. Floral-state audits further show that robustness rankings depend on starting measure, update schedule and recovery horizon. These computational interventions do not establish how actual development maintains robustness. Study~C: a supervised decoder can predict a measured landmark from restricted gradient inputs under this dataset and splitting protocol. The single-point score beats the true-dose 4.94\% EL comparator but not the measured-amplitude 2.8566\% EL comparator. The result does not identify whether a living embryo is limited by sensing, integration or another process.
 
 The methodological throughline: every number lives in a committed results
-file produced by tested code from accession-level public data; every formula
-is derived in the text and re-verified symbolically in the test suite; every
-failed claim is preserved next to the successful ones. We consider the
+file produced by tested code from accession-level public data; implemented formulas and tests provide local checks, not a certification of every mathematical statement; failed experimental claims are retained alongside their corrections. We consider the
 retraction machinery --- not any single result --- the project's most
 reusable output.
 
 
-If there is one transferable claim, it is procedural: benchmarks and
-published models are reproducible and beatable on their own data with
-commodity hardware, provided the evaluation is line-disjoint, the intervals
-are paired, and the failures are kept in the same document as the wins. The
+If there is one transferable claim, it is procedural: specific published-data benchmarks and model calculations can be reproduced and compared under stated splits with commodity hardware. Line-disjoint evaluation and paired resampling do not alone establish external validity, causal biological interpretation or universal superiority. The
 repository that backs this report --- code, tests, manifests, results, and
 this text --- is constructed so that any single number can be traced to the
 command that produced it in under a minute.

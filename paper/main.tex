@@ -13,26 +13,22 @@
 \newtheorem{proposition}{Proposition}
 \newtheorem{definition}{Definition}
 \newtheorem{lemma}{Lemma}
-\title{Computational Limits and Robustness of Predicting\\Developmental Cell-Fate Landscapes:\\Three Studies on Real Data}
+\title{Computational Limits and Robustness of Predicting\\Developmental Cell-Fate Landscapes:\\Simulation, Published Networks and Measured Gradients}
 \date{September 2026}
 \onehalfspacing
 \begin{document}
 \maketitle
 \begin{abstract}
 \noindent When can computation predict developmental cell-fate landscapes, and at
-what cost in information and robustness? We answer across three studies on real,
-public, accession-level data, organized as one argument: (A) emergent pattern
-formation resists image-based prediction, and a physics check on measured
+what cost in information and robustness? We examine three mixed-evidence studies: synthetic pattern simulations, published regulatory models and public measured gradients, organized as one argument: (A) the tested dispersion-curve CNN does not improve held-out wavenumber prediction, and a physics check on measured
 transport parameters shows \emph{where} self-organization can operate at all;
 (B) fate robustness depends on transition dynamics, perturbation kernel and
-starting measure, with ranking reversals in a published floral model; (C) positional states are decodable far below
-published information budgets. Study A simulates Turing reaction--diffusion
+starting measure, with ranking reversals in a published floral model; (C) supervised profile decoding is evaluated against specified empirical comparators, without measuring biological readout requirements. Study A simulates Turing reaction--diffusion
 morphogen patterning (Gierer--Meinhardt kinetics) and measures a systematic,
 statistically robust \emph{beyond-onset wavenumber upshift}: simulated patterns
 select wavenumbers 15--60\% above the linear fastest-growing mode, with the
 largest deviations at intermediate distance from onset; we show honestly that
-this shift is \emph{not} predictable from the linear dispersion relation by a
-convolutional surrogate ($n=171$ simulations). Study B analyses the published
+the tested convolutional surrogate on dispersion features fails to improve on the linear prediction ($n=171$ simulations). This is not an impossibility result for other features, estimators or training designs. Study B analyses the published
 Drosophila segment-polarity Boolean network (Cell Collective id-021) by exact
 attractor enumeration under all eight external signalling conditions,
 reproduces the published bistability, quantifies the wild-type basin as
@@ -54,7 +50,7 @@ for the segment-polarity network ($F=0.500$; exactly half of all 1{,}792 single-
 wild-type-basin states destroy the wild-type outcome, concentrated entirely in the CI/EN axis, with
 seven clamp interventions that abolish the basin and six that double it) and a \emph{minimum-information
 threshold} for morphogen readout (cephalic-furrow position is decodable below the published benchmark
-from a single measured point of the Bicoid gradient, 4.29\% vs 4.94\% EL). Negative results (a retracted small-sample surrogate win,
+from a single measured point of the Bicoid gradient, 4.29\% vs 4.94\% EL for the true-dose comparator). The measured-amplitude comparator in the same benchmark has lower RMSE, 2.8566\% EL, so the one-point result does not beat all threshold alternatives. Negative results (a retracted small-sample surrogate win,
 single-exponential sufficiency, degenerate basin classification) are reported
 alongside positive ones, each with its positive interpretation. All code, tests, data manifests and result files are
 public at the project repository.

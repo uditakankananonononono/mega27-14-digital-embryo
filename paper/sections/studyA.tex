@@ -101,8 +101,7 @@ fit but do not claim it as a theory).
 \paragraph{Resolution cross-check.} Re-running the $\mu_a = 0.030$ condition
 on a finer $96 \times 96$ lattice (different seed, independent steady-state
 check) gives $k^2 = 2.716$, within $1.0\%$ of the committed $48 \times 48$
-value $2.689$ (\texttt{results/turing\_morphometrics.json}). The upshift is
-not a lattice artefact. The same run provides spot morphometrics via
+value $2.689$ (\texttt{results/turing\_morphometrics.json}). This one-condition, changed-seed check reduces concern about a gross resolution effect at that point; it does not rule out lattice effects across the whole sweep. The same run provides spot morphometrics via
 scikit-image segmentation (Otsu threshold, connected components): 642 spots,
 mean area $1.79$ lattice cells, area CV $0.354$, mean eccentricity $0.677$
 --- the pattern is a disordered spot lattice with substantial elongation
@@ -171,8 +170,7 @@ as a candidate small discovery, hedged appropriately: the claim is about this
 kinetics, this lattice, and this parameter path, and generalisation to other
 Turing systems is untested. The companion negative result --- that the
 deviation is not recoverable from the linear dispersion curve by a generic
-CNN --- bounds what a purely linear surrogate can do and justifies the
-continued use of full simulation for wavenumber selection questions.
+CNN --- records a limitation of this tested CNN and dataset, not a bound on every linear-feature surrogate. Full simulation remains a tested reference for these conditions.
 
 \subsection{Steady-state verification and lattice quantisation}
 \label{sec:quant}
