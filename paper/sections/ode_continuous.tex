@@ -1,4 +1,36 @@
-\subsection{Continuous-dynamics counterpart: the bistability needs near-full-strength wg self-activation}
-Verdict \#4 asks whether the attractor conclusions survive continuous dynamics. We built a Hill-function ODE counterpart of the 5-node core (production: OR over activators, multiplicative repression; linear decay) and scanned $3^5 = 243$ initial conditions over 12 Hill-parameter settings ($K \in \{0.2, 0.35, 0.5, 0.65\}$, $n \in \{2, 4, 8\}$). \textbf{At every tested setting the ODE has a single all-OFF attractor: the wg-ON basin fraction is 0.} The mechanism is structural, not parametric: in the Boolean wg-ON state $(1,1,1,0,0)$, ci is OFF, and ci is wg's only activator in the core - so under continuous dynamics wg production vanishes and linear decay erases the state. The discrete bistability is update-rule-supported (consistent with the 14$\times$ async/sync accessibility gap above), not an intrinsic property of the wiring under mass-action-like dynamics.
+\subsection{Continuous equations change the Boolean rule, and the feedback threshold depends on parameters}
+The reduced five-node Boolean core and the Hill ODE share a signed-edge list, not a transition semantics. The Boolean successor turns a node on for positive signed input, off for negative input, and preserves its current value when the signed sum is zero. This tie rule gives persistence without an explicit self-edge. In particular, $(wg,en,hh,ptc,ci)=(1,1,1,0,0)$ is a Boolean fixed point despite ci=0. The ODE instead has linear decay and no production without activation: at that same state, without added feedback, $\dot{wg}=-1$. Removing zero-input persistence while introducing a continuous production function changes two assumptions at once. A differing outcome does not isolate discreteness or show that real segment-polarity bistability requires a particular biological feedback strength. This five-node reduction is also not the fourteen-node public network used for the exact basin census above.
 
-The constructive version of this negative is a threshold: adding wg auto-activation of relative strength $a$, the wg-ON attractor reappears only for $a \geq 0.9$ of full Hill strength (basin 66.7\% of the IC grid at $a = 0.9$, versus 0 at $a = 0.85$ and below, over all 12 $(K, n)$ settings). Biologically this is a sharp, testable requirement: \textbf{if segment-polarity bistability operates continuously, wg must be near-fully self-sustaining} - a prediction consistent with the known wg autoregulation in the parasegment boundary and falsifiable by attenuating wg cis-autoregulation. Full record: \texttt{results/ode\_vs\_boolean.json}, \texttt{results/ode\_vs\_boolean\_scan.json}.
+The old records in \path{results/ode_vs_boolean.json} and \path{results/ode_vs_boolean_scan.json} are retained as historical finite-grid terminal calculations. A finite set of initial values ending near one rounded state does not prove a single global attractor. The current tracked base experiment specifies an Euler integration, clipping and approximate rounded final-state grouping; it does not certify stationary points by their residuals or prove their stability. The threshold-scan JSON is not accompanied by a tracked scan-generating script specifying its added autoactivation term and parameter cross-product. Its unqualified reading that every tested parameter pair requires $a\geq.9$ is therefore withdrawn, as is the biological near-full-strength requirement. No archived number is changed.
+
+To make the comparison inspectable, a fresh local plan defines a separate continuous model explicitly. Let $H(x)=x^n/(K^n+x^n)$. Its five derivatives are
+\begin{align*}
+\dot{wg}&=\min(1,H(ci)+aH(wg))-wg,\\
+\dot{en}&=H(wg)-en,\quad \dot{hh}=H(en)-hh,\\
+\dot{ptc}&=H(ci)(1-H(hh))-ptc,\quad \dot{ci}=-ci.
+\end{align*}
+The last equation follows the production convention that a node with no positive activator has zero production. It shows directly that this continuous model cannot maintain positive ci: that is a modeling choice, not an observed biological loss of expression. An added wg term creates a different feedback system; it is not a calibrated strength of cis-regulation. Each term, saturation convention and decay rate must be stated before a threshold means anything.
+
+The frozen plan scans four $K$ values, three Hill exponents, five added strengths ($a=0,.5,.85,.9,1$), and all $3^5=243$ starts on $\{0,.5,1\}^5$. We integrate to $t=100$ using unclipped fourth-order Runge--Kutta at step sizes .1 and .05. The 120 parameter/step-size records count terminal wg above .5 and record full-vector residuals separately. The largest endpoint difference after halving the step is $1.875\times10^{-8}$, small for this protocol. The largest absolute derivative at the horizon is $1.015\times10^{-4}$, so we do not label every terminal vector a certified equilibrium. Rounded endpoint counts remain descriptive rather than attractor counts.
+
+\begin{table}[ht]\centering\small
+\caption{New explicitly defined Hill model: percentage of 243 grid starts with wg above .5 at $t=100$, RK4 step .05. The parameter dependence contradicts a universal near-full-strength threshold; entries are finite-grid outcomes, not continuous basin volumes.}
+\begin{tabular}{rrrr}\toprule
+$K$ & $n$ & $a=.85$ & $a=1$\\\midrule
+0.2 & 2 & 88.889 & 88.889 \\
+0.2 & 4 & 88.889 & 88.889 \\
+0.2 & 8 & 88.889 & 88.889 \\
+0.35 & 2 & 88.889 & 88.889 \\
+0.35 & 4 & 88.889 & 88.889 \\
+0.35 & 8 & 77.778 & 77.778 \\
+0.5 & 2 & 0.000 & 66.667 \\
+0.5 & 4 & 0.000 & 66.667 \\
+0.5 & 8 & 55.556 & 66.667 \\
+0.65 & 2 & 0.000 & 0.000 \\
+0.65 & 4 & 0.000 & 0.000 \\
+0.65 & 8 & 0.000 & 44.444 \\
+\bottomrule\end{tabular}\end{table}
+
+Without added feedback ($a=0$) the terminal wg-ON fraction is zero at every sampled setting, consistent with the earlier qualitative negative but not a global-attraction proof. At $K=.2$, $a=.85$ already gives 88.889\% for each tested exponent. At $K=.65$ with $n=2$ or 4, even $a=1$ gives zero. At $K=.5,n=2$, the $a=1$ fraction is 66.667\%, but its largest derivative residual is the audit maximum, so a near-threshold endpoint should not be promoted to a proven stable attractor. The new term is explicitly stated and not asserted to reconstruct the undocumented old threshold scan. These results demonstrate model and parameter dependence; they neither fit actual cellular rates nor validate a developmental intervention.
+
+All settings, endpoint discrepancies, residuals, coordinate ranges and rounded endpoint counts are in \path{results/grn_ode_semantics_audit.json}, generated by \path{experiments/grn_ode_semantics_audit.py}, with frozen-plan hash. Tests verify the Boolean persistence counterexample, derivatives at the same state, solver step-halving and representative saved outcomes. A more meaningful biological comparison would require a justified mapping between rules and kinetics, a measured phenotype and parameters, and stability/continuation analysis beyond this finite grid. That evidence is absent and remains an open gap.
