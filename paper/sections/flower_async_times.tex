@@ -1,0 +1,29 @@
+\subsection{Eventual return and recovery time answer different questions}
+
+An absorption probability is an infinite-horizon statement. It does not say that recovery is fast enough for a developmental process. We therefore compute first-absorption times and finite-horizon return probabilities in the same enumerated asynchronous chain, without changing topology, update schedule or perturbed states. Time is counted in single-node update attempts, including attempts that leave the state unchanged. It is not seconds, cell cycles or empirically estimated gene-expression time.
+
+Let $\tau$ be the first hitting time of any recurrent fixed point. For transient states, expected time $m$ and second moment $s$ solve
+\[
+(I-Q)m=\mathbf{1},\qquad (I-Q)s=\mathbf{1}+2Qm.
+\]
+The variance is $s-m^2$. For a particular fate $f$, let $H_f$ be its eventual absorption probability and $g_f(x)=\mathbb{E}_x[\tau\mathbf{1}\{X_\tau=f\}]$. Then
+\[
+(I-Q)g_f=H_f.
+\]
+For a mixture of perturbed states, conditional time to successful return is the sum of $g_f$ divided by the sum of $H_f$. This conditions on successes and is not the mean time to any fate. Recurrent boundary states have zero first-hitting time.
+
+\begin{center}\begin{tabular}{lrrr}\hline
+Fate & Mean time, any fate & Conditional return time & Return by 12\\\hline
+Sepal & 13.111 & 12.301 & 0.4948\\
+Petal & 12.694 & 10.635 & 0.4646\\
+Carpel & 13.662 & 11.373 & 0.4630\\
+Stamen & 13.273 & 8.882 & 0.4283\\
+Inflorescence & 14.732 & 13.912 & 0.5097\\
+Mutant & 14.460 & 13.194 & 0.4728\\\hline
+\end{tabular}\end{center}
+
+Finite-horizon recovery is evaluated by repeatedly applying $P$ to the one-hot recurrent boundary vectors. Since each recurrent class is an absorbing singleton, being at the original fixed point by update $t$ is equivalent to having returned to it by $t$. From the same twelve one-bit perturbed fixed-point states, petal recovery by twelve updates is 0.46464 and carpel recovery is 0.46295. Thus petal is very slightly ahead at that horizon even though eventual return favors carpel, 0.68708 versus 0.65123. By twenty-four updates carpel is ahead, 0.60396 versus 0.58210. This is a model-exact finite-horizon ranking change, not an empirical effect-size claim: the twelve-update difference is small and no real developmental time has been mapped to these counts.
+
+Across uniformly weighted starting states, expected first absorption is 30.1989 updates; the maximum statewise expectation is 43.1467. Neither is a bound on every trajectory. Self-loops allow arbitrarily long realizations with decreasing probability. Likewise, twelve updates are not a sweep in which every node updates once: node choices are random with replacement. Finite-horizon probabilities converge upward to the previously solved eventual probabilities, and all computed values are checked against that upper bound.
+
+This adds a third qualification to a scalar robustness claim: after specifying topology, transition rule, perturbation kernel and starting measure, one must also specify the recovery horizon. A favorable eventual fate probability can coexist with slower early recovery. The result does not establish physiological speed, a calibrated developmental deadline or a measured molecular mechanism. Expected times, variances, successful-return joint moments and exact finite-horizon probabilities at 12, 24, 48 and 96 updates are retained in \path{results/flower_async_absorption_times.json} and its full numerical archive. The executable is \path{experiments/flower_async_absorption_times.py}. Future mapping to biological time requires measured update kinetics; these update counts do not supply them.
