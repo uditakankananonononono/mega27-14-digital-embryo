@@ -1,0 +1,383 @@
+{
+  "model": "12-node published floral threshold Boolean network, synchronous update",
+  "source": "https://pageperso.lis-lab.fr/~sylvain.sene/files/publi_pres/rgs18.pdf",
+  "n_states": 4096,
+  "n_attractors": 13,
+  "measurement": "probability of same eventual attractor after exact k distinct bit flips, enumerated without sampling",
+  "rows": [
+    {
+      "organ": "sepal",
+      "fixed_state": "000100000000",
+      "basin_size": 168,
+      "fixed_start_retention_by_exact_radius": [
+        1.0,
+        0.5,
+        0.2727272727272727,
+        0.1590909090909091,
+        0.09090909090909091,
+        0.04924242424242424,
+        0.021645021645021644,
+        0.005050505050505051,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "uniform_basin_start_retention_by_exact_radius": [
+        1.0,
+        0.5337301587301587,
+        0.2943722943722944,
+        0.1630952380952381,
+        0.08831168831168831,
+        0.045093795093795096,
+        0.020562770562770564,
+        0.007575757575757576,
+        0.0017316017316017316,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "fixed_start_first_half_retention_q": 0.116,
+      "basin_start_first_half_retention_q": 0.122,
+      "independent_flip_grid_q": [
+        0,
+        0.01,
+        0.05,
+        0.1,
+        0.2,
+        0.5
+      ],
+      "fixed_start_retention_on_grid": [
+        1.0,
+        0.941765446699365,
+        0.7408959488952241,
+        0.5491722337200002,
+        0.30173822976000025,
+        0.041015625
+      ],
+      "basin_start_retention_on_grid": [
+        1.0,
+        0.945519424904813,
+        0.7546090696611765,
+        0.5671250417828574,
+        0.3152004476342859,
+        0.041015625
+      ]
+    },
+    {
+      "organ": "petal",
+      "fixed_state": "000100010110",
+      "basin_size": 248,
+      "fixed_start_retention_by_exact_radius": [
+        1.0,
+        0.4166666666666667,
+        0.25757575757575757,
+        0.16818181818181818,
+        0.11313131313131314,
+        0.07449494949494949,
+        0.046536796536796536,
+        0.027777777777777776,
+        0.014141414141414142,
+        0.004545454545454545,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "uniform_basin_start_retention_by_exact_radius": [
+        1.0,
+        0.6008064516129032,
+        0.36363636363636365,
+        0.21722873900293255,
+        0.12616487455197134,
+        0.07001466275659823,
+        0.036203044267560394,
+        0.016699250570218312,
+        0.0062561094819159335,
+        0.001466275659824047,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "fixed_start_first_half_retention_q": 0.105,
+      "basin_start_first_half_retention_q": 0.14100000000000001,
+      "independent_flip_grid_q": [
+        0,
+        0.01,
+        0.05,
+        0.1,
+        0.2,
+        0.5
+      ],
+      "fixed_start_retention_on_grid": [
+        1.0,
+        0.9327235563716448,
+        0.7111669143278219,
+        0.5156617366800003,
+        0.28717481984000015,
+        0.060546875
+      ],
+      "basin_start_retention_on_grid": [
+        1.0,
+        0.9531506273932445,
+        0.7853639824281103,
+        0.6138467686916133,
+        0.368080026590968,
+        0.06054687499999999
+      ]
+    },
+    {
+      "organ": "carpel",
+      "fixed_state": "000000001000",
+      "basin_size": 24,
+      "fixed_start_retention_by_exact_radius": [
+        1.0,
+        0.3333333333333333,
+        0.10606060606060606,
+        0.03636363636363636,
+        0.00808080808080808,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "uniform_basin_start_retention_by_exact_radius": [
+        1.0,
+        0.3194444444444444,
+        0.10606060606060606,
+        0.03257575757575758,
+        0.00808080808080808,
+        0.0012626262626262627,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "fixed_start_first_half_retention_q": 0.084,
+      "basin_start_first_half_retention_q": 0.083,
+      "independent_flip_grid_q": [
+        0,
+        0.01,
+        0.05,
+        0.1,
+        0.2,
+        0.5
+      ],
+      "fixed_start_retention_on_grid": [
+        1.0,
+        0.9228388143867516,
+        0.665244837475107,
+        0.43563281652000013,
+        0.1771674009600001,
+        0.005859375
+      ],
+      "basin_start_retention_on_grid": [
+        1.0,
+        0.9213458227918209,
+        0.6604394039563619,
+        0.4300845724800001,
+        0.17347641344000012,
+        0.005859375
+      ]
+    },
+    {
+      "organ": "stamen",
+      "fixed_state": "000000011110",
+      "basin_size": 8,
+      "fixed_start_retention_by_exact_radius": [
+        1.0,
+        0.16666666666666666,
+        0.045454545454545456,
+        0.00909090909090909,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "uniform_basin_start_retention_by_exact_radius": [
+        1.0,
+        0.20833333333333334,
+        0.045454545454545456,
+        0.006818181818181818,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "fixed_start_first_half_retention_q": 0.068,
+      "basin_start_first_half_retention_q": 0.07100000000000001,
+      "independent_flip_grid_q": [
+        0,
+        0.01,
+        0.05,
+        0.1,
+        0.2,
+        0.5
+      ],
+      "fixed_start_retention_on_grid": [
+        1.0,
+        0.9045647784583011,
+        0.6018881862870017,
+        0.3564268498800001,
+        0.11811160064000008,
+        0.001953125
+      ],
+      "basin_start_retention_on_grid": [
+        1.0,
+        0.909041012970971,
+        0.6160687980058054,
+        0.37192366944000016,
+        0.1261646643200001,
+        0.001953125
+      ]
+    },
+    {
+      "organ": "inflorescence",
+      "fixed_state": "110000000000",
+      "basin_size": 384,
+      "fixed_start_retention_by_exact_radius": [
+        1.0,
+        0.6666666666666666,
+        0.4393939393939394,
+        0.2909090909090909,
+        0.1919191919191919,
+        0.12121212121212122,
+        0.06818181818181818,
+        0.030303030303030304,
+        0.00808080808080808,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "uniform_basin_start_retention_by_exact_radius": [
+        1.0,
+        0.6527777777777778,
+        0.4292929292929293,
+        0.2825757575757576,
+        0.18383838383838383,
+        0.11595117845117846,
+        0.0689033189033189,
+        0.036826599326599326,
+        0.01616161616161616,
+        0.004545454545454545,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "fixed_start_first_half_retention_q": 0.167,
+      "basin_start_first_half_retention_q": 0.163,
+      "independent_flip_grid_q": [
+        0,
+        0.01,
+        0.05,
+        0.1,
+        0.2,
+        0.5
+      ],
+      "fixed_start_retention_on_grid": [
+        1.0,
+        0.96069399079302,
+        0.8167461421874996,
+        0.6639732000000002,
+        0.43253760000000024,
+        0.09375
+      ],
+      "basin_start_retention_on_grid": [
+        1.0,
+        0.95913975615183,
+        0.8108463304687497,
+        0.6555168000000001,
+        0.4235264000000003,
+        0.09375000000000001
+      ]
+    },
+    {
+      "organ": "mutant",
+      "fixed_state": "110000010110",
+      "basin_size": 384,
+      "fixed_start_retention_by_exact_radius": [
+        1.0,
+        0.5833333333333334,
+        0.3787878787878788,
+        0.2636363636363636,
+        0.18383838383838383,
+        0.12121212121212122,
+        0.07251082251082251,
+        0.03787878787878788,
+        0.01616161616161616,
+        0.004545454545454545,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "uniform_basin_start_retention_by_exact_radius": [
+        1.0,
+        0.6805555555555556,
+        0.4595959595959596,
+        0.3037878787878788,
+        0.19326599326599325,
+        0.11595117845117846,
+        0.06385281385281386,
+        0.030934343434343436,
+        0.012121212121212121,
+        0.0030303030303030303,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "fixed_start_first_half_retention_q": 0.146,
+      "basin_start_first_half_retention_q": 0.17300000000000001,
+      "independent_flip_grid_q": [
+        0,
+        0.01,
+        0.05,
+        0.1,
+        0.2,
+        0.5
+      ],
+      "fixed_start_retention_on_grid": [
+        1.0,
+        0.9513733374109801,
+        0.7818295453124997,
+        0.6161508000000001,
+        0.39075840000000023,
+        0.09375
+      ],
+      "basin_start_retention_on_grid": [
+        1.0,
+        0.96230939955183,
+        0.8237069554687494,
+        0.6749568000000004,
+        0.44400640000000036,
+        0.09375000000000001
+      ]
+    }
+  ],
+  "model_code_sha256": "f63f4be638ce8539b468a588901ef696d9d4a600a2154c9e28691fa30cee74dc",
+  "limits": [
+    "Artificial uniform state-space measure, not distribution of biological embryonic states",
+    "Independent bit noise is not calibrated gene-expression noise",
+    "Perturbation occurs before relaxation, not continuously during development",
+    "Synchronous update; no causal inference that topology alone determines fragility",
+    "Half-retention crossings quantized at q=.001"
+  ]
+}

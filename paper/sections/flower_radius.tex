@@ -1,0 +1,33 @@
+\subsection{Multi-bit robustness depends on the perturbation starting measure}
+The single-bit fragility index averages perturbations over every state in a basin. This measure is mathematically well-defined but differs from asking how stable an established fate is. We tested that distinction by enumerating the complete 12-node floral network state space and every Hamming-radius perturbation. We retain the published synchronous threshold update, rather than treating this experiment as a reconstruction of molecular fluctuations.
+
+Let $a(x)$ denote the eventual attractor of state $x$, $x_f$ a fixed point, and $B_f=\{x:a(x)=a(x_f)\}$ its basin. Two retention functions are
+\[
+R_f^{\mathrm{fixed}}(k)=\frac{1}{\binom{12}{k}}\sum_{\delta:|\delta|=k}\mathbf{1}[a(x_f\mathbin{\mathrm{xor}}\delta)=a(x_f)]
+\]
+and
+\[
+R_f^{\mathrm{basin}}(k)=\frac{1}{|B_f|\binom{12}{k}}\sum_{x\in B_f}\sum_{\delta:|\delta|=k}\mathbf{1}[a(x\mathbin{\mathrm{xor}}\delta)=a(x_f)].
+\]
+The earlier fragility index equals $1-R_f^{\mathrm{basin}}(1)$. It does not equal $1-R_f^{\mathrm{fixed}}(1)$ in general. The first function models perturbing an established attractor; the second models a uniformly sampled trajectory-starting state that will eventually reach it. Neither uniform measure has been calibrated to the distribution of actual developmental states.
+
+\begin{center}\begin{tabular}{lrrrr}\hline
+Fate & Fixed $R(1)$ & Basin $R(1)$ & Fixed $q_{1/2}$ & Basin $q_{1/2}$\\\hline
+sepal & 0.500 & 0.534 & 0.116 & 0.122 \\
+petal & 0.417 & 0.601 & 0.105 & 0.141 \\
+carpel & 0.333 & 0.319 & 0.084 & 0.083 \\
+stamen & 0.167 & 0.208 & 0.068 & 0.071 \\
+inflorescence & 0.667 & 0.653 & 0.167 & 0.163 \\
+mutant & 0.583 & 0.681 & 0.146 & 0.173 \\
+\hline\end{tabular}\end{center}
+Here $q_{1/2}$ is the first tested independent per-node flip probability whose same-attractor retention falls to one half. It is obtained by weighting the exact-radius curves with the binomial distribution,
+\[
+P_f(q)=\sum_{k=0}^{12}\binom{12}{k}q^k(1-q)^{12-k}R_f(k).
+\]
+The grid resolution is $0.001$, so the quoted crossing is a grid bracket, not a fitted biological threshold. At $q=0$, retention is one. At $q=0.5$, every perturbed state is uniformly distributed across the full cube, so retention must equal $|B_f|/4096$ independently of the starting state. This is an exact consistency check on both measures. Every one-bit basin result also recovers the previously archived fragility value within its rounding precision.
+
+The petal-versus-sepal ordering reverses. From their established fixed points, sepal retains fate under one bit flip with probability $0.500$, while petal retains it with probability $0.417$. Averaging uniformly over each basin instead gives $0.534$ for sepal and $0.601$ for petal. Petal is therefore less stable under the fixed-point measure but more stable under the basin-start measure. One scalar fragility ranking cannot represent both questions.
+
+This is a positive methodological limit: robustness is a property of the dynamics together with a perturbation kernel and a starting-state measure. It is not a topology-only invariant, and a cross-organism comparison must specify those choices. The observed ordering reversal is exact within the transcribed model and does not rely on a noisy simulation estimate. It remains model-bound: artificial bit noise, synchronous update and uniform basin weights are not direct molecular interventions. A useful next test would weight states by measured developmental trajectories and compare update schedules under the same kernel, rather than calling the current values intrinsic canalization.
+
+The full radius curves, independent-flip grid values and source-code checksum are in \path{results/flower_perturbation_radius.json}; the executable audit is \path{experiments/flower_perturbation_radius.py}. No new empirical biological discovery or causal topology law is claimed.
