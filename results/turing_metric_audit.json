@@ -1,0 +1,107 @@
+{
+  "cache_sha256": "22289eb53f60882f0bce0ae975b41696619c4f7051703d88f5b6d37e9e907d3e",
+  "plan_sha256": "7e8a76e50b40a958c1f823cbde3950ccb45ac5fea657af4d7f43356e9ae34a80",
+  "n": 171,
+  "target_min": 0.06988741216187462,
+  "target_max": 1.1873995247586329,
+  "target_mean": 0.4130720436019317,
+  "rows": [
+    {
+      "seed": 0,
+      "model": "linear",
+      "global": {
+        "relative_rmse": 0.3427332398916118,
+        "ordinary_rmse": 0.1864865554664199
+      },
+      "equal_fold_mean": {
+        "relative_rmse": 0.3421845484302875,
+        "ordinary_rmse": 0.18474204845455658
+      }
+    },
+    {
+      "seed": 0,
+      "model": "train_mean",
+      "global": {
+        "relative_rmse": 0.7373553407731959,
+        "ordinary_rmse": 0.17514472295580136
+      },
+      "equal_fold_mean": {
+        "relative_rmse": 0.698568377558399,
+        "ordinary_rmse": 0.1723291596148058
+      }
+    },
+    {
+      "seed": 0,
+      "model": "ridge_no_intercept",
+      "global": {
+        "relative_rmse": 1.2463674981462494,
+        "ordinary_rmse": 0.4408919582871196
+      },
+      "equal_fold_mean": {
+        "relative_rmse": 1.2404980275838267,
+        "ordinary_rmse": 0.4403081424353106
+      }
+    },
+    {
+      "seed": 0,
+      "model": "ridge_with_intercept",
+      "global": {
+        "relative_rmse": 0.3606480555477991,
+        "ordinary_rmse": 0.14140278608053677
+      },
+      "equal_fold_mean": {
+        "relative_rmse": 0.3507679452068411,
+        "ordinary_rmse": 0.13527373978284676
+      }
+    },
+    {
+      "seed": 1,
+      "model": "linear",
+      "global": {
+        "relative_rmse": 0.3427332398916118,
+        "ordinary_rmse": 0.1864865554664199
+      },
+      "equal_fold_mean": {
+        "relative_rmse": 0.3412974299420431,
+        "ordinary_rmse": 0.18193931133263053
+      }
+    },
+    {
+      "seed": 1,
+      "model": "train_mean",
+      "global": {
+        "relative_rmse": 0.7387736216108873,
+        "ordinary_rmse": 0.17612594906367723
+      },
+      "equal_fold_mean": {
+        "relative_rmse": 0.7055383103056135,
+        "ordinary_rmse": 0.1737549131711019
+      }
+    },
+    {
+      "seed": 1,
+      "model": "ridge_no_intercept",
+      "global": {
+        "relative_rmse": 1.2467350799035561,
+        "ordinary_rmse": 0.43704283181164383
+      },
+      "equal_fold_mean": {
+        "relative_rmse": 1.2386520620468997,
+        "ordinary_rmse": 0.4362174139996235
+      }
+    },
+    {
+      "seed": 1,
+      "model": "ridge_with_intercept",
+      "global": {
+        "relative_rmse": 0.3551760370750216,
+        "ordinary_rmse": 0.13292425601279892
+      },
+      "equal_fold_mean": {
+        "relative_rmse": 0.3514120801592717,
+        "ordinary_rmse": 0.1250623467271704
+      }
+    }
+  ],
+  "limits": "two overlapping partition seeds not independent simulation replication; not tuned models or information-theoretic statement"
+}
