@@ -31,3 +31,24 @@ At $q=.001$, first-unchanged stopping gives a marker fraction of 1.215\%, unchan
 The distortion is not uniformly upward or downward. At $q=.1$ and 1,000 steps the stopped marker fraction is 21.069\% versus a continued fraction of 19.061\%. More importantly, the full-reference fractions are 15.631\% versus 0.488\%. A marker-only reading would hide most of the loss of full-state occupancy under stronger continuing noise. Across the tested rates, continued wg occupancy rises while continued reference-state occupancy peaks at the low nonzero rate and then falls. These rates do not establish an optimized biological noise level: initial-state weighting, external condition, horizon and endpoint were fixed model choices, not measured developmental inputs.
 
 The noiseless lookup audit reproduces the exact 128/16,384 basin count. Every vectorized transition-table entry is checked against the original scalar Boolean successor, and independent noiseless trajectories reproduce the saved random-start results. The simulation makes no intervention, changes no historical result, and supplies no wet-lab evidence. All 60 replicate/rate/horizon records, the original reference state, node order, model hash and frozen-plan hash are saved in \path{results/grn_noise_horizon_audit.json}; execution is \path{experiments/grn_noise_horizon_audit.py}. This distinguishes a reproducible protocol failure from an unsupported developmental story.
+
+\subsection{A reference-valid rule change can still alter its exact basin}
+A separately frozen follow-up enumerates every internal start for all 58 one-rule constant replacements already audited for reference validity. The external context, synchronous convention and uniform measure over 16384 internal starts remain fixed. The endpoint is the exact original internal reference, not merely a wg-ON marker and not a newly selected preferred state. For the 20 variants in which that reference is not fixed, its basin endpoint is inadmissible and is recorded as null rather than as a comparable zero. Fixed and cyclic termination counts are still retained for every variant.
+Of the 38 reference-valid variants, 30 retain the baseline 128 exact-reference starts and eight enlarge that basin. Thus passing the reference-validity check does not establish unchanged dynamics or robustness. The complete eight changed valid variants are retained below; this selection is a result summary, not an exclusion from the exhaustive ledger.
+\begin{table}[ht]\centering
+\caption{All reference-valid variants whose exact-reference basin differs from the baseline 128 of 16384 starts. Replacement is a mathematical constant in one target rule, not an empirical edge knockout.}
+\begin{tabular}{llrr}\hline
+Target & Regulator reference & Constant & Exact-reference starts\\\hline
+CIA & CI protein & 1 & 2048\\
+CI protein & ci & 1 & 1024\\
+EN protein & en & 0 & 256\\
+ci & EN protein & 0 & 512\\
+wg & CIA & 1 & 4096\\
+wg & CIR & 0 & 256\\
+wg & SLP & 1 & 16384\\
+wg & wg & 1 & 16384\\\hline
+\end{tabular}\end{table}
+
+
+The two globally absorbing original-reference cases arise from constant forcing within the wg update rule, not a demonstrated biological rescue. Across all 58 variants, cyclic-start counts range from zero to 16384; two variants send every start to cyclic termination. A Boolean counterfactual can destroy the reference or change its basin without fitting any developmental measurement. These cases cannot be ranked as interventions in a living embryo. The original-model result, reference-invalid negatives and context dependence remain unchanged.
+The vectorized successor enumerator is independently checked against the existing scalar Boolean parser for every state in every altered model, including negated constants. Tests also reproduce complete endpoint aggregation, uniform denominators, 20 null inadmissible endpoints and the eight changed valid basins. The frozen plan and full ledger are \path{experiments/grn_rule_basin_plan.json} and \path{results/grn_rule_basin_audit.json}. This exact model calculation fills a basin-analysis gap while leaving empirical regulatory validation, spatial tissue structure, continuous dynamics and biological intervention inference open.
