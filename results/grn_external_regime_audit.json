@@ -1,0 +1,510 @@
+{
+  "plan_sha256": "15578a64630ef28f4b8e3e4fa4c38aae0c67e53125685ba74465e7e3643a9a60",
+  "model_sha256": "6f1ad8de743b443e9e1f92e48964be0a3fdae9487575ae2fa0cf8eb0c627f900",
+  "original_internal_reference_integer": 13285,
+  "node_order": [
+    "v_CIA",
+    "v_CIR",
+    "v_CI_protein",
+    "v_EN_protein",
+    "v_HH_protein",
+    "v_PH",
+    "v_PTC_protein",
+    "v_SMO",
+    "v_WG_protein",
+    "v_ci",
+    "v_en",
+    "v_hh",
+    "v_ptc",
+    "v_wg"
+  ],
+  "rows": [
+    {
+      "externals": {
+        "v_hh_external": 0,
+        "v_WG_external": 0,
+        "v_SLP": 0
+      },
+      "node": null,
+      "value": null,
+      "forced_updates": 0,
+      "n_initial": 16384,
+      "original_internal_reference_is_fixed": false,
+      "fixed_endpoints": [
+        582
+      ],
+      "counts": {
+        "original_internal_reference": 0,
+        "wg_on_fixed": 0,
+        "cycle": 0
+      }
+    },
+    {
+      "externals": {
+        "v_hh_external": 0,
+        "v_WG_external": 0,
+        "v_SLP": 0
+      },
+      "node": "v_wg",
+      "value": 1,
+      "forced_updates": 8,
+      "n_initial": 16384,
+      "original_internal_reference_is_fixed": false,
+      "fixed_endpoints": [
+        582
+      ],
+      "counts": {
+        "original_internal_reference": 0,
+        "wg_on_fixed": 0,
+        "cycle": 0
+      }
+    },
+    {
+      "externals": {
+        "v_hh_external": 0,
+        "v_WG_external": 0,
+        "v_SLP": 0
+      },
+      "node": "v_CIA",
+      "value": 1,
+      "forced_updates": 4,
+      "n_initial": 16384,
+      "original_internal_reference_is_fixed": false,
+      "fixed_endpoints": [
+        582
+      ],
+      "counts": {
+        "original_internal_reference": 0,
+        "wg_on_fixed": 0,
+        "cycle": 0
+      }
+    },
+    {
+      "externals": {
+        "v_hh_external": 0,
+        "v_WG_external": 0,
+        "v_SLP": 1
+      },
+      "node": null,
+      "value": null,
+      "forced_updates": 0,
+      "n_initial": 16384,
+      "original_internal_reference_is_fixed": false,
+      "fixed_endpoints": [
+        582
+      ],
+      "counts": {
+        "original_internal_reference": 0,
+        "wg_on_fixed": 0,
+        "cycle": 0
+      }
+    },
+    {
+      "externals": {
+        "v_hh_external": 0,
+        "v_WG_external": 0,
+        "v_SLP": 1
+      },
+      "node": "v_wg",
+      "value": 1,
+      "forced_updates": 8,
+      "n_initial": 16384,
+      "original_internal_reference_is_fixed": false,
+      "fixed_endpoints": [
+        582
+      ],
+      "counts": {
+        "original_internal_reference": 0,
+        "wg_on_fixed": 0,
+        "cycle": 0
+      }
+    },
+    {
+      "externals": {
+        "v_hh_external": 0,
+        "v_WG_external": 0,
+        "v_SLP": 1
+      },
+      "node": "v_CIA",
+      "value": 1,
+      "forced_updates": 4,
+      "n_initial": 16384,
+      "original_internal_reference_is_fixed": false,
+      "fixed_endpoints": [
+        582
+      ],
+      "counts": {
+        "original_internal_reference": 0,
+        "wg_on_fixed": 0,
+        "cycle": 0
+      }
+    },
+    {
+      "externals": {
+        "v_hh_external": 0,
+        "v_WG_external": 1,
+        "v_SLP": 0
+      },
+      "node": null,
+      "value": null,
+      "forced_updates": 0,
+      "n_initial": 16384,
+      "original_internal_reference_is_fixed": false,
+      "fixed_endpoints": [
+        3160,
+        3224
+      ],
+      "counts": {
+        "original_internal_reference": 0,
+        "wg_on_fixed": 0,
+        "cycle": 0
+      }
+    },
+    {
+      "externals": {
+        "v_hh_external": 0,
+        "v_WG_external": 1,
+        "v_SLP": 0
+      },
+      "node": "v_wg",
+      "value": 1,
+      "forced_updates": 8,
+      "n_initial": 16384,
+      "original_internal_reference_is_fixed": false,
+      "fixed_endpoints": [
+        3160,
+        3224
+      ],
+      "counts": {
+        "original_internal_reference": 0,
+        "wg_on_fixed": 0,
+        "cycle": 0
+      }
+    },
+    {
+      "externals": {
+        "v_hh_external": 0,
+        "v_WG_external": 1,
+        "v_SLP": 0
+      },
+      "node": "v_CIA",
+      "value": 1,
+      "forced_updates": 4,
+      "n_initial": 16384,
+      "original_internal_reference_is_fixed": false,
+      "fixed_endpoints": [
+        3160,
+        3224
+      ],
+      "counts": {
+        "original_internal_reference": 0,
+        "wg_on_fixed": 0,
+        "cycle": 0
+      }
+    },
+    {
+      "externals": {
+        "v_hh_external": 0,
+        "v_WG_external": 1,
+        "v_SLP": 1
+      },
+      "node": null,
+      "value": null,
+      "forced_updates": 0,
+      "n_initial": 16384,
+      "original_internal_reference_is_fixed": false,
+      "fixed_endpoints": [
+        582
+      ],
+      "counts": {
+        "original_internal_reference": 0,
+        "wg_on_fixed": 0,
+        "cycle": 0
+      }
+    },
+    {
+      "externals": {
+        "v_hh_external": 0,
+        "v_WG_external": 1,
+        "v_SLP": 1
+      },
+      "node": "v_wg",
+      "value": 1,
+      "forced_updates": 8,
+      "n_initial": 16384,
+      "original_internal_reference_is_fixed": false,
+      "fixed_endpoints": [
+        582
+      ],
+      "counts": {
+        "original_internal_reference": 0,
+        "wg_on_fixed": 0,
+        "cycle": 0
+      }
+    },
+    {
+      "externals": {
+        "v_hh_external": 0,
+        "v_WG_external": 1,
+        "v_SLP": 1
+      },
+      "node": "v_CIA",
+      "value": 1,
+      "forced_updates": 4,
+      "n_initial": 16384,
+      "original_internal_reference_is_fixed": false,
+      "fixed_endpoints": [
+        582
+      ],
+      "counts": {
+        "original_internal_reference": 0,
+        "wg_on_fixed": 0,
+        "cycle": 0
+      }
+    },
+    {
+      "externals": {
+        "v_hh_external": 1,
+        "v_WG_external": 0,
+        "v_SLP": 0
+      },
+      "node": null,
+      "value": null,
+      "forced_updates": 0,
+      "n_initial": 16384,
+      "original_internal_reference_is_fixed": true,
+      "fixed_endpoints": [
+        4837,
+        13285
+      ],
+      "counts": {
+        "original_internal_reference": 128,
+        "wg_on_fixed": 128,
+        "cycle": 0
+      }
+    },
+    {
+      "externals": {
+        "v_hh_external": 1,
+        "v_WG_external": 0,
+        "v_SLP": 0
+      },
+      "node": "v_wg",
+      "value": 1,
+      "forced_updates": 8,
+      "n_initial": 16384,
+      "original_internal_reference_is_fixed": true,
+      "fixed_endpoints": [
+        4837,
+        13285
+      ],
+      "counts": {
+        "original_internal_reference": 16384,
+        "wg_on_fixed": 16384,
+        "cycle": 0
+      }
+    },
+    {
+      "externals": {
+        "v_hh_external": 1,
+        "v_WG_external": 0,
+        "v_SLP": 0
+      },
+      "node": "v_CIA",
+      "value": 1,
+      "forced_updates": 4,
+      "n_initial": 16384,
+      "original_internal_reference_is_fixed": true,
+      "fixed_endpoints": [
+        4837,
+        13285
+      ],
+      "counts": {
+        "original_internal_reference": 4096,
+        "wg_on_fixed": 4096,
+        "cycle": 0
+      }
+    },
+    {
+      "externals": {
+        "v_hh_external": 1,
+        "v_WG_external": 0,
+        "v_SLP": 1
+      },
+      "node": null,
+      "value": null,
+      "forced_updates": 0,
+      "n_initial": 16384,
+      "original_internal_reference_is_fixed": true,
+      "fixed_endpoints": [
+        13285
+      ],
+      "counts": {
+        "original_internal_reference": 16384,
+        "wg_on_fixed": 16384,
+        "cycle": 0
+      }
+    },
+    {
+      "externals": {
+        "v_hh_external": 1,
+        "v_WG_external": 0,
+        "v_SLP": 1
+      },
+      "node": "v_wg",
+      "value": 1,
+      "forced_updates": 8,
+      "n_initial": 16384,
+      "original_internal_reference_is_fixed": true,
+      "fixed_endpoints": [
+        13285
+      ],
+      "counts": {
+        "original_internal_reference": 16384,
+        "wg_on_fixed": 16384,
+        "cycle": 0
+      }
+    },
+    {
+      "externals": {
+        "v_hh_external": 1,
+        "v_WG_external": 0,
+        "v_SLP": 1
+      },
+      "node": "v_CIA",
+      "value": 1,
+      "forced_updates": 4,
+      "n_initial": 16384,
+      "original_internal_reference_is_fixed": true,
+      "fixed_endpoints": [
+        13285
+      ],
+      "counts": {
+        "original_internal_reference": 16384,
+        "wg_on_fixed": 16384,
+        "cycle": 0
+      }
+    },
+    {
+      "externals": {
+        "v_hh_external": 1,
+        "v_WG_external": 1,
+        "v_SLP": 0
+      },
+      "node": null,
+      "value": null,
+      "forced_updates": 0,
+      "n_initial": 16384,
+      "original_internal_reference_is_fixed": false,
+      "fixed_endpoints": [
+        3224
+      ],
+      "counts": {
+        "original_internal_reference": 0,
+        "wg_on_fixed": 0,
+        "cycle": 0
+      }
+    },
+    {
+      "externals": {
+        "v_hh_external": 1,
+        "v_WG_external": 1,
+        "v_SLP": 0
+      },
+      "node": "v_wg",
+      "value": 1,
+      "forced_updates": 8,
+      "n_initial": 16384,
+      "original_internal_reference_is_fixed": false,
+      "fixed_endpoints": [
+        3224
+      ],
+      "counts": {
+        "original_internal_reference": 0,
+        "wg_on_fixed": 0,
+        "cycle": 0
+      }
+    },
+    {
+      "externals": {
+        "v_hh_external": 1,
+        "v_WG_external": 1,
+        "v_SLP": 0
+      },
+      "node": "v_CIA",
+      "value": 1,
+      "forced_updates": 4,
+      "n_initial": 16384,
+      "original_internal_reference_is_fixed": false,
+      "fixed_endpoints": [
+        3224
+      ],
+      "counts": {
+        "original_internal_reference": 0,
+        "wg_on_fixed": 0,
+        "cycle": 0
+      }
+    },
+    {
+      "externals": {
+        "v_hh_external": 1,
+        "v_WG_external": 1,
+        "v_SLP": 1
+      },
+      "node": null,
+      "value": null,
+      "forced_updates": 0,
+      "n_initial": 16384,
+      "original_internal_reference_is_fixed": true,
+      "fixed_endpoints": [
+        13285
+      ],
+      "counts": {
+        "original_internal_reference": 16384,
+        "wg_on_fixed": 16384,
+        "cycle": 0
+      }
+    },
+    {
+      "externals": {
+        "v_hh_external": 1,
+        "v_WG_external": 1,
+        "v_SLP": 1
+      },
+      "node": "v_wg",
+      "value": 1,
+      "forced_updates": 8,
+      "n_initial": 16384,
+      "original_internal_reference_is_fixed": true,
+      "fixed_endpoints": [
+        13285
+      ],
+      "counts": {
+        "original_internal_reference": 16384,
+        "wg_on_fixed": 16384,
+        "cycle": 0
+      }
+    },
+    {
+      "externals": {
+        "v_hh_external": 1,
+        "v_WG_external": 1,
+        "v_SLP": 1
+      },
+      "node": "v_CIA",
+      "value": 1,
+      "forced_updates": 4,
+      "n_initial": 16384,
+      "original_internal_reference_is_fixed": true,
+      "fixed_endpoints": [
+        13285
+      ],
+      "counts": {
+        "original_internal_reference": 16384,
+        "wg_on_fixed": 16384,
+        "cycle": 0
+      }
+    }
+  ],
+  "limits": "Externalinputregime sensitivity ofsamepublishedBooleanrule,synchronousupdates. Originalinternalreference endpoint maynot befixedinnewregime;report this validity separately. Internalmatching notwholeexternalstateequality. No empiricalembryo priors,asynchronous/parameter robustness,physicalpulse timing orbiological rescue."
+}

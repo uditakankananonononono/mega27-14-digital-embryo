@@ -1,0 +1,511 @@
+{
+  "plan_sha256": "4451714f3e35e6f57cca23d8e165c30fd5eac21cb75d57de3e2653d2f2cd2346",
+  "original_model_sha256": "6f1ad8de743b443e9e1f92e48964be0a3fdae9487575ae2fa0cf8eb0c627f900",
+  "rows": [
+    {
+      "target": "v_CIA",
+      "regulator": "v_CI_protein",
+      "replacement": 0,
+      "original_reference_is_fixed": false,
+      "changed_internal_coordinates": [
+        "v_CIA"
+      ],
+      "modified_model_sha256": "97438836bb7afb3772473bb85101bd40414b849bc977efd59f5c6d35d88823c5"
+    },
+    {
+      "target": "v_CIA",
+      "regulator": "v_CI_protein",
+      "replacement": 1,
+      "original_reference_is_fixed": true,
+      "changed_internal_coordinates": [],
+      "modified_model_sha256": "9c1ee62b5ef9c27a46c9cac268af284d626884052fa1fc462c1db91a8b064c74"
+    },
+    {
+      "target": "v_CIA",
+      "regulator": "v_PTC_protein",
+      "replacement": 0,
+      "original_reference_is_fixed": true,
+      "changed_internal_coordinates": [],
+      "modified_model_sha256": "c4bda6b9da7542dcf301c461d0574f2ed7db2350c5f16d3d045028fccf5b7880"
+    },
+    {
+      "target": "v_CIA",
+      "regulator": "v_PTC_protein",
+      "replacement": 1,
+      "original_reference_is_fixed": true,
+      "changed_internal_coordinates": [],
+      "modified_model_sha256": "4de02e140333fdf43d5746b14861ada0c07fb8b4d114ae4975bd7941e490f2c6"
+    },
+    {
+      "target": "v_CIA",
+      "regulator": "v_hh_external",
+      "replacement": 0,
+      "original_reference_is_fixed": false,
+      "changed_internal_coordinates": [
+        "v_CIA"
+      ],
+      "modified_model_sha256": "5890a9c52d69f87ee3f84532e39ef4ee7fb72c540b6566ac2b5cf101dcb43c4b"
+    },
+    {
+      "target": "v_CIA",
+      "regulator": "v_hh_external",
+      "replacement": 1,
+      "original_reference_is_fixed": true,
+      "changed_internal_coordinates": [],
+      "modified_model_sha256": "4e534d175f5802627ca8528188d54fd092c1e56d1bc4e9a72519421f05f5335c"
+    },
+    {
+      "target": "v_CIR",
+      "regulator": "v_CI_protein",
+      "replacement": 0,
+      "original_reference_is_fixed": true,
+      "changed_internal_coordinates": [],
+      "modified_model_sha256": "c1e918ea5b818c3b278aa2b605bcb6465509f3c2912c203e5898b8c2ab6ff5e9"
+    },
+    {
+      "target": "v_CIR",
+      "regulator": "v_CI_protein",
+      "replacement": 1,
+      "original_reference_is_fixed": true,
+      "changed_internal_coordinates": [],
+      "modified_model_sha256": "baf18c3bf6840702578e5b3b6612a682f7ded64d6c7fcdf99fd23b363421f450"
+    },
+    {
+      "target": "v_CIR",
+      "regulator": "v_PTC_protein",
+      "replacement": 0,
+      "original_reference_is_fixed": true,
+      "changed_internal_coordinates": [],
+      "modified_model_sha256": "0396ef080b8bf069bb06e1455db10ffcc8e158eaa57e0548dff3e1a30088f4b1"
+    },
+    {
+      "target": "v_CIR",
+      "regulator": "v_PTC_protein",
+      "replacement": 1,
+      "original_reference_is_fixed": true,
+      "changed_internal_coordinates": [],
+      "modified_model_sha256": "2c9833351fedd67379d6e2ec3cc20c3f0ec36530be8f5ae7788d3cf2c5391801"
+    },
+    {
+      "target": "v_CIR",
+      "regulator": "v_hh_external",
+      "replacement": 0,
+      "original_reference_is_fixed": false,
+      "changed_internal_coordinates": [
+        "v_CIR"
+      ],
+      "modified_model_sha256": "6e87229ac1a6b76a33e0be47679d234a0f8190020604cab4c06a194f92bd95b2"
+    },
+    {
+      "target": "v_CIR",
+      "regulator": "v_hh_external",
+      "replacement": 1,
+      "original_reference_is_fixed": true,
+      "changed_internal_coordinates": [],
+      "modified_model_sha256": "dc10a790edc8058cdfce9a8f7798c5c13145066d787b0cc27964dbb2eb1d9b50"
+    },
+    {
+      "target": "v_CI_protein",
+      "regulator": "v_ci",
+      "replacement": 0,
+      "original_reference_is_fixed": false,
+      "changed_internal_coordinates": [
+        "v_CI_protein"
+      ],
+      "modified_model_sha256": "2d78da2935baf75e06446eee99c95944872829fad62508aed20b7ddf60b57168"
+    },
+    {
+      "target": "v_CI_protein",
+      "regulator": "v_ci",
+      "replacement": 1,
+      "original_reference_is_fixed": true,
+      "changed_internal_coordinates": [],
+      "modified_model_sha256": "33e1fab80524077efb46f1c9cfd1add836a4cdba3c4f4eb223b322a76a97ee0d"
+    },
+    {
+      "target": "v_EN_protein",
+      "regulator": "v_en",
+      "replacement": 0,
+      "original_reference_is_fixed": true,
+      "changed_internal_coordinates": [],
+      "modified_model_sha256": "2de429a26238dd971369733a47789fc93ce4893c0b9625dc973203cf786a5dc9"
+    },
+    {
+      "target": "v_EN_protein",
+      "regulator": "v_en",
+      "replacement": 1,
+      "original_reference_is_fixed": false,
+      "changed_internal_coordinates": [
+        "v_EN_protein"
+      ],
+      "modified_model_sha256": "a87c8952c6a2338a85f829740a23d308982c6d8bd594ada0868cd8e445f2897b"
+    },
+    {
+      "target": "v_HH_protein",
+      "regulator": "v_hh",
+      "replacement": 0,
+      "original_reference_is_fixed": true,
+      "changed_internal_coordinates": [],
+      "modified_model_sha256": "4c0ce8934f7811ab015e2625510a9d6680eb5c3d2988a23106969620fbee524f"
+    },
+    {
+      "target": "v_HH_protein",
+      "regulator": "v_hh",
+      "replacement": 1,
+      "original_reference_is_fixed": false,
+      "changed_internal_coordinates": [
+        "v_HH_protein"
+      ],
+      "modified_model_sha256": "aae3300b03c589906710ac0a013bb614010c0dc8425f0d43c826f13ecd0475e3"
+    },
+    {
+      "target": "v_PH",
+      "regulator": "v_PTC_protein",
+      "replacement": 0,
+      "original_reference_is_fixed": false,
+      "changed_internal_coordinates": [
+        "v_PH"
+      ],
+      "modified_model_sha256": "18c34fd0c92661ccaaeed52df4a9f39ca5fe10fbd2d592537ebe8aa90c3cc691"
+    },
+    {
+      "target": "v_PH",
+      "regulator": "v_PTC_protein",
+      "replacement": 1,
+      "original_reference_is_fixed": true,
+      "changed_internal_coordinates": [],
+      "modified_model_sha256": "5dd2a84bafbf70d774eae175baf72bd8f648ab74a8e689c20457d2fcb2fd4216"
+    },
+    {
+      "target": "v_PH",
+      "regulator": "v_hh_external",
+      "replacement": 0,
+      "original_reference_is_fixed": false,
+      "changed_internal_coordinates": [
+        "v_PH"
+      ],
+      "modified_model_sha256": "4eb2286377134cccbff7158ef30fe4ce0f8b2f05630580292c406d77ab3ad857"
+    },
+    {
+      "target": "v_PH",
+      "regulator": "v_hh_external",
+      "replacement": 1,
+      "original_reference_is_fixed": true,
+      "changed_internal_coordinates": [],
+      "modified_model_sha256": "231f6af8416a5b85b38dc36eb489260a7564c5380daee7c5c864688d8ad6dfdd"
+    },
+    {
+      "target": "v_PTC_protein",
+      "regulator": "v_PTC_protein",
+      "replacement": 0,
+      "original_reference_is_fixed": true,
+      "changed_internal_coordinates": [],
+      "modified_model_sha256": "4059c24bb630bc71306bee0da740f9c73623de886b49b75f2eade0d904513b75"
+    },
+    {
+      "target": "v_PTC_protein",
+      "regulator": "v_PTC_protein",
+      "replacement": 1,
+      "original_reference_is_fixed": true,
+      "changed_internal_coordinates": [],
+      "modified_model_sha256": "81a4df89f7e2186199cd18ae4c43cae2f4b65e958688c94075107c5c304b60ff"
+    },
+    {
+      "target": "v_PTC_protein",
+      "regulator": "v_hh_external",
+      "replacement": 0,
+      "original_reference_is_fixed": true,
+      "changed_internal_coordinates": [],
+      "modified_model_sha256": "6bc761b3d9c34c8bf13f10da0dcdf37fef9af6a5b833736cd6aeb505fe028b90"
+    },
+    {
+      "target": "v_PTC_protein",
+      "regulator": "v_hh_external",
+      "replacement": 1,
+      "original_reference_is_fixed": true,
+      "changed_internal_coordinates": [],
+      "modified_model_sha256": "7db265ca03ed45d62f92cbf3a3091c04bad19a3c16c577a5a446b519ad7f196a"
+    },
+    {
+      "target": "v_PTC_protein",
+      "regulator": "v_ptc",
+      "replacement": 0,
+      "original_reference_is_fixed": false,
+      "changed_internal_coordinates": [
+        "v_PTC_protein"
+      ],
+      "modified_model_sha256": "39cd4a74eedd7b444ae10fdd6cbef8aab6bb7c9f2338b1b9f72e42fcaf3788f9"
+    },
+    {
+      "target": "v_PTC_protein",
+      "regulator": "v_ptc",
+      "replacement": 1,
+      "original_reference_is_fixed": true,
+      "changed_internal_coordinates": [],
+      "modified_model_sha256": "78af6ebba8dcbd37860e576005cb3c6c22f72cc95f14420df615dc8e45396c19"
+    },
+    {
+      "target": "v_SMO",
+      "regulator": "v_PTC_protein",
+      "replacement": 0,
+      "original_reference_is_fixed": true,
+      "changed_internal_coordinates": [],
+      "modified_model_sha256": "cfc36f14c202b2fcf35a375944503753679a4b03bfd5a619ac267f14c95cedba"
+    },
+    {
+      "target": "v_SMO",
+      "regulator": "v_PTC_protein",
+      "replacement": 1,
+      "original_reference_is_fixed": true,
+      "changed_internal_coordinates": [],
+      "modified_model_sha256": "9ac6c789a2aa14345689c32346432a676b0a4b32c7356eddf0183c2cfbd7be3c"
+    },
+    {
+      "target": "v_SMO",
+      "regulator": "v_hh_external",
+      "replacement": 0,
+      "original_reference_is_fixed": false,
+      "changed_internal_coordinates": [
+        "v_SMO"
+      ],
+      "modified_model_sha256": "0b2df713b8035f48e2dc3f70d82e236ce031bb52ef6d41f39f96239ba96304f1"
+    },
+    {
+      "target": "v_SMO",
+      "regulator": "v_hh_external",
+      "replacement": 1,
+      "original_reference_is_fixed": true,
+      "changed_internal_coordinates": [],
+      "modified_model_sha256": "6b24aa1af6deab19387ee67670fd576c1ed50f9e72c521b2490b7c34d109ddc0"
+    },
+    {
+      "target": "v_WG_protein",
+      "regulator": "v_wg",
+      "replacement": 0,
+      "original_reference_is_fixed": false,
+      "changed_internal_coordinates": [
+        "v_WG_protein"
+      ],
+      "modified_model_sha256": "8e9981b6213cd370167dd377fd44df84ec318e663dc65388471c975a7bbf790f"
+    },
+    {
+      "target": "v_WG_protein",
+      "regulator": "v_wg",
+      "replacement": 1,
+      "original_reference_is_fixed": true,
+      "changed_internal_coordinates": [],
+      "modified_model_sha256": "6c54278fab10608c96638ad18ba0f13e88ec68581818dca2ca8583946314e618"
+    },
+    {
+      "target": "v_ci",
+      "regulator": "v_EN_protein",
+      "replacement": 0,
+      "original_reference_is_fixed": true,
+      "changed_internal_coordinates": [],
+      "modified_model_sha256": "280ef654afc35af76421f92d518b37454632ec21750a935d67cc86909baf4d54"
+    },
+    {
+      "target": "v_ci",
+      "regulator": "v_EN_protein",
+      "replacement": 1,
+      "original_reference_is_fixed": false,
+      "changed_internal_coordinates": [
+        "v_ci"
+      ],
+      "modified_model_sha256": "b4c56fa2040d01260fc1bd1edeff81dd99ecaf05e3802f7b50dc0003d523436a"
+    },
+    {
+      "target": "v_en",
+      "regulator": "v_SLP",
+      "replacement": 0,
+      "original_reference_is_fixed": true,
+      "changed_internal_coordinates": [],
+      "modified_model_sha256": "3a0f7878336e7a069ee5dbfbf4e0c633f1567de272e92e83fe34fac2b08158e2"
+    },
+    {
+      "target": "v_en",
+      "regulator": "v_SLP",
+      "replacement": 1,
+      "original_reference_is_fixed": true,
+      "changed_internal_coordinates": [],
+      "modified_model_sha256": "e2363ada0b25aa92b98d48bb5ccb8f9add8eea75a0f806c46cf157ad4819b3fb"
+    },
+    {
+      "target": "v_en",
+      "regulator": "v_WG_external",
+      "replacement": 0,
+      "original_reference_is_fixed": true,
+      "changed_internal_coordinates": [],
+      "modified_model_sha256": "49a61f3573c889e153376064db7f61d4da1ca920932faef52d5c64a16f9ef27f"
+    },
+    {
+      "target": "v_en",
+      "regulator": "v_WG_external",
+      "replacement": 1,
+      "original_reference_is_fixed": false,
+      "changed_internal_coordinates": [
+        "v_en"
+      ],
+      "modified_model_sha256": "fd0eb70ee0e7389d63109df79ac549969a8dca213d857ae62441ba8bf2266830"
+    },
+    {
+      "target": "v_hh",
+      "regulator": "v_CIR",
+      "replacement": 0,
+      "original_reference_is_fixed": true,
+      "changed_internal_coordinates": [],
+      "modified_model_sha256": "ef06ab997ffeef97297b15989c768f1ead91bfea656be4042c2a1b0451269427"
+    },
+    {
+      "target": "v_hh",
+      "regulator": "v_CIR",
+      "replacement": 1,
+      "original_reference_is_fixed": true,
+      "changed_internal_coordinates": [],
+      "modified_model_sha256": "d3a4dbd32168df9352547fb5966c3b423dadb075a31a17a9ddae7dcfb70d9ba2"
+    },
+    {
+      "target": "v_hh",
+      "regulator": "v_EN_protein",
+      "replacement": 0,
+      "original_reference_is_fixed": true,
+      "changed_internal_coordinates": [],
+      "modified_model_sha256": "2471166f0f11fa132d854c6f2e0df12fc16c75eee6747202cc3df1c530b3eea2"
+    },
+    {
+      "target": "v_hh",
+      "regulator": "v_EN_protein",
+      "replacement": 1,
+      "original_reference_is_fixed": false,
+      "changed_internal_coordinates": [
+        "v_hh"
+      ],
+      "modified_model_sha256": "fa54ecb8dcbdc0c913e594c627d336b026082edf986188005e3c1dedccd68c54"
+    },
+    {
+      "target": "v_ptc",
+      "regulator": "v_CIA",
+      "replacement": 0,
+      "original_reference_is_fixed": false,
+      "changed_internal_coordinates": [
+        "v_ptc"
+      ],
+      "modified_model_sha256": "c4f53988151b8f016a19e3442845f4bbde027557f688de8c565e49cbde8a6555"
+    },
+    {
+      "target": "v_ptc",
+      "regulator": "v_CIA",
+      "replacement": 1,
+      "original_reference_is_fixed": true,
+      "changed_internal_coordinates": [],
+      "modified_model_sha256": "fe7aff1ddae9cf7d641463e3431230ed99e7dd6f06d271ba42aa88dfb92c7eba"
+    },
+    {
+      "target": "v_ptc",
+      "regulator": "v_CIR",
+      "replacement": 0,
+      "original_reference_is_fixed": true,
+      "changed_internal_coordinates": [],
+      "modified_model_sha256": "f7681b9c6be5b3fa3ef737be5cf063241f04d11d5dc081c9cdd02f1e6e7ad57e"
+    },
+    {
+      "target": "v_ptc",
+      "regulator": "v_CIR",
+      "replacement": 1,
+      "original_reference_is_fixed": false,
+      "changed_internal_coordinates": [
+        "v_ptc"
+      ],
+      "modified_model_sha256": "dec65449ad41f0393b7925e4d41d0863762d484fc74ab0f2563fa1e7a94e1efa"
+    },
+    {
+      "target": "v_ptc",
+      "regulator": "v_EN_protein",
+      "replacement": 0,
+      "original_reference_is_fixed": true,
+      "changed_internal_coordinates": [],
+      "modified_model_sha256": "4b727a5d002f1457bc2f0b8ff3118981273e736b913d58053572a76bd0324e31"
+    },
+    {
+      "target": "v_ptc",
+      "regulator": "v_EN_protein",
+      "replacement": 1,
+      "original_reference_is_fixed": false,
+      "changed_internal_coordinates": [
+        "v_ptc"
+      ],
+      "modified_model_sha256": "e0a92257df2d6f8ca8ee5cdd8253f37531e969657408fab79f1a622bbdc08a0b"
+    },
+    {
+      "target": "v_wg",
+      "regulator": "v_CIA",
+      "replacement": 0,
+      "original_reference_is_fixed": false,
+      "changed_internal_coordinates": [
+        "v_wg"
+      ],
+      "modified_model_sha256": "82a6a001d9c3f1966d87265df40cc012fb5a1768c2d287aadd4ef29bf950303f"
+    },
+    {
+      "target": "v_wg",
+      "regulator": "v_CIA",
+      "replacement": 1,
+      "original_reference_is_fixed": true,
+      "changed_internal_coordinates": [],
+      "modified_model_sha256": "313121d85c15fdf2d7560bce265de9632d33e018b422687f78c5927a8ea8df4d"
+    },
+    {
+      "target": "v_wg",
+      "regulator": "v_CIR",
+      "replacement": 0,
+      "original_reference_is_fixed": true,
+      "changed_internal_coordinates": [],
+      "modified_model_sha256": "de3e4823018617856aeb2af26ab2af48dc31aa1fc4dc0d22ff8d4735875ea011"
+    },
+    {
+      "target": "v_wg",
+      "regulator": "v_CIR",
+      "replacement": 1,
+      "original_reference_is_fixed": false,
+      "changed_internal_coordinates": [
+        "v_wg"
+      ],
+      "modified_model_sha256": "a925e21085255ab7a4be070328ed7c57ddf4b0dc2234e345dc66e1243b7fe5d1"
+    },
+    {
+      "target": "v_wg",
+      "regulator": "v_SLP",
+      "replacement": 0,
+      "original_reference_is_fixed": true,
+      "changed_internal_coordinates": [],
+      "modified_model_sha256": "94954c73a53af689b296a9010696849c97dff3b01f2171af5b622c627ffe93cd"
+    },
+    {
+      "target": "v_wg",
+      "regulator": "v_SLP",
+      "replacement": 1,
+      "original_reference_is_fixed": true,
+      "changed_internal_coordinates": [],
+      "modified_model_sha256": "947cd986fa6f3ec01dcac3d1b4e4e23f026ab1aae33c1f01fd38f9c8c49599b1"
+    },
+    {
+      "target": "v_wg",
+      "regulator": "v_wg",
+      "replacement": 0,
+      "original_reference_is_fixed": false,
+      "changed_internal_coordinates": [
+        "v_wg"
+      ],
+      "modified_model_sha256": "bb66b957f8be849ab95e7fbf0602c2142a477a118a6096172c1deb3598ba2439"
+    },
+    {
+      "target": "v_wg",
+      "regulator": "v_wg",
+      "replacement": 1,
+      "original_reference_is_fixed": true,
+      "changed_internal_coordinates": [],
+      "modified_model_sha256": "f8a75d2c2c6c96d4da3effd525d16e234e2a07577bd93b5c488747398a019cf7"
+    }
+  ],
+  "limits": "CounterfactualBooleanruleperturbationsnotbiologicaledgeknockouts;no basin/outcome/rescueclaim. Originalreferenceinvalidityflagsmodeldependence,notnewpreferredreference. Includesexternalsasregulatorreferences."
+}

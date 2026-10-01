@@ -1,0 +1,677 @@
+{
+  "plan_sha256": "bff4077b295885da2f1a863ef1d8e9752a095fc691a7f88b45f91e64d222e072",
+  "model_sha256": "6f1ad8de743b443e9e1f92e48964be0a3fdae9487575ae2fa0cf8eb0c627f900",
+  "node_order": [
+    "v_CIA",
+    "v_CIR",
+    "v_CI_protein",
+    "v_EN_protein",
+    "v_HH_protein",
+    "v_PH",
+    "v_PTC_protein",
+    "v_SMO",
+    "v_WG_protein",
+    "v_ci",
+    "v_en",
+    "v_hh",
+    "v_ptc",
+    "v_wg"
+  ],
+  "original_reference_integer": 13285,
+  "original_reference_state": {
+    "v_CIA": 1,
+    "v_CIR": 0,
+    "v_CI_protein": 1,
+    "v_EN_protein": 0,
+    "v_HH_protein": 0,
+    "v_PH": 1,
+    "v_PTC_protein": 1,
+    "v_SMO": 1,
+    "v_WG_protein": 1,
+    "v_ci": 1,
+    "v_en": 0,
+    "v_hh": 0,
+    "v_ptc": 1,
+    "v_wg": 1
+  },
+  "baseline_exact_reference_starts": 128,
+  "rows": [
+    {
+      "node": "v_CIA",
+      "value": 0,
+      "reference_value": 1,
+      "n_initial": 8192,
+      "counts": {
+        "full_reference": 0,
+        "projected_reference": 0,
+        "wg_on_fixed": 0,
+        "cycle": 0
+      },
+      "fractions": {
+        "full_reference": 0.0,
+        "projected_reference": 0.0,
+        "wg_on_fixed": 0.0,
+        "cycle": 0.0
+      },
+      "distinct_fixed_endpoints": [
+        644
+      ],
+      "graph_sha256": "aeacc3fda50385d0eaf1731f424dfac1bb4d5e0e93110c0423dd989d55bd5483"
+    },
+    {
+      "node": "v_CIA",
+      "value": 1,
+      "reference_value": 1,
+      "n_initial": 8192,
+      "counts": {
+        "full_reference": 2048,
+        "projected_reference": 2048,
+        "wg_on_fixed": 2048,
+        "cycle": 0
+      },
+      "fractions": {
+        "full_reference": 0.25,
+        "projected_reference": 0.25,
+        "wg_on_fixed": 0.25,
+        "cycle": 0.0
+      },
+      "distinct_fixed_endpoints": [
+        4837,
+        13285
+      ],
+      "graph_sha256": "ab48b37dd1c5e9a74cb9c35d754e120e9fc073ad5bb3b63535731d9176a9f614"
+    },
+    {
+      "node": "v_CIR",
+      "value": 0,
+      "reference_value": 0,
+      "n_initial": 8192,
+      "counts": {
+        "full_reference": 128,
+        "projected_reference": 128,
+        "wg_on_fixed": 128,
+        "cycle": 0
+      },
+      "fractions": {
+        "full_reference": 0.015625,
+        "projected_reference": 0.015625,
+        "wg_on_fixed": 0.015625,
+        "cycle": 0.0
+      },
+      "distinct_fixed_endpoints": [
+        4837,
+        13285
+      ],
+      "graph_sha256": "556b042e19b8f044c11fb46f95b01251be69454877af5c23448d534d6b3b1b90"
+    },
+    {
+      "node": "v_CIR",
+      "value": 1,
+      "reference_value": 0,
+      "n_initial": 8192,
+      "counts": {
+        "full_reference": 0,
+        "projected_reference": 0,
+        "wg_on_fixed": 0,
+        "cycle": 0
+      },
+      "fractions": {
+        "full_reference": 0.0,
+        "projected_reference": 0.0,
+        "wg_on_fixed": 0.0,
+        "cycle": 0.0
+      },
+      "distinct_fixed_endpoints": [
+        647
+      ],
+      "graph_sha256": "4c8f163e6b6639b119d61c2954e6f2bf90275b92ca013e94cae8089accf4c98a"
+    },
+    {
+      "node": "v_CI_protein",
+      "value": 0,
+      "reference_value": 1,
+      "n_initial": 8192,
+      "counts": {
+        "full_reference": 0,
+        "projected_reference": 0,
+        "wg_on_fixed": 0,
+        "cycle": 0
+      },
+      "fractions": {
+        "full_reference": 0.0,
+        "projected_reference": 0.0,
+        "wg_on_fixed": 0.0,
+        "cycle": 0.0
+      },
+      "distinct_fixed_endpoints": [
+        640
+      ],
+      "graph_sha256": "76817c2789f99dbaa667013a23a3e5b1c20bf00c55b63c0b34e5245e532ed598"
+    },
+    {
+      "node": "v_CI_protein",
+      "value": 1,
+      "reference_value": 1,
+      "n_initial": 8192,
+      "counts": {
+        "full_reference": 1024,
+        "projected_reference": 1024,
+        "wg_on_fixed": 1024,
+        "cycle": 0
+      },
+      "fractions": {
+        "full_reference": 0.125,
+        "projected_reference": 0.125,
+        "wg_on_fixed": 0.125,
+        "cycle": 0.0
+      },
+      "distinct_fixed_endpoints": [
+        4837,
+        13285
+      ],
+      "graph_sha256": "b8f9641cb9c3c82e5dc98098c096314f20a798593b5b3744dead187a63fdd73a"
+    },
+    {
+      "node": "v_EN_protein",
+      "value": 0,
+      "reference_value": 0,
+      "n_initial": 8192,
+      "counts": {
+        "full_reference": 256,
+        "projected_reference": 256,
+        "wg_on_fixed": 256,
+        "cycle": 0
+      },
+      "fractions": {
+        "full_reference": 0.03125,
+        "projected_reference": 0.03125,
+        "wg_on_fixed": 0.03125,
+        "cycle": 0.0
+      },
+      "distinct_fixed_endpoints": [
+        4837,
+        13285
+      ],
+      "graph_sha256": "5ae44e3de5838f968995d7862de49ec63807a14de895d7c1fc865caa327b87e0"
+    },
+    {
+      "node": "v_EN_protein",
+      "value": 1,
+      "reference_value": 0,
+      "n_initial": 8192,
+      "counts": {
+        "full_reference": 0,
+        "projected_reference": 0,
+        "wg_on_fixed": 0,
+        "cycle": 0
+      },
+      "fractions": {
+        "full_reference": 0.0,
+        "projected_reference": 0.0,
+        "wg_on_fixed": 0.0,
+        "cycle": 0.0
+      },
+      "distinct_fixed_endpoints": [
+        2200
+      ],
+      "graph_sha256": "a857fe373d339741d24932272a5288345ec70b612733b39cd88b9c53b9d5045d"
+    },
+    {
+      "node": "v_HH_protein",
+      "value": 0,
+      "reference_value": 0,
+      "n_initial": 8192,
+      "counts": {
+        "full_reference": 64,
+        "projected_reference": 64,
+        "wg_on_fixed": 64,
+        "cycle": 0
+      },
+      "fractions": {
+        "full_reference": 0.0078125,
+        "projected_reference": 0.0078125,
+        "wg_on_fixed": 0.0078125,
+        "cycle": 0.0
+      },
+      "distinct_fixed_endpoints": [
+        4837,
+        13285
+      ],
+      "graph_sha256": "b1c0ad45ecbc63b743e63302d8835f264e694dfc10b6ecae6610d9ff7ae640e8"
+    },
+    {
+      "node": "v_HH_protein",
+      "value": 1,
+      "reference_value": 0,
+      "n_initial": 8192,
+      "counts": {
+        "full_reference": 0,
+        "projected_reference": 64,
+        "wg_on_fixed": 64,
+        "cycle": 0
+      },
+      "fractions": {
+        "full_reference": 0.0,
+        "projected_reference": 0.0078125,
+        "wg_on_fixed": 0.0078125,
+        "cycle": 0.0
+      },
+      "distinct_fixed_endpoints": [
+        4853,
+        13301
+      ],
+      "graph_sha256": "749c7882465de5d82668fe7606743dae27ecf96d568f1efba6df952f5c8f5f6c"
+    },
+    {
+      "node": "v_PH",
+      "value": 0,
+      "reference_value": 1,
+      "n_initial": 8192,
+      "counts": {
+        "full_reference": 0,
+        "projected_reference": 64,
+        "wg_on_fixed": 64,
+        "cycle": 0
+      },
+      "fractions": {
+        "full_reference": 0.0,
+        "projected_reference": 0.0078125,
+        "wg_on_fixed": 0.0078125,
+        "cycle": 0.0
+      },
+      "distinct_fixed_endpoints": [
+        4805,
+        13253
+      ],
+      "graph_sha256": "555f5c77ca7d353afa2324e4b81f459d40cba333bebd732c5e218c8c1012ebbc"
+    },
+    {
+      "node": "v_PH",
+      "value": 1,
+      "reference_value": 1,
+      "n_initial": 8192,
+      "counts": {
+        "full_reference": 64,
+        "projected_reference": 64,
+        "wg_on_fixed": 64,
+        "cycle": 0
+      },
+      "fractions": {
+        "full_reference": 0.0078125,
+        "projected_reference": 0.0078125,
+        "wg_on_fixed": 0.0078125,
+        "cycle": 0.0
+      },
+      "distinct_fixed_endpoints": [
+        4837,
+        13285
+      ],
+      "graph_sha256": "4e2347b771d1fd4ad081b8241b40bb93381ff8fe2c604148c4977f48194d1a2a"
+    },
+    {
+      "node": "v_PTC_protein",
+      "value": 0,
+      "reference_value": 1,
+      "n_initial": 8192,
+      "counts": {
+        "full_reference": 0,
+        "projected_reference": 0,
+        "wg_on_fixed": 64,
+        "cycle": 0
+      },
+      "fractions": {
+        "full_reference": 0.0,
+        "projected_reference": 0.0,
+        "wg_on_fixed": 0.0078125,
+        "cycle": 0.0
+      },
+      "distinct_fixed_endpoints": [
+        4741,
+        13189
+      ],
+      "graph_sha256": "1b616c29db86e00856cb4746088419f560863d5268d8b9b52ea6fc18638b0a5f"
+    },
+    {
+      "node": "v_PTC_protein",
+      "value": 1,
+      "reference_value": 1,
+      "n_initial": 8192,
+      "counts": {
+        "full_reference": 64,
+        "projected_reference": 64,
+        "wg_on_fixed": 64,
+        "cycle": 0
+      },
+      "fractions": {
+        "full_reference": 0.0078125,
+        "projected_reference": 0.0078125,
+        "wg_on_fixed": 0.0078125,
+        "cycle": 0.0
+      },
+      "distinct_fixed_endpoints": [
+        4837,
+        13285
+      ],
+      "graph_sha256": "f24f8974f386dc083578a8b616ab258dd26e6f88e9d8bf26219785eef234071a"
+    },
+    {
+      "node": "v_SMO",
+      "value": 0,
+      "reference_value": 1,
+      "n_initial": 8192,
+      "counts": {
+        "full_reference": 0,
+        "projected_reference": 64,
+        "wg_on_fixed": 64,
+        "cycle": 0
+      },
+      "fractions": {
+        "full_reference": 0.0,
+        "projected_reference": 0.0078125,
+        "wg_on_fixed": 0.0078125,
+        "cycle": 0.0
+      },
+      "distinct_fixed_endpoints": [
+        4709,
+        13157
+      ],
+      "graph_sha256": "ac24a2afcd7ed88bcafa09a0a025e974dbcad9041f27e5b6f667f808608402d3"
+    },
+    {
+      "node": "v_SMO",
+      "value": 1,
+      "reference_value": 1,
+      "n_initial": 8192,
+      "counts": {
+        "full_reference": 64,
+        "projected_reference": 64,
+        "wg_on_fixed": 64,
+        "cycle": 0
+      },
+      "fractions": {
+        "full_reference": 0.0078125,
+        "projected_reference": 0.0078125,
+        "wg_on_fixed": 0.0078125,
+        "cycle": 0.0
+      },
+      "distinct_fixed_endpoints": [
+        4837,
+        13285
+      ],
+      "graph_sha256": "25b5c574be38e3be5eaf4ef5dec05cb58d0247386af8185e42c05c84a5d09fc9"
+    },
+    {
+      "node": "v_WG_protein",
+      "value": 0,
+      "reference_value": 1,
+      "n_initial": 8192,
+      "counts": {
+        "full_reference": 0,
+        "projected_reference": 64,
+        "wg_on_fixed": 64,
+        "cycle": 0
+      },
+      "fractions": {
+        "full_reference": 0.0,
+        "projected_reference": 0.0078125,
+        "wg_on_fixed": 0.0078125,
+        "cycle": 0.0
+      },
+      "distinct_fixed_endpoints": [
+        4837,
+        13029
+      ],
+      "graph_sha256": "24dd6704d86d8678fc54690056fa5a78dfc239980e4fdf4ad1f501c29176956c"
+    },
+    {
+      "node": "v_WG_protein",
+      "value": 1,
+      "reference_value": 1,
+      "n_initial": 8192,
+      "counts": {
+        "full_reference": 64,
+        "projected_reference": 64,
+        "wg_on_fixed": 64,
+        "cycle": 0
+      },
+      "fractions": {
+        "full_reference": 0.0078125,
+        "projected_reference": 0.0078125,
+        "wg_on_fixed": 0.0078125,
+        "cycle": 0.0
+      },
+      "distinct_fixed_endpoints": [
+        5093,
+        13285
+      ],
+      "graph_sha256": "42914f40f27fc4b34bdd1b7c57a30e0bc37d68006a530a9bcdd675fc0d8cc007"
+    },
+    {
+      "node": "v_ci",
+      "value": 0,
+      "reference_value": 1,
+      "n_initial": 8192,
+      "counts": {
+        "full_reference": 0,
+        "projected_reference": 0,
+        "wg_on_fixed": 0,
+        "cycle": 0
+      },
+      "fractions": {
+        "full_reference": 0.0,
+        "projected_reference": 0.0,
+        "wg_on_fixed": 0.0,
+        "cycle": 0.0
+      },
+      "distinct_fixed_endpoints": [
+        128
+      ],
+      "graph_sha256": "0c8537c00e3c084e7813e4609135093f224d618b84303681521b3f90b9447f1e"
+    },
+    {
+      "node": "v_ci",
+      "value": 1,
+      "reference_value": 1,
+      "n_initial": 8192,
+      "counts": {
+        "full_reference": 512,
+        "projected_reference": 512,
+        "wg_on_fixed": 512,
+        "cycle": 0
+      },
+      "fractions": {
+        "full_reference": 0.0625,
+        "projected_reference": 0.0625,
+        "wg_on_fixed": 0.0625,
+        "cycle": 0.0
+      },
+      "distinct_fixed_endpoints": [
+        4837,
+        13285
+      ],
+      "graph_sha256": "923146ca889008d41e35a53cd19e6d1dfb410dd61a052fc6bdcdee76dc6d7162"
+    },
+    {
+      "node": "v_en",
+      "value": 0,
+      "reference_value": 0,
+      "n_initial": 8192,
+      "counts": {
+        "full_reference": 128,
+        "projected_reference": 128,
+        "wg_on_fixed": 128,
+        "cycle": 0
+      },
+      "fractions": {
+        "full_reference": 0.015625,
+        "projected_reference": 0.015625,
+        "wg_on_fixed": 0.015625,
+        "cycle": 0.0
+      },
+      "distinct_fixed_endpoints": [
+        4837,
+        13285
+      ],
+      "graph_sha256": "f3946ced8998844c36a32400e790a5fc8408c8efb8531f5557bdb275ce611f45"
+    },
+    {
+      "node": "v_en",
+      "value": 1,
+      "reference_value": 0,
+      "n_initial": 8192,
+      "counts": {
+        "full_reference": 0,
+        "projected_reference": 0,
+        "wg_on_fixed": 0,
+        "cycle": 0
+      },
+      "fractions": {
+        "full_reference": 0.0,
+        "projected_reference": 0.0,
+        "wg_on_fixed": 0.0,
+        "cycle": 0.0
+      },
+      "distinct_fixed_endpoints": [
+        3224
+      ],
+      "graph_sha256": "6f3b4fa79e807ba3313a74adf9b82947153f3279790a9a84b99821dbd778eda1"
+    },
+    {
+      "node": "v_hh",
+      "value": 0,
+      "reference_value": 0,
+      "n_initial": 8192,
+      "counts": {
+        "full_reference": 64,
+        "projected_reference": 64,
+        "wg_on_fixed": 64,
+        "cycle": 0
+      },
+      "fractions": {
+        "full_reference": 0.0078125,
+        "projected_reference": 0.0078125,
+        "wg_on_fixed": 0.0078125,
+        "cycle": 0.0
+      },
+      "distinct_fixed_endpoints": [
+        4837,
+        13285
+      ],
+      "graph_sha256": "ffe541118f5b918f243060c3255bc64fdb6855004385628f20f93ff135d46fa5"
+    },
+    {
+      "node": "v_hh",
+      "value": 1,
+      "reference_value": 0,
+      "n_initial": 8192,
+      "counts": {
+        "full_reference": 0,
+        "projected_reference": 0,
+        "wg_on_fixed": 64,
+        "cycle": 0
+      },
+      "fractions": {
+        "full_reference": 0.0,
+        "projected_reference": 0.0,
+        "wg_on_fixed": 0.0078125,
+        "cycle": 0.0
+      },
+      "distinct_fixed_endpoints": [
+        6901,
+        15349
+      ],
+      "graph_sha256": "38f0e994072df398017c3dd98e2ec366273b8b2347d4f1c35083d9a783cbe00d"
+    },
+    {
+      "node": "v_ptc",
+      "value": 0,
+      "reference_value": 1,
+      "n_initial": 8192,
+      "counts": {
+        "full_reference": 0,
+        "projected_reference": 0,
+        "wg_on_fixed": 64,
+        "cycle": 0
+      },
+      "fractions": {
+        "full_reference": 0.0,
+        "projected_reference": 0.0,
+        "wg_on_fixed": 0.0078125,
+        "cycle": 0.0
+      },
+      "distinct_fixed_endpoints": [
+        645,
+        9093
+      ],
+      "graph_sha256": "527481bdfd139535dd7bb2bc41e36692cea28707476eee83b59f1bc5cf6f9035"
+    },
+    {
+      "node": "v_ptc",
+      "value": 1,
+      "reference_value": 1,
+      "n_initial": 8192,
+      "counts": {
+        "full_reference": 64,
+        "projected_reference": 64,
+        "wg_on_fixed": 64,
+        "cycle": 0
+      },
+      "fractions": {
+        "full_reference": 0.0078125,
+        "projected_reference": 0.0078125,
+        "wg_on_fixed": 0.0078125,
+        "cycle": 0.0
+      },
+      "distinct_fixed_endpoints": [
+        4837,
+        13285
+      ],
+      "graph_sha256": "daad7e1fa69a04075b8e1245344000b82598ed58e566ae9215a94124f1ad3a2f"
+    },
+    {
+      "node": "v_wg",
+      "value": 0,
+      "reference_value": 1,
+      "n_initial": 8192,
+      "counts": {
+        "full_reference": 0,
+        "projected_reference": 0,
+        "wg_on_fixed": 0,
+        "cycle": 0
+      },
+      "fractions": {
+        "full_reference": 0.0,
+        "projected_reference": 0.0,
+        "wg_on_fixed": 0.0,
+        "cycle": 0.0
+      },
+      "distinct_fixed_endpoints": [
+        4837
+      ],
+      "graph_sha256": "3d6926536dca5ecafb6f1533aa8646e93dc6a08f5453ed900ebce8d8fb2417ba"
+    },
+    {
+      "node": "v_wg",
+      "value": 1,
+      "reference_value": 1,
+      "n_initial": 8192,
+      "counts": {
+        "full_reference": 8192,
+        "projected_reference": 8192,
+        "wg_on_fixed": 8192,
+        "cycle": 0
+      },
+      "fractions": {
+        "full_reference": 1.0,
+        "projected_reference": 1.0,
+        "wg_on_fixed": 1.0,
+        "cycle": 0.0
+      },
+      "distinct_fixed_endpoints": [
+        13285
+      ],
+      "graph_sha256": "a6ac1cc5ee9a30467bc232dd4e014da5bf0fa1cc8de371ec63384390c6c46048"
+    }
+  ],
+  "limits": "Original reference is a software state not biologically verified WT. Full match impossible when clamped value contradicts reference. Projected match excludes manipulated node explicitly; it is not whole-state rescue. No historical records changed."
+}

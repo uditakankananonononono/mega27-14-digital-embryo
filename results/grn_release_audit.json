@@ -1,0 +1,1145 @@
+{
+  "plan_sha256": "8df46cf5b78d8dada67bee96e70d4f294ac753ea26fd77709b9b2ff067a5f169",
+  "source_model_sha256": "6f1ad8de743b443e9e1f92e48964be0a3fdae9487575ae2fa0cf8eb0c627f900",
+  "node_order": [
+    "v_CIA",
+    "v_CIR",
+    "v_CI_protein",
+    "v_EN_protein",
+    "v_HH_protein",
+    "v_PH",
+    "v_PTC_protein",
+    "v_SMO",
+    "v_WG_protein",
+    "v_ci",
+    "v_en",
+    "v_hh",
+    "v_ptc",
+    "v_wg"
+  ],
+  "reference_integer": 13285,
+  "baseline_reference_count": 128,
+  "rows": [
+    {
+      "node": "v_CIA",
+      "value": 0,
+      "forced_updates": 1,
+      "n_initial": 16384,
+      "exact_reference_at_release": 0,
+      "eventual_reference_after_release": 0,
+      "released_reference_fraction": 0.0,
+      "distinct_release_states": 192
+    },
+    {
+      "node": "v_CIA",
+      "value": 0,
+      "forced_updates": 2,
+      "n_initial": 16384,
+      "exact_reference_at_release": 0,
+      "eventual_reference_after_release": 0,
+      "released_reference_fraction": 0.0,
+      "distinct_release_states": 12
+    },
+    {
+      "node": "v_CIA",
+      "value": 0,
+      "forced_updates": 4,
+      "n_initial": 16384,
+      "exact_reference_at_release": 0,
+      "eventual_reference_after_release": 0,
+      "released_reference_fraction": 0.0,
+      "distinct_release_states": 1
+    },
+    {
+      "node": "v_CIA",
+      "value": 0,
+      "forced_updates": 8,
+      "n_initial": 16384,
+      "exact_reference_at_release": 0,
+      "eventual_reference_after_release": 0,
+      "released_reference_fraction": 0.0,
+      "distinct_release_states": 1
+    },
+    {
+      "node": "v_CIA",
+      "value": 1,
+      "forced_updates": 1,
+      "n_initial": 16384,
+      "exact_reference_at_release": 64,
+      "eventual_reference_after_release": 512,
+      "released_reference_fraction": 0.03125,
+      "distinct_release_states": 256
+    },
+    {
+      "node": "v_CIA",
+      "value": 1,
+      "forced_updates": 2,
+      "n_initial": 16384,
+      "exact_reference_at_release": 512,
+      "eventual_reference_after_release": 1024,
+      "released_reference_fraction": 0.0625,
+      "distinct_release_states": 24
+    },
+    {
+      "node": "v_CIA",
+      "value": 1,
+      "forced_updates": 4,
+      "n_initial": 16384,
+      "exact_reference_at_release": 2048,
+      "eventual_reference_after_release": 4096,
+      "released_reference_fraction": 0.25,
+      "distinct_release_states": 4
+    },
+    {
+      "node": "v_CIA",
+      "value": 1,
+      "forced_updates": 8,
+      "n_initial": 16384,
+      "exact_reference_at_release": 4096,
+      "eventual_reference_after_release": 4096,
+      "released_reference_fraction": 0.25,
+      "distinct_release_states": 2
+    },
+    {
+      "node": "v_CIR",
+      "value": 0,
+      "forced_updates": 1,
+      "n_initial": 16384,
+      "exact_reference_at_release": 32,
+      "eventual_reference_after_release": 256,
+      "released_reference_fraction": 0.015625,
+      "distinct_release_states": 448
+    },
+    {
+      "node": "v_CIR",
+      "value": 0,
+      "forced_updates": 2,
+      "n_initial": 16384,
+      "exact_reference_at_release": 128,
+      "eventual_reference_after_release": 256,
+      "released_reference_fraction": 0.015625,
+      "distinct_release_states": 68
+    },
+    {
+      "node": "v_CIR",
+      "value": 0,
+      "forced_updates": 4,
+      "n_initial": 16384,
+      "exact_reference_at_release": 256,
+      "eventual_reference_after_release": 256,
+      "released_reference_fraction": 0.015625,
+      "distinct_release_states": 16
+    },
+    {
+      "node": "v_CIR",
+      "value": 0,
+      "forced_updates": 8,
+      "n_initial": 16384,
+      "exact_reference_at_release": 256,
+      "eventual_reference_after_release": 256,
+      "released_reference_fraction": 0.015625,
+      "distinct_release_states": 2
+    },
+    {
+      "node": "v_CIR",
+      "value": 1,
+      "forced_updates": 1,
+      "n_initial": 16384,
+      "exact_reference_at_release": 0,
+      "eventual_reference_after_release": 0,
+      "released_reference_fraction": 0.0,
+      "distinct_release_states": 256
+    },
+    {
+      "node": "v_CIR",
+      "value": 1,
+      "forced_updates": 2,
+      "n_initial": 16384,
+      "exact_reference_at_release": 0,
+      "eventual_reference_after_release": 0,
+      "released_reference_fraction": 0.0,
+      "distinct_release_states": 16
+    },
+    {
+      "node": "v_CIR",
+      "value": 1,
+      "forced_updates": 4,
+      "n_initial": 16384,
+      "exact_reference_at_release": 0,
+      "eventual_reference_after_release": 0,
+      "released_reference_fraction": 0.0,
+      "distinct_release_states": 2
+    },
+    {
+      "node": "v_CIR",
+      "value": 1,
+      "forced_updates": 8,
+      "n_initial": 16384,
+      "exact_reference_at_release": 0,
+      "eventual_reference_after_release": 0,
+      "released_reference_fraction": 0.0,
+      "distinct_release_states": 1
+    },
+    {
+      "node": "v_CI_protein",
+      "value": 0,
+      "forced_updates": 1,
+      "n_initial": 16384,
+      "exact_reference_at_release": 0,
+      "eventual_reference_after_release": 0,
+      "released_reference_fraction": 0.0,
+      "distinct_release_states": 144
+    },
+    {
+      "node": "v_CI_protein",
+      "value": 0,
+      "forced_updates": 2,
+      "n_initial": 16384,
+      "exact_reference_at_release": 0,
+      "eventual_reference_after_release": 0,
+      "released_reference_fraction": 0.0,
+      "distinct_release_states": 20
+    },
+    {
+      "node": "v_CI_protein",
+      "value": 0,
+      "forced_updates": 4,
+      "n_initial": 16384,
+      "exact_reference_at_release": 0,
+      "eventual_reference_after_release": 0,
+      "released_reference_fraction": 0.0,
+      "distinct_release_states": 1
+    },
+    {
+      "node": "v_CI_protein",
+      "value": 0,
+      "forced_updates": 8,
+      "n_initial": 16384,
+      "exact_reference_at_release": 0,
+      "eventual_reference_after_release": 0,
+      "released_reference_fraction": 0.0,
+      "distinct_release_states": 1
+    },
+    {
+      "node": "v_CI_protein",
+      "value": 1,
+      "forced_updates": 1,
+      "n_initial": 16384,
+      "exact_reference_at_release": 64,
+      "eventual_reference_after_release": 512,
+      "released_reference_fraction": 0.03125,
+      "distinct_release_states": 144
+    },
+    {
+      "node": "v_CI_protein",
+      "value": 1,
+      "forced_updates": 2,
+      "n_initial": 16384,
+      "exact_reference_at_release": 256,
+      "eventual_reference_after_release": 1024,
+      "released_reference_fraction": 0.0625,
+      "distinct_release_states": 20
+    },
+    {
+      "node": "v_CI_protein",
+      "value": 1,
+      "forced_updates": 4,
+      "n_initial": 16384,
+      "exact_reference_at_release": 1024,
+      "eventual_reference_after_release": 2048,
+      "released_reference_fraction": 0.125,
+      "distinct_release_states": 4
+    },
+    {
+      "node": "v_CI_protein",
+      "value": 1,
+      "forced_updates": 8,
+      "n_initial": 16384,
+      "exact_reference_at_release": 2048,
+      "eventual_reference_after_release": 2048,
+      "released_reference_fraction": 0.125,
+      "distinct_release_states": 2
+    },
+    {
+      "node": "v_EN_protein",
+      "value": 0,
+      "forced_updates": 1,
+      "n_initial": 16384,
+      "exact_reference_at_release": 64,
+      "eventual_reference_after_release": 512,
+      "released_reference_fraction": 0.03125,
+      "distinct_release_states": 128
+    },
+    {
+      "node": "v_EN_protein",
+      "value": 0,
+      "forced_updates": 2,
+      "n_initial": 16384,
+      "exact_reference_at_release": 256,
+      "eventual_reference_after_release": 512,
+      "released_reference_fraction": 0.03125,
+      "distinct_release_states": 24
+    },
+    {
+      "node": "v_EN_protein",
+      "value": 0,
+      "forced_updates": 4,
+      "n_initial": 16384,
+      "exact_reference_at_release": 512,
+      "eventual_reference_after_release": 512,
+      "released_reference_fraction": 0.03125,
+      "distinct_release_states": 5
+    },
+    {
+      "node": "v_EN_protein",
+      "value": 0,
+      "forced_updates": 8,
+      "n_initial": 16384,
+      "exact_reference_at_release": 512,
+      "eventual_reference_after_release": 512,
+      "released_reference_fraction": 0.03125,
+      "distinct_release_states": 2
+    },
+    {
+      "node": "v_EN_protein",
+      "value": 1,
+      "forced_updates": 1,
+      "n_initial": 16384,
+      "exact_reference_at_release": 0,
+      "eventual_reference_after_release": 0,
+      "released_reference_fraction": 0.0,
+      "distinct_release_states": 160
+    },
+    {
+      "node": "v_EN_protein",
+      "value": 1,
+      "forced_updates": 2,
+      "n_initial": 16384,
+      "exact_reference_at_release": 0,
+      "eventual_reference_after_release": 0,
+      "released_reference_fraction": 0.0,
+      "distinct_release_states": 16
+    },
+    {
+      "node": "v_EN_protein",
+      "value": 1,
+      "forced_updates": 4,
+      "n_initial": 16384,
+      "exact_reference_at_release": 0,
+      "eventual_reference_after_release": 0,
+      "released_reference_fraction": 0.0,
+      "distinct_release_states": 2
+    },
+    {
+      "node": "v_EN_protein",
+      "value": 1,
+      "forced_updates": 8,
+      "n_initial": 16384,
+      "exact_reference_at_release": 0,
+      "eventual_reference_after_release": 0,
+      "released_reference_fraction": 0.0,
+      "distinct_release_states": 1
+    },
+    {
+      "node": "v_HH_protein",
+      "value": 0,
+      "forced_updates": 1,
+      "n_initial": 16384,
+      "exact_reference_at_release": 32,
+      "eventual_reference_after_release": 128,
+      "released_reference_fraction": 0.0078125,
+      "distinct_release_states": 288
+    },
+    {
+      "node": "v_HH_protein",
+      "value": 0,
+      "forced_updates": 2,
+      "n_initial": 16384,
+      "exact_reference_at_release": 64,
+      "eventual_reference_after_release": 128,
+      "released_reference_fraction": 0.0078125,
+      "distinct_release_states": 68
+    },
+    {
+      "node": "v_HH_protein",
+      "value": 0,
+      "forced_updates": 4,
+      "n_initial": 16384,
+      "exact_reference_at_release": 128,
+      "eventual_reference_after_release": 128,
+      "released_reference_fraction": 0.0078125,
+      "distinct_release_states": 16
+    },
+    {
+      "node": "v_HH_protein",
+      "value": 0,
+      "forced_updates": 8,
+      "n_initial": 16384,
+      "exact_reference_at_release": 128,
+      "eventual_reference_after_release": 128,
+      "released_reference_fraction": 0.0078125,
+      "distinct_release_states": 2
+    },
+    {
+      "node": "v_HH_protein",
+      "value": 1,
+      "forced_updates": 1,
+      "n_initial": 16384,
+      "exact_reference_at_release": 0,
+      "eventual_reference_after_release": 128,
+      "released_reference_fraction": 0.0078125,
+      "distinct_release_states": 288
+    },
+    {
+      "node": "v_HH_protein",
+      "value": 1,
+      "forced_updates": 2,
+      "n_initial": 16384,
+      "exact_reference_at_release": 0,
+      "eventual_reference_after_release": 128,
+      "released_reference_fraction": 0.0078125,
+      "distinct_release_states": 68
+    },
+    {
+      "node": "v_HH_protein",
+      "value": 1,
+      "forced_updates": 4,
+      "n_initial": 16384,
+      "exact_reference_at_release": 0,
+      "eventual_reference_after_release": 128,
+      "released_reference_fraction": 0.0078125,
+      "distinct_release_states": 16
+    },
+    {
+      "node": "v_HH_protein",
+      "value": 1,
+      "forced_updates": 8,
+      "n_initial": 16384,
+      "exact_reference_at_release": 0,
+      "eventual_reference_after_release": 128,
+      "released_reference_fraction": 0.0078125,
+      "distinct_release_states": 2
+    },
+    {
+      "node": "v_PH",
+      "value": 0,
+      "forced_updates": 1,
+      "n_initial": 16384,
+      "exact_reference_at_release": 0,
+      "eventual_reference_after_release": 128,
+      "released_reference_fraction": 0.0078125,
+      "distinct_release_states": 288
+    },
+    {
+      "node": "v_PH",
+      "value": 0,
+      "forced_updates": 2,
+      "n_initial": 16384,
+      "exact_reference_at_release": 0,
+      "eventual_reference_after_release": 128,
+      "released_reference_fraction": 0.0078125,
+      "distinct_release_states": 40
+    },
+    {
+      "node": "v_PH",
+      "value": 0,
+      "forced_updates": 4,
+      "n_initial": 16384,
+      "exact_reference_at_release": 0,
+      "eventual_reference_after_release": 128,
+      "released_reference_fraction": 0.0078125,
+      "distinct_release_states": 12
+    },
+    {
+      "node": "v_PH",
+      "value": 0,
+      "forced_updates": 8,
+      "n_initial": 16384,
+      "exact_reference_at_release": 0,
+      "eventual_reference_after_release": 128,
+      "released_reference_fraction": 0.0078125,
+      "distinct_release_states": 2
+    },
+    {
+      "node": "v_PH",
+      "value": 1,
+      "forced_updates": 1,
+      "n_initial": 16384,
+      "exact_reference_at_release": 32,
+      "eventual_reference_after_release": 128,
+      "released_reference_fraction": 0.0078125,
+      "distinct_release_states": 288
+    },
+    {
+      "node": "v_PH",
+      "value": 1,
+      "forced_updates": 2,
+      "n_initial": 16384,
+      "exact_reference_at_release": 128,
+      "eventual_reference_after_release": 128,
+      "released_reference_fraction": 0.0078125,
+      "distinct_release_states": 40
+    },
+    {
+      "node": "v_PH",
+      "value": 1,
+      "forced_updates": 4,
+      "n_initial": 16384,
+      "exact_reference_at_release": 128,
+      "eventual_reference_after_release": 128,
+      "released_reference_fraction": 0.0078125,
+      "distinct_release_states": 12
+    },
+    {
+      "node": "v_PH",
+      "value": 1,
+      "forced_updates": 8,
+      "n_initial": 16384,
+      "exact_reference_at_release": 128,
+      "eventual_reference_after_release": 128,
+      "released_reference_fraction": 0.0078125,
+      "distinct_release_states": 2
+    },
+    {
+      "node": "v_PTC_protein",
+      "value": 0,
+      "forced_updates": 1,
+      "n_initial": 16384,
+      "exact_reference_at_release": 0,
+      "eventual_reference_after_release": 128,
+      "released_reference_fraction": 0.0078125,
+      "distinct_release_states": 144
+    },
+    {
+      "node": "v_PTC_protein",
+      "value": 0,
+      "forced_updates": 2,
+      "n_initial": 16384,
+      "exact_reference_at_release": 0,
+      "eventual_reference_after_release": 128,
+      "released_reference_fraction": 0.0078125,
+      "distinct_release_states": 34
+    },
+    {
+      "node": "v_PTC_protein",
+      "value": 0,
+      "forced_updates": 4,
+      "n_initial": 16384,
+      "exact_reference_at_release": 0,
+      "eventual_reference_after_release": 128,
+      "released_reference_fraction": 0.0078125,
+      "distinct_release_states": 8
+    },
+    {
+      "node": "v_PTC_protein",
+      "value": 0,
+      "forced_updates": 8,
+      "n_initial": 16384,
+      "exact_reference_at_release": 0,
+      "eventual_reference_after_release": 128,
+      "released_reference_fraction": 0.0078125,
+      "distinct_release_states": 2
+    },
+    {
+      "node": "v_PTC_protein",
+      "value": 1,
+      "forced_updates": 1,
+      "n_initial": 16384,
+      "exact_reference_at_release": 64,
+      "eventual_reference_after_release": 128,
+      "released_reference_fraction": 0.0078125,
+      "distinct_release_states": 144
+    },
+    {
+      "node": "v_PTC_protein",
+      "value": 1,
+      "forced_updates": 2,
+      "n_initial": 16384,
+      "exact_reference_at_release": 128,
+      "eventual_reference_after_release": 128,
+      "released_reference_fraction": 0.0078125,
+      "distinct_release_states": 34
+    },
+    {
+      "node": "v_PTC_protein",
+      "value": 1,
+      "forced_updates": 4,
+      "n_initial": 16384,
+      "exact_reference_at_release": 128,
+      "eventual_reference_after_release": 128,
+      "released_reference_fraction": 0.0078125,
+      "distinct_release_states": 8
+    },
+    {
+      "node": "v_PTC_protein",
+      "value": 1,
+      "forced_updates": 8,
+      "n_initial": 16384,
+      "exact_reference_at_release": 128,
+      "eventual_reference_after_release": 128,
+      "released_reference_fraction": 0.0078125,
+      "distinct_release_states": 2
+    },
+    {
+      "node": "v_SMO",
+      "value": 0,
+      "forced_updates": 1,
+      "n_initial": 16384,
+      "exact_reference_at_release": 0,
+      "eventual_reference_after_release": 128,
+      "released_reference_fraction": 0.0078125,
+      "distinct_release_states": 576
+    },
+    {
+      "node": "v_SMO",
+      "value": 0,
+      "forced_updates": 2,
+      "n_initial": 16384,
+      "exact_reference_at_release": 0,
+      "eventual_reference_after_release": 128,
+      "released_reference_fraction": 0.0078125,
+      "distinct_release_states": 80
+    },
+    {
+      "node": "v_SMO",
+      "value": 0,
+      "forced_updates": 4,
+      "n_initial": 16384,
+      "exact_reference_at_release": 0,
+      "eventual_reference_after_release": 128,
+      "released_reference_fraction": 0.0078125,
+      "distinct_release_states": 16
+    },
+    {
+      "node": "v_SMO",
+      "value": 0,
+      "forced_updates": 8,
+      "n_initial": 16384,
+      "exact_reference_at_release": 0,
+      "eventual_reference_after_release": 128,
+      "released_reference_fraction": 0.0078125,
+      "distinct_release_states": 2
+    },
+    {
+      "node": "v_SMO",
+      "value": 1,
+      "forced_updates": 1,
+      "n_initial": 16384,
+      "exact_reference_at_release": 16,
+      "eventual_reference_after_release": 128,
+      "released_reference_fraction": 0.0078125,
+      "distinct_release_states": 576
+    },
+    {
+      "node": "v_SMO",
+      "value": 1,
+      "forced_updates": 2,
+      "n_initial": 16384,
+      "exact_reference_at_release": 64,
+      "eventual_reference_after_release": 128,
+      "released_reference_fraction": 0.0078125,
+      "distinct_release_states": 80
+    },
+    {
+      "node": "v_SMO",
+      "value": 1,
+      "forced_updates": 4,
+      "n_initial": 16384,
+      "exact_reference_at_release": 128,
+      "eventual_reference_after_release": 128,
+      "released_reference_fraction": 0.0078125,
+      "distinct_release_states": 16
+    },
+    {
+      "node": "v_SMO",
+      "value": 1,
+      "forced_updates": 8,
+      "n_initial": 16384,
+      "exact_reference_at_release": 128,
+      "eventual_reference_after_release": 128,
+      "released_reference_fraction": 0.0078125,
+      "distinct_release_states": 2
+    },
+    {
+      "node": "v_WG_protein",
+      "value": 0,
+      "forced_updates": 1,
+      "n_initial": 16384,
+      "exact_reference_at_release": 0,
+      "eventual_reference_after_release": 128,
+      "released_reference_fraction": 0.0078125,
+      "distinct_release_states": 384
+    },
+    {
+      "node": "v_WG_protein",
+      "value": 0,
+      "forced_updates": 2,
+      "n_initial": 16384,
+      "exact_reference_at_release": 0,
+      "eventual_reference_after_release": 128,
+      "released_reference_fraction": 0.0078125,
+      "distinct_release_states": 64
+    },
+    {
+      "node": "v_WG_protein",
+      "value": 0,
+      "forced_updates": 4,
+      "n_initial": 16384,
+      "exact_reference_at_release": 0,
+      "eventual_reference_after_release": 128,
+      "released_reference_fraction": 0.0078125,
+      "distinct_release_states": 14
+    },
+    {
+      "node": "v_WG_protein",
+      "value": 0,
+      "forced_updates": 8,
+      "n_initial": 16384,
+      "exact_reference_at_release": 0,
+      "eventual_reference_after_release": 128,
+      "released_reference_fraction": 0.0078125,
+      "distinct_release_states": 2
+    },
+    {
+      "node": "v_WG_protein",
+      "value": 1,
+      "forced_updates": 1,
+      "n_initial": 16384,
+      "exact_reference_at_release": 16,
+      "eventual_reference_after_release": 128,
+      "released_reference_fraction": 0.0078125,
+      "distinct_release_states": 384
+    },
+    {
+      "node": "v_WG_protein",
+      "value": 1,
+      "forced_updates": 2,
+      "n_initial": 16384,
+      "exact_reference_at_release": 64,
+      "eventual_reference_after_release": 128,
+      "released_reference_fraction": 0.0078125,
+      "distinct_release_states": 64
+    },
+    {
+      "node": "v_WG_protein",
+      "value": 1,
+      "forced_updates": 4,
+      "n_initial": 16384,
+      "exact_reference_at_release": 128,
+      "eventual_reference_after_release": 128,
+      "released_reference_fraction": 0.0078125,
+      "distinct_release_states": 14
+    },
+    {
+      "node": "v_WG_protein",
+      "value": 1,
+      "forced_updates": 8,
+      "n_initial": 16384,
+      "exact_reference_at_release": 128,
+      "eventual_reference_after_release": 128,
+      "released_reference_fraction": 0.0078125,
+      "distinct_release_states": 2
+    },
+    {
+      "node": "v_ci",
+      "value": 0,
+      "forced_updates": 1,
+      "n_initial": 16384,
+      "exact_reference_at_release": 0,
+      "eventual_reference_after_release": 0,
+      "released_reference_fraction": 0.0,
+      "distinct_release_states": 224
+    },
+    {
+      "node": "v_ci",
+      "value": 0,
+      "forced_updates": 2,
+      "n_initial": 16384,
+      "exact_reference_at_release": 0,
+      "eventual_reference_after_release": 0,
+      "released_reference_fraction": 0.0,
+      "distinct_release_states": 34
+    },
+    {
+      "node": "v_ci",
+      "value": 0,
+      "forced_updates": 4,
+      "n_initial": 16384,
+      "exact_reference_at_release": 0,
+      "eventual_reference_after_release": 0,
+      "released_reference_fraction": 0.0,
+      "distinct_release_states": 2
+    },
+    {
+      "node": "v_ci",
+      "value": 0,
+      "forced_updates": 8,
+      "n_initial": 16384,
+      "exact_reference_at_release": 0,
+      "eventual_reference_after_release": 0,
+      "released_reference_fraction": 0.0,
+      "distinct_release_states": 1
+    },
+    {
+      "node": "v_ci",
+      "value": 1,
+      "forced_updates": 1,
+      "n_initial": 16384,
+      "exact_reference_at_release": 32,
+      "eventual_reference_after_release": 512,
+      "released_reference_fraction": 0.03125,
+      "distinct_release_states": 224
+    },
+    {
+      "node": "v_ci",
+      "value": 1,
+      "forced_updates": 2,
+      "n_initial": 16384,
+      "exact_reference_at_release": 128,
+      "eventual_reference_after_release": 1024,
+      "released_reference_fraction": 0.0625,
+      "distinct_release_states": 34
+    },
+    {
+      "node": "v_ci",
+      "value": 1,
+      "forced_updates": 4,
+      "n_initial": 16384,
+      "exact_reference_at_release": 512,
+      "eventual_reference_after_release": 1024,
+      "released_reference_fraction": 0.0625,
+      "distinct_release_states": 4
+    },
+    {
+      "node": "v_ci",
+      "value": 1,
+      "forced_updates": 8,
+      "n_initial": 16384,
+      "exact_reference_at_release": 1024,
+      "eventual_reference_after_release": 1024,
+      "released_reference_fraction": 0.0625,
+      "distinct_release_states": 2
+    },
+    {
+      "node": "v_en",
+      "value": 0,
+      "forced_updates": 1,
+      "n_initial": 16384,
+      "exact_reference_at_release": 32,
+      "eventual_reference_after_release": 256,
+      "released_reference_fraction": 0.015625,
+      "distinct_release_states": 288
+    },
+    {
+      "node": "v_en",
+      "value": 0,
+      "forced_updates": 2,
+      "n_initial": 16384,
+      "exact_reference_at_release": 128,
+      "eventual_reference_after_release": 256,
+      "released_reference_fraction": 0.015625,
+      "distinct_release_states": 48
+    },
+    {
+      "node": "v_en",
+      "value": 0,
+      "forced_updates": 4,
+      "n_initial": 16384,
+      "exact_reference_at_release": 256,
+      "eventual_reference_after_release": 256,
+      "released_reference_fraction": 0.015625,
+      "distinct_release_states": 10
+    },
+    {
+      "node": "v_en",
+      "value": 0,
+      "forced_updates": 8,
+      "n_initial": 16384,
+      "exact_reference_at_release": 256,
+      "eventual_reference_after_release": 256,
+      "released_reference_fraction": 0.015625,
+      "distinct_release_states": 2
+    },
+    {
+      "node": "v_en",
+      "value": 1,
+      "forced_updates": 1,
+      "n_initial": 16384,
+      "exact_reference_at_release": 0,
+      "eventual_reference_after_release": 0,
+      "released_reference_fraction": 0.0,
+      "distinct_release_states": 288
+    },
+    {
+      "node": "v_en",
+      "value": 1,
+      "forced_updates": 2,
+      "n_initial": 16384,
+      "exact_reference_at_release": 0,
+      "eventual_reference_after_release": 0,
+      "released_reference_fraction": 0.0,
+      "distinct_release_states": 32
+    },
+    {
+      "node": "v_en",
+      "value": 1,
+      "forced_updates": 4,
+      "n_initial": 16384,
+      "exact_reference_at_release": 0,
+      "eventual_reference_after_release": 0,
+      "released_reference_fraction": 0.0,
+      "distinct_release_states": 3
+    },
+    {
+      "node": "v_en",
+      "value": 1,
+      "forced_updates": 8,
+      "n_initial": 16384,
+      "exact_reference_at_release": 0,
+      "eventual_reference_after_release": 0,
+      "released_reference_fraction": 0.0,
+      "distinct_release_states": 1
+    },
+    {
+      "node": "v_hh",
+      "value": 0,
+      "forced_updates": 1,
+      "n_initial": 16384,
+      "exact_reference_at_release": 32,
+      "eventual_reference_after_release": 128,
+      "released_reference_fraction": 0.0078125,
+      "distinct_release_states": 224
+    },
+    {
+      "node": "v_hh",
+      "value": 0,
+      "forced_updates": 2,
+      "n_initial": 16384,
+      "exact_reference_at_release": 64,
+      "eventual_reference_after_release": 128,
+      "released_reference_fraction": 0.0078125,
+      "distinct_release_states": 68
+    },
+    {
+      "node": "v_hh",
+      "value": 0,
+      "forced_updates": 4,
+      "n_initial": 16384,
+      "exact_reference_at_release": 128,
+      "eventual_reference_after_release": 128,
+      "released_reference_fraction": 0.0078125,
+      "distinct_release_states": 16
+    },
+    {
+      "node": "v_hh",
+      "value": 0,
+      "forced_updates": 8,
+      "n_initial": 16384,
+      "exact_reference_at_release": 128,
+      "eventual_reference_after_release": 128,
+      "released_reference_fraction": 0.0078125,
+      "distinct_release_states": 2
+    },
+    {
+      "node": "v_hh",
+      "value": 1,
+      "forced_updates": 1,
+      "n_initial": 16384,
+      "exact_reference_at_release": 0,
+      "eventual_reference_after_release": 128,
+      "released_reference_fraction": 0.0078125,
+      "distinct_release_states": 224
+    },
+    {
+      "node": "v_hh",
+      "value": 1,
+      "forced_updates": 2,
+      "n_initial": 16384,
+      "exact_reference_at_release": 0,
+      "eventual_reference_after_release": 128,
+      "released_reference_fraction": 0.0078125,
+      "distinct_release_states": 68
+    },
+    {
+      "node": "v_hh",
+      "value": 1,
+      "forced_updates": 4,
+      "n_initial": 16384,
+      "exact_reference_at_release": 0,
+      "eventual_reference_after_release": 128,
+      "released_reference_fraction": 0.0078125,
+      "distinct_release_states": 16
+    },
+    {
+      "node": "v_hh",
+      "value": 1,
+      "forced_updates": 8,
+      "n_initial": 16384,
+      "exact_reference_at_release": 0,
+      "eventual_reference_after_release": 128,
+      "released_reference_fraction": 0.0078125,
+      "distinct_release_states": 2
+    },
+    {
+      "node": "v_ptc",
+      "value": 0,
+      "forced_updates": 1,
+      "n_initial": 16384,
+      "exact_reference_at_release": 0,
+      "eventual_reference_after_release": 128,
+      "released_reference_fraction": 0.0078125,
+      "distinct_release_states": 256
+    },
+    {
+      "node": "v_ptc",
+      "value": 0,
+      "forced_updates": 2,
+      "n_initial": 16384,
+      "exact_reference_at_release": 0,
+      "eventual_reference_after_release": 128,
+      "released_reference_fraction": 0.0078125,
+      "distinct_release_states": 28
+    },
+    {
+      "node": "v_ptc",
+      "value": 0,
+      "forced_updates": 4,
+      "n_initial": 16384,
+      "exact_reference_at_release": 0,
+      "eventual_reference_after_release": 128,
+      "released_reference_fraction": 0.0078125,
+      "distinct_release_states": 6
+    },
+    {
+      "node": "v_ptc",
+      "value": 0,
+      "forced_updates": 8,
+      "n_initial": 16384,
+      "exact_reference_at_release": 0,
+      "eventual_reference_after_release": 128,
+      "released_reference_fraction": 0.0078125,
+      "distinct_release_states": 2
+    },
+    {
+      "node": "v_ptc",
+      "value": 1,
+      "forced_updates": 1,
+      "n_initial": 16384,
+      "exact_reference_at_release": 32,
+      "eventual_reference_after_release": 128,
+      "released_reference_fraction": 0.0078125,
+      "distinct_release_states": 256
+    },
+    {
+      "node": "v_ptc",
+      "value": 1,
+      "forced_updates": 2,
+      "n_initial": 16384,
+      "exact_reference_at_release": 128,
+      "eventual_reference_after_release": 128,
+      "released_reference_fraction": 0.0078125,
+      "distinct_release_states": 28
+    },
+    {
+      "node": "v_ptc",
+      "value": 1,
+      "forced_updates": 4,
+      "n_initial": 16384,
+      "exact_reference_at_release": 128,
+      "eventual_reference_after_release": 128,
+      "released_reference_fraction": 0.0078125,
+      "distinct_release_states": 6
+    },
+    {
+      "node": "v_ptc",
+      "value": 1,
+      "forced_updates": 8,
+      "n_initial": 16384,
+      "exact_reference_at_release": 128,
+      "eventual_reference_after_release": 128,
+      "released_reference_fraction": 0.0078125,
+      "distinct_release_states": 2
+    },
+    {
+      "node": "v_wg",
+      "value": 0,
+      "forced_updates": 1,
+      "n_initial": 16384,
+      "exact_reference_at_release": 0,
+      "eventual_reference_after_release": 0,
+      "released_reference_fraction": 0.0,
+      "distinct_release_states": 256
+    },
+    {
+      "node": "v_wg",
+      "value": 0,
+      "forced_updates": 2,
+      "n_initial": 16384,
+      "exact_reference_at_release": 0,
+      "eventual_reference_after_release": 0,
+      "released_reference_fraction": 0.0,
+      "distinct_release_states": 48
+    },
+    {
+      "node": "v_wg",
+      "value": 0,
+      "forced_updates": 4,
+      "n_initial": 16384,
+      "exact_reference_at_release": 0,
+      "eventual_reference_after_release": 0,
+      "released_reference_fraction": 0.0,
+      "distinct_release_states": 12
+    },
+    {
+      "node": "v_wg",
+      "value": 0,
+      "forced_updates": 8,
+      "n_initial": 16384,
+      "exact_reference_at_release": 0,
+      "eventual_reference_after_release": 0,
+      "released_reference_fraction": 0.0,
+      "distinct_release_states": 1
+    },
+    {
+      "node": "v_wg",
+      "value": 1,
+      "forced_updates": 1,
+      "n_initial": 16384,
+      "exact_reference_at_release": 32,
+      "eventual_reference_after_release": 1024,
+      "released_reference_fraction": 0.0625,
+      "distinct_release_states": 256
+    },
+    {
+      "node": "v_wg",
+      "value": 1,
+      "forced_updates": 2,
+      "n_initial": 16384,
+      "exact_reference_at_release": 128,
+      "eventual_reference_after_release": 2048,
+      "released_reference_fraction": 0.125,
+      "distinct_release_states": 48
+    },
+    {
+      "node": "v_wg",
+      "value": 1,
+      "forced_updates": 4,
+      "n_initial": 16384,
+      "exact_reference_at_release": 1024,
+      "eventual_reference_after_release": 8192,
+      "released_reference_fraction": 0.5,
+      "distinct_release_states": 12
+    },
+    {
+      "node": "v_wg",
+      "value": 1,
+      "forced_updates": 8,
+      "n_initial": 16384,
+      "exact_reference_at_release": 16384,
+      "eventual_reference_after_release": 16384,
+      "released_reference_fraction": 1.0,
+      "distinct_release_states": 1
+    }
+  ],
+  "limits": "finite binary forcing/release model, artificial uniform initial measure, no physical time or biological rescue claim; same denominator but initial overwrite is part of intervention"
+}

@@ -1,0 +1,553 @@
+{
+  "plan_sha256": "8b997e377a016f19e8c0359de235395dd20074211ca089f8b42b2f98039d2e93",
+  "model_sha256": "6f1ad8de743b443e9e1f92e48964be0a3fdae9487575ae2fa0cf8eb0c627f900",
+  "reference_integer": 13285,
+  "node_order": [
+    "v_CIA",
+    "v_CIR",
+    "v_CI_protein",
+    "v_EN_protein",
+    "v_HH_protein",
+    "v_PH",
+    "v_PTC_protein",
+    "v_SMO",
+    "v_WG_protein",
+    "v_ci",
+    "v_en",
+    "v_hh",
+    "v_ptc",
+    "v_wg"
+  ],
+  "n_census_states": 16384,
+  "rows": [
+    {
+      "node": null,
+      "value": null,
+      "forced_updates": 0,
+      "measure": "uniform",
+      "support_states": 16384,
+      "probabilities": {
+        "exact_original_reference": 0.0078125,
+        "any_wg_on_fixed_point": 0.0078125,
+        "cycle": 0.0
+      }
+    },
+    {
+      "node": null,
+      "value": null,
+      "forced_updates": 0,
+      "measure": "independent_bit_p025",
+      "support_states": 16384,
+      "probabilities": {
+        "exact_original_reference": 0.00164794921875,
+        "any_wg_on_fixed_point": 0.00164794921875,
+        "cycle": 0.0
+      }
+    },
+    {
+      "node": null,
+      "value": null,
+      "forced_updates": 0,
+      "measure": "independent_bit_p075",
+      "support_states": 16384,
+      "probabilities": {
+        "exact_original_reference": 0.00494384765625,
+        "any_wg_on_fixed_point": 0.00494384765625,
+        "cycle": 0.0
+      }
+    },
+    {
+      "node": null,
+      "value": null,
+      "forced_updates": 0,
+      "measure": "uniform_hamming_distance_le2_from_reference",
+      "support_states": 106,
+      "probabilities": {
+        "exact_original_reference": 0.27358490566037735,
+        "any_wg_on_fixed_point": 0.27358490566037735,
+        "cycle": 0.0
+      }
+    },
+    {
+      "node": "v_wg",
+      "value": 1,
+      "forced_updates": 1,
+      "measure": "uniform",
+      "support_states": 16384,
+      "probabilities": {
+        "exact_original_reference": 0.0625,
+        "any_wg_on_fixed_point": 0.0625,
+        "cycle": 0.0
+      }
+    },
+    {
+      "node": "v_wg",
+      "value": 1,
+      "forced_updates": 1,
+      "measure": "independent_bit_p025",
+      "support_states": 16384,
+      "probabilities": {
+        "exact_original_reference": 0.03515625,
+        "any_wg_on_fixed_point": 0.03515625,
+        "cycle": 0.0
+      }
+    },
+    {
+      "node": "v_wg",
+      "value": 1,
+      "forced_updates": 1,
+      "measure": "independent_bit_p075",
+      "support_states": 16384,
+      "probabilities": {
+        "exact_original_reference": 0.03515625,
+        "any_wg_on_fixed_point": 0.03515625,
+        "cycle": 0.0
+      }
+    },
+    {
+      "node": "v_wg",
+      "value": 1,
+      "forced_updates": 1,
+      "measure": "uniform_hamming_distance_le2_from_reference",
+      "support_states": 106,
+      "probabilities": {
+        "exact_original_reference": 0.5283018867924528,
+        "any_wg_on_fixed_point": 0.5283018867924528,
+        "cycle": 0.0
+      }
+    },
+    {
+      "node": "v_wg",
+      "value": 1,
+      "forced_updates": 2,
+      "measure": "uniform",
+      "support_states": 16384,
+      "probabilities": {
+        "exact_original_reference": 0.125,
+        "any_wg_on_fixed_point": 0.125,
+        "cycle": 0.0
+      }
+    },
+    {
+      "node": "v_wg",
+      "value": 1,
+      "forced_updates": 2,
+      "measure": "independent_bit_p025",
+      "support_states": 16384,
+      "probabilities": {
+        "exact_original_reference": 0.140625,
+        "any_wg_on_fixed_point": 0.140625,
+        "cycle": 0.0
+      }
+    },
+    {
+      "node": "v_wg",
+      "value": 1,
+      "forced_updates": 2,
+      "measure": "independent_bit_p075",
+      "support_states": 16384,
+      "probabilities": {
+        "exact_original_reference": 0.046875,
+        "any_wg_on_fixed_point": 0.046875,
+        "cycle": 0.0
+      }
+    },
+    {
+      "node": "v_wg",
+      "value": 1,
+      "forced_updates": 2,
+      "measure": "uniform_hamming_distance_le2_from_reference",
+      "support_states": 106,
+      "probabilities": {
+        "exact_original_reference": 0.6320754716981132,
+        "any_wg_on_fixed_point": 0.6320754716981132,
+        "cycle": 0.0
+      }
+    },
+    {
+      "node": "v_wg",
+      "value": 1,
+      "forced_updates": 4,
+      "measure": "uniform",
+      "support_states": 16384,
+      "probabilities": {
+        "exact_original_reference": 0.5,
+        "any_wg_on_fixed_point": 0.5,
+        "cycle": 0.0
+      }
+    },
+    {
+      "node": "v_wg",
+      "value": 1,
+      "forced_updates": 4,
+      "measure": "independent_bit_p025",
+      "support_states": 16384,
+      "probabilities": {
+        "exact_original_reference": 0.75,
+        "any_wg_on_fixed_point": 0.75,
+        "cycle": 0.0
+      }
+    },
+    {
+      "node": "v_wg",
+      "value": 1,
+      "forced_updates": 4,
+      "measure": "independent_bit_p075",
+      "support_states": 16384,
+      "probabilities": {
+        "exact_original_reference": 0.25,
+        "any_wg_on_fixed_point": 0.25,
+        "cycle": 0.0
+      }
+    },
+    {
+      "node": "v_wg",
+      "value": 1,
+      "forced_updates": 4,
+      "measure": "uniform_hamming_distance_le2_from_reference",
+      "support_states": 106,
+      "probabilities": {
+        "exact_original_reference": 0.8679245283018867,
+        "any_wg_on_fixed_point": 0.8679245283018867,
+        "cycle": 0.0
+      }
+    },
+    {
+      "node": "v_wg",
+      "value": 1,
+      "forced_updates": 8,
+      "measure": "uniform",
+      "support_states": 16384,
+      "probabilities": {
+        "exact_original_reference": 1.0,
+        "any_wg_on_fixed_point": 1.0,
+        "cycle": 0.0
+      }
+    },
+    {
+      "node": "v_wg",
+      "value": 1,
+      "forced_updates": 8,
+      "measure": "independent_bit_p025",
+      "support_states": 16384,
+      "probabilities": {
+        "exact_original_reference": 1.0,
+        "any_wg_on_fixed_point": 1.0,
+        "cycle": 0.0
+      }
+    },
+    {
+      "node": "v_wg",
+      "value": 1,
+      "forced_updates": 8,
+      "measure": "independent_bit_p075",
+      "support_states": 16384,
+      "probabilities": {
+        "exact_original_reference": 1.0,
+        "any_wg_on_fixed_point": 1.0,
+        "cycle": 0.0
+      }
+    },
+    {
+      "node": "v_wg",
+      "value": 1,
+      "forced_updates": 8,
+      "measure": "uniform_hamming_distance_le2_from_reference",
+      "support_states": 106,
+      "probabilities": {
+        "exact_original_reference": 0.9999999999999999,
+        "any_wg_on_fixed_point": 0.9999999999999999,
+        "cycle": 0.0
+      }
+    },
+    {
+      "node": "v_CIA",
+      "value": 1,
+      "forced_updates": 1,
+      "measure": "uniform",
+      "support_states": 16384,
+      "probabilities": {
+        "exact_original_reference": 0.03125,
+        "any_wg_on_fixed_point": 0.03125,
+        "cycle": 0.0
+      }
+    },
+    {
+      "node": "v_CIA",
+      "value": 1,
+      "forced_updates": 1,
+      "measure": "independent_bit_p025",
+      "support_states": 16384,
+      "probabilities": {
+        "exact_original_reference": 0.0263671875,
+        "any_wg_on_fixed_point": 0.0263671875,
+        "cycle": 0.0
+      }
+    },
+    {
+      "node": "v_CIA",
+      "value": 1,
+      "forced_updates": 1,
+      "measure": "independent_bit_p075",
+      "support_states": 16384,
+      "probabilities": {
+        "exact_original_reference": 0.0087890625,
+        "any_wg_on_fixed_point": 0.0087890625,
+        "cycle": 0.0
+      }
+    },
+    {
+      "node": "v_CIA",
+      "value": 1,
+      "forced_updates": 1,
+      "measure": "uniform_hamming_distance_le2_from_reference",
+      "support_states": 106,
+      "probabilities": {
+        "exact_original_reference": 0.43396226415094336,
+        "any_wg_on_fixed_point": 0.43396226415094336,
+        "cycle": 0.0
+      }
+    },
+    {
+      "node": "v_CIA",
+      "value": 1,
+      "forced_updates": 2,
+      "measure": "uniform",
+      "support_states": 16384,
+      "probabilities": {
+        "exact_original_reference": 0.0625,
+        "any_wg_on_fixed_point": 0.0625,
+        "cycle": 0.0
+      }
+    },
+    {
+      "node": "v_CIA",
+      "value": 1,
+      "forced_updates": 2,
+      "measure": "independent_bit_p025",
+      "support_states": 16384,
+      "probabilities": {
+        "exact_original_reference": 0.10546875,
+        "any_wg_on_fixed_point": 0.10546875,
+        "cycle": 0.0
+      }
+    },
+    {
+      "node": "v_CIA",
+      "value": 1,
+      "forced_updates": 2,
+      "measure": "independent_bit_p075",
+      "support_states": 16384,
+      "probabilities": {
+        "exact_original_reference": 0.01171875,
+        "any_wg_on_fixed_point": 0.01171875,
+        "cycle": 0.0
+      }
+    },
+    {
+      "node": "v_CIA",
+      "value": 1,
+      "forced_updates": 2,
+      "measure": "uniform_hamming_distance_le2_from_reference",
+      "support_states": 106,
+      "probabilities": {
+        "exact_original_reference": 0.5283018867924528,
+        "any_wg_on_fixed_point": 0.5283018867924528,
+        "cycle": 0.0
+      }
+    },
+    {
+      "node": "v_CIA",
+      "value": 1,
+      "forced_updates": 4,
+      "measure": "uniform",
+      "support_states": 16384,
+      "probabilities": {
+        "exact_original_reference": 0.25,
+        "any_wg_on_fixed_point": 0.25,
+        "cycle": 0.0
+      }
+    },
+    {
+      "node": "v_CIA",
+      "value": 1,
+      "forced_updates": 4,
+      "measure": "independent_bit_p025",
+      "support_states": 16384,
+      "probabilities": {
+        "exact_original_reference": 0.1875,
+        "any_wg_on_fixed_point": 0.1875,
+        "cycle": 0.0
+      }
+    },
+    {
+      "node": "v_CIA",
+      "value": 1,
+      "forced_updates": 4,
+      "measure": "independent_bit_p075",
+      "support_states": 16384,
+      "probabilities": {
+        "exact_original_reference": 0.1875,
+        "any_wg_on_fixed_point": 0.1875,
+        "cycle": 0.0
+      }
+    },
+    {
+      "node": "v_CIA",
+      "value": 1,
+      "forced_updates": 4,
+      "measure": "uniform_hamming_distance_le2_from_reference",
+      "support_states": 106,
+      "probabilities": {
+        "exact_original_reference": 0.7452830188679245,
+        "any_wg_on_fixed_point": 0.7452830188679245,
+        "cycle": 0.0
+      }
+    },
+    {
+      "node": "v_CIA",
+      "value": 1,
+      "forced_updates": 8,
+      "measure": "uniform",
+      "support_states": 16384,
+      "probabilities": {
+        "exact_original_reference": 0.25,
+        "any_wg_on_fixed_point": 0.25,
+        "cycle": 0.0
+      }
+    },
+    {
+      "node": "v_CIA",
+      "value": 1,
+      "forced_updates": 8,
+      "measure": "independent_bit_p025",
+      "support_states": 16384,
+      "probabilities": {
+        "exact_original_reference": 0.1875,
+        "any_wg_on_fixed_point": 0.1875,
+        "cycle": 0.0
+      }
+    },
+    {
+      "node": "v_CIA",
+      "value": 1,
+      "forced_updates": 8,
+      "measure": "independent_bit_p075",
+      "support_states": 16384,
+      "probabilities": {
+        "exact_original_reference": 0.1875,
+        "any_wg_on_fixed_point": 0.1875,
+        "cycle": 0.0
+      }
+    },
+    {
+      "node": "v_CIA",
+      "value": 1,
+      "forced_updates": 8,
+      "measure": "uniform_hamming_distance_le2_from_reference",
+      "support_states": 106,
+      "probabilities": {
+        "exact_original_reference": 0.7452830188679245,
+        "any_wg_on_fixed_point": 0.7452830188679245,
+        "cycle": 0.0
+      }
+    },
+    {
+      "node": "v_PTC_protein",
+      "value": 0,
+      "forced_updates": 1,
+      "measure": "uniform",
+      "support_states": 16384,
+      "probabilities": {
+        "exact_original_reference": 0.0078125,
+        "any_wg_on_fixed_point": 0.0078125,
+        "cycle": 0.0
+      }
+    },
+    {
+      "node": "v_PTC_protein",
+      "value": 0,
+      "forced_updates": 1,
+      "measure": "independent_bit_p025",
+      "support_states": 16384,
+      "probabilities": {
+        "exact_original_reference": 0.00164794921875,
+        "any_wg_on_fixed_point": 0.00164794921875,
+        "cycle": 0.0
+      }
+    },
+    {
+      "node": "v_PTC_protein",
+      "value": 0,
+      "forced_updates": 1,
+      "measure": "independent_bit_p075",
+      "support_states": 16384,
+      "probabilities": {
+        "exact_original_reference": 0.00494384765625,
+        "any_wg_on_fixed_point": 0.00494384765625,
+        "cycle": 0.0
+      }
+    },
+    {
+      "node": "v_PTC_protein",
+      "value": 0,
+      "forced_updates": 1,
+      "measure": "uniform_hamming_distance_le2_from_reference",
+      "support_states": 106,
+      "probabilities": {
+        "exact_original_reference": 0.27358490566037735,
+        "any_wg_on_fixed_point": 0.27358490566037735,
+        "cycle": 0.0
+      }
+    },
+    {
+      "node": "v_EN_protein",
+      "value": 0,
+      "forced_updates": 1,
+      "measure": "uniform",
+      "support_states": 16384,
+      "probabilities": {
+        "exact_original_reference": 0.03125,
+        "any_wg_on_fixed_point": 0.03125,
+        "cycle": 0.0
+      }
+    },
+    {
+      "node": "v_EN_protein",
+      "value": 0,
+      "forced_updates": 1,
+      "measure": "independent_bit_p025",
+      "support_states": 16384,
+      "probabilities": {
+        "exact_original_reference": 0.0029296875,
+        "any_wg_on_fixed_point": 0.0029296875,
+        "cycle": 0.0
+      }
+    },
+    {
+      "node": "v_EN_protein",
+      "value": 0,
+      "forced_updates": 1,
+      "measure": "independent_bit_p075",
+      "support_states": 16384,
+      "probabilities": {
+        "exact_original_reference": 0.0791015625,
+        "any_wg_on_fixed_point": 0.0791015625,
+        "cycle": 0.0
+      }
+    },
+    {
+      "node": "v_EN_protein",
+      "value": 0,
+      "forced_updates": 1,
+      "measure": "uniform_hamming_distance_le2_from_reference",
+      "support_states": 106,
+      "probabilities": {
+        "exact_original_reference": 0.43396226415094336,
+        "any_wg_on_fixed_point": 0.43396226415094336,
+        "cycle": 0.0
+      }
+    }
+  ],
+  "limits": "Exact synchronous published Boolean-model census; artificial initial measures, not empirical embryo distributions. No biological rescue or physical pulse time. Different denominators/weights intentional and reported, no best-measure selection."
+}

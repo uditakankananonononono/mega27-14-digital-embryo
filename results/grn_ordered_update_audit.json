@@ -1,0 +1,269 @@
+{
+  "plan_sha256": "6f0924b1dbf03e471370b16ef2ee7f386f809c4e88e6f0f3dcdca21d1cec75a4",
+  "model_sha256": "6f1ad8de743b443e9e1f92e48964be0a3fdae9487575ae2fa0cf8eb0c627f900",
+  "reference_integer": 13285,
+  "rows": [
+    {
+      "schedule": "source_order",
+      "node_order": [
+        "v_CIA",
+        "v_CIR",
+        "v_CI_protein",
+        "v_EN_protein",
+        "v_HH_protein",
+        "v_PH",
+        "v_PTC_protein",
+        "v_SMO",
+        "v_WG_protein",
+        "v_ci",
+        "v_en",
+        "v_hh",
+        "v_ptc",
+        "v_wg"
+      ],
+      "forced_node": null,
+      "forced_value": null,
+      "forced_sweeps": 0,
+      "n_initial": 16384,
+      "graph_sha256": "c7739e4ead5f91163155d4d746816818f2fcf614879f0a41413f93e494f34287",
+      "counts": {
+        "original_reference": 1024,
+        "wg_on_fixed_sweep_endpoint": 1024,
+        "sweep_cycle": 0
+      }
+    },
+    {
+      "schedule": "source_order",
+      "node_order": [
+        "v_CIA",
+        "v_CIR",
+        "v_CI_protein",
+        "v_EN_protein",
+        "v_HH_protein",
+        "v_PH",
+        "v_PTC_protein",
+        "v_SMO",
+        "v_WG_protein",
+        "v_ci",
+        "v_en",
+        "v_hh",
+        "v_ptc",
+        "v_wg"
+      ],
+      "forced_node": "v_wg",
+      "forced_value": 1,
+      "forced_sweeps": 8,
+      "n_initial": 16384,
+      "graph_sha256": "c7739e4ead5f91163155d4d746816818f2fcf614879f0a41413f93e494f34287",
+      "counts": {
+        "original_reference": 16384,
+        "wg_on_fixed_sweep_endpoint": 16384,
+        "sweep_cycle": 0
+      }
+    },
+    {
+      "schedule": "source_order",
+      "node_order": [
+        "v_CIA",
+        "v_CIR",
+        "v_CI_protein",
+        "v_EN_protein",
+        "v_HH_protein",
+        "v_PH",
+        "v_PTC_protein",
+        "v_SMO",
+        "v_WG_protein",
+        "v_ci",
+        "v_en",
+        "v_hh",
+        "v_ptc",
+        "v_wg"
+      ],
+      "forced_node": "v_CIA",
+      "forced_value": 1,
+      "forced_sweeps": 4,
+      "n_initial": 16384,
+      "graph_sha256": "c7739e4ead5f91163155d4d746816818f2fcf614879f0a41413f93e494f34287",
+      "counts": {
+        "original_reference": 8192,
+        "wg_on_fixed_sweep_endpoint": 8192,
+        "sweep_cycle": 0
+      }
+    },
+    {
+      "schedule": "reverse_source_order",
+      "node_order": [
+        "v_wg",
+        "v_ptc",
+        "v_hh",
+        "v_en",
+        "v_ci",
+        "v_WG_protein",
+        "v_SMO",
+        "v_PTC_protein",
+        "v_PH",
+        "v_HH_protein",
+        "v_EN_protein",
+        "v_CI_protein",
+        "v_CIR",
+        "v_CIA"
+      ],
+      "forced_node": null,
+      "forced_value": null,
+      "forced_sweeps": 0,
+      "n_initial": 16384,
+      "graph_sha256": "c7c3bb184d901f3e02058f9843068c458fdacdf09152f1b663268c9af57a8e79",
+      "counts": {
+        "original_reference": 1024,
+        "wg_on_fixed_sweep_endpoint": 1024,
+        "sweep_cycle": 0
+      }
+    },
+    {
+      "schedule": "reverse_source_order",
+      "node_order": [
+        "v_wg",
+        "v_ptc",
+        "v_hh",
+        "v_en",
+        "v_ci",
+        "v_WG_protein",
+        "v_SMO",
+        "v_PTC_protein",
+        "v_PH",
+        "v_HH_protein",
+        "v_EN_protein",
+        "v_CI_protein",
+        "v_CIR",
+        "v_CIA"
+      ],
+      "forced_node": "v_wg",
+      "forced_value": 1,
+      "forced_sweeps": 8,
+      "n_initial": 16384,
+      "graph_sha256": "c7c3bb184d901f3e02058f9843068c458fdacdf09152f1b663268c9af57a8e79",
+      "counts": {
+        "original_reference": 16384,
+        "wg_on_fixed_sweep_endpoint": 16384,
+        "sweep_cycle": 0
+      }
+    },
+    {
+      "schedule": "reverse_source_order",
+      "node_order": [
+        "v_wg",
+        "v_ptc",
+        "v_hh",
+        "v_en",
+        "v_ci",
+        "v_WG_protein",
+        "v_SMO",
+        "v_PTC_protein",
+        "v_PH",
+        "v_HH_protein",
+        "v_EN_protein",
+        "v_CI_protein",
+        "v_CIR",
+        "v_CIA"
+      ],
+      "forced_node": "v_CIA",
+      "forced_value": 1,
+      "forced_sweeps": 4,
+      "n_initial": 16384,
+      "graph_sha256": "c7c3bb184d901f3e02058f9843068c458fdacdf09152f1b663268c9af57a8e79",
+      "counts": {
+        "original_reference": 4096,
+        "wg_on_fixed_sweep_endpoint": 4096,
+        "sweep_cycle": 0
+      }
+    },
+    {
+      "schedule": "fixed_permutation_seed2183",
+      "node_order": [
+        "v_PH",
+        "v_SMO",
+        "v_CI_protein",
+        "v_en",
+        "v_hh",
+        "v_ci",
+        "v_HH_protein",
+        "v_CIR",
+        "v_PTC_protein",
+        "v_ptc",
+        "v_wg",
+        "v_CIA",
+        "v_WG_protein",
+        "v_EN_protein"
+      ],
+      "forced_node": null,
+      "forced_value": null,
+      "forced_sweeps": 0,
+      "n_initial": 16384,
+      "graph_sha256": "de7c778eb2d3aeecf2e3fd748d4110f4ccd6300b1e28d7c61a79131fddac6b5e",
+      "counts": {
+        "original_reference": 1024,
+        "wg_on_fixed_sweep_endpoint": 1024,
+        "sweep_cycle": 0
+      }
+    },
+    {
+      "schedule": "fixed_permutation_seed2183",
+      "node_order": [
+        "v_PH",
+        "v_SMO",
+        "v_CI_protein",
+        "v_en",
+        "v_hh",
+        "v_ci",
+        "v_HH_protein",
+        "v_CIR",
+        "v_PTC_protein",
+        "v_ptc",
+        "v_wg",
+        "v_CIA",
+        "v_WG_protein",
+        "v_EN_protein"
+      ],
+      "forced_node": "v_wg",
+      "forced_value": 1,
+      "forced_sweeps": 8,
+      "n_initial": 16384,
+      "graph_sha256": "de7c778eb2d3aeecf2e3fd748d4110f4ccd6300b1e28d7c61a79131fddac6b5e",
+      "counts": {
+        "original_reference": 16384,
+        "wg_on_fixed_sweep_endpoint": 16384,
+        "sweep_cycle": 0
+      }
+    },
+    {
+      "schedule": "fixed_permutation_seed2183",
+      "node_order": [
+        "v_PH",
+        "v_SMO",
+        "v_CI_protein",
+        "v_en",
+        "v_hh",
+        "v_ci",
+        "v_HH_protein",
+        "v_CIR",
+        "v_PTC_protein",
+        "v_ptc",
+        "v_wg",
+        "v_CIA",
+        "v_WG_protein",
+        "v_EN_protein"
+      ],
+      "forced_node": "v_CIA",
+      "forced_value": 1,
+      "forced_sweeps": 4,
+      "n_initial": 16384,
+      "graph_sha256": "de7c778eb2d3aeecf2e3fd748d4110f4ccd6300b1e28d7c61a79131fddac6b5e",
+      "counts": {
+        "original_reference": 8192,
+        "wg_on_fixed_sweep_endpoint": 8192,
+        "sweep_cycle": 0
+      }
+    }
+  ],
+  "limits": "Deterministicorderedsequentialupdates,notstochasticasynchronousorphysicaltime. Forcedupdatesnowcountcompletesweepsnotoriginalsynchronoussteps;notpairedphysicalpulsecomparison. Cycleovercomplete-sweepmap;notproofaboutallrandomschedules. No biologicalrescue."
+}

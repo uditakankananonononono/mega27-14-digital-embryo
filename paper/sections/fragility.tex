@@ -46,3 +46,119 @@ wg OFF & .000000 & .000000 \\\hline\hline
 The differences are substantive: CIA ON gives a quarter of the reduced starting space, not the old 1.5625\%. They establish how changing the transition differs from conditioning on the initial measure. They do not show that actual constitutive expression produces those outcome probabilities. The endpoint itself needs care: forcing wg ON trivially satisfies the wg marker at every fixed point. Its fraction of one is not full wild-type rescue. A maintained intervention must therefore state whether the target phenotype includes the manipulated node and what other phenotype coordinates are required. Reduced-space weighting also changes the denominator, so a larger fraction is not automatically more developmental accessibility under a natural initial distribution.
 
 The exact code and all 28 conditions are in \path{experiments/grn_maintained_clamp_audit.py} and \path{results/grn_maintained_clamp_audit.json}, with source model hash, node order, transition hashes, fixed-point/cycle counts and archived initial-restriction contrasts. The computation is finite and deterministic. Binary Boolean dynamics, the chosen external signals, uniform starting measure and wg-only fixed-point endpoint remain modeling choices. There is no physical intervention or wet-lab verification.
+
+\subsection{An exact reference-state check separates marker retention from state recovery}
+The previous maintained-clamp census deliberately used wg=1 at a fixed point as its endpoint. A new frozen-plan audit asks which complete fixed point is reached instead. Under the unrestricted condition hh external=1, WG external=0, SLP=0, the original model has one wg-ON fixed point and exactly 128 of 16,384 starts reach it. We identify it by every one of the fourteen free coordinates, not merely by a fate label. Its ON coordinates are CIA, CI protein, PH, PTC protein, SMO, WG protein, ci, ptc and wg; CIR, EN protein, HH protein, en and hh are OFF. The named software reference is not an experimentally established wild-type phenotype.
+
+For each of the 28 maintained interventions, all 8,192 starts already matching the forced value are classified by their exact terminal fixed-point integer or by a cycle label. We score both complete reference equality and equality only on the thirteen nonmanipulated coordinates. The latter deliberately permits a disagreement at the forced node, while exposing downstream mismatches that marker wg cannot detect. A clamped value opposite to the original reference makes full-state equality impossible by construction. It need not make projected equality impossible. These tests answer different questions and must not be mixed in an intervention ranking.
+
+\begin{table}[ht]\centering\small
+\caption{Selected exact maintained-clamp endpoints, percentages of the same reduced starting space. Projection omits only the manipulated coordinate. All values are model calculations, not measured rescue rates.}
+\begin{tabular}{lrrr}\toprule
+Forced condition & wg marker & thirteen-coordinate reference & full reference\\\midrule
+CIA ON & 25.000 & 25.000 & 25.000 \\
+PTC protein OFF & 0.781 & 0.000 & 0.000 \\
+hh ON & 0.781 & 0.000 & 0.000 \\
+ptc OFF & 0.781 & 0.000 & 0.000 \\
+HH protein ON & 0.781 & 0.781 & 0.000 \\
+PH OFF & 0.781 & 0.781 & 0.000 \\
+wg ON & 100.000 & 100.000 & 100.000 \\
+\bottomrule\end{tabular}\end{table}
+
+Three interventions make the endpoint distinction especially clear. PTC protein OFF, hh ON and ptc OFF each preserve wg-ON fixed-point outcomes from 0.78125\% of their starting spaces, yet none matches the original reference even on the other thirteen coordinates. For them the disagreement propagates beyond the forced node. Calling these outcomes wild-type retention based on wg alone would conceal a change in the model's remaining expression pattern. By contrast, HH protein ON, PH OFF, SMO OFF and WG protein OFF retain projected-reference outcomes at 0.78125\%, but cannot satisfy whole-state equality because their forced coordinate itself contradicts the original reference. The projection explicitly states what is being ignored rather than quietly relaxing a phenotype.
+
+CIA ON reaches the exact complete reference from 25\% of starts, CI protein ON from 12.5\%, ci ON from 6.25\%, and EN protein OFF from 3.125\%. Those compatible interventions change basin counts without changing the model's final reference pattern. Forcing wg ON does more than satisfy its own marker here: all reduced-space starts reach the complete original reference under this transition. That separate identity check removes the marker-only tautology, but it still does not show physical rescue. The intervention forces the initiating coordinate forever, the starting measure is artificial and uniform, and the external condition is fixed. It is neither recovery after a temporary perturbation nor robustness of an unforced tissue.
+
+Graph classification is checked against independent scalar maintained trajectories over all reduced-space starts for CIA ON, PTC protein OFF and wg ON. The old marker fractions and all historical files remain untouched. The source hash, exact original reference, all fixed endpoints, graph hashes and all 28 conditions are in \path{results/grn_full_reference_audit.json}, generated by \path{experiments/grn_full_reference_audit.py}. The corrected conclusion is narrow: even exact model intervention counts depend on which state coordinates define success. Identifying a biological phenotype, measuring intervention kinetics and testing transient rather than permanent forcing remain separate research steps.
+
+\subsection{Transient forcing followed by release changes the intervention question}
+Permanent forcing changes the transition graph indefinitely. It cannot establish that a short intervention returns a system to the original attractor once the forcing ends. A new plan therefore evaluates finite forcing and explicit release. We hold the original external condition and the exact fourteen-coordinate reference fixed, start from every one of the 16,384 unrestricted states with equal weight, overwrite the chosen coordinate at intervention onset, maintain it for a stated number of synchronous updates, then restore the original successor without any clamp. Each released state is classified by its eventual original attractor. Thus success is attraction after release, not wg occupancy while it is forced.
+
+The grid uses all fourteen nodes, both binary values and durations one, two, four and eight, giving 112 finite interventions. Every condition shares the full 16,384-start denominator, so comparisons do not confuse a reduced-state conditional measure with a different population size. Overwriting the coordinate initially maps pairs of starts onto the same clamped state, but both original starts keep their original weight. This initial overwrite is part of the hypothetical intervention. The durations count synchronous updates, not measured minutes, protein lifetimes or developmental stages.
+
+\begin{table}[ht]\centering\small
+\caption{Exact original-reference attraction after release, percentage of the same 16,384 starts. No forcing remains during the classified return trajectory.}
+\begin{tabular}{lrrrr}\toprule
+Transient forcing & one update & two & four & eight\\\midrule
+CIA ON & 3.125 & 6.250 & 25.000 & 25.000\\
+CI protein ON & 3.125 & 6.250 & 12.500 & 12.500\\
+ci ON & 3.125 & 6.250 & 6.250 & 6.250\\
+EN protein OFF & 3.125 & 3.125 & 3.125 & 3.125\\
+wg ON & 6.250 & 12.500 & 50.000 & 100.000\\
+PTC protein OFF & .781 & .781 & .781 & .781\\\bottomrule
+\end{tabular}\end{table}
+
+With no intervention, 128 starts, or .78125\%, reach the reference. CIA ON for one update gives 3.125\% after release, two updates 6.25\%, and four or eight updates 25\%. CI protein ON saturates at 12.5\% in the recorded four/eight-update conditions, while ci ON saturates at 6.25\%. EN protein OFF gives 3.125\% at every tested duration. These finite differences show dependence on intervention duration and node identity within this model; they do not identify a medically or developmentally useful dose. The complete grid retains OFF conditions with zero recovery rather than presenting only favorable interventions.
+
+wg ON rises from 6.25\% after one forced update to 12.5\%, 50\% and 100\% after two, four and eight updates. The eight-update result is checked after the clamp has ended: all starts enter the original reference basin. This is stronger than the marker tautology of permanently forcing wg, but it remains a result of the stated single-cell binary rules and fixed external inputs. A finite-pulse biological claim would require intervention kinetics, coordinate meanings, measured starting-state distributions and phenotype validation. The code supplies none of those measurements.
+
+PTC protein OFF illustrates another distinction. Under maintained forcing it could retain wg marker states that differed from the reference on other coordinates. Under finite forcing and release, the original dynamics recovers the reference from .78125\% of full starts at every recorded duration. This is a restoration of the original rule, not evidence that permanent knockouts are equivalent to temporary perturbations. Exact reference equality at the instant of release is recorded separately from eventual reference attraction: a state outside the reference can still lie in its basin. Counting only occupancy at release would conflate immediate expression matching with later model recovery.
+
+The experiment retains every release-state count, the number of distinct released states, immediate reference occupancy and eventual reference counts in \path{results/grn_release_audit.json}. Its frozen plan and executable are \path{experiments/grn_release_plan.json} and \path{experiments/grn_release_audit.py}. Tests regenerate the exact graph-based grid and independently enumerate full scalar trajectories for wg ON for two updates and CIA ON for four updates. All prior maintained/initial-restriction/noisy result files remain intact. This adds a controlled temporal-intervention question, not a universal robustness law. Temporary forcing, permanent forcing, initial-value restriction and continuing random noise are four different processes and must not share an unqualified ``basin rescue'' number.
+
+\subsection{Initial-measure sensitivity is separate from endpoint identity}
+The uniform 16,384-state census is an exact counting measure, not a measured distribution of embryonic starting states. A further frozen audit keeps the original model, synchronous update and eventual exact-reference endpoint fixed while changing only the initial-state weights. We test independent bits with ON probabilities .25 and .75, and a uniform distribution on the 106 states within Hamming distance two of the original reference. The latter is deliberately reference-centered and cannot be treated as an unbiased embryo sample. Ten predeclared forcing conditions plus the unforced baseline are evaluated under all four measures. No measure is selected after its result.
+
+\begin{table}[ht]\centering
+\caption{Exact-reference probability after release under artificial initial measures. Fractions are weighted census sums, not biological probabilities or sample estimates. The near-reference support has 106 states; all other measures have 16,384.}
+\begin{tabular}{lrrrr}\hline
+Condition & uniform & bit .25 & bit .75 & near reference\\\hline
+Unforced &.00781&.00165&.00494&.27358\\
+wg ON, 2 updates &.12500&.14063&.04688&.63208\\
+wg ON, 8 updates &1.00000&1.00000&1.00000&1.00000\\
+CIA ON, 4 updates &.25000&.18750&.18750&.74528\\
+PTC protein OFF, 1 update &.00781&.00165&.00494&.27358\\
+EN protein OFF, 1 update &.03125&.00293&.07910&.43396\\\hline
+\end{tabular}\end{table}
+
+The unforced probability changes from .78125 percent under uniform bits to .16479 and .49438 percent under the two biased-bit measures, and to 27.35849 percent under the reference-centered measure. The model and trajectories have not changed: only the probability assigned to the same starts changes. In contrast, eight updates of artificial wg forcing reach the original reference from every enumerated start, so this particular model result is invariant to these weights. That invariance is an all-state property of this rule and forcing protocol, not evidence of physical rescue or general developmental robustness.
+
+EN-protein OFF illustrates why fold comparisons depend on the measure. Its one-update probability is 3.125 percent under uniform weighting but .29297 percent under bit-.25 and 7.91016 percent under bit-.75. The unforced denominators also change. A quoted fold gain without the distribution would conflate an intervention response with the chosen prior. PTC-protein OFF remains identical to the unforced baseline under every tested measure. These findings preserve the full-reference and projected-reference distinctions from permanent forcing.
+
+For every tested released condition, the original dynamics yield no cycles and every wg-ON fixed endpoint is the same exact reference. Thus the two endpoint definitions coincide here after release; this is a measured property of these conditions, not a reason to replace exact identity with a marker in maintained-forcing experiments. The complete 44 weighted rows, support counts, source hash and plan hash are stored in \path{results/grn_initial_measure_audit.json}. Tests reproduce the full census, match uniform rows to the release audit and verify the 29-of-106 near-reference baseline. These artificial weights expose dependence on an assumption; empirical embryo distributions, asynchronous timing, altered rules and independent biological endpoints remain unvalidated.
+
+\subsection{External-input regimes invalidate an unconditional reference-rescue claim}
+The main forcing experiments hold hh-external ON, WG-external OFF and SLP OFF. A frozen context audit now enumerates every binary combination of those three external inputs while preserving all fourteen internal rules and synchronous timing. Each context receives the same 16,384 internal starts, the unforced baseline, eight forced updates of wg ON, and four forced updates of CIA ON followed by release. We retain the original internal reference as one endpoint, any wg-ON fixed state as another, and cycles separately. Before interpreting reference attraction, we test whether that original internal state remains a fixed point under the new context.
+\begin{table}[ht]\centering
+\caption{Exact original-internal-reference attraction by external-input context. Every column has 16,384 uniform internal starts. Context order is hh-external, WG-external, SLP. Endpoint validity is reported rather than assuming a reference from one context remains meaningful everywhere.}
+\begin{tabular}{lrrrr}\hline
+Context & original reference fixed? & unforced & wg ON 8 & CIA ON 4\\\hline
+000 & no &0&0&0\\
+001 & no &0&0&0\\
+010 & no &0&0&0\\
+011 & no &0&0&0\\
+100 & yes &128&16384&4096\\
+101 & yes &16384&16384&16384\\
+110 & no &0&0&0\\
+111 & yes &16384&16384&16384\\\hline
+\end{tabular}\end{table}
+Only three of eight contexts preserve the original internal state as a fixed endpoint. The other five have zero attraction to it after release, not merely a smaller basin. In contexts 101 and 111 every unforced start already reaches the same internal reference, so neither forcing protocol supplies a gain there. In the original 100 context the previously reported counts reproduce exactly. Thus eight wg-forcing updates yielding all-state attraction is a conditional result under a specified context, not robustness across external input settings. An internal-state match also does not claim equality of the external biological environment.
+
+The wg-ON fixed endpoint count equals original-internal-reference attraction in all 24 tested rows and no cycle occurs. This agreement is an output of these exact censuses; it cannot validate the earlier maintained-clamp marker by analogy. Other contexts can make the prior endpoint invalid even if a different internally or biologically defined phenotype could be suitable. We do not select a new preferred reference after viewing outcomes. The complete fixed-endpoint lists, validity flags, source hash, plan hash and counts are in \path{results/grn_external_regime_audit.json}. Tests enumerate all eight contexts and reproduce the original release counts. This is context sensitivity of a published binary rule, not altered-rule, asynchronous, kinetic, empirical-prior or biological model validation.
+
+\subsection{Deterministic sequential update orders alter the basin}
+Synchronous timing is another assumption, separate from external context and initial-state weights. A frozen audit uses the original 100 external context and all 16,384 internal starts but updates the fourteen nodes in place through a complete deterministic sweep. Three orders are retained: source order, reversed source order and a fixed permutation from seed 2183. A forced node is overwritten initially and after every microstep, then released after the stated number of complete sweeps. The original reference is still a fixed point in every order. These are not random asynchronous trajectories, nor do sweeps have a physical duration equivalent to synchronous steps.
+\begin{table}[ht]\centering
+\caption{Original-reference attraction under fixed sequential sweep schedules. Every cell counts 16,384 starts. The synchronous comparison uses updates, whereas sequential rows use complete fourteen-node sweeps; they do not represent paired physical pulse times.}
+\begin{tabular}{lrrr}\hline
+Schedule & unforced & wg ON 8 & CIA ON 4\\\hline
+Synchronous update, earlier audit &128&16384&4096\\
+Source-order sweep &1024&16384&8192\\
+Reverse-source-order sweep &1024&16384&4096\\
+Fixed-permutation sweep &1024&16384&8192\\\hline
+\end{tabular}\end{table}
+The uniform unforced basin is 6.25 percent under each tested sequential schedule rather than .78125 percent under synchronous updates. That eightfold difference occurs without changing the rules or initial distribution. Equality across three sequential orders does not prove invariance across every order or random schedule. CIA forcing reaches half the starts for source/permutation orders but one quarter for reverse order; wg forcing reaches all starts after eight sweeps in these three contexts. The audit does not identify a best biological update schedule or use a favorable schedule as the new default.
+
+Complete-sweep terminal labels distinguish fixed endpoints from cycles of the sweep map. No cycle is observed in these nine conditions. Tests independently require every unforced sweep-fixed state to satisfy all original synchronous rules, so endpoint stasis here is not a hidden microstep excursion. Graph hashes, exact orders, counts and plan identity are retained in \path{results/grn_ordered_update_audit.json}. This experiment shows model-timing sensitivity and a limited all-state result for selected schedules. Stochastic asynchronous updates, schedules changing between sweeps, kinetic rate models and independently measured developmental trajectories remain open. No timing convention in this audit validates a physical pulse or embryo rescue.
+
+\subsection{Rule perturbations must pass endpoint-validity checks first}
+A frozen preliminary audit changes one syntactically named regulator in one target rule to constant zero or one, replacing all occurrences of that regulator within that rule. The 29 distinct regulator--target references yield 58 counterfactual models, including external-input references. The original 100 external context and original internal reference are fixed. This is a Boolean-expression counterfactual, not an experimentally measured edge deletion or gene knockout; constants zero and one represent different changed logical assumptions.
+\begin{table}[ht]\centering
+\caption{Original-reference fixed-point validity before any counterfactual basin claim. The audit does not enumerate altered-model basins or select a new reference after observing invalidity.}
+\begin{tabular}{lr}\hline
+Counterfactual models &58\\
+Original internal reference remains fixed &38\\
+Original internal reference is not fixed &20\\\hline
+\end{tabular}\end{table}
+In twenty models the original reference fails at the first successor check. A basin described as attraction to this fixed endpoint is therefore invalid for those models before any enumeration or rescue interpretation. In the other thirty-eight, passing one fixed-point check says nothing about basin size, stability or empirical correctness. Every changed coordinate is the perturbed target only, as expected for a one-rule successor audit. No altered-model attraction or biological result is claimed.
+The complete target, regulator, replacement value, changed coordinate and modified-model hash are retained in \path{results/grn_rule_validity_audit.json}; tests reproduce all 58 unique variants and the twenty invalid cases. This audit makes the reference-validity gate explicit rather than inheriting the original endpoint across changed models. Empirical benchmark scope still requires measured developmental states, assay definitions and an independent model; logical counterfactuals do not supply those observations.
