@@ -17,3 +17,4 @@ Every command prints JSON with the dataset/provenance fields named inline.
 
 ### Fixed-coordinate transient linear amplification
 The full finite-difference linearizations have negative spectral abscissa, but raw-concentration Euclidean propagator norms at frozen times1/10/100 are9.641/36.778/6.206. Positive symmetric-part logarithmic norm5.283 supplies a distinct non-normal transient-growth diagnostic. No nonlinear/positivity-feasible disturbance or biological robustness is certified; nativeJacobian failure remains. See `results/spatial_ode_nonnormal_audit.json`.
+The time10 leading singular direction's initial nonnegative amplitude ceiling is1.497e-6 in its less restrictive sign (4.861e-7 of endpointnorm);opposite sign ceiling is~4.7e-79. Exact limiting species change across finite-difference steps,not stable biological bottlenecks. This is geometry only,no nonlinearfeasible transientgrowth measured. See `results/spatial_ode_direction_feasibility_audit.json`.
