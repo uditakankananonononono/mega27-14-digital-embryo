@@ -1,0 +1,1432 @@
+{
+  "plan_sha256": "645bd58eef88f4c592c1e5c5fb0b013c97ce43e812e2787c0eff981bcf4f1426",
+  "sbml_sha256": "25c4d788562cc9ae9b8ee6dfeb94abfe11d6bed4d95762bfd154eeab1f353ca3",
+  "source_commit": "1962866c8d4750516be10978908fca2b333073a3",
+  "prior_overlap_max_abs_error": 0.0,
+  "residuals": [
+    {
+      "time": 1100,
+      "floating_species": 132,
+      "max_abs_derivative": 2.7216663613799374e-08,
+      "max_concentration_scaled_derivative": 0.01724878622588729,
+      "species": [
+        {
+          "id": "en_0_0",
+          "concentration": 6.743921934721452e-30,
+          "derivative": 5.4975578451444746e-39
+        },
+        {
+          "id": "EN_0_0",
+          "concentration": 6.743921893710191e-30,
+          "derivative": 6.183108611840707e-39
+        },
+        {
+          "id": "ci_0_0",
+          "concentration": 0.9999999999999294,
+          "derivative": 9.325873406851315e-15
+        },
+        {
+          "id": "CI_0_0",
+          "concentration": 0.15225195117492527,
+          "derivative": -2.7216663613799374e-08
+        },
+        {
+          "id": "CN_0_0",
+          "concentration": 0.8477480488250049,
+          "derivative": 2.7216663589513246e-08
+        },
+        {
+          "id": "hh_0_0",
+          "concentration": 1.4911852057461117e-09,
+          "derivative": -2.5721132102335512e-11
+        },
+        {
+          "id": "HH1_0_0",
+          "concentration": 3.9730913963247604e-10,
+          "derivative": -6.853100415111783e-12
+        },
+        {
+          "id": "HH2_0_0",
+          "concentration": 3.973162092354756e-10,
+          "derivative": -6.8532223118994655e-12
+        },
+        {
+          "id": "HH3_0_0",
+          "concentration": 3.973162092354757e-10,
+          "derivative": -6.853222311899481e-12
+        },
+        {
+          "id": "HH4_0_0",
+          "concentration": 3.973091396324758e-10,
+          "derivative": -6.853100415111761e-12
+        },
+        {
+          "id": "HH5_0_0",
+          "concentration": 3.9731620928253104e-10,
+          "derivative": -6.853222313218546e-12
+        },
+        {
+          "id": "HH6_0_0",
+          "concentration": 3.973162092825312e-10,
+          "derivative": -6.853222313218555e-12
+        },
+        {
+          "id": "ptc_0_0",
+          "concentration": 0.007144739993272278,
+          "derivative": 6.463635793046638e-10
+        },
+        {
+          "id": "PTC1_0_0",
+          "concentration": 0.0011907740283728454,
+          "derivative": 3.267789879016174e-10
+        },
+        {
+          "id": "PTC2_0_0",
+          "concentration": 0.0011907740283649277,
+          "derivative": 3.267791227187179e-10
+        },
+        {
+          "id": "PTC3_0_0",
+          "concentration": 0.0011907740283649264,
+          "derivative": 3.267791242366009e-10
+        },
+        {
+          "id": "PTC4_0_0",
+          "concentration": 0.0011907740283728452,
+          "derivative": 3.267789873053062e-10
+        },
+        {
+          "id": "PTC5_0_0",
+          "concentration": 0.001190774028364814,
+          "derivative": 3.2677912564346464e-10
+        },
+        {
+          "id": "PTC6_0_0",
+          "concentration": 0.0011907740283648147,
+          "derivative": 3.267791248845231e-10
+        },
+        {
+          "id": "wg_0_0",
+          "concentration": 3.716655755458351e-08,
+          "derivative": -2.7050033387005535e-12
+        },
+        {
+          "id": "IWG_0_0",
+          "concentration": 0.0020669046939325096,
+          "derivative": 1.7526755058134419e-12
+        },
+        {
+          "id": "EWG1_0_0",
+          "concentration": 0.05772008482666839,
+          "derivative": -1.72412915908169e-08
+        },
+        {
+          "id": "EWG2_0_0",
+          "concentration": 0.053007566058323664,
+          "derivative": 1.7360600181167904e-08
+        },
+        {
+          "id": "EWG3_0_0",
+          "concentration": 0.05300758654419141,
+          "derivative": -1.7242931501138155e-08
+        },
+        {
+          "id": "EWG4_0_0",
+          "concentration": 0.05772006434080069,
+          "derivative": 1.7362240081622918e-08
+        },
+        {
+          "id": "EWG5_0_0",
+          "concentration": 0.06551610828434726,
+          "derivative": -1.723885516627388e-08
+        },
+        {
+          "id": "EWG6_0_0",
+          "concentration": 0.06551608779847948,
+          "derivative": 1.7364676550835068e-08
+        },
+        {
+          "id": "PH1_0_0",
+          "concentration": 3.8716135650633776e-11,
+          "derivative": -5.929541359888081e-13
+        },
+        {
+          "id": "PH2_0_0",
+          "concentration": 1.5754192425804918e-10,
+          "derivative": -2.4121574717488105e-12
+        },
+        {
+          "id": "PH3_0_0",
+          "concentration": 1.5754192425804877e-10,
+          "derivative": -2.412157471748804e-12
+        },
+        {
+          "id": "PH4_0_0",
+          "concentration": 3.8716135650633866e-11,
+          "derivative": -5.929541359888095e-13
+        },
+        {
+          "id": "PH5_0_0",
+          "concentration": 1.580757663425438e-10,
+          "derivative": -2.4203279339325183e-12
+        },
+        {
+          "id": "PH6_0_0",
+          "concentration": 1.580757663425443e-10,
+          "derivative": -2.420327933932526e-12
+        },
+        {
+          "id": "en_0_1",
+          "concentration": 7.862158476197446e-30,
+          "derivative": 6.036398968468988e-39
+        },
+        {
+          "id": "EN_0_1",
+          "concentration": 7.86215843115378e-30,
+          "derivative": 6.791058622504176e-39
+        },
+        {
+          "id": "ci_0_1",
+          "concentration": 0.9999999999999294,
+          "derivative": 9.325873406851315e-15
+        },
+        {
+          "id": "CI_0_1",
+          "concentration": 0.15299898051567806,
+          "derivative": -2.3124717033612407e-08
+        },
+        {
+          "id": "CN_0_1",
+          "concentration": 0.8470010194842512,
+          "derivative": 2.3124717037081854e-08
+        },
+        {
+          "id": "hh_0_1",
+          "concentration": 6.425949571109119e-09,
+          "derivative": -1.1083981866541186e-10
+        },
+        {
+          "id": "HH1_0_1",
+          "concentration": 1.7148384847881074e-09,
+          "derivative": -2.957887895376199e-11
+        },
+        {
+          "id": "HH2_0_1",
+          "concentration": 1.7131135714910115e-09,
+          "derivative": -2.9549128365491975e-11
+        },
+        {
+          "id": "HH3_0_1",
+          "concentration": 1.7131135714910115e-09,
+          "derivative": -2.954912836549204e-11
+        },
+        {
+          "id": "HH4_0_1",
+          "concentration": 1.7148384847881038e-09,
+          "derivative": -2.95788789537617e-11
+        },
+        {
+          "id": "HH5_0_1",
+          "concentration": 1.7210187600339994e-09,
+          "derivative": -2.968547534084468e-11
+        },
+        {
+          "id": "HH6_0_1",
+          "concentration": 1.7210187600339983e-09,
+          "derivative": -2.968547534084451e-11
+        },
+        {
+          "id": "ptc_0_1",
+          "concentration": 0.007207227780211004,
+          "derivative": 1.8046177341368447e-10
+        },
+        {
+          "id": "PTC1_0_1",
+          "concentration": 0.0011817746902963763,
+          "derivative": 2.626418016059952e-10
+        },
+        {
+          "id": "PTC2_0_1",
+          "concentration": 0.0011827126149631531,
+          "derivative": 2.6286219203279764e-10
+        },
+        {
+          "id": "PTC3_0_1",
+          "concentration": 0.0011827126149631525,
+          "derivative": 2.628621931712099e-10
+        },
+        {
+          "id": "PTC4_0_1",
+          "concentration": 0.0011817746902963772,
+          "derivative": 2.626418011181042e-10
+        },
+        {
+          "id": "PTC5_0_1",
+          "concentration": 0.0011798512353393292,
+          "derivative": 2.621990667195278e-10
+        },
+        {
+          "id": "PTC6_0_1",
+          "concentration": 0.0011798512353393279,
+          "derivative": 2.621990679136325e-10
+        },
+        {
+          "id": "wg_0_1",
+          "concentration": 0.8294253138792569,
+          "derivative": 1.3535295800837233e-10
+        },
+        {
+          "id": "IWG_0_1",
+          "concentration": 0.145813774222815,
+          "derivative": 2.7492496777400954e-11
+        },
+        {
+          "id": "EWG1_0_1",
+          "concentration": 0.24209454828488394,
+          "derivative": -1.7187863183935892e-08
+        },
+        {
+          "id": "EWG2_0_1",
+          "concentration": 0.2383879476680331,
+          "derivative": 1.7414573828117286e-08
+        },
+        {
+          "id": "EWG3_0_1",
+          "concentration": 0.23838796815390095,
+          "derivative": -1.718895791674724e-08
+        },
+        {
+          "id": "EWG4_0_1",
+          "concentration": 0.24209452779901647,
+          "derivative": 1.7415668403068796e-08
+        },
+        {
+          "id": "EWG5_0_1",
+          "concentration": 0.23838796815265859,
+          "derivative": -1.718892883671025e-08
+        },
+        {
+          "id": "EWG6_0_1",
+          "concentration": 0.2383879476667907,
+          "derivative": 1.7414602951956043e-08
+        },
+        {
+          "id": "PH1_0_1",
+          "concentration": 1.3010501944523938e-10,
+          "derivative": -1.9899120399284047e-12
+        },
+        {
+          "id": "PH2_0_1",
+          "concentration": 3.1029032741759395e-11,
+          "derivative": -4.746614519310672e-13
+        },
+        {
+          "id": "PH3_0_1",
+          "concentration": 3.102903274175908e-11,
+          "derivative": -4.746614519310624e-13
+        },
+        {
+          "id": "PH4_0_1",
+          "concentration": 1.301050194452387e-10,
+          "derivative": -1.989912039928394e-12
+        },
+        {
+          "id": "PH5_0_1",
+          "concentration": 7.875661309726468e-05,
+          "derivative": -4.16334785981131e-11
+        },
+        {
+          "id": "PH6_0_1",
+          "concentration": 7.875661309726475e-05,
+          "derivative": -4.16334786006542e-11
+        },
+        {
+          "id": "en_0_2",
+          "concentration": 0.9999993879318608,
+          "derivative": 9.575673587391975e-15
+        },
+        {
+          "id": "EN_0_2",
+          "concentration": 0.9999993879317998,
+          "derivative": 9.2148511043888e-15
+        },
+        {
+          "id": "ci_0_2",
+          "concentration": 9.54863895766593e-13,
+          "derivative": -2.466547169572642e-25
+        },
+        {
+          "id": "CI_0_2",
+          "concentration": 9.548638957643943e-13,
+          "derivative": 7.681273735598392e-26
+        },
+        {
+          "id": "CN_0_2",
+          "concentration": 2.823811356462484e-19,
+          "derivative": -9.935335777873993e-21
+        },
+        {
+          "id": "hh_0_2",
+          "concentration": 0.99999914475464,
+          "derivative": 9.922047211619045e-11
+        },
+        {
+          "id": "HH1_0_2",
+          "concentration": 0.16640056857297983,
+          "derivative": 2.5777428666217787e-10
+        },
+        {
+          "id": "HH2_0_2",
+          "concentration": 0.1660445127249199,
+          "derivative": -4.782016220451681e-11
+        },
+        {
+          "id": "HH3_0_2",
+          "concentration": 0.1660445127249199,
+          "derivative": -4.782016216385923e-11
+        },
+        {
+          "id": "HH4_0_2",
+          "concentration": 0.16640056857297983,
+          "derivative": 2.5777428666217683e-10
+        },
+        {
+          "id": "HH5_0_2",
+          "concentration": 0.16604451271113013,
+          "derivative": -4.763562130470286e-11
+        },
+        {
+          "id": "HH6_0_2",
+          "concentration": 0.16604451271113013,
+          "derivative": -4.76356213724655e-11
+        },
+        {
+          "id": "ptc_0_2",
+          "concentration": 1.6669248383044005e-07,
+          "derivative": -1.8103360735658204e-09
+        },
+        {
+          "id": "PTC1_0_2",
+          "concentration": 5.7132453802100596e-08,
+          "derivative": -6.204826252786454e-10
+        },
+        {
+          "id": "PTC2_0_2",
+          "concentration": 5.718070498436809e-08,
+          "derivative": -6.210066534856789e-10
+        },
+        {
+          "id": "PTC3_0_2",
+          "concentration": 5.718070498436807e-08,
+          "derivative": -6.210066534856657e-10
+        },
+        {
+          "id": "PTC4_0_2",
+          "concentration": 5.7132453802100556e-08,
+          "derivative": -6.204826252786289e-10
+        },
+        {
+          "id": "PTC5_0_2",
+          "concentration": 5.7180704984373655e-08,
+          "derivative": -6.210066534858195e-10
+        },
+        {
+          "id": "PTC6_0_2",
+          "concentration": 5.7180704984373674e-08,
+          "derivative": -6.210066534858261e-10
+        },
+        {
+          "id": "wg_0_2",
+          "concentration": 3.713908843966279e-08,
+          "derivative": -1.8955463351396848e-12
+        },
+        {
+          "id": "IWG_0_2",
+          "concentration": 0.002066904688298844,
+          "derivative": 1.91108056029482e-12
+        },
+        {
+          "id": "EWG1_0_2",
+          "concentration": 0.05772008480605617,
+          "derivative": -1.7240806469542153e-08
+        },
+        {
+          "id": "EWG2_0_2",
+          "concentration": 0.06551608777828154,
+          "derivative": 1.7365152049815535e-08
+        },
+        {
+          "id": "EWG3_0_2",
+          "concentration": 0.06551610826414937,
+          "derivative": -1.7238379763136885e-08
+        },
+        {
+          "id": "EWG4_0_2",
+          "concentration": 0.057720064320188426,
+          "derivative": 1.7362725288332798e-08
+        },
+        {
+          "id": "EWG5_0_2",
+          "concentration": 0.053007586523993455,
+          "derivative": -1.7242456061246705e-08
+        },
+        {
+          "id": "EWG6_0_2",
+          "concentration": 0.05300756603812564,
+          "derivative": 1.7361075717444927e-08
+        },
+        {
+          "id": "PH1_0_2",
+          "concentration": 1.2785864221559253e-08,
+          "derivative": -1.3796754768823392e-10
+        },
+        {
+          "id": "PH2_0_2",
+          "concentration": 1.6110659638824943e-11,
+          "derivative": -2.4795907338138385e-13
+        },
+        {
+          "id": "PH3_0_2",
+          "concentration": 1.6110659638823954e-11,
+          "derivative": -2.4795907338136865e-13
+        },
+        {
+          "id": "PH4_0_2",
+          "concentration": 1.2785864221559223e-08,
+          "derivative": -1.379675476882335e-10
+        },
+        {
+          "id": "PH5_0_2",
+          "concentration": 1.605830675220408e-11,
+          "derivative": -2.4715331062961236e-13
+        },
+        {
+          "id": "PH6_0_2",
+          "concentration": 1.6058306752204586e-11,
+          "derivative": -2.4715331062962014e-13
+        },
+        {
+          "id": "en_0_3",
+          "concentration": 2.7253438675680612e-30,
+          "derivative": 4.098725140629945e-39
+        },
+        {
+          "id": "EN_0_3",
+          "concentration": 2.7253438370256055e-30,
+          "derivative": 4.604767559679626e-39
+        },
+        {
+          "id": "ci_0_3",
+          "concentration": 0.9999999999999294,
+          "derivative": 9.325873406851315e-15
+        },
+        {
+          "id": "CI_0_3",
+          "concentration": 0.1529989784559952,
+          "derivative": -2.3089192110331558e-08
+        },
+        {
+          "id": "CN_0_3",
+          "concentration": 0.8470010215439323,
+          "derivative": 2.308919217625105e-08
+        },
+        {
+          "id": "hh_0_3",
+          "concentration": 6.40257078340576e-09,
+          "derivative": -1.1043656299697215e-10
+        },
+        {
+          "id": "HH1_0_3",
+          "concentration": 1.708599586476201e-09,
+          "derivative": -2.9471265541848424e-11
+        },
+        {
+          "id": "HH2_0_3",
+          "concentration": 1.7147573768508784e-09,
+          "derivative": -2.957747411509916e-11
+        },
+        {
+          "id": "HH3_0_3",
+          "concentration": 1.714757376850877e-09,
+          "derivative": -2.9577474115099034e-11
+        },
+        {
+          "id": "HH4_0_3",
+          "concentration": 1.7085995864762008e-09,
+          "derivative": -2.947126554184844e-11
+        },
+        {
+          "id": "HH5_0_3",
+          "concentration": 1.706880948839442e-09,
+          "derivative": -2.944162319514262e-11
+        },
+        {
+          "id": "HH6_0_3",
+          "concentration": 1.7068809488394413e-09,
+          "derivative": -2.9441623195142567e-11
+        },
+        {
+          "id": "ptc_0_3",
+          "concentration": 0.0072072277965564745,
+          "derivative": 1.7840842964479773e-10
+        },
+        {
+          "id": "PTC1_0_3",
+          "concentration": 0.0011817747136938252,
+          "derivative": 2.6221085132663907e-10
+        },
+        {
+          "id": "PTC2_0_3",
+          "concentration": 0.001179851258697435,
+          "derivative": 2.617688229473915e-10
+        },
+        {
+          "id": "PTC3_0_3",
+          "concentration": 0.0011798512586974372,
+          "derivative": 2.6176882018055836e-10
+        },
+        {
+          "id": "PTC4_0_3",
+          "concentration": 0.001181774713693825,
+          "derivative": 2.6221085246505135e-10
+        },
+        {
+          "id": "PTC5_0_3",
+          "concentration": 0.0011827126383801474,
+          "derivative": 2.624308977095683e-10
+        },
+        {
+          "id": "PTC6_0_3",
+          "concentration": 0.0011827126383801472,
+          "derivative": 2.6243089798061883e-10
+        },
+        {
+          "id": "wg_0_3",
+          "concentration": 5.260323075191648e-10,
+          "derivative": -1.0740123929355807e-12
+        },
+        {
+          "id": "IWG_0_3",
+          "concentration": 0.000835271983982283,
+          "derivative": 1.4774197761458635e-12
+        },
+        {
+          "id": "EWG1_0_3",
+          "concentration": 0.023325759006101142,
+          "derivative": -1.72564762119555e-08
+        },
+        {
+          "id": "EWG2_0_3",
+          "concentration": 0.023948793475600482,
+          "derivative": 1.7347363340291036e-08
+        },
+        {
+          "id": "EWG3_0_3",
+          "concentration": 0.02394881396146828,
+          "derivative": -1.7256168431461702e-08
+        },
+        {
+          "id": "EWG4_0_3",
+          "concentration": 0.023325738520233365,
+          "derivative": 1.7347055535511108e-08
+        },
+        {
+          "id": "EWG5_0_3",
+          "concentration": 0.02394881396271048,
+          "derivative": -1.7256197437772944e-08
+        },
+        {
+          "id": "EWG6_0_3",
+          "concentration": 0.023948793476842718,
+          "derivative": 1.7347334287901202e-08
+        },
+        {
+          "id": "PH1_0_3",
+          "concentration": 1.2965795892897914e-10,
+          "derivative": -1.983076934267967e-12
+        },
+        {
+          "id": "PH2_0_3",
+          "concentration": 7.875660924323021e-05,
+          "derivative": -4.1550265064088266e-11
+        },
+        {
+          "id": "PH3_0_3",
+          "concentration": 7.875660924323021e-05,
+          "derivative": -4.1550265061970684e-11
+        },
+        {
+          "id": "PH4_0_3",
+          "concentration": 1.296579589289794e-10,
+          "derivative": -1.983076934267971e-12
+        },
+        {
+          "id": "PH5_0_3",
+          "concentration": 3.103180934634245e-11,
+          "derivative": -4.747041866845612e-13
+        },
+        {
+          "id": "PH6_0_3",
+          "concentration": 3.1031809346342467e-11,
+          "derivative": -4.747041866845615e-13
+        }
+      ]
+    },
+    {
+      "time": 11000,
+      "floating_species": 132,
+      "max_abs_derivative": 2.7869803012701283e-09,
+      "max_concentration_scaled_derivative": 1.194808434659539e-07,
+      "species": [
+        {
+          "id": "en_0_0",
+          "concentration": 6.743922262339477e-30,
+          "derivative": 8.758115402030107e-47
+        },
+        {
+          "id": "EN_0_0",
+          "concentration": 6.743922262339474e-30,
+          "derivative": 3.503246160812043e-46
+        },
+        {
+          "id": "ci_0_0",
+          "concentration": 1.0,
+          "derivative": 0.0
+        },
+        {
+          "id": "CI_0_0",
+          "concentration": 0.15225092119172637,
+          "derivative": -3.469446951953614e-18
+        },
+        {
+          "id": "CN_0_0",
+          "concentration": 0.8477490788082738,
+          "derivative": -3.469446951953614e-18
+        },
+        {
+          "id": "hh_0_0",
+          "concentration": 2.132043363125319e-83,
+          "derivative": -3.677515628477258e-85
+        },
+        {
+          "id": "HH1_0_0",
+          "concentration": 5.68058352896202e-84,
+          "derivative": -9.798316051135777e-86
+        },
+        {
+          "id": "HH2_0_0",
+          "concentration": 5.680684678762705e-84,
+          "derivative": -9.798490522246135e-86
+        },
+        {
+          "id": "HH3_0_0",
+          "concentration": 5.680684678762705e-84,
+          "derivative": -9.798490522246132e-86
+        },
+        {
+          "id": "HH4_0_0",
+          "concentration": 5.68058352896202e-84,
+          "derivative": -9.798316051135774e-86
+        },
+        {
+          "id": "HH5_0_0",
+          "concentration": 5.680684678762703e-84,
+          "derivative": -9.798490522246119e-86
+        },
+        {
+          "id": "HH6_0_0",
+          "concentration": 5.680684678762704e-84,
+          "derivative": -9.798490522246128e-86
+        },
+        {
+          "id": "ptc_0_0",
+          "concentration": 0.007144713679447726,
+          "derivative": 1.0842021724855044e-19
+        },
+        {
+          "id": "PTC1_0_0",
+          "concentration": 0.0011907856132412852,
+          "derivative": 5.421010862427522e-20
+        },
+        {
+          "id": "PTC2_0_0",
+          "concentration": 0.0011907856132412852,
+          "derivative": 5.421010862427522e-20
+        },
+        {
+          "id": "PTC3_0_0",
+          "concentration": 0.0011907856132412852,
+          "derivative": 5.421010862427522e-20
+        },
+        {
+          "id": "PTC4_0_0",
+          "concentration": 0.0011907856132412852,
+          "derivative": 5.421010862427522e-20
+        },
+        {
+          "id": "PTC5_0_0",
+          "concentration": 0.0011907856132412852,
+          "derivative": 5.421010862427522e-20
+        },
+        {
+          "id": "PTC6_0_0",
+          "concentration": 0.0011907856132412852,
+          "derivative": 5.421010862427522e-20
+        },
+        {
+          "id": "wg_0_0",
+          "concentration": 3.7033484114126685e-08,
+          "derivative": 3.101927297073854e-25
+        },
+        {
+          "id": "IWG_0_0",
+          "concentration": 0.002066904803856324,
+          "derivative": 2.981555974335137e-19
+        },
+        {
+          "id": "EWG1_0_0",
+          "concentration": 0.05772007985330772,
+          "derivative": -2.786980258769403e-09
+        },
+        {
+          "id": "EWG2_0_0",
+          "concentration": 0.05300757817511244,
+          "derivative": 2.7869802634314725e-09
+        },
+        {
+          "id": "EWG3_0_0",
+          "concentration": 0.05300758147499001,
+          "derivative": -2.7869802674430205e-09
+        },
+        {
+          "id": "EWG4_0_0",
+          "concentration": 0.05772007655343014,
+          "derivative": 2.786980272647191e-09
+        },
+        {
+          "id": "EWG5_0_0",
+          "concentration": 0.06551610345311121,
+          "derivative": -2.7869802724303505e-09
+        },
+        {
+          "id": "EWG6_0_0",
+          "concentration": 0.06551610015323363,
+          "derivative": 2.7869802585525627e-09
+        },
+        {
+          "id": "PH1_0_0",
+          "concentration": 4.818688358767894e-77,
+          "derivative": -7.416458798200437e-79
+        },
+        {
+          "id": "PH2_0_0",
+          "concentration": 1.9650752178231413e-76,
+          "derivative": -3.0244536071290034e-78
+        },
+        {
+          "id": "PH3_0_0",
+          "concentration": 1.9650752178231413e-76,
+          "derivative": -3.0244536071290034e-78
+        },
+        {
+          "id": "PH4_0_0",
+          "concentration": 4.818688358767894e-77,
+          "derivative": -7.416458798200437e-79
+        },
+        {
+          "id": "PH5_0_0",
+          "concentration": 1.9717552989483135e-76,
+          "derivative": -3.034734941538805e-78
+        },
+        {
+          "id": "PH6_0_0",
+          "concentration": 1.9717552989483135e-76,
+          "derivative": -3.034734941538805e-78
+        },
+        {
+          "id": "en_0_1",
+          "concentration": 7.8621588352765e-30,
+          "derivative": 0.0
+        },
+        {
+          "id": "EN_0_1",
+          "concentration": 7.8621588352765e-30,
+          "derivative": 0.0
+        },
+        {
+          "id": "ci_0_1",
+          "concentration": 1.0,
+          "derivative": 0.0
+        },
+        {
+          "id": "CI_0_1",
+          "concentration": 0.15299834342799667,
+          "derivative": 0.0
+        },
+        {
+          "id": "CN_0_1",
+          "concentration": 0.8470016565720038,
+          "derivative": -1.734723475976807e-17
+        },
+        {
+          "id": "hh_0_1",
+          "concentration": 9.1875932527148e-83,
+          "derivative": -1.5847481509673634e-84
+        },
+        {
+          "id": "HH1_0_1",
+          "concentration": 2.451814985618125e-83,
+          "derivative": -4.2290828055805373e-85
+        },
+        {
+          "id": "HH2_0_1",
+          "concentration": 2.4493485084022145e-83,
+          "derivative": -4.2248284322100676e-85
+        },
+        {
+          "id": "HH3_0_1",
+          "concentration": 2.449348508402214e-83,
+          "derivative": -4.224828432210064e-85
+        },
+        {
+          "id": "HH4_0_1",
+          "concentration": 2.451814985618125e-83,
+          "derivative": -4.229082805580538e-85
+        },
+        {
+          "id": "HH5_0_1",
+          "concentration": 2.460651969628643e-83,
+          "derivative": -4.2443255287677625e-85
+        },
+        {
+          "id": "HH6_0_1",
+          "concentration": 2.460651969628643e-83,
+          "derivative": -4.2443255287677625e-85
+        },
+        {
+          "id": "ptc_0_1",
+          "concentration": 0.007207190973727364,
+          "derivative": -1.2197274440461925e-19
+        },
+        {
+          "id": "PTC1_0_1",
+          "concentration": 0.0011817812794496071,
+          "derivative": -1.7927217366716502e-88
+        },
+        {
+          "id": "PTC2_0_1",
+          "concentration": 0.0011827192100548577,
+          "derivative": -4.156908041459259e-89
+        },
+        {
+          "id": "PTC3_0_1",
+          "concentration": 0.0011827192100548577,
+          "derivative": -4.15690804145926e-89
+        },
+        {
+          "id": "PTC4_0_1",
+          "concentration": 0.0011817812794496071,
+          "derivative": -1.7927217366716502e-88
+        },
+        {
+          "id": "PTC5_0_1",
+          "concentration": 0.0011798578128369866,
+          "derivative": -1.6940658945086007e-21
+        },
+        {
+          "id": "PTC6_0_1",
+          "concentration": 0.0011798578128369866,
+          "derivative": -1.6940658945086007e-21
+        },
+        {
+          "id": "wg_0_1",
+          "concentration": 0.8294253217952418,
+          "derivative": 2.0816681711721685e-17
+        },
+        {
+          "id": "IWG_0_1",
+          "concentration": 0.14581377583333502,
+          "derivative": 1.951563910473908e-18
+        },
+        {
+          "id": "EWG1_0_1",
+          "concentration": 0.24209454642531414,
+          "derivative": -2.7869802594199244e-09
+        },
+        {
+          "id": "EWG2_0_1",
+          "concentration": 0.2383879629307484,
+          "derivative": 2.7869802585525627e-09
+        },
+        {
+          "id": "EWG3_0_1",
+          "concentration": 0.238387966230626,
+          "derivative": -2.7869802724303505e-09
+        },
+        {
+          "id": "EWG4_0_1",
+          "concentration": 0.24209454312543655,
+          "derivative": 2.786980301053288e-09
+        },
+        {
+          "id": "EWG5_0_1",
+          "concentration": 0.23838796623081235,
+          "derivative": -2.7869803012701283e-09
+        },
+        {
+          "id": "EWG6_0_1",
+          "concentration": 0.23838796293093475,
+          "derivative": 2.7869802715629888e-09
+        },
+        {
+          "id": "PH1_0_1",
+          "concentration": 1.6367065909599858e-76,
+          "derivative": -2.5190603941697353e-78
+        },
+        {
+          "id": "PH2_0_1",
+          "concentration": 3.898077862319175e-77,
+          "derivative": -5.999544213124379e-79
+        },
+        {
+          "id": "PH3_0_1",
+          "concentration": 3.898077862319155e-77,
+          "derivative": -5.999544213124348e-79
+        },
+        {
+          "id": "PH4_0_1",
+          "concentration": 1.6367065909599834e-76,
+          "derivative": -2.5190603941697314e-78
+        },
+        {
+          "id": "PH5_0_1",
+          "concentration": 7.875434901699462e-05,
+          "derivative": 2.964615315390051e-21
+        },
+        {
+          "id": "PH6_0_1",
+          "concentration": 7.875434901699462e-05,
+          "derivative": 2.964615315390051e-21
+        },
+        {
+          "id": "en_0_2",
+          "concentration": 0.9999993879319781,
+          "derivative": 1.3877787807814457e-17
+        },
+        {
+          "id": "EN_0_2",
+          "concentration": 0.9999993879319781,
+          "derivative": 0.0
+        },
+        {
+          "id": "ci_0_2",
+          "concentration": 9.548638957613764e-13,
+          "derivative": 0.0
+        },
+        {
+          "id": "CI_0_2",
+          "concentration": 9.548638957613755e-13,
+          "derivative": 3.1554436208840433e-29
+        },
+        {
+          "id": "CN_0_2",
+          "concentration": 1.0940431147128422e-42,
+          "derivative": -2.987047333373348e-59
+        },
+        {
+          "id": "hh_0_2",
+          "concentration": 0.9999991505069556,
+          "derivative": 2.0816681711721685e-17
+        },
+        {
+          "id": "HH1_0_2",
+          "concentration": 0.16640059507635294,
+          "derivative": 4.196535569755757e-18
+        },
+        {
+          "id": "HH2_0_2",
+          "concentration": 0.16604451678584004,
+          "derivative": 4.1131919918668824e-18
+        },
+        {
+          "id": "HH3_0_2",
+          "concentration": 0.16604451678584004,
+          "derivative": 4.1131919918668824e-18
+        },
+        {
+          "id": "HH4_0_2",
+          "concentration": 0.16640059507635294,
+          "derivative": 4.196535569755757e-18
+        },
+        {
+          "id": "HH5_0_2",
+          "concentration": 0.16604451678584004,
+          "derivative": 4.1131919918668824e-18
+        },
+        {
+          "id": "HH6_0_2",
+          "concentration": 0.16604451678584004,
+          "derivative": 4.1131919918668824e-18
+        },
+        {
+          "id": "ptc_0_2",
+          "concentration": 9.048461799521498e-12,
+          "derivative": -3.407879110554771e-28
+        },
+        {
+          "id": "PTC1_0_2",
+          "concentration": 1.4823877281788555e-12,
+          "derivative": -3.7865323450608567e-29
+        },
+        {
+          "id": "PTC2_0_2",
+          "concentration": 1.4836286229969145e-12,
+          "derivative": -2.2587256238294714e-97
+        },
+        {
+          "id": "PTC3_0_2",
+          "concentration": 1.4836286229969145e-12,
+          "derivative": -2.2587256238294714e-97
+        },
+        {
+          "id": "PTC4_0_2",
+          "concentration": 1.4823877281788555e-12,
+          "derivative": -3.7865323450608567e-29
+        },
+        {
+          "id": "PTC5_0_2",
+          "concentration": 1.4836286229969145e-12,
+          "derivative": -2.2505079641271712e-97
+        },
+        {
+          "id": "PTC6_0_2",
+          "concentration": 1.4836286229969145e-12,
+          "derivative": -2.2505079641271715e-97
+        },
+        {
+          "id": "wg_0_2",
+          "concentration": 3.704583998439154e-08,
+          "derivative": 1.7577588016751838e-24
+        },
+        {
+          "id": "IWG_0_2",
+          "concentration": 0.002066904806016056,
+          "derivative": -4.607859233063394e-19
+        },
+        {
+          "id": "EWG1_0_2",
+          "concentration": 0.057720079856566686,
+          "derivative": -2.7869802618051692e-09
+        },
+        {
+          "id": "EWG2_0_2",
+          "concentration": 0.0655161001564281,
+          "derivative": 2.786980249228424e-09
+        },
+        {
+          "id": "EWG3_0_2",
+          "concentration": 0.06551610345630565,
+          "derivative": -2.78698024727686e-09
+        },
+        {
+          "id": "EWG4_0_2",
+          "concentration": 0.057720076556689114,
+          "derivative": 2.7869802583357223e-09
+        },
+        {
+          "id": "EWG5_0_2",
+          "concentration": 0.05300758147818448,
+          "derivative": -2.7869802675514407e-09
+        },
+        {
+          "id": "EWG6_0_2",
+          "concentration": 0.053007578178306904,
+          "derivative": 2.7869802739482336e-09
+        },
+        {
+          "id": "PH1_0_2",
+          "concentration": 9.916011476395742e-14,
+          "derivative": -2.9582283945787943e-30
+        },
+        {
+          "id": "PH2_0_2",
+          "concentration": 1.9267565200067926e-77,
+          "derivative": -2.9654771758791633e-79
+        },
+        {
+          "id": "PH3_0_2",
+          "concentration": 1.9267565200066955e-77,
+          "derivative": -2.9654771758790135e-79
+        },
+        {
+          "id": "PH4_0_2",
+          "concentration": 9.916011476395742e-14,
+          "derivative": -2.9582283945787943e-30
+        },
+        {
+          "id": "PH5_0_2",
+          "concentration": 1.9204953672204955e-77,
+          "derivative": -2.955840615426579e-79
+        },
+        {
+          "id": "PH6_0_2",
+          "concentration": 1.9204953672205576e-77,
+          "derivative": -2.955840615426675e-79
+        },
+        {
+          "id": "en_0_3",
+          "concentration": 2.725344113542865e-30,
+          "derivative": 0.0
+        },
+        {
+          "id": "EN_0_3",
+          "concentration": 2.7253441135428646e-30,
+          "derivative": 8.758115402030107e-47
+        },
+        {
+          "id": "ci_0_3",
+          "concentration": 1.0,
+          "derivative": 0.0
+        },
+        {
+          "id": "CI_0_3",
+          "concentration": 0.15299834342799667,
+          "derivative": 0.0
+        },
+        {
+          "id": "CN_0_3",
+          "concentration": 0.8470016565720037,
+          "derivative": -1.3877787807814457e-17
+        },
+        {
+          "id": "hh_0_3",
+          "concentration": 9.154167096816341e-83,
+          "derivative": -1.5789825454059314e-84
+        },
+        {
+          "id": "HH1_0_3",
+          "concentration": 2.44289483126549e-83,
+          "derivative": -4.2136966236634174e-85
+        },
+        {
+          "id": "HH2_0_3",
+          "concentration": 2.451699664701088e-83,
+          "derivative": -4.228883891017152e-85
+        },
+        {
+          "id": "HH3_0_3",
+          "concentration": 2.4516996647010885e-83,
+          "derivative": -4.228883891017155e-85
+        },
+        {
+          "id": "HH4_0_3",
+          "concentration": 2.44289483126549e-83,
+          "derivative": -4.213696623663417e-85
+        },
+        {
+          "id": "HH5_0_3",
+          "concentration": 2.440437327547825e-83,
+          "derivative": -4.2094577284865854e-85
+        },
+        {
+          "id": "HH6_0_3",
+          "concentration": 2.440437327547825e-83,
+          "derivative": -4.2094577284865854e-85
+        },
+        {
+          "id": "ptc_0_3",
+          "concentration": 0.007207190973727363,
+          "derivative": -1.2197274440461925e-19
+        },
+        {
+          "id": "PTC1_0_3",
+          "concentration": 0.0011817812794496071,
+          "derivative": -1.7861994849127547e-88
+        },
+        {
+          "id": "PTC2_0_3",
+          "concentration": 0.0011798578128369866,
+          "derivative": -1.6940658945086007e-21
+        },
+        {
+          "id": "PTC3_0_3",
+          "concentration": 0.0011798578128369866,
+          "derivative": -1.6940658945086007e-21
+        },
+        {
+          "id": "PTC4_0_3",
+          "concentration": 0.0011817812794496071,
+          "derivative": -1.7861994849127547e-88
+        },
+        {
+          "id": "PTC5_0_3",
+          "concentration": 0.0011827192100548577,
+          "derivative": -4.1569080414592605e-89
+        },
+        {
+          "id": "PTC6_0_3",
+          "concentration": 0.0011827192100548577,
+          "derivative": -4.1569080414592605e-89
+        },
+        {
+          "id": "wg_0_3",
+          "concentration": 4.731924348447512e-10,
+          "derivative": -4.8467614016778965e-27
+        },
+        {
+          "id": "IWG_0_3",
+          "concentration": 0.0008352720750418668,
+          "derivative": 5.421010862427522e-20
+        },
+        {
+          "id": "EWG1_0_3",
+          "concentration": 0.02332575314098585,
+          "derivative": -2.786980263756733e-09
+        },
+        {
+          "id": "EWG2_0_3",
+          "concentration": 0.02394880481437517,
+          "derivative": 2.7869802623472703e-09
+        },
+        {
+          "id": "EWG3_0_3",
+          "concentration": 0.02394880811425274,
+          "derivative": -2.7869802618051692e-09
+        },
+        {
+          "id": "EWG4_0_3",
+          "concentration": 0.023325749841108273,
+          "derivative": 2.7869802654914566e-09
+        },
+        {
+          "id": "EWG5_0_3",
+          "concentration": 0.023948808114066408,
+          "derivative": -2.786980268635643e-09
+        },
+        {
+          "id": "EWG6_0_3",
+          "concentration": 0.023948804814188828,
+          "derivative": 2.7869802674430205e-09
+        },
+        {
+          "id": "PH1_0_3",
+          "concentration": 1.6310663119589384e-76,
+          "derivative": -2.5103794225636903e-78
+        },
+        {
+          "id": "PH2_0_3",
+          "concentration": 7.875434901699468e-05,
+          "derivative": 2.117582368135751e-21
+        },
+        {
+          "id": "PH3_0_3",
+          "concentration": 7.875434901699468e-05,
+          "derivative": 2.117582368135751e-21
+        },
+        {
+          "id": "PH4_0_3",
+          "concentration": 1.6310663119589384e-76,
+          "derivative": -2.5103794225636903e-78
+        },
+        {
+          "id": "PH5_0_3",
+          "concentration": 3.898409929909397e-77,
+          "derivative": -6.000055299423776e-79
+        },
+        {
+          "id": "PH6_0_3",
+          "concentration": 3.898409929909397e-77,
+          "derivative": -6.000055299423776e-79
+        }
+      ]
+    }
+  ],
+  "endpoint_mRNA_max_abs_drift": 1.6668343536864052e-07,
+  "endpoints": {
+    "en": {
+      "values_1100": [
+        6.743921934721452e-30,
+        7.862158476197446e-30,
+        0.9999993879318608,
+        2.7253438675680612e-30
+      ],
+      "values_11000": [
+        6.743922262339477e-30,
+        7.8621588352765e-30,
+        0.9999993879319781,
+        2.725344113542865e-30
+      ],
+      "argmax_1100": 2,
+      "argmax_11000": 2
+    },
+    "ci": {
+      "values_1100": [
+        0.9999999999999294,
+        0.9999999999999294,
+        9.54863895766593e-13,
+        0.9999999999999294
+      ],
+      "values_11000": [
+        1.0,
+        1.0,
+        9.548638957613764e-13,
+        1.0
+      ],
+      "argmax_1100": 0,
+      "argmax_11000": 0
+    },
+    "hh": {
+      "values_1100": [
+        1.4911852057461117e-09,
+        6.425949571109119e-09,
+        0.99999914475464,
+        6.40257078340576e-09
+      ],
+      "values_11000": [
+        2.132043363125319e-83,
+        9.1875932527148e-83,
+        0.9999991505069556,
+        9.154167096816341e-83
+      ],
+      "argmax_1100": 2,
+      "argmax_11000": 2
+    },
+    "ptc": {
+      "values_1100": [
+        0.007144739993272278,
+        0.007207227780211004,
+        1.6669248383044005e-07,
+        0.0072072277965564745
+      ],
+      "values_11000": [
+        0.007144713679447726,
+        0.007207190973727364,
+        9.048461799521498e-12,
+        0.007207190973727363
+      ],
+      "argmax_1100": 3,
+      "argmax_11000": 1
+    },
+    "wg": {
+      "values_1100": [
+        3.716655755458351e-08,
+        0.8294253138792569,
+        3.713908843966279e-08,
+        5.260323075191648e-10
+      ],
+      "values_11000": [
+        3.7033484114126685e-08,
+        0.8294253217952418,
+        3.704583998439154e-08,
+        4.731924348447512e-10
+      ],
+      "argmax_1100": 1,
+      "argmax_11000": 1
+    }
+  },
+  "ptc_cell2_minus_cell4_1100": -1.6345470116307936e-11,
+  "ptc_cell2_minus_cell4_11000": 8.673617379884035e-19,
+  "stationary_at_11000_under_frozen_threshold": true,
+  "roadrunner_version": "2.8.0",
+  "limits": "selectedpublishedsetting,finitehorizon residual does not prove asymptotic stability,biologicalrobustness or Boolean equivalence;no parameter change or source-datafitting;near ties not silently converted to exact success"
+}
