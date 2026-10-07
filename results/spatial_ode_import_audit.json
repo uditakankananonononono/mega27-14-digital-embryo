@@ -1,0 +1,385 @@
+{
+  "plan_sha256": "6d352e2120c25400fd614ba37ee0d8805a0c7af1396634e01350827fd16f2b01",
+  "source_url": "https://github.com/pmendes/models/tree/main/vonDassow2000",
+  "source_commit": "1962866c8d4750516be10978908fca2b333073a3",
+  "sbml_sha256": "25c4d788562cc9ae9b8ee6dfeb94abfe11d6bed4d95762bfd154eeab1f353ca3",
+  "reference_sha256": {
+    "tellurium": "dca2c38d36ed2a5cc434ad7c39eee2d36e1da53c7c354fc233a97d59e965d3ca",
+    "copasi": "090bba8361cb77b838c74835bc4e369f2582a3bdf76e28df0d615418447960d7"
+  },
+  "reference_ptc_endpoints": {
+    "tellurium": [
+      0.007144740007910367,
+      0.007207227794164927,
+      1.666867526273193e-07,
+      0.007207227810489369
+    ],
+    "copasi": [
+      0.00714474,
+      0.00720723,
+      1.66692e-07,
+      0.00720723
+    ]
+  },
+  "roadrunner_version": "2.8.0",
+  "samples": 221,
+  "species": [
+    "en_0_0",
+    "en_0_1",
+    "en_0_2",
+    "en_0_3",
+    "ci_0_0",
+    "ci_0_1",
+    "ci_0_2",
+    "ci_0_3",
+    "hh_0_0",
+    "hh_0_1",
+    "hh_0_2",
+    "hh_0_3",
+    "ptc_0_0",
+    "ptc_0_1",
+    "ptc_0_2",
+    "ptc_0_3",
+    "wg_0_0",
+    "wg_0_1",
+    "wg_0_2",
+    "wg_0_3"
+  ],
+  "minimum_concentration": 2.725319306859811e-30,
+  "comparisons": [
+    {
+      "source": "tellurium",
+      "species": "en_0_0",
+      "max_abs_error": 2.3483359164022666e-05,
+      "scale_normalized_max_error": 3.1982114506900475e-05,
+      "within_frozen_threshold": true
+    },
+    {
+      "source": "tellurium",
+      "species": "en_0_1",
+      "max_abs_error": 6.924101848104769e-06,
+      "scale_normalized_max_error": 7.539327886537926e-06,
+      "within_frozen_threshold": true
+    },
+    {
+      "source": "tellurium",
+      "species": "en_0_2",
+      "max_abs_error": 9.314911564306527e-08,
+      "scale_normalized_max_error": 9.314917265669789e-08,
+      "within_frozen_threshold": true
+    },
+    {
+      "source": "tellurium",
+      "species": "en_0_3",
+      "max_abs_error": 4.400309210228492e-06,
+      "scale_normalized_max_error": 4.791294244025768e-06,
+      "within_frozen_threshold": true
+    },
+    {
+      "source": "tellurium",
+      "species": "ci_0_0",
+      "max_abs_error": 3.1900805780804564e-05,
+      "scale_normalized_max_error": 3.1900805780804564e-05,
+      "within_frozen_threshold": true
+    },
+    {
+      "source": "tellurium",
+      "species": "ci_0_1",
+      "max_abs_error": 7.775327372561147e-06,
+      "scale_normalized_max_error": 7.775327372561147e-06,
+      "within_frozen_threshold": true
+    },
+    {
+      "source": "tellurium",
+      "species": "ci_0_2",
+      "max_abs_error": 1.8582647313275524e-10,
+      "scale_normalized_max_error": 3.716529462655105e-09,
+      "within_frozen_threshold": true
+    },
+    {
+      "source": "tellurium",
+      "species": "ci_0_3",
+      "max_abs_error": 5.359943791527488e-06,
+      "scale_normalized_max_error": 5.359943791527488e-06,
+      "within_frozen_threshold": true
+    },
+    {
+      "source": "tellurium",
+      "species": "hh_0_0",
+      "max_abs_error": 1.1038744412855683e-05,
+      "scale_normalized_max_error": 5.515347074763981e-05,
+      "within_frozen_threshold": true
+    },
+    {
+      "source": "tellurium",
+      "species": "hh_0_1",
+      "max_abs_error": 2.1118712638656945e-06,
+      "scale_normalized_max_error": 4.108388776012941e-06,
+      "within_frozen_threshold": true
+    },
+    {
+      "source": "tellurium",
+      "species": "hh_0_2",
+      "max_abs_error": 1.2323124076729641e-08,
+      "scale_normalized_max_error": 1.2323134616023455e-08,
+      "within_frozen_threshold": true
+    },
+    {
+      "source": "tellurium",
+      "species": "hh_0_3",
+      "max_abs_error": 1.675512107368604e-05,
+      "scale_normalized_max_error": 3.2712914630246094e-05,
+      "within_frozen_threshold": true
+    },
+    {
+      "source": "tellurium",
+      "species": "ptc_0_0",
+      "max_abs_error": 1.408862888310769e-06,
+      "scale_normalized_max_error": 1.1606820512061165e-05,
+      "within_frozen_threshold": true
+    },
+    {
+      "source": "tellurium",
+      "species": "ptc_0_1",
+      "max_abs_error": 4.733055213174131e-07,
+      "scale_normalized_max_error": 4.90788208721818e-06,
+      "within_frozen_threshold": true
+    },
+    {
+      "source": "tellurium",
+      "species": "ptc_0_2",
+      "max_abs_error": 7.587820210748584e-10,
+      "scale_normalized_max_error": 4.5924936647960295e-08,
+      "within_frozen_threshold": true
+    },
+    {
+      "source": "tellurium",
+      "species": "ptc_0_3",
+      "max_abs_error": 3.251321279151842e-07,
+      "scale_normalized_max_error": 3.370305036064968e-06,
+      "within_frozen_threshold": true
+    },
+    {
+      "source": "tellurium",
+      "species": "wg_0_0",
+      "max_abs_error": 2.0407003687439307e-06,
+      "scale_normalized_max_error": 6.8440988328621705e-06,
+      "within_frozen_threshold": true
+    },
+    {
+      "source": "tellurium",
+      "species": "wg_0_1",
+      "max_abs_error": 2.757909878248199e-07,
+      "scale_normalized_max_error": 3.3250852513117713e-07,
+      "within_frozen_threshold": true
+    },
+    {
+      "source": "tellurium",
+      "species": "wg_0_2",
+      "max_abs_error": 5.344855641409296e-09,
+      "scale_normalized_max_error": 2.175949834657251e-08,
+      "within_frozen_threshold": true
+    },
+    {
+      "source": "tellurium",
+      "species": "wg_0_3",
+      "max_abs_error": 1.067142802513299e-06,
+      "scale_normalized_max_error": 8.181325114516063e-06,
+      "within_frozen_threshold": true
+    },
+    {
+      "source": "copasi",
+      "species": "en_0_0",
+      "max_abs_error": 3.7075071990244624e-07,
+      "scale_normalized_max_error": 5.04927675842436e-07,
+      "within_frozen_threshold": true
+    },
+    {
+      "source": "copasi",
+      "species": "en_0_1",
+      "max_abs_error": 4.138565312949982e-07,
+      "scale_normalized_max_error": 4.506287375353585e-07,
+      "within_frozen_threshold": true
+    },
+    {
+      "source": "copasi",
+      "species": "en_0_2",
+      "max_abs_error": 4.78638394363351e-07,
+      "scale_normalized_max_error": 4.78638873002224e-07,
+      "within_frozen_threshold": true
+    },
+    {
+      "source": "copasi",
+      "species": "en_0_3",
+      "max_abs_error": 4.2594463556255846e-07,
+      "scale_normalized_max_error": 4.6379140563673273e-07,
+      "within_frozen_threshold": true
+    },
+    {
+      "source": "copasi",
+      "species": "ci_0_0",
+      "max_abs_error": 4.887270415032674e-07,
+      "scale_normalized_max_error": 4.887270415032674e-07,
+      "within_frozen_threshold": true
+    },
+    {
+      "source": "copasi",
+      "species": "ci_0_1",
+      "max_abs_error": 4.954624928110718e-07,
+      "scale_normalized_max_error": 4.954624928110718e-07,
+      "within_frozen_threshold": true
+    },
+    {
+      "source": "copasi",
+      "species": "ci_0_2",
+      "max_abs_error": 3.6420757385663416e-08,
+      "scale_normalized_max_error": 7.284151477132683e-07,
+      "within_frozen_threshold": true
+    },
+    {
+      "source": "copasi",
+      "species": "ci_0_3",
+      "max_abs_error": 5.118193579511932e-07,
+      "scale_normalized_max_error": 5.118193579511932e-07,
+      "within_frozen_threshold": true
+    },
+    {
+      "source": "copasi",
+      "species": "hh_0_0",
+      "max_abs_error": 9.077606906993108e-06,
+      "scale_normalized_max_error": 4.535537866232866e-05,
+      "within_frozen_threshold": true
+    },
+    {
+      "source": "copasi",
+      "species": "hh_0_1",
+      "max_abs_error": 4.721201670443431e-07,
+      "scale_normalized_max_error": 9.184502510394971e-07,
+      "within_frozen_threshold": true
+    },
+    {
+      "source": "copasi",
+      "species": "hh_0_2",
+      "max_abs_error": 4.996952949198885e-07,
+      "scale_normalized_max_error": 4.996957946156831e-07,
+      "within_frozen_threshold": true
+    },
+    {
+      "source": "copasi",
+      "species": "hh_0_3",
+      "max_abs_error": 4.88751515537178e-07,
+      "scale_normalized_max_error": 9.542759543455845e-07,
+      "within_frozen_threshold": true
+    },
+    {
+      "source": "copasi",
+      "species": "ptc_0_0",
+      "max_abs_error": 4.0631732842189017e-07,
+      "scale_normalized_max_error": 3.3474265411831255e-06,
+      "within_frozen_threshold": true
+    },
+    {
+      "source": "copasi",
+      "species": "ptc_0_1",
+      "max_abs_error": 4.990484195679934e-08,
+      "scale_normalized_max_error": 5.174821694065951e-07,
+      "within_frozen_threshold": true
+    },
+    {
+      "source": "copasi",
+      "species": "ptc_0_2",
+      "max_abs_error": 4.935055429935997e-08,
+      "scale_normalized_max_error": 2.9869239144520685e-06,
+      "within_frozen_threshold": true
+    },
+    {
+      "source": "copasi",
+      "species": "ptc_0_3",
+      "max_abs_error": 4.942442998097374e-08,
+      "scale_normalized_max_error": 5.123311255344812e-07,
+      "within_frozen_threshold": true
+    },
+    {
+      "source": "copasi",
+      "species": "wg_0_0",
+      "max_abs_error": 4.5974832826867207e-07,
+      "scale_normalized_max_error": 1.5419103601616273e-06,
+      "within_frozen_threshold": true
+    },
+    {
+      "source": "copasi",
+      "species": "wg_0_1",
+      "max_abs_error": 4.998968617941912e-07,
+      "scale_normalized_max_error": 6.027029108047036e-07,
+      "within_frozen_threshold": true
+    },
+    {
+      "source": "copasi",
+      "species": "wg_0_2",
+      "max_abs_error": 4.5566002301877795e-07,
+      "scale_normalized_max_error": 1.855044000678972e-06,
+      "within_frozen_threshold": true
+    },
+    {
+      "source": "copasi",
+      "species": "wg_0_3",
+      "max_abs_error": 4.50497328594035e-07,
+      "scale_normalized_max_error": 3.4537806172685075e-06,
+      "within_frozen_threshold": true
+    }
+  ],
+  "endpoints": {
+    "en": {
+      "values": [
+        6.743921934721452e-30,
+        7.862158476197446e-30,
+        0.9999993879318608,
+        2.7253438675680612e-30
+      ],
+      "argmax_cell_zero_index": 2
+    },
+    "ci": {
+      "values": [
+        0.9999999999999294,
+        0.9999999999999294,
+        9.54863895766593e-13,
+        0.9999999999999294
+      ],
+      "argmax_cell_zero_index": 0
+    },
+    "hh": {
+      "values": [
+        1.4911852057461117e-09,
+        6.425949571109119e-09,
+        0.99999914475464,
+        6.40257078340576e-09
+      ],
+      "argmax_cell_zero_index": 2
+    },
+    "ptc": {
+      "values": [
+        0.007144739993272278,
+        0.007207227780211004,
+        1.6669248383044005e-07,
+        0.0072072277965564745
+      ],
+      "argmax_cell_zero_index": 3
+    },
+    "wg": {
+      "values": [
+        3.716655755458351e-08,
+        0.8294253138792569,
+        3.713908843966279e-08,
+        5.260323075191648e-10
+      ],
+      "argmax_cell_zero_index": 1
+    }
+  },
+  "published_argmax_matches": {
+    "wg": true,
+    "ptc": false,
+    "en": true,
+    "hh": true
+  },
+  "limits": "one published selected parameter/initial setting;differentmodel notBoolean equivalence;solver replay not independent biological validation,steady-state proof or robustness;no spatial perturbation grid;no rawsource redistribution"
+}
