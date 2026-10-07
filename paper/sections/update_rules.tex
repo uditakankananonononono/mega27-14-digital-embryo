@@ -72,3 +72,27 @@ wg & wg & 1 &14/14&91/91\\\hline
 
 
 The valid-variant one-bit return range is .5 to one and the two-bit range is .23077 to one. These larger counts agree with the previously recorded global basin enlargements; they are not an independent replication. Choosing a near-reference starting measure changes the numerical estimand, not the biological validity of the Boolean rules. The globally absorbing constant-wg cases remain mathematical forcing rather than tissue rescue. Every shell denominator equals its binomial coefficient, and summing shell returns exactly reproduces each prior global basin count. Plans and complete shell counts remain in \path{experiments/grn_rule_radius_plan.json} and \path{results/grn_rule_radius_audit.json}. Empirical initial-state distributions, regulatory perturbations and independent physiological validation remain unmeasured.
+
+\subsection{Finite-step return latency is distinct from eventual basin membership}
+A frozen follow-up at head \texttt{9b27ea8} computes the exact first hitting time of the original reference for every one of the 16,384 states in the baseline and all 58 previously specified single-rule constant counterfactuals. The original external context and synchronous update convention are unchanged. The 20 variants for which the reference is not a fixed point retain null latency summaries, rather than an invented return endpoint. For each of the 38 admissible variants, starts are partitioned into the same exact Hamming shells as the preceding basin audit. Histograms retain each finite first-hit time; cumulative horizons are fixed in advance at 0, 1, 2, 4, 8, 16 and 32 steps.
+
+The baseline's eventual return counts at radii one and two are seven of fourteen and 21 of 91. These are not immediate returns: after one step the counts are four and six, and after two steps six and fifteen. Every returning baseline start arrives by step three. Across valid rule counterfactuals, maximum first-hit times range from two to eight steps, with observed maxima in the set $\{2,3,4,5,8\}$. Thus an eventual basin comparison conceals timing differences under exactly the same finite model.
+
+\begin{center}
+\begin{tabular}{rrrrr}
+\toprule
+Radius & Horizon & Baseline count & Valid-variant range & Changed variants\\
+\midrule
+1 & 1 & 4 & 4--5 & 7\\
+1 & 2 & 6 & 6--8 & 8\\
+1 & 4 & 7 & 7--10 & 8\\
+2 & 1 & 6 & 6--10 & 7\\
+2 & 2 & 15 & 15--28 & 8\\
+2 & 4 & 21 & 21--45 & 8\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Each count uses the complete shell denominator, fourteen at radius one and 91 at radius two, not only eventual returning starts. The table's changed-variant count compares each finite-horizon count with the baseline at that horizon. The full histograms sum exactly to all previously saved shell-basin counts. Tests independently traverse every functional graph on up to four states and compare every fixed endpoint's first-hit times, including starts in other fixed basins or nontrivial cycles. The numerical follow-up was selected after shell-basin outcomes, not as an independent replication.
+
+Discrete synchronous model steps are not measured developmental time. Constant substitutions of a regulator within one rule are not biological knockouts. Neither shorter latency nor a larger mathematical basin establishes rescue, robustness in tissue, or independent physiological validation. All inadmissible endpoints, delayed returns and nonreturning starts are preserved in \path{results/grn_rule_latency_audit.json}, with the frozen plan in \path{experiments/grn_rule_latency_plan.json} and the runner in \path{experiments/grn_rule_latency_audit.py}. The manuscript content-page gate remains uncertified.
