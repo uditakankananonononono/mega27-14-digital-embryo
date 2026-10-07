@@ -1,6 +1,7 @@
 {
   "plan_sha256": "6d352e2120c25400fd614ba37ee0d8805a0c7af1396634e01350827fd16f2b01",
   "source_url": "https://github.com/pmendes/models/tree/main/vonDassow2000",
+  "publication_url": "https://www.frontiersin.org/journals/cell-and-developmental-biology/articles/10.3389/fcell.2023.1201673/full",
   "source_commit": "1962866c8d4750516be10978908fca2b333073a3",
   "sbml_sha256": "25c4d788562cc9ae9b8ee6dfeb94abfe11d6bed4d95762bfd154eeab1f353ca3",
   "reference_sha256": {
