@@ -14,3 +14,6 @@ Run: `pip install -e . && pytest && python experiments/run_all.py`
 - `embryosim fragility` - developmental fragility index (reproduces the paper's 0.781% WT basin, F=0.500)
 - `embryosim info-threshold` - restricted-input CF decode (separate full-profile CNN benchmark: 2.38% EL RMSE vs the 4.94% EL true-dose Liu threshold comparator, but the measured-amplitude threshold comparator in the same benchmark is 2.8566% EL and ridge is 2.55%, so the margin depends on the comparator chosen; see results/cf_decoder.json. The single-point (4.29% EL) and anterior-window (2.99% EL) restricted-input decoders do not beat the measured-amplitude comparator. Not a biological minimum-information claim)
 Every command prints JSON with the dataset/provenance fields named inline.
+
+### Fixed-coordinate transient linear amplification
+The full finite-difference linearizations have negative spectral abscissa, but raw-concentration Euclidean propagator norms at frozen times1/10/100 are9.641/36.778/6.206. Positive symmetric-part logarithmic norm5.283 supplies a distinct non-normal transient-growth diagnostic. No nonlinear/positivity-feasible disturbance or biological robustness is certified; nativeJacobian failure remains. See `results/spatial_ode_nonnormal_audit.json`.
