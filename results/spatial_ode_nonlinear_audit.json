@@ -1,0 +1,87 @@
+{
+  "plan_sha256": "3c23fda63e4a10aa6555e18408d8f38d2e0f3b449f323d03db9eb91ad9c19bc8",
+  "source_commit": "1962866c8d4750516be10978908fca2b333073a3",
+  "sbml_sha256": "25c4d788562cc9ae9b8ee6dfeb94abfe11d6bed4d95762bfd154eeab1f353ca3",
+  "endpoint_sha256": "e292bc649c45a168fdfb318efcdddf9eb5a3678a0f6cc7cb9a42784279ce2b9f",
+  "jacobian_sha256": "3c40ac11d268316d0cfa41eb023ffeea68422742f0ff21cc425eaa31b5969dea",
+  "roadrunner_version": "2.8.0",
+  "perturbations": [
+    {
+      "fractional_increase": 0.001,
+      "initial_deviation_norm": 0.003080293246805239,
+      "times": [
+        {
+          "time": 0,
+          "observed_gain": 0.9999999999999809,
+          "linear_gain": 1.0,
+          "linear_relative_error": 7.374382170766827e-14,
+          "minimum_concentration": 5.686264112490982e-84,
+          "baseline_drift_norm": 0.0
+        },
+        {
+          "time": 1,
+          "observed_gain": 0.9528125206405976,
+          "linear_gain": 0.9528159062345816,
+          "linear_relative_error": 9.984213268888302e-06,
+          "minimum_concentration": 5.5890229111079185e-84,
+          "baseline_drift_norm": 6.482848381665125e-09
+        },
+        {
+          "time": 10,
+          "observed_gain": 0.7093382754573199,
+          "linear_gain": 0.7093833896550082,
+          "linear_relative_error": 0.00011572063969279993,
+          "minimum_concentration": 4.785372412074709e-84,
+          "baseline_drift_norm": 1.2996895455576648e-08
+        },
+        {
+          "time": 100,
+          "observed_gain": 0.11688486916254005,
+          "linear_gain": 0.11691642091394455,
+          "linear_relative_error": 0.0009463311927295659,
+          "minimum_concentration": 1.0132627432168956e-84,
+          "baseline_drift_norm": 7.88648934039568e-09
+        }
+      ]
+    },
+    {
+      "fractional_increase": 0.01,
+      "initial_deviation_norm": 0.03080293246805239,
+      "times": [
+        {
+          "time": 0,
+          "observed_gain": 0.9999999999999968,
+          "linear_gain": 1.0,
+          "linear_relative_error": 5.038165838019894e-15,
+          "minimum_concentration": 5.73738936425164e-84,
+          "baseline_drift_norm": 0.0
+        },
+        {
+          "time": 1,
+          "observed_gain": 0.9527816776110961,
+          "linear_gain": 0.9528159062345816,
+          "linear_relative_error": 0.00010019598321030449,
+          "minimum_concentration": 5.63926339247465e-84,
+          "baseline_drift_norm": 6.482848381665125e-09
+        },
+        {
+          "time": 10,
+          "observed_gain": 0.7089351904106059,
+          "linear_gain": 0.7093833896550082,
+          "linear_relative_error": 0.0011443780105265479,
+          "minimum_concentration": 4.8283201776914185e-84,
+          "baseline_drift_norm": 1.2996895455576648e-08
+        },
+        {
+          "time": 100,
+          "observed_gain": 0.11660840267411744,
+          "linear_gain": 0.11691642091394455,
+          "linear_relative_error": 0.009443126884579356,
+          "minimum_concentration": 1.0223766317801408e-84,
+          "baseline_drift_norm": 7.88648934039568e-09
+        }
+      ]
+    }
+  ],
+  "limits": "twoselectednumericalinitialperturbationsnot robustnessgrid/biologicaldose orpositivityinvarianceproof;finiteendpointresidualandnativeJacobianfailurepersist;no new empiricaldata"
+}
