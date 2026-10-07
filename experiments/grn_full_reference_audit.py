@@ -5,6 +5,8 @@ ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT/'src'));sys.
 import fragility_index as F
 
 def terminal_ids(graph):
+ from numbers import Integral
+ if len(graph)==0 or any(isinstance(x,bool) or not isinstance(x,Integral) or x<0 or x>=len(graph) for x in graph):raise ValueError('invalid functional graph')
  labels=[None]*len(graph)
  for start in range(len(graph)):
   if labels[start] is not None:continue
