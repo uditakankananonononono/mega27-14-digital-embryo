@@ -52,3 +52,23 @@ wg & wg & 1 & 16384\\\hline
 
 The two globally absorbing original-reference cases arise from constant forcing within the wg update rule, not a demonstrated biological rescue. Across all 58 variants, cyclic-start counts range from zero to 16384; two variants send every start to cyclic termination. A Boolean counterfactual can destroy the reference or change its basin without fitting any developmental measurement. These cases cannot be ranked as interventions in a living embryo. The original-model result, reference-invalid negatives and context dependence remain unchanged.
 The vectorized successor enumerator is independently checked against the existing scalar Boolean parser for every state in every altered model, including negated constants. Tests also reproduce complete endpoint aggregation, uniform denominators, 20 null inadmissible endpoints and the eight changed valid basins. The frozen plan and full ledger are \path{experiments/grn_rule_basin_plan.json} and \path{results/grn_rule_basin_audit.json}. This exact model calculation fills a basin-analysis gap while leaving empirical regulatory validation, spatial tissue structure, continuous dynamics and biological intervention inference open.
+
+\subsection{Local shell returns depend on the same rule counterfactuals}
+A further exploratory plan partitions all 16384 internal starts by Hamming distance zero through fourteen from the exact original reference. The rule variants and external context remain fixed. This conditional measure asks about nearby state perturbations rather than uniform whole-state volume, but it is mathematical weighting, not a measured developmental perturbation distribution. All 58 counterfactuals and all shells are retained; the 20 reference-invalid variants remain null rather than being assigned return probabilities.
+The baseline exact-reference basin has 128 starts but returns from seven of fourteen one-bit perturbations and twenty-one of ninety-one two-bit perturbations. Those local fractions, .5 and .23077, must not be replaced with the global .0078125 fraction. Of the 38 reference-valid counterfactuals, thirty preserve both shell counts and eight change them. The complete changed set is below.
+\begin{table}[ht]\centering
+\caption{All reference-valid rule replacements changing one-bit shell return. Denominators are fourteen and ninety-one starts, respectively. Constant forcing is not a biological intervention result.}
+\begin{tabular}{llrrr}\hline
+Target & Regulator reference & Constant & Radius one & Radius two\\\hline
+CIA & CI protein & 1 &11/14&55/91\\
+CI protein & ci & 1 &10/14&45/91\\
+EN protein & en & 0 &8/14&28/91\\
+ci & EN protein & 0 &9/14&36/91\\
+wg & CIA & 1 &12/14&66/91\\
+wg & CIR & 0 &8/14&28/91\\
+wg & SLP & 1 &14/14&91/91\\
+wg & wg & 1 &14/14&91/91\\\hline
+\end{tabular}\end{table}
+
+
+The valid-variant one-bit return range is .5 to one and the two-bit range is .23077 to one. These larger counts agree with the previously recorded global basin enlargements; they are not an independent replication. Choosing a near-reference starting measure changes the numerical estimand, not the biological validity of the Boolean rules. The globally absorbing constant-wg cases remain mathematical forcing rather than tissue rescue. Every shell denominator equals its binomial coefficient, and summing shell returns exactly reproduces each prior global basin count. Plans and complete shell counts remain in \path{experiments/grn_rule_radius_plan.json} and \path{results/grn_rule_radius_audit.json}. Empirical initial-state distributions, regulatory perturbations and independent physiological validation remain unmeasured.
