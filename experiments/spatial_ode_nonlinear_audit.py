@@ -5,11 +5,11 @@ import numpy as np
 import roadrunner
 from scipy.linalg import expm
 ROOT=Path(__file__).resolve().parents[1]
-def compute(upstream):
+def compute(upstream,rtol=1e-8,atol=1e-14):
  pth=ROOT/'experiments/spatial_ode_nonlinear_plan.json';p=json.loads(pth.read_text());u=Path(upstream);f=u/'vonDassow2000/vonDassow2000_1x4.timecourse1.xml';assert subprocess.check_output(['git','-C',str(u),'rev-parse','HEAD']).decode().strip()==p['source_commit'];assert hashlib.sha256(f.read_bytes()).hexdigest()==p['sbml_sha256']
  old=ROOT/'results/spatial_ode_stationarity_audit.json';jac=ROOT/'results/spatial_ode_jacobian_fd1e6.csv';cells=json.loads(old.read_text())['residuals'][-1]['species'];x=np.array([s['concentration'] for s in cells]);J=np.loadtxt(jac,delimiter=',');times=[0,1,10,100]
  def trajectory(z):
-  r=roadrunner.RoadRunner(str(f));assert list(r.model.getFloatingSpeciesIds())==[s['id'] for s in cells];r.integrator.relative_tolerance=1e-8;r.integrator.absolute_tolerance=1e-14;r.integrator.stiff=False;r.model.setFloatingSpeciesConcentrations(z);r.model.setTime(11000);states=[z.copy()]
+  r=roadrunner.RoadRunner(str(f));assert list(r.model.getFloatingSpeciesIds())==[s['id'] for s in cells];r.integrator.relative_tolerance=rtol;r.integrator.absolute_tolerance=atol;r.integrator.stiff=False;r.model.setFloatingSpeciesConcentrations(z);r.model.setTime(11000);states=[z.copy()]
   for a,b in zip(times[:-1],times[1:]):
    r.simulate(11000+a,11000+b,2);states.append(np.asarray(r.model.getFloatingSpeciesConcentrations()).copy())
   return states
