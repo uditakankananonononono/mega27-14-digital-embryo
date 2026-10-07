@@ -1,0 +1,3819 @@
+{
+  "plan_sha256": "f13be7fe4e43aae2802547aa8d8ac63063af857192d357eb62b495a4ca6efab8",
+  "baseline": {
+    "reference_valid": true,
+    "basin_size": 128,
+    "directed_edges": 1792,
+    "exit_edges": 896,
+    "internal_edges": 896,
+    "exit_fraction": 0.5,
+    "per_node": [
+      {
+        "node": "v_CIA",
+        "exit_edges": 128,
+        "exit_fraction": 1.0
+      },
+      {
+        "node": "v_CIR",
+        "exit_edges": 128,
+        "exit_fraction": 1.0
+      },
+      {
+        "node": "v_CI_protein",
+        "exit_edges": 128,
+        "exit_fraction": 1.0
+      },
+      {
+        "node": "v_EN_protein",
+        "exit_edges": 128,
+        "exit_fraction": 1.0
+      },
+      {
+        "node": "v_HH_protein",
+        "exit_edges": 0,
+        "exit_fraction": 0.0
+      },
+      {
+        "node": "v_PH",
+        "exit_edges": 0,
+        "exit_fraction": 0.0
+      },
+      {
+        "node": "v_PTC_protein",
+        "exit_edges": 0,
+        "exit_fraction": 0.0
+      },
+      {
+        "node": "v_SMO",
+        "exit_edges": 0,
+        "exit_fraction": 0.0
+      },
+      {
+        "node": "v_WG_protein",
+        "exit_edges": 0,
+        "exit_fraction": 0.0
+      },
+      {
+        "node": "v_ci",
+        "exit_edges": 128,
+        "exit_fraction": 1.0
+      },
+      {
+        "node": "v_en",
+        "exit_edges": 128,
+        "exit_fraction": 1.0
+      },
+      {
+        "node": "v_hh",
+        "exit_edges": 0,
+        "exit_fraction": 0.0
+      },
+      {
+        "node": "v_ptc",
+        "exit_edges": 0,
+        "exit_fraction": 0.0
+      },
+      {
+        "node": "v_wg",
+        "exit_edges": 128,
+        "exit_fraction": 1.0
+      }
+    ],
+    "reference_flip_exits": [
+      "v_CIA",
+      "v_CIR",
+      "v_CI_protein",
+      "v_EN_protein",
+      "v_ci",
+      "v_en",
+      "v_wg"
+    ]
+  },
+  "rows": [
+    {
+      "target": "v_CIA",
+      "regulator": "v_CI_protein",
+      "replacement": 0,
+      "reference_valid": false,
+      "basin_size": null,
+      "directed_edges": null,
+      "exit_edges": null,
+      "internal_edges": null,
+      "exit_fraction": null,
+      "per_node": null,
+      "reference_flip_exits": null
+    },
+    {
+      "target": "v_CIA",
+      "regulator": "v_CI_protein",
+      "replacement": 1,
+      "reference_valid": true,
+      "basin_size": 2048,
+      "directed_edges": 28672,
+      "exit_edges": 6144,
+      "internal_edges": 22528,
+      "exit_fraction": 0.21428571428571427,
+      "per_node": [
+        {
+          "node": "v_CIA",
+          "exit_edges": 2048,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_CIR",
+          "exit_edges": 2048,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_CI_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_EN_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_HH_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_PH",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_PTC_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_SMO",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_WG_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_ci",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_en",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_hh",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_ptc",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_wg",
+          "exit_edges": 2048,
+          "exit_fraction": 1.0
+        }
+      ],
+      "reference_flip_exits": [
+        "v_CIA",
+        "v_CIR",
+        "v_wg"
+      ]
+    },
+    {
+      "target": "v_CIA",
+      "regulator": "v_PTC_protein",
+      "replacement": 0,
+      "reference_valid": true,
+      "basin_size": 128,
+      "directed_edges": 1792,
+      "exit_edges": 896,
+      "internal_edges": 896,
+      "exit_fraction": 0.5,
+      "per_node": [
+        {
+          "node": "v_CIA",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_CIR",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_CI_protein",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_EN_protein",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_HH_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_PH",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_PTC_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_SMO",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_WG_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_ci",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_en",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_hh",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_ptc",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_wg",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        }
+      ],
+      "reference_flip_exits": [
+        "v_CIA",
+        "v_CIR",
+        "v_CI_protein",
+        "v_EN_protein",
+        "v_ci",
+        "v_en",
+        "v_wg"
+      ]
+    },
+    {
+      "target": "v_CIA",
+      "regulator": "v_PTC_protein",
+      "replacement": 1,
+      "reference_valid": true,
+      "basin_size": 128,
+      "directed_edges": 1792,
+      "exit_edges": 896,
+      "internal_edges": 896,
+      "exit_fraction": 0.5,
+      "per_node": [
+        {
+          "node": "v_CIA",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_CIR",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_CI_protein",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_EN_protein",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_HH_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_PH",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_PTC_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_SMO",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_WG_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_ci",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_en",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_hh",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_ptc",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_wg",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        }
+      ],
+      "reference_flip_exits": [
+        "v_CIA",
+        "v_CIR",
+        "v_CI_protein",
+        "v_EN_protein",
+        "v_ci",
+        "v_en",
+        "v_wg"
+      ]
+    },
+    {
+      "target": "v_CIA",
+      "regulator": "v_hh_external",
+      "replacement": 0,
+      "reference_valid": false,
+      "basin_size": null,
+      "directed_edges": null,
+      "exit_edges": null,
+      "internal_edges": null,
+      "exit_fraction": null,
+      "per_node": null,
+      "reference_flip_exits": null
+    },
+    {
+      "target": "v_CIA",
+      "regulator": "v_hh_external",
+      "replacement": 1,
+      "reference_valid": true,
+      "basin_size": 128,
+      "directed_edges": 1792,
+      "exit_edges": 896,
+      "internal_edges": 896,
+      "exit_fraction": 0.5,
+      "per_node": [
+        {
+          "node": "v_CIA",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_CIR",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_CI_protein",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_EN_protein",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_HH_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_PH",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_PTC_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_SMO",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_WG_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_ci",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_en",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_hh",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_ptc",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_wg",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        }
+      ],
+      "reference_flip_exits": [
+        "v_CIA",
+        "v_CIR",
+        "v_CI_protein",
+        "v_EN_protein",
+        "v_ci",
+        "v_en",
+        "v_wg"
+      ]
+    },
+    {
+      "target": "v_CIR",
+      "regulator": "v_CI_protein",
+      "replacement": 0,
+      "reference_valid": true,
+      "basin_size": 128,
+      "directed_edges": 1792,
+      "exit_edges": 896,
+      "internal_edges": 896,
+      "exit_fraction": 0.5,
+      "per_node": [
+        {
+          "node": "v_CIA",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_CIR",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_CI_protein",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_EN_protein",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_HH_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_PH",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_PTC_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_SMO",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_WG_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_ci",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_en",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_hh",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_ptc",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_wg",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        }
+      ],
+      "reference_flip_exits": [
+        "v_CIA",
+        "v_CIR",
+        "v_CI_protein",
+        "v_EN_protein",
+        "v_ci",
+        "v_en",
+        "v_wg"
+      ]
+    },
+    {
+      "target": "v_CIR",
+      "regulator": "v_CI_protein",
+      "replacement": 1,
+      "reference_valid": true,
+      "basin_size": 128,
+      "directed_edges": 1792,
+      "exit_edges": 896,
+      "internal_edges": 896,
+      "exit_fraction": 0.5,
+      "per_node": [
+        {
+          "node": "v_CIA",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_CIR",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_CI_protein",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_EN_protein",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_HH_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_PH",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_PTC_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_SMO",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_WG_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_ci",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_en",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_hh",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_ptc",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_wg",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        }
+      ],
+      "reference_flip_exits": [
+        "v_CIA",
+        "v_CIR",
+        "v_CI_protein",
+        "v_EN_protein",
+        "v_ci",
+        "v_en",
+        "v_wg"
+      ]
+    },
+    {
+      "target": "v_CIR",
+      "regulator": "v_PTC_protein",
+      "replacement": 0,
+      "reference_valid": true,
+      "basin_size": 128,
+      "directed_edges": 1792,
+      "exit_edges": 896,
+      "internal_edges": 896,
+      "exit_fraction": 0.5,
+      "per_node": [
+        {
+          "node": "v_CIA",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_CIR",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_CI_protein",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_EN_protein",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_HH_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_PH",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_PTC_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_SMO",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_WG_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_ci",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_en",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_hh",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_ptc",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_wg",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        }
+      ],
+      "reference_flip_exits": [
+        "v_CIA",
+        "v_CIR",
+        "v_CI_protein",
+        "v_EN_protein",
+        "v_ci",
+        "v_en",
+        "v_wg"
+      ]
+    },
+    {
+      "target": "v_CIR",
+      "regulator": "v_PTC_protein",
+      "replacement": 1,
+      "reference_valid": true,
+      "basin_size": 128,
+      "directed_edges": 1792,
+      "exit_edges": 896,
+      "internal_edges": 896,
+      "exit_fraction": 0.5,
+      "per_node": [
+        {
+          "node": "v_CIA",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_CIR",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_CI_protein",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_EN_protein",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_HH_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_PH",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_PTC_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_SMO",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_WG_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_ci",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_en",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_hh",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_ptc",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_wg",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        }
+      ],
+      "reference_flip_exits": [
+        "v_CIA",
+        "v_CIR",
+        "v_CI_protein",
+        "v_EN_protein",
+        "v_ci",
+        "v_en",
+        "v_wg"
+      ]
+    },
+    {
+      "target": "v_CIR",
+      "regulator": "v_hh_external",
+      "replacement": 0,
+      "reference_valid": false,
+      "basin_size": null,
+      "directed_edges": null,
+      "exit_edges": null,
+      "internal_edges": null,
+      "exit_fraction": null,
+      "per_node": null,
+      "reference_flip_exits": null
+    },
+    {
+      "target": "v_CIR",
+      "regulator": "v_hh_external",
+      "replacement": 1,
+      "reference_valid": true,
+      "basin_size": 128,
+      "directed_edges": 1792,
+      "exit_edges": 896,
+      "internal_edges": 896,
+      "exit_fraction": 0.5,
+      "per_node": [
+        {
+          "node": "v_CIA",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_CIR",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_CI_protein",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_EN_protein",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_HH_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_PH",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_PTC_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_SMO",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_WG_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_ci",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_en",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_hh",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_ptc",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_wg",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        }
+      ],
+      "reference_flip_exits": [
+        "v_CIA",
+        "v_CIR",
+        "v_CI_protein",
+        "v_EN_protein",
+        "v_ci",
+        "v_en",
+        "v_wg"
+      ]
+    },
+    {
+      "target": "v_CI_protein",
+      "regulator": "v_ci",
+      "replacement": 0,
+      "reference_valid": false,
+      "basin_size": null,
+      "directed_edges": null,
+      "exit_edges": null,
+      "internal_edges": null,
+      "exit_fraction": null,
+      "per_node": null,
+      "reference_flip_exits": null
+    },
+    {
+      "target": "v_CI_protein",
+      "regulator": "v_ci",
+      "replacement": 1,
+      "reference_valid": true,
+      "basin_size": 1024,
+      "directed_edges": 14336,
+      "exit_edges": 4096,
+      "internal_edges": 10240,
+      "exit_fraction": 0.2857142857142857,
+      "per_node": [
+        {
+          "node": "v_CIA",
+          "exit_edges": 1024,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_CIR",
+          "exit_edges": 1024,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_CI_protein",
+          "exit_edges": 1024,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_EN_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_HH_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_PH",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_PTC_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_SMO",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_WG_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_ci",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_en",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_hh",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_ptc",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_wg",
+          "exit_edges": 1024,
+          "exit_fraction": 1.0
+        }
+      ],
+      "reference_flip_exits": [
+        "v_CIA",
+        "v_CIR",
+        "v_CI_protein",
+        "v_wg"
+      ]
+    },
+    {
+      "target": "v_EN_protein",
+      "regulator": "v_en",
+      "replacement": 0,
+      "reference_valid": true,
+      "basin_size": 256,
+      "directed_edges": 3584,
+      "exit_edges": 1536,
+      "internal_edges": 2048,
+      "exit_fraction": 0.42857142857142855,
+      "per_node": [
+        {
+          "node": "v_CIA",
+          "exit_edges": 256,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_CIR",
+          "exit_edges": 256,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_CI_protein",
+          "exit_edges": 256,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_EN_protein",
+          "exit_edges": 256,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_HH_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_PH",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_PTC_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_SMO",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_WG_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_ci",
+          "exit_edges": 256,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_en",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_hh",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_ptc",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_wg",
+          "exit_edges": 256,
+          "exit_fraction": 1.0
+        }
+      ],
+      "reference_flip_exits": [
+        "v_CIA",
+        "v_CIR",
+        "v_CI_protein",
+        "v_EN_protein",
+        "v_ci",
+        "v_wg"
+      ]
+    },
+    {
+      "target": "v_EN_protein",
+      "regulator": "v_en",
+      "replacement": 1,
+      "reference_valid": false,
+      "basin_size": null,
+      "directed_edges": null,
+      "exit_edges": null,
+      "internal_edges": null,
+      "exit_fraction": null,
+      "per_node": null,
+      "reference_flip_exits": null
+    },
+    {
+      "target": "v_HH_protein",
+      "regulator": "v_hh",
+      "replacement": 0,
+      "reference_valid": true,
+      "basin_size": 128,
+      "directed_edges": 1792,
+      "exit_edges": 896,
+      "internal_edges": 896,
+      "exit_fraction": 0.5,
+      "per_node": [
+        {
+          "node": "v_CIA",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_CIR",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_CI_protein",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_EN_protein",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_HH_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_PH",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_PTC_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_SMO",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_WG_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_ci",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_en",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_hh",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_ptc",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_wg",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        }
+      ],
+      "reference_flip_exits": [
+        "v_CIA",
+        "v_CIR",
+        "v_CI_protein",
+        "v_EN_protein",
+        "v_ci",
+        "v_en",
+        "v_wg"
+      ]
+    },
+    {
+      "target": "v_HH_protein",
+      "regulator": "v_hh",
+      "replacement": 1,
+      "reference_valid": false,
+      "basin_size": null,
+      "directed_edges": null,
+      "exit_edges": null,
+      "internal_edges": null,
+      "exit_fraction": null,
+      "per_node": null,
+      "reference_flip_exits": null
+    },
+    {
+      "target": "v_PH",
+      "regulator": "v_PTC_protein",
+      "replacement": 0,
+      "reference_valid": false,
+      "basin_size": null,
+      "directed_edges": null,
+      "exit_edges": null,
+      "internal_edges": null,
+      "exit_fraction": null,
+      "per_node": null,
+      "reference_flip_exits": null
+    },
+    {
+      "target": "v_PH",
+      "regulator": "v_PTC_protein",
+      "replacement": 1,
+      "reference_valid": true,
+      "basin_size": 128,
+      "directed_edges": 1792,
+      "exit_edges": 896,
+      "internal_edges": 896,
+      "exit_fraction": 0.5,
+      "per_node": [
+        {
+          "node": "v_CIA",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_CIR",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_CI_protein",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_EN_protein",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_HH_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_PH",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_PTC_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_SMO",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_WG_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_ci",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_en",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_hh",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_ptc",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_wg",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        }
+      ],
+      "reference_flip_exits": [
+        "v_CIA",
+        "v_CIR",
+        "v_CI_protein",
+        "v_EN_protein",
+        "v_ci",
+        "v_en",
+        "v_wg"
+      ]
+    },
+    {
+      "target": "v_PH",
+      "regulator": "v_hh_external",
+      "replacement": 0,
+      "reference_valid": false,
+      "basin_size": null,
+      "directed_edges": null,
+      "exit_edges": null,
+      "internal_edges": null,
+      "exit_fraction": null,
+      "per_node": null,
+      "reference_flip_exits": null
+    },
+    {
+      "target": "v_PH",
+      "regulator": "v_hh_external",
+      "replacement": 1,
+      "reference_valid": true,
+      "basin_size": 128,
+      "directed_edges": 1792,
+      "exit_edges": 896,
+      "internal_edges": 896,
+      "exit_fraction": 0.5,
+      "per_node": [
+        {
+          "node": "v_CIA",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_CIR",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_CI_protein",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_EN_protein",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_HH_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_PH",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_PTC_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_SMO",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_WG_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_ci",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_en",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_hh",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_ptc",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_wg",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        }
+      ],
+      "reference_flip_exits": [
+        "v_CIA",
+        "v_CIR",
+        "v_CI_protein",
+        "v_EN_protein",
+        "v_ci",
+        "v_en",
+        "v_wg"
+      ]
+    },
+    {
+      "target": "v_PTC_protein",
+      "regulator": "v_PTC_protein",
+      "replacement": 0,
+      "reference_valid": true,
+      "basin_size": 128,
+      "directed_edges": 1792,
+      "exit_edges": 896,
+      "internal_edges": 896,
+      "exit_fraction": 0.5,
+      "per_node": [
+        {
+          "node": "v_CIA",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_CIR",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_CI_protein",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_EN_protein",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_HH_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_PH",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_PTC_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_SMO",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_WG_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_ci",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_en",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_hh",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_ptc",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_wg",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        }
+      ],
+      "reference_flip_exits": [
+        "v_CIA",
+        "v_CIR",
+        "v_CI_protein",
+        "v_EN_protein",
+        "v_ci",
+        "v_en",
+        "v_wg"
+      ]
+    },
+    {
+      "target": "v_PTC_protein",
+      "regulator": "v_PTC_protein",
+      "replacement": 1,
+      "reference_valid": true,
+      "basin_size": 128,
+      "directed_edges": 1792,
+      "exit_edges": 896,
+      "internal_edges": 896,
+      "exit_fraction": 0.5,
+      "per_node": [
+        {
+          "node": "v_CIA",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_CIR",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_CI_protein",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_EN_protein",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_HH_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_PH",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_PTC_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_SMO",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_WG_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_ci",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_en",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_hh",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_ptc",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_wg",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        }
+      ],
+      "reference_flip_exits": [
+        "v_CIA",
+        "v_CIR",
+        "v_CI_protein",
+        "v_EN_protein",
+        "v_ci",
+        "v_en",
+        "v_wg"
+      ]
+    },
+    {
+      "target": "v_PTC_protein",
+      "regulator": "v_hh_external",
+      "replacement": 0,
+      "reference_valid": true,
+      "basin_size": 128,
+      "directed_edges": 1792,
+      "exit_edges": 896,
+      "internal_edges": 896,
+      "exit_fraction": 0.5,
+      "per_node": [
+        {
+          "node": "v_CIA",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_CIR",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_CI_protein",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_EN_protein",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_HH_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_PH",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_PTC_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_SMO",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_WG_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_ci",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_en",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_hh",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_ptc",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_wg",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        }
+      ],
+      "reference_flip_exits": [
+        "v_CIA",
+        "v_CIR",
+        "v_CI_protein",
+        "v_EN_protein",
+        "v_ci",
+        "v_en",
+        "v_wg"
+      ]
+    },
+    {
+      "target": "v_PTC_protein",
+      "regulator": "v_hh_external",
+      "replacement": 1,
+      "reference_valid": true,
+      "basin_size": 128,
+      "directed_edges": 1792,
+      "exit_edges": 896,
+      "internal_edges": 896,
+      "exit_fraction": 0.5,
+      "per_node": [
+        {
+          "node": "v_CIA",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_CIR",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_CI_protein",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_EN_protein",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_HH_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_PH",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_PTC_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_SMO",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_WG_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_ci",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_en",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_hh",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_ptc",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_wg",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        }
+      ],
+      "reference_flip_exits": [
+        "v_CIA",
+        "v_CIR",
+        "v_CI_protein",
+        "v_EN_protein",
+        "v_ci",
+        "v_en",
+        "v_wg"
+      ]
+    },
+    {
+      "target": "v_PTC_protein",
+      "regulator": "v_ptc",
+      "replacement": 0,
+      "reference_valid": false,
+      "basin_size": null,
+      "directed_edges": null,
+      "exit_edges": null,
+      "internal_edges": null,
+      "exit_fraction": null,
+      "per_node": null,
+      "reference_flip_exits": null
+    },
+    {
+      "target": "v_PTC_protein",
+      "regulator": "v_ptc",
+      "replacement": 1,
+      "reference_valid": true,
+      "basin_size": 128,
+      "directed_edges": 1792,
+      "exit_edges": 896,
+      "internal_edges": 896,
+      "exit_fraction": 0.5,
+      "per_node": [
+        {
+          "node": "v_CIA",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_CIR",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_CI_protein",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_EN_protein",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_HH_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_PH",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_PTC_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_SMO",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_WG_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_ci",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_en",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_hh",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_ptc",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_wg",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        }
+      ],
+      "reference_flip_exits": [
+        "v_CIA",
+        "v_CIR",
+        "v_CI_protein",
+        "v_EN_protein",
+        "v_ci",
+        "v_en",
+        "v_wg"
+      ]
+    },
+    {
+      "target": "v_SMO",
+      "regulator": "v_PTC_protein",
+      "replacement": 0,
+      "reference_valid": true,
+      "basin_size": 128,
+      "directed_edges": 1792,
+      "exit_edges": 896,
+      "internal_edges": 896,
+      "exit_fraction": 0.5,
+      "per_node": [
+        {
+          "node": "v_CIA",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_CIR",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_CI_protein",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_EN_protein",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_HH_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_PH",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_PTC_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_SMO",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_WG_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_ci",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_en",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_hh",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_ptc",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_wg",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        }
+      ],
+      "reference_flip_exits": [
+        "v_CIA",
+        "v_CIR",
+        "v_CI_protein",
+        "v_EN_protein",
+        "v_ci",
+        "v_en",
+        "v_wg"
+      ]
+    },
+    {
+      "target": "v_SMO",
+      "regulator": "v_PTC_protein",
+      "replacement": 1,
+      "reference_valid": true,
+      "basin_size": 128,
+      "directed_edges": 1792,
+      "exit_edges": 896,
+      "internal_edges": 896,
+      "exit_fraction": 0.5,
+      "per_node": [
+        {
+          "node": "v_CIA",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_CIR",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_CI_protein",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_EN_protein",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_HH_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_PH",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_PTC_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_SMO",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_WG_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_ci",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_en",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_hh",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_ptc",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_wg",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        }
+      ],
+      "reference_flip_exits": [
+        "v_CIA",
+        "v_CIR",
+        "v_CI_protein",
+        "v_EN_protein",
+        "v_ci",
+        "v_en",
+        "v_wg"
+      ]
+    },
+    {
+      "target": "v_SMO",
+      "regulator": "v_hh_external",
+      "replacement": 0,
+      "reference_valid": false,
+      "basin_size": null,
+      "directed_edges": null,
+      "exit_edges": null,
+      "internal_edges": null,
+      "exit_fraction": null,
+      "per_node": null,
+      "reference_flip_exits": null
+    },
+    {
+      "target": "v_SMO",
+      "regulator": "v_hh_external",
+      "replacement": 1,
+      "reference_valid": true,
+      "basin_size": 128,
+      "directed_edges": 1792,
+      "exit_edges": 896,
+      "internal_edges": 896,
+      "exit_fraction": 0.5,
+      "per_node": [
+        {
+          "node": "v_CIA",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_CIR",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_CI_protein",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_EN_protein",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_HH_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_PH",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_PTC_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_SMO",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_WG_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_ci",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_en",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_hh",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_ptc",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_wg",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        }
+      ],
+      "reference_flip_exits": [
+        "v_CIA",
+        "v_CIR",
+        "v_CI_protein",
+        "v_EN_protein",
+        "v_ci",
+        "v_en",
+        "v_wg"
+      ]
+    },
+    {
+      "target": "v_WG_protein",
+      "regulator": "v_wg",
+      "replacement": 0,
+      "reference_valid": false,
+      "basin_size": null,
+      "directed_edges": null,
+      "exit_edges": null,
+      "internal_edges": null,
+      "exit_fraction": null,
+      "per_node": null,
+      "reference_flip_exits": null
+    },
+    {
+      "target": "v_WG_protein",
+      "regulator": "v_wg",
+      "replacement": 1,
+      "reference_valid": true,
+      "basin_size": 128,
+      "directed_edges": 1792,
+      "exit_edges": 896,
+      "internal_edges": 896,
+      "exit_fraction": 0.5,
+      "per_node": [
+        {
+          "node": "v_CIA",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_CIR",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_CI_protein",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_EN_protein",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_HH_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_PH",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_PTC_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_SMO",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_WG_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_ci",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_en",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_hh",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_ptc",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_wg",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        }
+      ],
+      "reference_flip_exits": [
+        "v_CIA",
+        "v_CIR",
+        "v_CI_protein",
+        "v_EN_protein",
+        "v_ci",
+        "v_en",
+        "v_wg"
+      ]
+    },
+    {
+      "target": "v_ci",
+      "regulator": "v_EN_protein",
+      "replacement": 0,
+      "reference_valid": true,
+      "basin_size": 512,
+      "directed_edges": 7168,
+      "exit_edges": 2560,
+      "internal_edges": 4608,
+      "exit_fraction": 0.35714285714285715,
+      "per_node": [
+        {
+          "node": "v_CIA",
+          "exit_edges": 512,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_CIR",
+          "exit_edges": 512,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_CI_protein",
+          "exit_edges": 512,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_EN_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_HH_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_PH",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_PTC_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_SMO",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_WG_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_ci",
+          "exit_edges": 512,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_en",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_hh",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_ptc",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_wg",
+          "exit_edges": 512,
+          "exit_fraction": 1.0
+        }
+      ],
+      "reference_flip_exits": [
+        "v_CIA",
+        "v_CIR",
+        "v_CI_protein",
+        "v_ci",
+        "v_wg"
+      ]
+    },
+    {
+      "target": "v_ci",
+      "regulator": "v_EN_protein",
+      "replacement": 1,
+      "reference_valid": false,
+      "basin_size": null,
+      "directed_edges": null,
+      "exit_edges": null,
+      "internal_edges": null,
+      "exit_fraction": null,
+      "per_node": null,
+      "reference_flip_exits": null
+    },
+    {
+      "target": "v_en",
+      "regulator": "v_SLP",
+      "replacement": 0,
+      "reference_valid": true,
+      "basin_size": 128,
+      "directed_edges": 1792,
+      "exit_edges": 896,
+      "internal_edges": 896,
+      "exit_fraction": 0.5,
+      "per_node": [
+        {
+          "node": "v_CIA",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_CIR",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_CI_protein",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_EN_protein",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_HH_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_PH",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_PTC_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_SMO",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_WG_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_ci",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_en",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_hh",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_ptc",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_wg",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        }
+      ],
+      "reference_flip_exits": [
+        "v_CIA",
+        "v_CIR",
+        "v_CI_protein",
+        "v_EN_protein",
+        "v_ci",
+        "v_en",
+        "v_wg"
+      ]
+    },
+    {
+      "target": "v_en",
+      "regulator": "v_SLP",
+      "replacement": 1,
+      "reference_valid": true,
+      "basin_size": 128,
+      "directed_edges": 1792,
+      "exit_edges": 896,
+      "internal_edges": 896,
+      "exit_fraction": 0.5,
+      "per_node": [
+        {
+          "node": "v_CIA",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_CIR",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_CI_protein",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_EN_protein",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_HH_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_PH",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_PTC_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_SMO",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_WG_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_ci",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_en",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_hh",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_ptc",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_wg",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        }
+      ],
+      "reference_flip_exits": [
+        "v_CIA",
+        "v_CIR",
+        "v_CI_protein",
+        "v_EN_protein",
+        "v_ci",
+        "v_en",
+        "v_wg"
+      ]
+    },
+    {
+      "target": "v_en",
+      "regulator": "v_WG_external",
+      "replacement": 0,
+      "reference_valid": true,
+      "basin_size": 128,
+      "directed_edges": 1792,
+      "exit_edges": 896,
+      "internal_edges": 896,
+      "exit_fraction": 0.5,
+      "per_node": [
+        {
+          "node": "v_CIA",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_CIR",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_CI_protein",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_EN_protein",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_HH_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_PH",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_PTC_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_SMO",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_WG_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_ci",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_en",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_hh",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_ptc",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_wg",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        }
+      ],
+      "reference_flip_exits": [
+        "v_CIA",
+        "v_CIR",
+        "v_CI_protein",
+        "v_EN_protein",
+        "v_ci",
+        "v_en",
+        "v_wg"
+      ]
+    },
+    {
+      "target": "v_en",
+      "regulator": "v_WG_external",
+      "replacement": 1,
+      "reference_valid": false,
+      "basin_size": null,
+      "directed_edges": null,
+      "exit_edges": null,
+      "internal_edges": null,
+      "exit_fraction": null,
+      "per_node": null,
+      "reference_flip_exits": null
+    },
+    {
+      "target": "v_hh",
+      "regulator": "v_CIR",
+      "replacement": 0,
+      "reference_valid": true,
+      "basin_size": 128,
+      "directed_edges": 1792,
+      "exit_edges": 896,
+      "internal_edges": 896,
+      "exit_fraction": 0.5,
+      "per_node": [
+        {
+          "node": "v_CIA",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_CIR",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_CI_protein",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_EN_protein",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_HH_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_PH",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_PTC_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_SMO",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_WG_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_ci",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_en",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_hh",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_ptc",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_wg",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        }
+      ],
+      "reference_flip_exits": [
+        "v_CIA",
+        "v_CIR",
+        "v_CI_protein",
+        "v_EN_protein",
+        "v_ci",
+        "v_en",
+        "v_wg"
+      ]
+    },
+    {
+      "target": "v_hh",
+      "regulator": "v_CIR",
+      "replacement": 1,
+      "reference_valid": true,
+      "basin_size": 128,
+      "directed_edges": 1792,
+      "exit_edges": 896,
+      "internal_edges": 896,
+      "exit_fraction": 0.5,
+      "per_node": [
+        {
+          "node": "v_CIA",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_CIR",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_CI_protein",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_EN_protein",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_HH_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_PH",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_PTC_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_SMO",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_WG_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_ci",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_en",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_hh",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_ptc",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_wg",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        }
+      ],
+      "reference_flip_exits": [
+        "v_CIA",
+        "v_CIR",
+        "v_CI_protein",
+        "v_EN_protein",
+        "v_ci",
+        "v_en",
+        "v_wg"
+      ]
+    },
+    {
+      "target": "v_hh",
+      "regulator": "v_EN_protein",
+      "replacement": 0,
+      "reference_valid": true,
+      "basin_size": 128,
+      "directed_edges": 1792,
+      "exit_edges": 896,
+      "internal_edges": 896,
+      "exit_fraction": 0.5,
+      "per_node": [
+        {
+          "node": "v_CIA",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_CIR",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_CI_protein",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_EN_protein",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_HH_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_PH",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_PTC_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_SMO",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_WG_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_ci",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_en",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_hh",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_ptc",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_wg",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        }
+      ],
+      "reference_flip_exits": [
+        "v_CIA",
+        "v_CIR",
+        "v_CI_protein",
+        "v_EN_protein",
+        "v_ci",
+        "v_en",
+        "v_wg"
+      ]
+    },
+    {
+      "target": "v_hh",
+      "regulator": "v_EN_protein",
+      "replacement": 1,
+      "reference_valid": false,
+      "basin_size": null,
+      "directed_edges": null,
+      "exit_edges": null,
+      "internal_edges": null,
+      "exit_fraction": null,
+      "per_node": null,
+      "reference_flip_exits": null
+    },
+    {
+      "target": "v_ptc",
+      "regulator": "v_CIA",
+      "replacement": 0,
+      "reference_valid": false,
+      "basin_size": null,
+      "directed_edges": null,
+      "exit_edges": null,
+      "internal_edges": null,
+      "exit_fraction": null,
+      "per_node": null,
+      "reference_flip_exits": null
+    },
+    {
+      "target": "v_ptc",
+      "regulator": "v_CIA",
+      "replacement": 1,
+      "reference_valid": true,
+      "basin_size": 128,
+      "directed_edges": 1792,
+      "exit_edges": 896,
+      "internal_edges": 896,
+      "exit_fraction": 0.5,
+      "per_node": [
+        {
+          "node": "v_CIA",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_CIR",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_CI_protein",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_EN_protein",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_HH_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_PH",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_PTC_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_SMO",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_WG_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_ci",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_en",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_hh",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_ptc",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_wg",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        }
+      ],
+      "reference_flip_exits": [
+        "v_CIA",
+        "v_CIR",
+        "v_CI_protein",
+        "v_EN_protein",
+        "v_ci",
+        "v_en",
+        "v_wg"
+      ]
+    },
+    {
+      "target": "v_ptc",
+      "regulator": "v_CIR",
+      "replacement": 0,
+      "reference_valid": true,
+      "basin_size": 128,
+      "directed_edges": 1792,
+      "exit_edges": 896,
+      "internal_edges": 896,
+      "exit_fraction": 0.5,
+      "per_node": [
+        {
+          "node": "v_CIA",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_CIR",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_CI_protein",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_EN_protein",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_HH_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_PH",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_PTC_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_SMO",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_WG_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_ci",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_en",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_hh",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_ptc",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_wg",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        }
+      ],
+      "reference_flip_exits": [
+        "v_CIA",
+        "v_CIR",
+        "v_CI_protein",
+        "v_EN_protein",
+        "v_ci",
+        "v_en",
+        "v_wg"
+      ]
+    },
+    {
+      "target": "v_ptc",
+      "regulator": "v_CIR",
+      "replacement": 1,
+      "reference_valid": false,
+      "basin_size": null,
+      "directed_edges": null,
+      "exit_edges": null,
+      "internal_edges": null,
+      "exit_fraction": null,
+      "per_node": null,
+      "reference_flip_exits": null
+    },
+    {
+      "target": "v_ptc",
+      "regulator": "v_EN_protein",
+      "replacement": 0,
+      "reference_valid": true,
+      "basin_size": 128,
+      "directed_edges": 1792,
+      "exit_edges": 896,
+      "internal_edges": 896,
+      "exit_fraction": 0.5,
+      "per_node": [
+        {
+          "node": "v_CIA",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_CIR",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_CI_protein",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_EN_protein",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_HH_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_PH",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_PTC_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_SMO",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_WG_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_ci",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_en",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_hh",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_ptc",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_wg",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        }
+      ],
+      "reference_flip_exits": [
+        "v_CIA",
+        "v_CIR",
+        "v_CI_protein",
+        "v_EN_protein",
+        "v_ci",
+        "v_en",
+        "v_wg"
+      ]
+    },
+    {
+      "target": "v_ptc",
+      "regulator": "v_EN_protein",
+      "replacement": 1,
+      "reference_valid": false,
+      "basin_size": null,
+      "directed_edges": null,
+      "exit_edges": null,
+      "internal_edges": null,
+      "exit_fraction": null,
+      "per_node": null,
+      "reference_flip_exits": null
+    },
+    {
+      "target": "v_wg",
+      "regulator": "v_CIA",
+      "replacement": 0,
+      "reference_valid": false,
+      "basin_size": null,
+      "directed_edges": null,
+      "exit_edges": null,
+      "internal_edges": null,
+      "exit_fraction": null,
+      "per_node": null,
+      "reference_flip_exits": null
+    },
+    {
+      "target": "v_wg",
+      "regulator": "v_CIA",
+      "replacement": 1,
+      "reference_valid": true,
+      "basin_size": 4096,
+      "directed_edges": 57344,
+      "exit_edges": 8192,
+      "internal_edges": 49152,
+      "exit_fraction": 0.14285714285714285,
+      "per_node": [
+        {
+          "node": "v_CIA",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_CIR",
+          "exit_edges": 4096,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_CI_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_EN_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_HH_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_PH",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_PTC_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_SMO",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_WG_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_ci",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_en",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_hh",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_ptc",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_wg",
+          "exit_edges": 4096,
+          "exit_fraction": 1.0
+        }
+      ],
+      "reference_flip_exits": [
+        "v_CIR",
+        "v_wg"
+      ]
+    },
+    {
+      "target": "v_wg",
+      "regulator": "v_CIR",
+      "replacement": 0,
+      "reference_valid": true,
+      "basin_size": 256,
+      "directed_edges": 3584,
+      "exit_edges": 1536,
+      "internal_edges": 2048,
+      "exit_fraction": 0.42857142857142855,
+      "per_node": [
+        {
+          "node": "v_CIA",
+          "exit_edges": 256,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_CIR",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_CI_protein",
+          "exit_edges": 256,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_EN_protein",
+          "exit_edges": 256,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_HH_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_PH",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_PTC_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_SMO",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_WG_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_ci",
+          "exit_edges": 256,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_en",
+          "exit_edges": 256,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_hh",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_ptc",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_wg",
+          "exit_edges": 256,
+          "exit_fraction": 1.0
+        }
+      ],
+      "reference_flip_exits": [
+        "v_CIA",
+        "v_CI_protein",
+        "v_EN_protein",
+        "v_ci",
+        "v_en",
+        "v_wg"
+      ]
+    },
+    {
+      "target": "v_wg",
+      "regulator": "v_CIR",
+      "replacement": 1,
+      "reference_valid": false,
+      "basin_size": null,
+      "directed_edges": null,
+      "exit_edges": null,
+      "internal_edges": null,
+      "exit_fraction": null,
+      "per_node": null,
+      "reference_flip_exits": null
+    },
+    {
+      "target": "v_wg",
+      "regulator": "v_SLP",
+      "replacement": 0,
+      "reference_valid": true,
+      "basin_size": 128,
+      "directed_edges": 1792,
+      "exit_edges": 896,
+      "internal_edges": 896,
+      "exit_fraction": 0.5,
+      "per_node": [
+        {
+          "node": "v_CIA",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_CIR",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_CI_protein",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_EN_protein",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_HH_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_PH",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_PTC_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_SMO",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_WG_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_ci",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_en",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        },
+        {
+          "node": "v_hh",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_ptc",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_wg",
+          "exit_edges": 128,
+          "exit_fraction": 1.0
+        }
+      ],
+      "reference_flip_exits": [
+        "v_CIA",
+        "v_CIR",
+        "v_CI_protein",
+        "v_EN_protein",
+        "v_ci",
+        "v_en",
+        "v_wg"
+      ]
+    },
+    {
+      "target": "v_wg",
+      "regulator": "v_SLP",
+      "replacement": 1,
+      "reference_valid": true,
+      "basin_size": 16384,
+      "directed_edges": 229376,
+      "exit_edges": 0,
+      "internal_edges": 229376,
+      "exit_fraction": 0.0,
+      "per_node": [
+        {
+          "node": "v_CIA",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_CIR",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_CI_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_EN_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_HH_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_PH",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_PTC_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_SMO",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_WG_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_ci",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_en",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_hh",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_ptc",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_wg",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        }
+      ],
+      "reference_flip_exits": []
+    },
+    {
+      "target": "v_wg",
+      "regulator": "v_wg",
+      "replacement": 0,
+      "reference_valid": false,
+      "basin_size": null,
+      "directed_edges": null,
+      "exit_edges": null,
+      "internal_edges": null,
+      "exit_fraction": null,
+      "per_node": null,
+      "reference_flip_exits": null
+    },
+    {
+      "target": "v_wg",
+      "regulator": "v_wg",
+      "replacement": 1,
+      "reference_valid": true,
+      "basin_size": 16384,
+      "directed_edges": 229376,
+      "exit_edges": 0,
+      "internal_edges": 229376,
+      "exit_fraction": 0.0,
+      "per_node": [
+        {
+          "node": "v_CIA",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_CIR",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_CI_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_EN_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_HH_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_PH",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_PTC_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_SMO",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_WG_protein",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_ci",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_en",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_hh",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_ptc",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        },
+        {
+          "node": "v_wg",
+          "exit_edges": 0,
+          "exit_fraction": 0.0
+        }
+      ],
+      "reference_flip_exits": []
+    }
+  ],
+  "limits": "constant substitutions are model-rule counterfactuals not biological knockouts;uniform basin-state/node perturbation weights not measured;fixed external and synchronous context;no spatial/continuous/physiological validation"
+}

@@ -96,3 +96,29 @@ Radius & Horizon & Baseline count & Valid-variant range & Changed variants\\
 Each count uses the complete shell denominator, fourteen at radius one and 91 at radius two, not only eventual returning starts. The table's changed-variant count compares each finite-horizon count with the baseline at that horizon. The full histograms sum exactly to all previously saved shell-basin counts. Tests independently traverse every functional graph on up to four states and compare every fixed endpoint's first-hit times, including starts in other fixed basins or nontrivial cycles. The numerical follow-up was selected after shell-basin outcomes, not as an independent replication.
 
 Discrete synchronous model steps are not measured developmental time. Constant substitutions of a regulator within one rule are not biological knockouts. Neither shorter latency nor a larger mathematical basin establishes rescue, robustness in tissue, or independent physiological validation. All inadmissible endpoints, delayed returns and nonreturning starts are preserved in \path{results/grn_rule_latency_audit.json}, with the frozen plan in \path{experiments/grn_rule_latency_plan.json} and the runner in \path{experiments/grn_rule_latency_audit.py}. The manuscript content-page gate remains uncertified.
+
+\subsection{Basin boundary-to-volume fragility under the same rule variants}
+A frozen follow-up at head \texttt{6821374} asks whether the previously observed enlarged basins also change a distinct exact statistic: the fraction of all directed single-internal-bit flips from basin members that leave the original-reference basin. The original external context, synchronous successor rules and all 58 constant-substitution variants are unchanged. Every valid model is enumerated over all 16,384 states, and every one of fourteen node flips is counted for every basin member. The 20 inadmissible reference endpoints retain null boundary summaries rather than zero fragility. The preregistration SHA256 is \path{f13be7fe4e43aae2802547aa8d8ac63063af857192d357eb62b495a4ca6efab8}.
+
+The baseline basin has 128 members, 1,792 directed flips and 896 exits, giving exit fraction .5. Seven nodes always exit this basin under a single flip and seven never do. These seven exit-sensitive nodes also match the reference-only flip exits in this baseline. The statistic weights all basin members and all nodes uniformly; it is not a measured perturbation probability.
+
+\begin{center}
+\begin{tabular}{llrrrr}
+\toprule
+Target & Replaced regulator/value & Basin & Directed flips & Exits & Fraction\\
+\midrule
+CIA & CI protein/1 & 2048 & 28672 & 6144 & .21429\\
+CI protein & ci/1 & 1024 & 14336 & 4096 & .28571\\
+EN protein & en/0 & 256 & 3584 & 1536 & .42857\\
+ci & EN protein/0 & 512 & 7168 & 2560 & .35714\\
+wg & CIA/1 & 4096 & 57344 & 8192 & .14286\\
+wg & CIR/0 & 256 & 3584 & 1536 & .42857\\
+wg & SLP/1 & 16384 & 229376 & 0 & 0\\
+wg & wg/1 & 16384 & 229376 & 0 & 0\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+These are all eight admissible variants whose basins differ from the baseline. Their exit fractions are lower; the remaining thirty valid variants retain fraction .5. Absolute exit counts need not fall: the CIA-input substitution gives 6,144 exits rather than 896 while the denominator grows enough to lower the fraction. Hence basin size, exit count and exit fraction are separate quantities and should not be called interchangeable robustness evidence. Full-state absorbing cases have no boundary by construction, not demonstrated biological rescue.
+
+All per-node counts and reference-only exits remain in \path{results/grn_rule_boundary_audit.json}. Tests reconcile every basin size with the existing exact basin ledger, check directed flip accounting and independently traverse every four-state functional graph to verify its fixed-reference boundary. The plan and runner are \path{experiments/grn_rule_boundary_plan.json} and \path{experiments/grn_rule_boundary_audit.py}. This follow-up was selected after the shell and latency results and is not independent replication. Uniform basin-state/node weights, fixed external conditions and constant rule replacements are mathematical choices, not empirical developmental noise or biological knockouts. Spatial, continuous and physiological validation remain open; the content-page gate is uncertified.
